@@ -5,7 +5,7 @@
 <head>
     
     <meta charset="utf-8">
-    <meta name="keywords" content="博客搭建, jgy 计算机网络 强化学习 数据中心">
+    <meta name="keywords" content="Markdown语法, jgy 计算机网络 强化学习 数据中心">
 
     <meta name="description" content="记录工作与生活">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>博客搭建 | 努力搬砖的眼镜狗</title>
+    <title>Markdown语法 | 努力搬砖的眼镜狗</title>
     <link rel="icon" type="image/png" href="/meng.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -31,9 +31,9 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery.min.js"></script>
-<meta name="generator" content="Hexo 6.3.0">
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="努力搬砖的眼镜狗" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="努力搬砖的眼镜狗" type="application/atom+xml">
 </head>
 
 
@@ -422,28 +422,15 @@
 </header>
 
     
-<script src="/libs/cryptojs/crypto-js.min.js"></script>
-<script>
-    (function() {
-        let pwd = '';
-        if (pwd && pwd.length > 0) {
-            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
-                alert('密码错误，将返回主页！');
-                location.href = '/';
-            }
-        }
-    })();
-</script>
 
 
 
-
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">博客搭建</h1>
+                    <h1 class="description center-align post-title">Markdown语法</h1>
                 </div>
             </div>
         </div>
@@ -593,14 +580,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    838
+                    263
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
 
@@ -623,99 +610,40 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Hexo笔记搭建记录文档"><a href="#Hexo笔记搭建记录文档" class="headerlink" title="Hexo笔记搭建记录文档"></a>Hexo笔记搭建记录文档</h1><h2 id="一-Hexo网站的优势"><a href="#一-Hexo网站的优势" class="headerlink" title="一 Hexo网站的优势"></a>一 Hexo网站的优势</h2><p>博客平台如CSDN，博客园，简书等平台，用户可以直接在上面发表，缺点是比较不自由，会受到平台的各种限制和恶心的广告。</p>
-<p>购买域名和服务器成本太高了，花力气去自己搭这么一个网站，还要定期的维护它，成本精力较大。</p>
-<p>那么就有第三种选择，直接在github page平台上托管我们的博客。这样就可以安心的来写作，又不需要定期维护，而且hexo作为一个快速简洁的博客框架，用它来搭建博客真的非常容易。</p>
-<p>Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。</p>
-<h2 id="二-环境配置"><a href="#二-环境配置" class="headerlink" title="二 环境配置"></a>二 环境配置</h2><p>参考链接<a href="%5B%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%5D(https://blog.csdn.net/sinat_37781304/article/details/82729029?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168845286916800222814197%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=168845286916800222814197&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-82729029-null-null.142%5Ev88%5Econtrol_2,239%5Ev2%5Einsert_chatgpt&amp;utm_term=hexo&amp;spm=1018.2226.3001.4449)">^1</a></p>
-<p>常见命令</p>
-<ol>
-<li>Create a new post</li>
-</ol>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h1 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h1><h2 id="1-Markdown优势"><a href="#1-Markdown优势" class="headerlink" title="1 Markdown优势"></a>1 Markdown优势</h2><ul>
+<li>相对于word，操作方便，打开迅速</li>
+<li>主题丰富，较为美观</li>
+</ul>
+<h2 id="2-Markdown语法"><a href="#2-Markdown语法" class="headerlink" title="2 Markdown语法"></a>2 Markdown语法</h2><h3 id="1-脚注，尾注"><a href="#1-脚注，尾注" class="headerlink" title="1 脚注，尾注"></a>1 脚注，尾注</h3><p>参考文章[^1]</p>
+<p><strong>1.脚注，尾注</strong>：主要用于注释说明内容 (参看<a href="https://link.zhihu.com/?target=https://www.imooc.com/wiki/markdownlesson/markdownfootnote.html%23:~:text=%E5%86%99%E5%88%B0%E6%96%87%E7%AB%A0%E6%9C%AB%E5%B0%BE%E3%80%82-,3.%20%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF%E5%8F%8A%E5%AE%9E%E4%BE%8B,-%E5%AE%9E%E4%BE%8B%204%EF%BC%9A">使用场景</a>)。脚注/尾注的特点是可以在页面中来回跳转。</p>
+<p>示例：</p>
+<p>这是一个链接到谷歌的<a target="_blank" rel="noopener" href="http://www.google.com/">^脚注</a>。</p>
+<p>源码：</p>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">这是一个链接到谷歌的[^脚注]。
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<ol start="2">
-<li>Run server</li>
-</ol>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+[^脚注]: http://www.google.com<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<ol start="3">
-<li>Generate static files</li>
-</ol>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<ol start="4">
-<li>Deploy to remote sites</li>
-</ol>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h2 id="三-模板设置"><a href="#三-模板设置" class="headerlink" title="三 模板设置"></a>三 模板设置</h2><p>当我们使用命令 <code>hexo new "title"</code> 创建文章时，Hexo 会根据 <code>/scaffolds/post.md</code> 对新文章进行初始化。[^2]</p>
-<p>简单来说，<code>/scaffolds/post.md</code> 文档中所规定的格式就是新文章的 <strong>模板</strong>。</p>
-<p>一个简单的示例如下：</p>
-<pre class="line-numbers language-text" data-language="text"><code class="language-text">title: {{ title }}
-date: {{ date }}
-tags: 
-categories:<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="https://gitee.com/jgyong/blogimg/raw/master/img/202401211224018.webp" alt="img"></p>
+<h3 id="2-引用链接"><a href="#2-引用链接" class="headerlink" title="2 引用链接"></a>2 引用链接</h3><p>两部分：</p>
+<ul>
+<li>引用文本</li>
+<li>引用主体</li>
+</ul>
+<p>引用文本格式：<code>[显示文字][引用标签]</code></p>
+<p>引用主体格式：<code>[引用标签]: &lt;链接地址&gt; (链接可选标题)</code>(参看主体格式说明<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/499137261/%E4%BB%A5%E4%B8%8B%E7%A4%BA%E4%BE%8B%E6%A0%BC%E5%BC%8F%E5%AF%B9%E4%BA%8E**%E5%BC%95%E7%94%A8%E4%B8%BB%E4%BD%93%E6%A0%BC%E5%BC%8F**%E6%95%88%E6%9E%9C%E7%9B%B8%E5%90%8C%EF%BC%9A">^1</a>)</p>
+<p>示例：</p>
+<p>I get 10 times more traffic from <a target="_blank" rel="noopener" href="http://google.com/" title="Google">Google</a> than from <a target="_blank" rel="noopener" href="http://search.yahoo.com/" title="Yahoo Search">Yahoo</a> or <a target="_blank" rel="noopener" href="http://search.msn.com/" title="MSN Search">MSN</a>.  </p>
+<p>一般链接放置位置末尾，便于统一管理。</p>
+<p>源码：</p>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].  
 
-<h3 id="头部设置"><a href="#头部设置" class="headerlink" title="头部设置"></a>头部设置</h3><p>在每篇利用 Hexo 创建的文章的开头，都会有对文章进行说明的文字，叫做 <strong>文章头部</strong></p>
-<p>文章的头部除了可以设置文章标题、发布日期等基础信息外，还可以为文章添加标签、分类等</p>
-<p>一个简单的示例如下：</p>
-<pre class="line-numbers language-text" data-language="text"><code class="language-text">title: Title
-date: YYYY-MM-DD HH:MM:SS
-tags: [tag1, tag2, ...]
-categories: category
-1234<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+[1]: http://google.com/        "Google" 
+[2]: http://search.yahoo.com/  "Yahoo Search" 
+[3]: http://search.msn.com/    "MSN Search"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><strong>注意</strong>：属性和属性值之间必须有一个空格，否则会解析错误</p>
-<h2 id="四-文章分类"><a href="#四-文章分类" class="headerlink" title="四 文章分类"></a>四 文章分类</h2><p>当运行代码[^3]</p>
-<pre class="line-numbers language-git" data-language="git"><code class="language-git">hexo new paper<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>它其实默认使用的是<code>post</code>这个布局，也就是在<code>source</code>文件夹下的<code>_post</code>里面。</p>
-<p>Hexo 有三种默认布局：<code>post</code>、<code>page</code> 和 <code>draft</code>，它们分别对应不同的路径，而您自定义的其他布局和 <code>post</code> 相同，都将储存到 <code>source/_posts</code> 文件夹</p>
-<table>
-<thead>
-<tr>
-<th>布局</th>
-<th>路径</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>post</code></td>
-<td><code>source/_posts</code></td>
-</tr>
-<tr>
-<td><code>page</code></td>
-<td><code>source</code></td>
-</tr>
-<tr>
-<td><code>draft</code></td>
-<td><code>source/_drafts</code></td>
-</tr>
-</tbody></table>
-<p>而new这个命令其实是：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new <span class="token punctuation">[</span>layout<span class="token punctuation">]</span> <span class="token operator">&lt;</span>title<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>只不过这个layout默认是post罢了。</p>
-<h3 id="page"><a href="#page" class="headerlink" title="page"></a>page</h3><p>如果你想另起一页，那么可以使用</p>
-<pre class="line-numbers language-none"><code class="language-none">hexo new page board<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>系统会自动给你在source文件夹下创建一个board文件夹，以及board文件夹中的index.md，这样你访问的board对应的链接就是<code>http://xxx.xxx/board</code></p>
-<h3 id="draft"><a href="#draft" class="headerlink" title="draft"></a>draft</h3><p>draft是草稿的意思，也就是你如果想写文章，又不希望被看到，那么可以</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new draft newpage<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>这样会在source/_draft中新建一个newpage.md文件，如果你的草稿文件写的过程中，想要预览一下，那么可以使用</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo server <span class="token parameter variable">--draft</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>在本地端口中开启服务预览。</p>
-<p>如果你的草稿文件写完了，想要发表到post中，</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo publish draft newpage<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>就会自动把newpage.md发送到post中。</p>
-<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>[^2]:<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/392900312">【hexo】基础教程-一-撰写文章 </a></p>
-<p>[^3]:<a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_37781304/article/details/82729029?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168845286916800222814197%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=168845286916800222814197&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-82729029-null-null.142%5Ev88%5Econtrol_2,239%5Ev2%5Einsert_chatgpt&amp;utm_term=hexo&amp;spm=1018.2226.3001.4449"> hexo史上最全搭建教程</a></p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>[^1]:<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/499137261">Markdown写作 | 尾注,脚注和引用链接的正确使用</a></p>
 
                 
             </div>
@@ -742,7 +670,7 @@ categories: category
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jiang-gy.github.io/2024/01/21/bo-ke-da-jian/">https://jiang-gy.github.io/2024/01/21/bo-ke-da-jian/</a>
+                    <a href="https://jiang-gy.github.io/2024/01/21/markdown/markdown-yu-fa/">https://jiang-gy.github.io/2024/01/21/markdown/markdown-yu-fa/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1245,13 +1173,13 @@ new Valine({
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/01/21/markdown-yu-fa/">
+                <a href="/2024/01/21/shu-fa/xie-zi-zhu-yi-dian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Markdown语法">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="行楷注意事项">
                         
-                        <span class="card-title">Markdown语法</span>
+                        <span class="card-title">行楷注意事项</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1275,12 +1203,8 @@ new Valine({
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">Hexo博客</span>
-                    </a>
-                    
-                    <a href="/tags/Markdown%E8%AF%AD%E6%B3%95/">
-                        <span class="chip bg-color">Markdown语法</span>
+                    <a href="/tags/%E4%B9%A6%E6%B3%95/">
+                        <span class="chip bg-color">书法</span>
                     </a>
                     
                 </div>
@@ -1478,7 +1402,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">19.2k</span>&nbsp;字
+                class="white-color">35.5k</span>&nbsp;字
             
             
             
