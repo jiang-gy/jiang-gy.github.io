@@ -6,7 +6,7 @@
   <link href="https://jiang-gy.github.io/atom.xml" rel="self"/>
   
   <link href="https://jiang-gy.github.io/"/>
-  <updated>2024-01-21T07:24:03.302Z</updated>
+  <updated>2024-01-21T08:11:12.285Z</updated>
   <id>https://jiang-gy.github.io/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>passtest</title>
+    <link href="https://jiang-gy.github.io/2024/01/21/passtest/"/>
+    <id>https://jiang-gy.github.io/2024/01/21/passtest/</id>
+    <published>2024-01-21T08:08:16.000Z</published>
+    <updated>2024-01-21T08:11:12.285Z</updated>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>My New Post</title>
@@ -31,8 +46,8 @@
   
   <entry>
     <title>行楷注意事项</title>
-    <link href="https://jiang-gy.github.io/2024/01/21/xie-zi-zhu-yi-dian/"/>
-    <id>https://jiang-gy.github.io/2024/01/21/xie-zi-zhu-yi-dian/</id>
+    <link href="https://jiang-gy.github.io/2024/01/21/shu-fa/xie-zi-zhu-yi-dian/"/>
+    <id>https://jiang-gy.github.io/2024/01/21/shu-fa/xie-zi-zhu-yi-dian/</id>
     <published>2024-01-21T07:20:50.000Z</published>
     <updated>2024-01-21T07:24:38.200Z</updated>
     
@@ -82,6 +97,31 @@
     <link href="https://jiang-gy.github.io/2024/01/21/bo-ke-da-jian/"/>
     <id>https://jiang-gy.github.io/2024/01/21/bo-ke-da-jian/</id>
     <published>2024-01-21T02:16:52.000Z</published>
+    <updated>2024-01-21T08:01:04.345Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Hexo笔记搭建记录文档&quot;&gt;&lt;a href=&quot;#Hexo笔记搭建记录文档&quot; class=&quot;headerlink&quot; title=&quot;Hexo笔记搭建记录文档&quot;&gt;&lt;/a&gt;Hexo笔记搭建记录文档&lt;/h1&gt;&lt;h2 id=&quot;一-Hexo网站的优势&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Hexo博客" scheme="https://jiang-gy.github.io/tags/Hexo%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="Markdown语法" scheme="https://jiang-gy.github.io/tags/Markdown%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客搭建</title>
+    <link href="https://jiang-gy.github.io/2024/01/21/bo-ke/bo-ke-da-jian/"/>
+    <id>https://jiang-gy.github.io/2024/01/21/bo-ke/bo-ke-da-jian/</id>
+    <published>2024-01-21T02:16:52.000Z</published>
     <updated>2024-01-21T07:20:33.896Z</updated>
     
     
@@ -103,19 +143,19 @@
   </entry>
   
   <entry>
-    <title>DQN笔记</title>
-    <link href="https://jiang-gy.github.io/2023/07/21/dqn-bi-ji/"/>
-    <id>https://jiang-gy.github.io/2023/07/21/dqn-bi-ji/</id>
+    <title>git使用手册</title>
+    <link href="https://jiang-gy.github.io/2023/07/21/git-shi-yong-shou-ce/"/>
+    <id>https://jiang-gy.github.io/2023/07/21/git-shi-yong-shou-ce/</id>
     <published>2023-07-21T12:00:23.000Z</published>
-    <updated>2024-01-21T07:10:30.245Z</updated>
+    <updated>2024-01-21T07:29:00.173Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;DQN&quot;&gt;&lt;a href=&quot;#DQN&quot; class=&quot;headerlink&quot; title=&quot;DQN&quot;&gt;&lt;/a&gt;DQN&lt;/h1&gt;&lt;p&gt;DQN两个因素&lt;/p&gt;
-&lt;p&gt; DQN 有一个记忆库用于学习之前的经历. 在之前的简介影片中提到过, Q learning 是一种</summary>
+    <summary type="html">&lt;h2 id=&quot;一-安装&quot;&gt;&lt;a href=&quot;#一-安装&quot; class=&quot;headerlink&quot; title=&quot;一 安装&quot;&gt;&lt;/a&gt;一 安装&lt;/h2&gt;&lt;p&gt;Linux&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-bash&quot;</summary>
         
       
     
@@ -130,18 +170,18 @@
   
   <entry>
     <title>DQN笔记</title>
-    <link href="https://jiang-gy.github.io/2023/07/21/git-shi-yong-shou-ce/"/>
-    <id>https://jiang-gy.github.io/2023/07/21/git-shi-yong-shou-ce/</id>
+    <link href="https://jiang-gy.github.io/2023/07/21/dqn-bi-ji/dqn-bi-ji/"/>
+    <id>https://jiang-gy.github.io/2023/07/21/dqn-bi-ji/dqn-bi-ji/</id>
     <published>2023-07-21T12:00:23.000Z</published>
-    <updated>2024-01-21T07:16:11.367Z</updated>
+    <updated>2024-01-21T07:10:30.245Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;一-安装&quot;&gt;&lt;a href=&quot;#一-安装&quot; class=&quot;headerlink&quot; title=&quot;一 安装&quot;&gt;&lt;/a&gt;一 安装&lt;/h2&gt;&lt;p&gt;Linux&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-bash&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;DQN&quot;&gt;&lt;a href=&quot;#DQN&quot; class=&quot;headerlink&quot; title=&quot;DQN&quot;&gt;&lt;/a&gt;DQN&lt;/h1&gt;&lt;p&gt;DQN两个因素&lt;/p&gt;
+&lt;p&gt; DQN 有一个记忆库用于学习之前的经历. 在之前的简介影片中提到过, Q learning 是一种</summary>
         
       
     
@@ -177,8 +217,8 @@
   
   <entry>
     <title>我的第一篇博客文章</title>
-    <link href="https://jiang-gy.github.io/2023/07/04/wo-de-di-yi-pian-bo-ke-wen-zhang/"/>
-    <id>https://jiang-gy.github.io/2023/07/04/wo-de-di-yi-pian-bo-ke-wen-zhang/</id>
+    <link href="https://jiang-gy.github.io/2023/07/04/bo-ke/wo-de-di-yi-pian-bo-ke-wen-zhang/"/>
+    <id>https://jiang-gy.github.io/2023/07/04/bo-ke/wo-de-di-yi-pian-bo-ke-wen-zhang/</id>
     <published>2023-07-04T07:42:23.000Z</published>
     <updated>2023-07-21T11:53:33.057Z</updated>
     
