@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Markdown语法</title>
+      <link href="/2024/01/21/markdown-yu-fa/"/>
+      <url>/2024/01/21/markdown-yu-fa/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h1><h2 id="1-Markdown优势"><a href="#1-Markdown优势" class="headerlink" title="1 Markdown优势"></a>1 Markdown优势</h2><ul><li>相对于word，操作方便，打开迅速</li><li>主题丰富，较为美观</li></ul><h2 id="2-Markdown语法"><a href="#2-Markdown语法" class="headerlink" title="2 Markdown语法"></a>2 Markdown语法</h2><h3 id="1-脚注，尾注"><a href="#1-脚注，尾注" class="headerlink" title="1 脚注，尾注"></a>1 脚注，尾注</h3><p>参考文章[^1]</p><p><strong>1.脚注，尾注</strong>：主要用于注释说明内容 (参看<a href="https://link.zhihu.com/?target=https://www.imooc.com/wiki/markdownlesson/markdownfootnote.html%23:~:text=%E5%86%99%E5%88%B0%E6%96%87%E7%AB%A0%E6%9C%AB%E5%B0%BE%E3%80%82-,3.%20%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF%E5%8F%8A%E5%AE%9E%E4%BE%8B,-%E5%AE%9E%E4%BE%8B%204%EF%BC%9A">使用场景</a>)。脚注/尾注的特点是可以在页面中来回跳转。</p><p>示例：</p><p>这是一个链接到谷歌的<a href="http://www.google.com/">^脚注</a>。</p><p>源码：</p><pre class="line-numbers language-text" data-language="text"><code class="language-text">这是一个链接到谷歌的[^脚注]。[^脚注]: http://www.google.com<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p><img src="https://gitee.com/jgyong/blogimg/raw/master/img/202401211224018.webp" alt="img"></p><h3 id="2-引用链接"><a href="#2-引用链接" class="headerlink" title="2 引用链接"></a>2 引用链接</h3><p>两部分：</p><ul><li>引用文本</li><li>引用主体</li></ul><p>引用文本格式：<code>[显示文字][引用标签]</code></p><p>引用主体格式：<code>[引用标签]: &lt;链接地址&gt; (链接可选标题)</code>(参看主体格式说明<a href="https://zhuanlan.zhihu.com/p/499137261/%E4%BB%A5%E4%B8%8B%E7%A4%BA%E4%BE%8B%E6%A0%BC%E5%BC%8F%E5%AF%B9%E4%BA%8E**%E5%BC%95%E7%94%A8%E4%B8%BB%E4%BD%93%E6%A0%BC%E5%BC%8F**%E6%95%88%E6%9E%9C%E7%9B%B8%E5%90%8C%EF%BC%9A">^1</a>)</p><p>示例：</p><p>I get 10 times more traffic from <a href="http://google.com/" title="Google">Google</a> than from <a href="http://search.yahoo.com/" title="Yahoo Search">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search">MSN</a>.  </p><p>一般链接放置位置末尾，便于统一管理。</p><p>源码：</p><pre class="line-numbers language-text" data-language="text"><code class="language-text">I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].  [1]: http://google.com/        "Google" [2]: http://search.yahoo.com/  "Yahoo Search" [3]: http://search.msn.com/    "MSN Search"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>[^1]:<a href="https://zhuanlan.zhihu.com/p/499137261">Markdown写作 | 尾注,脚注和引用链接的正确使用</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Hexo博客 </tag>
+            
+            <tag> Markdown语法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>博客搭建</title>
+      <link href="/2024/01/21/bo-ke-da-jian/"/>
+      <url>/2024/01/21/bo-ke-da-jian/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Hexo笔记搭建记录文档"><a href="#Hexo笔记搭建记录文档" class="headerlink" title="Hexo笔记搭建记录文档"></a>Hexo笔记搭建记录文档</h1><h2 id="1-Hexo网站的优势"><a href="#1-Hexo网站的优势" class="headerlink" title="1 Hexo网站的优势"></a>1 Hexo网站的优势</h2><p>博客平台如CSDN，博客园，简书等平台，用户可以直接在上面发表，缺点是比较不自由，会受到平台的各种限制和恶心的广告。</p><p>购买域名和服务器成本太高了，花力气去自己搭这么一个网站，还要定期的维护它，成本精力较大。</p><p>那么就有第三种选择，直接在github page平台上托管我们的博客。这样就可以安心的来写作，又不需要定期维护，而且hexo作为一个快速简洁的博客框架，用它来搭建博客真的非常容易。</p><p>Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。</p><h2 id="2-环境配置"><a href="#2-环境配置" class="headerlink" title="2 环境配置"></a>2 环境配置</h2><p>参考链接<a href="%5B%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%5D(https://blog.csdn.net/sinat_37781304/article/details/82729029?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168845286916800222814197%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=168845286916800222814197&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-82729029-null-null.142%5Ev88%5Econtrol_2,239%5Ev2%5Einsert_chatgpt&amp;utm_term=hexo&amp;spm=1018.2226.3001.4449)">^1</a></p><h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Hexo博客 </tag>
+            
+            <tag> Markdown语法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>DQN笔记</title>
+      <link href="/2023/07/21/dqn-bi-ji/"/>
+      <url>/2023/07/21/dqn-bi-ji/</url>
+      
+        <content type="html"><![CDATA[<h1 id="DQN"><a href="#DQN" class="headerlink" title="DQN"></a>DQN</h1><p>DQN两个因素</p><p> DQN 有一个记忆库用于学习之前的经历. 在之前的简介影片中提到过, Q learning 是一种 off-policy 离线学习法, 它能学习当前经历着的, 也能学习过去经历过的, 甚至是学习别人的经历. 所以每次 DQN 更新的时候, 我们都可以随机抽取一些之前的经历进行学习. 随机抽取这种做法打乱了经历之间的相关性, 也使得神经网络更新更有效率. Fixed Q-targets 也是一种打乱相关性的机理, 如果使用 fixed Q-targets, 我们就会在 DQN 中使用到两个结构相同但参数不同的神经网络, 预测 Q 估计 的神经网络具备最新的参数, 而预测 Q 现实 的神经网络使用的参数则是很久以前的. 有了这两种提升手段, DQN 才能在一些游戏中超越人类.</p><h2 id="2-程序运行"><a href="#2-程序运行" class="headerlink" title="2. 程序运行"></a>2. 程序运行</h2><p>安装TensorFlow</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pip3 <span class="token function">install</span> <span class="token assign-left variable">tensorflow</span><span class="token operator">==</span><span class="token number">1.0</span>.0<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>将脚本中<code>output_graph=True</code>设置后</p><p>运行</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">tensorboard <span class="token parameter variable">--logdir</span><span class="token operator">=</span>logs<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> 强化学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>UCOM会议</title>
+      <link href="/2023/07/13/ucom-hui-yi/"/>
+      <url>/2023/07/13/ucom-hui-yi/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/2023/07/13/ucom-hui-yi/1111.png" alt="会议合影"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的第一篇博客文章</title>
+      <link href="/2023/07/04/wo-de-di-yi-pian-bo-ke-wen-zhang/"/>
+      <url>/2023/07/04/wo-de-di-yi-pian-bo-ke-wen-zhang/</url>
+      
+        <content type="html"><![CDATA[<p>博客搭建成功！！！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 心路历程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 碎碎念 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2023/07/04/hello-world/"/>
+      <url>/2023/07/04/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
