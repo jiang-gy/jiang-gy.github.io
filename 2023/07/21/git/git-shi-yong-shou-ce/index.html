@@ -31,9 +31,9 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery.min.js"></script>
-<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="努力搬砖的眼镜狗" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="努力搬砖的眼镜狗" type="application/atom+xml">
 </head>
 
 
@@ -573,14 +573,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-01-21
+                    2024-01-24
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    17k
+                    17.1k
                 </div>
                 
 
@@ -2044,8 +2044,7 @@ To github.com:michaelliao/learngit.git
 <p>如果你希望bootstrap的官方库能接受你的修改，你就可以在GitHub上发起一个pull request。当然，对方是否接受你的pull request就不一定了。</p>
 <p>如果你没能力修改bootstrap，但又想要试一把pull request，那就Fork一下我的仓库：<a target="_blank" rel="noopener" href="https://github.com/michaelliao/learngit%EF%BC%8C%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%60your-github-id.txt%60%E7%9A%84%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%EF%BC%8C%E5%86%99%E7%82%B9%E8%87%AA%E5%B7%B1%E5%AD%A6%E4%B9%A0Git%E7%9A%84%E5%BF%83%E5%BE%97%EF%BC%8C%E7%84%B6%E5%90%8E%E6%8E%A8%E9%80%81%E4%B8%80%E4%B8%AApull">https://github.com/michaelliao/learngit，创建一个`your-github-id.txt`的文本文件，写点自己学习Git的心得，然后推送一个pull</a> request给我，我会视心情而定是否接受。</p>
 <hr>
-<h2 id="八-总结"><a href="#八-总结" class="headerlink" title="八 总结"></a>八 总结</h2><p>步骤:</p>
-<ol>
+<h2 id="八-总结"><a href="#八-总结" class="headerlink" title="八 总结"></a>八 总结</h2><h3 id="1-常规步骤"><a href="#1-常规步骤" class="headerlink" title="1. 常规步骤:"></a>1. 常规步骤:</h3><ol>
 <li><p>创建本地仓库</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
@@ -2072,40 +2071,51 @@ To github.com:michaelliao/learngit.git
 
 <span class="token operator">!</span><span class="token punctuation">[</span>git<span class="token punctuation">]</span><span class="token punctuation">(</span>https://gitee.com/jgyong/blogimg/raw/master/img/202302191537138.png<span class="token punctuation">)</span>
 
-<span class="token comment">## 九 出现的问题以及解决方法</span>
+<span class="token comment">### 2 便捷方式</span>
 
-<span class="token comment">### 1 “ssh:connect to host github.com port 22: Connection timed out”</span>
+<span class="token number">1</span>.    将add与commit合并<span class="token punctuation">[</span>^2<span class="token punctuation">]</span>
 
-方法思路：更换端口（参考<span class="token punctuation">[</span>^1<span class="token punctuation">]</span>）
+一般流程
 
-<span class="token number">1</span>.   进入~/.ssh
+```bash
+<span class="token function">git</span> <span class="token function">add</span> <span class="token operator">&lt;</span>file<span class="token operator">&gt;</span> <span class="token comment"># 将文件添加到暂存区</span>
+<span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"Commit Message"</span> <span class="token comment"># 将暂存区的文件提交到本地仓库</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ol>
+<p>合并语句</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> commit <span class="token parameter variable">-am</span> <span class="token string">"Commit Message"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<span class="token number">2</span>.   修改config文件
 
-<span class="token number">3</span>.   编辑文件内容
 
-     ```git
-     Host github.com
-     User <span class="token function">git</span>
-     Hostname ssh.github.com
-     PreferredAuthentications publickey
-     IdentityFile ~/.ssh/id_rsa
-     Port <span class="token number">443</span>
-     
-     Host gitlab.com
-     Hostname altssh.gitlab.com
-     User <span class="token function">git</span>
-     Port <span class="token number">443</span>
-     PreferredAuthentications publickey
-     IdentityFile ~/.ssh/id_rsa
-     <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<h2 id="九-出现的问题以及解决方法"><a href="#九-出现的问题以及解决方法" class="headerlink" title="九 出现的问题以及解决方法"></a>九 出现的问题以及解决方法</h2><h3 id="1-“ssh-connect-to-host-github-com-port-22-Connection-timed-out”"><a href="#1-“ssh-connect-to-host-github-com-port-22-Connection-timed-out”" class="headerlink" title="1 “ssh:connect to host github.com port 22: Connection timed out”"></a>1 “ssh:connect to host github.com port 22: Connection timed out”</h3><p>方法思路：更换端口（参考[^1]）</p>
+<ol>
+<li><p>进入~/.ssh</p>
+</li>
+<li><p>修改config文件</p>
+</li>
+<li><p>编辑文件内容</p>
+<pre class="line-numbers language-git" data-language="git"><code class="language-git">Host github.com
+User git
+Hostname ssh.github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa
+Port 443
+
+Host gitlab.com
+Hostname altssh.gitlab.com
+User git
+Port 443
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 <li><p>保存退出</p>
 </li>
 <li><p>检查是否成功</p>
 <pre class="line-numbers language-git" data-language="git"><code class="language-git">ssh -T git@github.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
 </ol>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>[^1]:<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45637036/article/details/106560217">Git问题：解决“ssh:connect to host github.com port 22: Connection timed out”</a></p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>[^1]:<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45637036/article/details/106560217">Git问题：解决“ssh:connect to host github.com port 22: Connection timed out”</a><br>[^2]: <a target="_blank" rel="noopener" href="https://geek-docs.com/git/git-questions/466_git_git_add_and_commit_in_one_command.html">Git 如何在Git中使用一条命令同时进行add和commit操作</a></p>
 
                 
             </div>
@@ -2856,7 +2866,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">35.5k</span>&nbsp;字
+                class="white-color">37k</span>&nbsp;字
             
             
             
