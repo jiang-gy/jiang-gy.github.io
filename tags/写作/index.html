@@ -31,9 +31,9 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery.min.js"></script>
-<meta name="generator" content="Hexo 6.3.0">
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="努力搬砖的眼镜狗" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="努力搬砖的眼镜狗" type="application/atom+xml">
 </head>
 
 
@@ -494,10 +494,19 @@
                 </a>
                 
                 
+                <a href="/tags/Latex/" title="Latex: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Latex" style="background-color: #D5F5E3;">Latex
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
                 <a href="/tags/Hexo%E5%8D%9A%E5%AE%A2/" title="Hexo博客: 3">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="Hexo博客" style="background-color: #D5F5E3;">Hexo博客
+                            data-tagname="Hexo博客" style="background-color: #E8F8F5;">Hexo博客
                         <span class="tag-length">3</span>
                     </span>
                 </a>
@@ -506,7 +515,7 @@
                 <a href="/tags/Markdown%E8%AF%AD%E6%B3%95/" title="Markdown语法: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="Markdown语法" style="background-color: #E8F8F5;">Markdown语法
+                            data-tagname="Markdown语法" style="background-color: #FEF9E7;">Markdown语法
                         <span class="tag-length">2</span>
                     </span>
                 </a>
@@ -515,7 +524,7 @@
                 <a href="/tags/%E4%B9%A6%E6%B3%95/" title="书法: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="书法" style="background-color: #FEF9E7;">书法
+                            data-tagname="书法" style="background-color: #F8F9F9;">书法
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -524,16 +533,7 @@
                 <a href="/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/" title="碎碎念: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="碎碎念" style="background-color: #F8F9F9;">碎碎念
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/Latex/" title="Latex: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="Latex" style="background-color: #82E0AA;">Latex
+                            data-tagname="碎碎念" style="background-color: #82E0AA;">碎碎念
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -607,13 +607,14 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">37k</span>&nbsp;字
+                class="white-color">37.2k</span>&nbsp;字
             
             
             
             
             
-            
+            <!-- modify by jgy:comment -->
+            <!-- 
             <span id="busuanzi_container_site_pv" style='display:none'></span>
                 |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
                     class="white-color"></span>&nbsp;次
@@ -624,6 +625,19 @@
                 |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
                     class="white-color"></span>&nbsp;人
 
+             -->
+            <!--  -->
+            <!-- add -->
+            
+                <span id="busuanzi_container_site_pv" style='display:none'>
+                    <i class="fa fa-heart-o"></i>
+                    本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
+                </span>
+            
+            
+                <span id="busuanzi_container_site_uv" style='display:none'>
+                    人次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
+                </span>
             
             <br>
             
@@ -663,6 +677,28 @@
 
 </div>
     </div>
+    <!-- add by jgy:添加统计
+     -->
+    <script>
+        $(document).ready(function () {
+    
+            var int = setInterval(fixCount, 50);  // 50ms周期检测函数
+            var pvcountOffset = 80000;  // 初始化首次数据
+            var uvcountOffset = 20000;
+    
+            function fixCount() {
+                if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
+                    $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
+                    clearInterval(int);
+                }
+                if ($("#busuanzi_container_site_pv").css("display") != "none") {
+                    $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
+                    clearInterval(int); // 停止检测
+                }
+            }
+        });
+    </script>
+    <!--  -->
 </footer>
 
 <div class="progress-bar"></div>

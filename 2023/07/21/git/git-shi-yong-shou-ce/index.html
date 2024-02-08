@@ -31,9 +31,9 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery.min.js"></script>
-<meta name="generator" content="Hexo 6.3.0">
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="努力搬砖的眼镜狗" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="努力搬砖的眼镜狗" type="application/atom+xml">
 </head>
 
 
@@ -573,7 +573,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-01-24
+                    2024-02-05
                 </div>
                 
 
@@ -592,11 +592,6 @@
                 
 
                 
-                    <span id="busuanzi_container_page_pv" style='display:none'></span>
-                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
-                        <span id="busuanzi_value_page_pv"></span>
-                    
-				
             </div>
         </div>
         <hr class="clearfix">
@@ -1233,6 +1228,11 @@ README.md<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
 <p>如果有多个人协作开发，那么每个人各自从远程克隆一份就可以了。</p>
 <p>你也许还注意到，GitHub给出的地址不止一个，还可以用<code>https://github.com/michaelliao/gitskills.git</code>这样的地址。实际上，Git支持多种协议，默认的<code>git://</code>使用ssh，但也可以使用<code>https</code>等其他协议。</p>
 <p>使用<code>https</code>除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放http端口的公司内部就无法使用<code>ssh</code>协议而只能用<code>https</code></p>
+<h3 id="4-5-查看远程仓库"><a href="#4-5-查看远程仓库" class="headerlink" title="4.5 查看远程仓库"></a>4.5 查看远程仓库</h3><p>查看本地仓库连接的远程仓库</p>
+<pre class="line-numbers language-git" data-language="git"><code class="language-git">git remote -v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
 <h2 id="五-分支管理"><a href="#五-分支管理" class="headerlink" title="五 分支管理"></a>五 分支管理</h2><h3 id="5-1分支管理"><a href="#5-1分支管理" class="headerlink" title="5.1分支管理"></a>5.1分支管理</h3><h4 id="1-应用场景"><a href="#1-应用场景" class="headerlink" title="1 应用场景"></a>1 应用场景</h4><p><img src="https://gitee.com/jgyong/blogimg/raw/master/img/202302191537126.png" alt="learn-branches"></p>
 <p>开发新功能但未完成。</p>
 <p>立刻提交不完整的代码库导致别人无法继续工作</p>
@@ -2866,13 +2866,14 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">37k</span>&nbsp;字
+                class="white-color">37.2k</span>&nbsp;字
             
             
             
             
             
-            
+            <!-- modify by jgy:comment -->
+            <!-- 
             <span id="busuanzi_container_site_pv" style='display:none'></span>
                 |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
                     class="white-color"></span>&nbsp;次
@@ -2883,6 +2884,19 @@ new Valine({
                 |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
                     class="white-color"></span>&nbsp;人
 
+             -->
+            <!--  -->
+            <!-- add -->
+            
+                <span id="busuanzi_container_site_pv" style='display:none'>
+                    <i class="fa fa-heart-o"></i>
+                    本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
+                </span>
+            
+            
+                <span id="busuanzi_container_site_uv" style='display:none'>
+                    人次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
+                </span>
             
             <br>
             
@@ -2922,6 +2936,28 @@ new Valine({
 
 </div>
     </div>
+    <!-- add by jgy:添加统计
+     -->
+    <script>
+        $(document).ready(function () {
+    
+            var int = setInterval(fixCount, 50);  // 50ms周期检测函数
+            var pvcountOffset = 80000;  // 初始化首次数据
+            var uvcountOffset = 20000;
+    
+            function fixCount() {
+                if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
+                    $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
+                    clearInterval(int);
+                }
+                if ($("#busuanzi_container_site_pv").css("display") != "none") {
+                    $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
+                    clearInterval(int); // 停止检测
+                }
+            }
+        });
+    </script>
+    <!--  -->
 </footer>
 
 <div class="progress-bar"></div>
