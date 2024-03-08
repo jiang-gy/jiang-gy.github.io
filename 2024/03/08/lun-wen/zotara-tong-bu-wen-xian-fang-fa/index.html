@@ -558,21 +558,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-02-28
+                    2024-03-08
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-02-28
+                    2024-03-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    472
+                    97
                 </div>
                 
 
@@ -597,37 +597,18 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h5 id="一、另外生成一份SSH-key"><a href="#一、另外生成一份SSH-key" class="headerlink" title="一、另外生成一份SSH key"></a>一、另外生成一份SSH key</h5><p>执行命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ssh-keygen <span class="token parameter variable">-t</span> rsa <span class="token parameter variable">-f</span> /c/Users/Administrator/.ssh/id_rsa_second <span class="token parameter variable">-C</span> <span class="token string">"xxxxx@163.com"</span> <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>生成成功会在.ssh目录下看到多出两个文件：id_rsa_second和id_rsa_second.pub，同样我们把新生成的公钥添加到gitLab新账号上。</p>
-<h5 id="二：添加密钥到-SSH-Agent"><a href="#二：添加密钥到-SSH-Agent" class="headerlink" title="二：添加密钥到 SSH Agent"></a>二：添加密钥到 SSH Agent</h5><p>执行命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ssh-agent <span class="token function">bash</span>
-ssh-add /c/Users/Administrator/.ssh/id_rsa_second<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<h5 id="三、配置config文件"><a href="#三、配置config文件" class="headerlink" title="三、配置config文件"></a>三、配置config文件</h5><p>.ssh目录下默认是没有config文件的，我们手动在.ssh目录下创建一个config文件（不需要后缀）。然后用编辑器打开config文件，给新账号单独配置一个Host，Host要取一个别名，每个Host主要配置HostName和IdentityFile即可。如下：</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">Host gitLab<span class="token operator">-</span>second
-HostName gitLab<span class="token punctuation">.</span>com
-PreferredAuthentications publickey
-IdentityFile <span class="token operator">~</span><span class="token operator">/</span><span class="token punctuation">.</span>ssh<span class="token operator">/</span>id_rsa_second<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>检查是否配置成功：</p>
-<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">ssh <span class="token operator">-</span>T git<span class="token variable">@gitLab</span><span class="token operator">-</span><span class="token keyword">second</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>如果看到自己的昵称则表示配置成功，如：Hi (you name)! You’ve successfully authenticated, but GITEE.COM does not provide shell access.<br> 配置完成后，在连接非默认帐号的gitLab仓库时，远程库的地址要对应地做一些修改，比如现在克隆second帐号下的一个仓库xxxxx：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone git@gitLab-second:name/xxxxx.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>其实此时就可以使用了，但是网上还有其他配置</p>
-<h5 id="四、取消全局的用户名和邮箱配置"><a href="#四、取消全局的用户名和邮箱配置" class="headerlink" title="四、取消全局的用户名和邮箱配置"></a>四、取消全局的用户名和邮箱配置</h5><p>因为一台电脑上配置了多个git账号，所以就不能再配置全局的用户名和邮箱了，而是在不同的仓库下，配置相应的局部用户名和邮箱即可。 打开 git bash，输入以下命令取消全局配置：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css">css复制代码git config --global --unset user.name
-git config --global --unset user.email<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<h5 id="五、为某个仓库配置用户名和邮箱"><a href="#五、为某个仓库配置用户名和邮箱" class="headerlink" title="五、为某个仓库配置用户名和邮箱"></a>五、为某个仓库配置用户名和邮箱</h5><p>进入某个仓库根目录，打开 git bash,输入以下命令为其配置局部用户名和邮箱：</p>
-<pre class="line-numbers language-lua" data-language="lua"><code class="language-lua">git config user<span class="token punctuation">.</span>name <span class="token string">"xx"</span>
-git config user<span class="token punctuation">.</span>email <span class="token string">"xx@xx.com"</span>
-git config <span class="token comment">--list   （查看配置）</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6992519940074897444">https://juejin.cn/post/6992519940074897444</a></p>
+                <hr>
+<p>title: Zotara同步文献方法<br>top: false<br>cover: false<br>toc: true<br>mathjax: false<br>date: 2024-1-27 17:13:22<br>tags:</p>
+<ul>
+<li>写作<br>categories:</li>
+</ul>
+<hr>
+<p>问题一：同步各个电脑笔记与数据</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/414686776">https://zhuanlan.zhihu.com/p/414686776</a></p>
+<p>其中,安装插件的方式可以参考这个网址：</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jianghaonan0818/p/15376754.html">https://www.cnblogs.com/jianghaonan0818/p/15376754.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_49818157/article/details/125200034">https://blog.csdn.net/weixin_49818157/article/details/125200034</a></p>
+<h1 id="问题二：解决：无法打开Zotero数据库"><a href="#问题二：解决：无法打开Zotero数据库" class="headerlink" title="问题二：解决：无法打开Zotero数据库"></a>问题二：<strong>解决：无法打开Zotero数据库</strong></h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43585760/article/details/133989832">解决：无法打开Zotero数据库</a></p>
 
                 
             </div>
@@ -654,7 +635,7 @@ git config <span class="token comment">--list   （查看配置）</span><span a
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jiang-gy.github.io/2024/02/28/git/liang-ge-github-pei-zhi-tong-yi-tai-dian-nao-shang-de-gong-yao/">https://jiang-gy.github.io/2024/02/28/git/liang-ge-github-pei-zhi-tong-yi-tai-dian-nao-shang-de-gong-yao/</a>
+                    <a href="https://jiang-gy.github.io/2024/03/08/lun-wen/zotara-tong-bu-wen-xian-fang-fa/">https://jiang-gy.github.io/2024/03/08/lun-wen/zotara-tong-bu-wen-xian-fang-fa/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1145,9 +1126,48 @@ new Valine({
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2024/03/08/lun-wen/zotara-tong-bu-wen-xian-fang-fa/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-03-08
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            努力搬砖的眼镜狗
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2024/03/08/bo-ke/hexo-teng-xun-yun-yu-ming/">
                     <div class="card-image">
@@ -1165,45 +1185,8 @@ new Valine({
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-03-08
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            努力搬砖的眼镜狗
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2024/02/22/ns3-fang-zhen/ns3-zhong-wang-luo-fang-zhen/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                        
-                        <span class="card-title"></span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-02-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-03-08
                             </span>
                         <span class="publish-author">
                             

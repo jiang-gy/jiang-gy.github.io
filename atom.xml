@@ -6,7 +6,7 @@
   <link href="https://jiang-gy.github.io/atom.xml" rel="self"/>
   
   <link href="https://jiang-gy.github.io/"/>
-  <updated>2024-02-28T08:50:47.354Z</updated>
+  <updated>2024-03-08T02:39:42.384Z</updated>
   <id>https://jiang-gy.github.io/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://jiang-gy.github.io/2024/03/08/lun-wen/zotara-tong-bu-wen-xian-fang-fa/"/>
+    <id>https://jiang-gy.github.io/2024/03/08/lun-wen/zotara-tong-bu-wen-xian-fang-fa/</id>
+    <published>2024-03-08T02:39:42.384Z</published>
+    <updated>2024-03-08T02:39:42.384Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;hr&gt;
+&lt;p&gt;title: Zotara同步文献方法&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: false&lt;br&gt;date: 2024-1-27</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://jiang-gy.github.io/2024/03/08/bo-ke/hexo-teng-xun-yun-yu-ming/"/>
+    <id>https://jiang-gy.github.io/2024/03/08/bo-ke/hexo-teng-xun-yun-yu-ming/</id>
+    <published>2024-03-08T02:39:42.383Z</published>
+    <updated>2024-03-08T02:39:42.383Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;参考链接&quot;&gt;&lt;a href=&quot;#参考链接&quot; class=&quot;headerlink&quot; title=&quot;参考链接&quot;&gt;&lt;/a&gt;参考链接&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title></title>
@@ -62,10 +106,10 @@
   
   <entry>
     <title>论文写作</title>
-    <link href="https://jiang-gy.github.io/2024/01/27/lun-wen-xie-zuo/lun-wen-xie-zuo/"/>
-    <id>https://jiang-gy.github.io/2024/01/27/lun-wen-xie-zuo/lun-wen-xie-zuo/</id>
+    <link href="https://jiang-gy.github.io/2024/01/27/lun-wen/lun-wen-xie-zuo/"/>
+    <id>https://jiang-gy.github.io/2024/01/27/lun-wen/lun-wen-xie-zuo/</id>
     <published>2024-01-27T09:13:22.000Z</published>
-    <updated>2024-01-27T09:25:47.942Z</updated>
+    <updated>2024-03-08T02:39:42.409Z</updated>
     
     
       
@@ -417,48 +461,6 @@
         
         
     <summary type="html">&lt;h1 id=&quot;Ns3-Trace系统&quot;&gt;&lt;a href=&quot;#Ns3-Trace系统&quot; class=&quot;headerlink&quot; title=&quot;Ns3 Trace系统&quot;&gt;&lt;/a&gt;Ns3 Trace系统&lt;/h1&gt;&lt;h2 id=&quot;Trace变量配置&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://jiang-gy.github.io/2022/12/12/ns3-fang-zhen/ns3-xue-xi-zi-liao-hui-zong/"/>
-    <id>https://jiang-gy.github.io/2022/12/12/ns3-fang-zhen/ns3-xue-xi-zi-liao-hui-zong/</id>
-    <published>2022-12-12T01:55:51.361Z</published>
-    <updated>2022-12-12T02:31:35.212Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;学习资料&quot;&gt;&lt;a href=&quot;#学习资料&quot; class=&quot;headerlink&quot; title=&quot;学习资料&quot;&gt;&lt;/a&gt;学习资料&lt;/h2&gt;&lt;h2 id=&quot;1-官方学习网址&quot;&gt;&lt;a href=&quot;#1-官方学习网址&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://jiang-gy.github.io/2022/12/08/ns3-fang-zhen/ns3-shi-yong-xin-de-mo-kuai/"/>
-    <id>https://jiang-gy.github.io/2022/12/08/ns3-fang-zhen/ns3-shi-yong-xin-de-mo-kuai/</id>
-    <published>2022-12-08T12:06:37.468Z</published>
-    <updated>2022-12-12T01:55:22.806Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;a</summary>
         
       
     
