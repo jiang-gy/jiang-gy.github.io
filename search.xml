@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2024/02/28/git/liang-ge-github-pei-zhi-tong-yi-tai-dian-nao-shang-de-gong-yao/"/>
+      <url>/2024/02/28/git/liang-ge-github-pei-zhi-tong-yi-tai-dian-nao-shang-de-gong-yao/</url>
+      
+        <content type="html"><![CDATA[<h5 id="一、另外生成一份SSH-key"><a href="#一、另外生成一份SSH-key" class="headerlink" title="一、另外生成一份SSH key"></a>一、另外生成一份SSH key</h5><p>执行命令：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ssh-keygen <span class="token parameter variable">-t</span> rsa <span class="token parameter variable">-f</span> /c/Users/Administrator/.ssh/id_rsa_second <span class="token parameter variable">-C</span> <span class="token string">"xxxxx@163.com"</span> <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>生成成功会在.ssh目录下看到多出两个文件：id_rsa_second和id_rsa_second.pub，同样我们把新生成的公钥添加到gitLab新账号上。</p><h5 id="二：添加密钥到-SSH-Agent"><a href="#二：添加密钥到-SSH-Agent" class="headerlink" title="二：添加密钥到 SSH Agent"></a>二：添加密钥到 SSH Agent</h5><p>执行命令：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ssh-agent <span class="token function">bash</span>ssh-add /c/Users/Administrator/.ssh/id_rsa_second<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h5 id="三、配置config文件"><a href="#三、配置config文件" class="headerlink" title="三、配置config文件"></a>三、配置config文件</h5><p>.ssh目录下默认是没有config文件的，我们手动在.ssh目录下创建一个config文件（不需要后缀）。然后用编辑器打开config文件，给新账号单独配置一个Host，Host要取一个别名，每个Host主要配置HostName和IdentityFile即可。如下：</p><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">Host gitLab<span class="token operator">-</span>secondHostName gitLab<span class="token punctuation">.</span>comPreferredAuthentications publickeyIdentityFile <span class="token operator">~</span><span class="token operator">/</span><span class="token punctuation">.</span>ssh<span class="token operator">/</span>id_rsa_second<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>检查是否配置成功：</p><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">ssh <span class="token operator">-</span>T git<span class="token variable">@gitLab</span><span class="token operator">-</span><span class="token keyword">second</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>如果看到自己的昵称则表示配置成功，如：Hi (you name)! You’ve successfully authenticated, but GITEE.COM does not provide shell access.<br> 配置完成后，在连接非默认帐号的gitLab仓库时，远程库的地址要对应地做一些修改，比如现在克隆second帐号下的一个仓库xxxxx：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone git@gitLab-second:name/xxxxx.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>其实此时就可以使用了，但是网上还有其他配置</p><h5 id="四、取消全局的用户名和邮箱配置"><a href="#四、取消全局的用户名和邮箱配置" class="headerlink" title="四、取消全局的用户名和邮箱配置"></a>四、取消全局的用户名和邮箱配置</h5><p>因为一台电脑上配置了多个git账号，所以就不能再配置全局的用户名和邮箱了，而是在不同的仓库下，配置相应的局部用户名和邮箱即可。 打开 git bash，输入以下命令取消全局配置：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css">css复制代码git config --global --unset user.namegit config --global --unset user.email<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h5 id="五、为某个仓库配置用户名和邮箱"><a href="#五、为某个仓库配置用户名和邮箱" class="headerlink" title="五、为某个仓库配置用户名和邮箱"></a>五、为某个仓库配置用户名和邮箱</h5><p>进入某个仓库根目录，打开 git bash,输入以下命令为其配置局部用户名和邮箱：</p><pre class="line-numbers language-lua" data-language="lua"><code class="language-lua">git config user<span class="token punctuation">.</span>name <span class="token string">"xx"</span>git config user<span class="token punctuation">.</span>email <span class="token string">"xx@xx.com"</span>git config <span class="token comment">--list   （查看配置）</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p><a href="https://juejin.cn/post/6992519940074897444">https://juejin.cn/post/6992519940074897444</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2024/02/22/ns3-fang-zhen/ns3-zhong-wang-luo-fang-zhen/"/>
+      <url>/2024/02/22/ns3-fang-zhen/ns3-zhong-wang-luo-fang-zhen/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-无线仿真"><a href="#1-无线仿真" class="headerlink" title="1 无线仿真"></a>1 无线仿真</h2><p>以<code>wifi-ap.cc</code>为例</p><h3 id="1-前提知识"><a href="#1-前提知识" class="headerlink" title="1. 前提知识"></a>1. 前提知识</h3><ol><li>Packet::EnablePrinting ();</li></ol><pre><code> 在ns-3中，Packet::EnablePrinting()是一个用于启用或禁用数据包（Packet）的打印输出的方法。ns-3是一个用于网络仿真的开源工具，Packet::EnablePrinting()方法是其Packet类的成员函数之一。 当你启用打印时，数据包对象在调用适当的打印函数时会打印其内容。这对于调试和了解仿真中的数据流非常有用。 但需要注意的是，启用打印输出会产生额外的开销，因为在每个打印语句中都需要处理数据包的内容。因此，在生产环境中，应该谨慎使用打印功能，以避免影响仿真的性能。</code></pre><h2 id="2-有线仿真"><a href="#2-有线仿真" class="headerlink" title="2 有线仿真"></a>2 有线仿真</h2>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>论文写作</title>
       <link href="/2024/01/27/lun-wen-xie-zuo/lun-wen-xie-zuo/"/>
       <url>/2024/01/27/lun-wen-xie-zuo/lun-wen-xie-zuo/</url>
@@ -213,6 +239,110 @@
             <tag> 碎碎念 </tag>
             
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2022/12/12/ns3-fang-zhen/ns3-zhong-yuan-xin-xi/"/>
+      <url>/2022/12/12/ns3-fang-zhen/ns3-zhong-yuan-xin-xi/</url>
+      
+        <content type="html"><![CDATA[<p>元信息是关于Ns3中ObjectBase与其各种子类的辅助信息。每一个类有且仅有唯一一组元信息。元信息是实现对象聚合、属性与Trace变量配置的基础。例如对象聚合数据利用元信息的类名与父类TypeId查找对象。</p><p>元信息管理接口：TypeId类</p><p>TypeId是一个C++类，本文将其视为元信息管理接口</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2022/12/12/ns3-fang-zhen/ns3-dui-lie-mo-xing-jie-shao/"/>
+      <url>/2022/12/12/ns3-fang-zhen/ns3-dui-lie-mo-xing-jie-shao/</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>队列模型位于TC(Traffic Control)层，TC层所有模型均在<code>src/traffic-control/</code>文件夹中，队列相关代码主要是 <code>src/traffic-control/model/queue-disc.cc</code>、<code>src/traffic-control/model/queue-disc.h</code>两个文件。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2022/12/12/ns3-fang-zhen/ns3-wang-luo-lu-you-mo-kuai/"/>
+      <url>/2022/12/12/ns3-fang-zhen/ns3-wang-luo-lu-you-mo-kuai/</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">Ptr<span class="token operator">&lt;</span>Node<span class="token operator">&gt;</span> node <span class="token operator">=</span> m_ipv4<span class="token operator">-&gt;</span><span class="token generic-function"><span class="token function">GetObject</span><span class="token generic class-name"><span class="token operator">&lt;</span>Node<span class="token operator">&gt;</span></span></span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//获取相应的结点模型</span>Ptr<span class="token operator">&lt;</span>TrafficControlLayer<span class="token operator">&gt;</span> tc <span class="token operator">=</span> node<span class="token operator">-&gt;</span><span class="token generic-function"><span class="token function">GetObject</span><span class="token generic class-name"><span class="token operator">&lt;</span>TrafficControlLayer<span class="token operator">&gt;</span></span></span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//通过结点，获取相应的TC层</span>Ipv4RoutingTableEntry<span class="token operator">*</span> route <span class="token operator">=</span> allRoutes<span class="token punctuation">.</span><span class="token function">at</span> <span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token keyword">uint32_t</span> interfaceIdx <span class="token operator">=</span> route<span class="token operator">-&gt;</span><span class="token function">GetInterface</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//获取队列端口号</span><span class="token comment">// cout&lt;&lt;"ID "&lt;&lt;m_ipv4-&gt;GetObject&lt;Node&gt; ()-&gt;GetId ()&lt;&lt;"  interfaces "&lt;&lt;interfaceIdx&lt;&lt;endl;</span>Ptr<span class="token operator">&lt;</span>NetDevice<span class="token operator">&gt;</span> device <span class="token operator">=</span> m_ipv4<span class="token operator">-&gt;</span><span class="token function">GetNetDevice</span><span class="token punctuation">(</span>interfaceIdx<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//获得对应的网络设备</span>Ptr<span class="token operator">&lt;</span>QueueDisc<span class="token operator">&gt;</span> root <span class="token operator">=</span> tc <span class="token operator">-&gt;</span> <span class="token function">GetRootQueueDiscOnDevice</span><span class="token punctuation">(</span>device<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//获得相应网络设备对应的队列</span><span class="token keyword">uint32_t</span> rootBytes <span class="token operator">=</span> root<span class="token operator">-&gt;</span><span class="token function">GetNBytes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//获得队列中包含的字节量信息</span>cout<span class="token operator">&lt;&lt;</span><span class="token string">"ID "</span><span class="token operator">&lt;&lt;</span>m_ipv4<span class="token operator">-&gt;</span><span class="token generic-function"><span class="token function">GetObject</span><span class="token generic class-name"><span class="token operator">&lt;</span>Node<span class="token operator">&gt;</span></span></span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token function">GetId</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span><span class="token string">"  interfaces "</span><span class="token operator">&lt;&lt;</span>interfaceIdx<span class="token operator">&lt;&lt;</span><span class="token string">" Bytes "</span><span class="token operator">&lt;&lt;</span>rootBytes<span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2022/12/12/ns3-fang-zhen/ns3-wen-jian-dui-xiang-mo-xing-jia-gou/"/>
+      <url>/2022/12/12/ns3-fang-zhen/ns3-wen-jian-dui-xiang-mo-xing-jia-gou/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Ns3对象之间的关联"><a href="#Ns3对象之间的关联" class="headerlink" title="Ns3对象之间的关联"></a>Ns3对象之间的关联</h1><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">m_ipv4<span class="token operator">-&gt;</span><span class="token generic-function"><span class="token function">GetObject</span><span class="token generic class-name"><span class="token operator">&lt;</span>Node<span class="token operator">&gt;</span></span></span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token function">GetId</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="网络层对象"><a href="#网络层对象" class="headerlink" title="网络层对象"></a>网络层对象</h2><p>具体代码存在于<code>src/internet/model/ipv4-l3-protocol.h</code>中</p><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">/** * \brief Get an interface. * \param i interface index * \return IPv4 interface pointer */</span>Ptr<span class="token operator">&lt;</span>Ipv4Interface<span class="token operator">&gt;</span> <span class="token function">GetInterface</span> <span class="token punctuation">(</span><span class="token keyword">uint32_t</span> i<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span><span class="token keyword">uint32_t</span> <span class="token function">GetNInterfaces</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span><span class="token keyword">int32_t</span> <span class="token function">GetInterfaceForAddress</span> <span class="token punctuation">(</span>Ipv4Address addr<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span><span class="token keyword">int32_t</span> <span class="token function">GetInterfaceForPrefix</span> <span class="token punctuation">(</span>Ipv4Address addr<span class="token punctuation">,</span> Ipv4Mask mask<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span><span class="token keyword">int32_t</span> <span class="token function">GetInterfaceForDevice</span> <span class="token punctuation">(</span>Ptr<span class="token operator">&lt;</span><span class="token keyword">const</span> NetDevice<span class="token operator">&gt;</span> device<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span><span class="token keyword">bool</span> <span class="token function">IsDestinationAddress</span> <span class="token punctuation">(</span>Ipv4Address address<span class="token punctuation">,</span> <span class="token keyword">uint32_t</span> iif<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="链路层对象"><a href="#链路层对象" class="headerlink" title="链路层对象"></a>链路层对象</h2><p>主要文件位于<code>src/network/model/net-device.h</code></p><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">/** * \param index ifIndex of the device  */</span><span class="token keyword">virtual</span> <span class="token keyword">void</span> <span class="token function">SetIfIndex</span> <span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">uint32_t</span> index<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">/** * \return index ifIndex of the device  */</span><span class="token keyword">virtual</span> <span class="token keyword">uint32_t</span> <span class="token function">GetIfIndex</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> <span class="token keyword">const</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2022/12/12/ns3-fang-zhen/ns3trace-xi-tong-zong-jie/"/>
+      <url>/2022/12/12/ns3-fang-zhen/ns3trace-xi-tong-zong-jie/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Ns3-Trace系统"><a href="#Ns3-Trace系统" class="headerlink" title="Ns3 Trace系统"></a>Ns3 Trace系统</h1><h2 id="Trace变量配置"><a href="#Trace变量配置" class="headerlink" title="Trace变量配置"></a>Trace变量配置</h2><p>​由于Ns3初始化并没有提供Trace变量的初始值，创建变量时无法根据配置好的函数指针初始化Trace变量，因此只能在已存在的C++对象上配置Trace变量。</p><p>​在对象未创建、未分配内存时，Trace变量是无法配置的，即使配置相关属性，也不能成功使用。因此，Trace变量的配置操作必须放在网络拓扑用户应用建立完成之后，但必须放在<code>Simulation::Run()</code>之前。为保证每次成功配置并成功运行，十分建议养成在<strong>程序末尾配置Trace + 开启仿真运行的习惯</strong>。</p><h3 id="1-ipv4-l3-protocol发送数据包"><a href="#1-ipv4-l3-protocol发送数据包" class="headerlink" title="1. ipv4-l3-protocol发送数据包"></a>1. ipv4-l3-protocol发送数据包</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//src/internet/model/ipv4-l3-protocol.cc</span>TypeId <span class="token class-name">Ipv4L3Protocol</span><span class="token double-colon punctuation">::</span><span class="token function">GetTypeId</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token function">AddTraceSource</span> <span class="token punctuation">(</span><span class="token string">"TxTrace"</span><span class="token punctuation">,</span>                     <span class="token string">"Send ipv4 packet to outgoing interface."</span><span class="token punctuation">,</span>                     <span class="token function">MakeTraceSourceAccessor</span> <span class="token punctuation">(</span><span class="token operator">&amp;</span>Ipv4L3Protocol<span class="token double-colon punctuation">::</span>m_adTrace<span class="token punctuation">)</span><span class="token punctuation">,</span>                     <span class="token string">"ns3::Ipv4L3Protocol::AdressCallback"</span><span class="token punctuation">)</span>    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">}</span><span class="token keyword">void</span><span class="token class-name">Ipv4L3Protocol</span><span class="token double-colon punctuation">::</span><span class="token function">CallTxTrace</span> <span class="token punctuation">(</span><span class="token keyword">const</span> Ipv4Header <span class="token operator">&amp;</span> ipHeader<span class="token punctuation">,</span> Ptr<span class="token operator">&lt;</span>Packet<span class="token operator">&gt;</span> packet<span class="token punctuation">,</span>                                    Ptr<span class="token operator">&lt;</span>Ipv4<span class="token operator">&gt;</span> ipv4<span class="token punctuation">,</span> <span class="token keyword">uint32_t</span> interface<span class="token punctuation">)</span><span class="token punctuation">{</span>  Ptr<span class="token operator">&lt;</span>Packet<span class="token operator">&gt;</span> packetCopy <span class="token operator">=</span> packet<span class="token operator">-&gt;</span><span class="token function">Copy</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  packetCopy<span class="token operator">-&gt;</span><span class="token function">AddHeader</span> <span class="token punctuation">(</span>ipHeader<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token function">m_txTrace</span> <span class="token punctuation">(</span>packetCopy<span class="token punctuation">,</span> ipv4<span class="token punctuation">,</span> interface<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token comment">//src/internet/model/ipv4-l3-protocol.h</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>  <span class="token comment">// The following two traces pass a packet with an IP header</span>  <span class="token comment">/// Trace of transmitted packets</span>  <span class="token comment">/// \deprecated The non-const \c Ptr&lt;Ipv4&gt; argument is deprecated</span>  <span class="token comment">/// and will be changed to \c Ptr&lt;const Ipv4&gt; in a future release.</span>  TracedCallback<span class="token operator">&lt;</span>Ptr<span class="token operator">&lt;</span><span class="token keyword">const</span> Packet<span class="token operator">&gt;</span><span class="token punctuation">,</span> Ptr<span class="token operator">&lt;</span>Ipv4<span class="token operator">&gt;</span><span class="token punctuation">,</span>  <span class="token keyword">uint32_t</span><span class="token operator">&gt;</span> m_txTrace<span class="token punctuation">;</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2022/12/12/ns3-fang-zhen/ns3-xue-xi-zi-liao-hui-zong/"/>
+      <url>/2022/12/12/ns3-fang-zhen/ns3-xue-xi-zi-liao-hui-zong/</url>
+      
+        <content type="html"><![CDATA[<h2 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h2><h2 id="1-官方学习网址"><a href="#1-官方学习网址" class="headerlink" title="1 官方学习网址"></a>1 官方学习网址</h2><p><a href="https://www.nsnam.org/documentation/">NS3文档网址</a></p><p><a href="https://www.nsnam.org/tutorials/">Ns3官方学习网站</a></p><p>以下内容为官方网站复制内容</p><h3 id="Getting-started"><a href="#Getting-started" class="headerlink" title="Getting started"></a>Getting started</h3><ul><li><strong>Tutorial:</strong> The tutorial for our latest release is available in <a href="https://www.nsnam.org/docs/release/3.37/tutorial/html/index.html">HTML</a> and <a href="https://www.nsnam.org/docs/release/3.37/tutorial/ns-3-tutorial.pdf">PDF</a> versions.</li><li><strong>Installation instructions:</strong> We typically maintain this information on our <a href="https://www.nsnam.org/wiki/Installation">wiki</a>.</li><li><strong>Videos:</strong> The ns-3 Consortium has offered training and tutorial sessions at its <a href="https://www.nsnam.org/research/wns3/">annual meeting</a>, and recorded videos from prior sessions can be found from <a href="https://www.nsnam.org/consortium/activities/training/">this training page</a>. Note that due to the pandemic, in-person training sessions have not been offered since 2019. For some additional recorded sessions, please see also the <a href="https://www.nsnam.org/documentation/videos/">videos</a> page.</li><li><strong>Mailing lists:</strong> We have several <a href="https://www.nsnam.org/support/mailing-lists/">mailing lists</a>, but in particular, the <a href="https://groups.google.com/forum/#!forum/ns-3-users">ns-3-users Google Group forum</a>, answers many questions from people trying to get started.</li><li><strong>Chat:</strong> ns-3 discussions also take place in a <a href="https://ns-3.zulipchat.com/">Zulip</a> chatroom.</li></ul><h3 id="Development"><a href="#Development" class="headerlink" title="Development"></a>Development</h3><p>Most users will need to write new simulation scripts and possibly modify or extend the ns-3 libraries to conduct their work. The three main resources for this are our reference manual, model library documentation, and our Doxygen.</p><ul><li>We maintain a <strong>reference manual</strong> on the ns-3 core, and a separate <strong>model library</strong> documentation set, also in <a href="https://www.nsnam.org/ns-3-37/documentation/">several formats</a> for our latest release.</li><li>All of our APIs are documented using <a href="https://www.nsnam.org/docs/release/3.37/doxygen/index.html"><strong>Doxygen</strong></a>  【里面为程序中重要的API说明】</li><li>The ns-3 <a href="https://www.nsnam.org/developers/contributing-code/coding-style/">coding style</a> documentation is maintained on this site.</li></ul><h2 id="2-相关书籍"><a href="#2-相关书籍" class="headerlink" title="2 相关书籍"></a>2 相关书籍</h2><p>开源网络模拟器ns-3 - 架构与实践</p><p>电子书 <a href="https://weread.qq.com/web/bookDetail/21932bf07210dbdd2191d13">开源网络模拟器ns-3 - 架构与实践</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2022/12/08/ns3-fang-zhen/ns3-shi-yong-xin-de-mo-kuai/"/>
+      <url>/2022/12/08/ns3-fang-zhen/ns3-shi-yong-xin-de-mo-kuai/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/fwhdzh/article/details/106361397">NS3使用新的模块方法</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2022/12/08/ns3-fang-zhen/ns3-chang-jian-wen-ti-chu-li/"/>
+      <url>/2022/12/08/ns3-fang-zhen/ns3-chang-jian-wen-ti-chu-li/</url>
+      
+        <content type="html"><![CDATA[<h2 id="编译问题"><a href="#编译问题" class="headerlink" title="编译问题"></a>编译问题</h2><h3 id="1-NS3编译错误"><a href="#1-NS3编译错误" class="headerlink" title="1 NS3编译错误"></a>1 NS3编译错误</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">cc1plus: all warnings being treated as errors<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>解决方法</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token assign-left variable">CXXFLAGS</span><span class="token operator">=</span><span class="token string">"-Wno-error"</span> ./waf configure  <span class="token comment">#注意等号前后没有空格，进行该配置之后再进行编译 即可忽略警告</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
+      
+      
       
     </entry>
     
