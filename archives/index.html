@@ -20,6 +20,8 @@
 
 
     <title>归档 | 努力搬砖的眼镜狗</title>
+    <link rel="stylesheet" type="text/css" href="/css/loading.css">
+
     <link rel="icon" type="image/png" href="/meng.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -38,8 +40,36 @@
 
 
 
+<!-- 样式一（鼠标点击更换样式） -->
+<script src="https://g.joyinshare.com/hc/ribbon.min.js" type="text/javascript"></script>
+
 
 <body>
+
+    
+    <div id="loading-box">
+      <div class="loading-left-bg"></div>
+      <div class="loading-right-bg"></div>
+      <div class="spinner-box">
+        <div class="configure-border-1">
+          <div class="configure-core"></div>
+        </div>
+        <div class="configure-border-2">
+          <div class="configure-core"></div>
+        </div>
+        <div class="loading-word">加载中...</div>
+      </div>
+    </div>
+    <!-- 页面加载动画 -->
+    <script>
+      $(document).ready(function () {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loading-box').classList.add("loaded")
+      })
+    </script>
+  
+  
+
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
@@ -376,7 +406,7 @@
     }
 
     .github-corner svg {
-        color: #0f9d58;
+        color: #925EB0;
         fill: #fff;
         height: 64px;
         width: 64px;
@@ -457,6 +487,7 @@
     // 每天切换 banner 图.  Switch banner image every day.
     var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
     $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    // $('.bg-cover').css('background-image', 'url(https://api.ixiaowai.cn/api/api.php)');
 </script>
 
 
@@ -837,7 +868,7 @@ Ptr&lt;TrafficControlLayer&gt; tc = node-&gt;Ge
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2024/03/22/ns3-fang-zhen/ns3trace-xi-tong-zong-jie/">
+                        <a href="/2024/03/22/ns3-fang-zhen/ns3-wen-jian-dui-xiang-mo-xing-jia-gou/">
                             <div class="card-image">
                                 
                                 
@@ -849,8 +880,11 @@ Ptr&lt;TrafficControlLayer&gt; tc = node-&gt;Ge
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    Ns3 Trace系统Trace变量配置​	由于Ns3初始化并没有提供Trace变量的初始值，创建变量时无法根据配置好的函数指针初始化Trace变量，因此只能在已存在的C++对象上配置Trace变量。
-​	在对象未创建、未分配内存时，Tra
+                                    Ns3对象之间的关联m_ipv4-&gt;GetObject&lt;Node&gt; ()-&gt;GetId ()
+
+网络层对象具体代码存在于src/internet/model/ipv4-l3-protocol.h中
+/**
+ * \b
                                 
                             </div>
                             <div class="publish-info">
@@ -887,7 +921,7 @@ Ptr&lt;TrafficControlLayer&gt; tc = node-&gt;Ge
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2024/03/22/ns3-fang-zhen/ns3-wen-jian-dui-xiang-mo-xing-jia-gou/">
+                        <a href="/2024/03/22/ns3-fang-zhen/ns3trace-xi-tong-zong-jie/">
                             <div class="card-image">
                                 
                                 
@@ -899,11 +933,8 @@ Ptr&lt;TrafficControlLayer&gt; tc = node-&gt;Ge
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    Ns3对象之间的关联m_ipv4-&gt;GetObject&lt;Node&gt; ()-&gt;GetId ()
-
-网络层对象具体代码存在于src/internet/model/ipv4-l3-protocol.h中
-/**
- * \b
+                                    Ns3 Trace系统Trace变量配置​	由于Ns3初始化并没有提供Trace变量的初始值，创建变量时无法根据配置好的函数指针初始化Trace变量，因此只能在已存在的C++对象上配置Trace变量。
+​	在对象未创建、未分配内存时，Tra
                                 
                             </div>
                             <div class="publish-info">
@@ -1333,6 +1364,9 @@ $(function () {
     </a>
 </div>
 
+    
+    <!-- 样式二（飘动的彩带） -->
+    <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/piao.js" type="text/javascript"></script>
 
     <script src="/libs/materialize/materialize.min.js"></script>
     <script src="/libs/masonry/masonry.pkgd.min.js"></script>
@@ -1364,6 +1398,16 @@ $(function () {
     
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+    <!-- 冒泡 -->
+    
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            document.write(
+                '<script type="text/javascript" src="/libs/others/buble.js"><\/script>'
+            );
+        </script>
     
 
     

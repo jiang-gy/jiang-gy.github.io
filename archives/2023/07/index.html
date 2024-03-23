@@ -20,6 +20,8 @@
 
 
     <title>归档: 2023/7 | 努力搬砖的眼镜狗</title>
+    <link rel="stylesheet" type="text/css" href="/css/loading.css">
+
     <link rel="icon" type="image/png" href="/meng.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -38,8 +40,36 @@
 
 
 
+<!-- 样式一（鼠标点击更换样式） -->
+<script src="https://g.joyinshare.com/hc/ribbon.min.js" type="text/javascript"></script>
+
 
 <body>
+
+    
+    <div id="loading-box">
+      <div class="loading-left-bg"></div>
+      <div class="loading-right-bg"></div>
+      <div class="spinner-box">
+        <div class="configure-border-1">
+          <div class="configure-core"></div>
+        </div>
+        <div class="configure-border-2">
+          <div class="configure-core"></div>
+        </div>
+        <div class="loading-word">加载中...</div>
+      </div>
+    </div>
+    <!-- 页面加载动画 -->
+    <script>
+      $(document).ready(function () {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loading-box').classList.add("loaded")
+      })
+    </script>
+  
+  
+
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
@@ -376,7 +406,7 @@
     }
 
     .github-corner svg {
-        color: #0f9d58;
+        color: #925EB0;
         fill: #fff;
         height: 64px;
         width: 64px;
@@ -457,6 +487,7 @@
     // 每天切换 banner 图.  Switch banner image every day.
     var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
     $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    // $('.bg-cover').css('background-image', 'url(https://api.ixiaowai.cn/api/api.php)');
 </script>
 
 
@@ -580,20 +611,25 @@
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2023/07/21/dqn-bi-ji/dqn-bi-ji/">
+                        <a href="/2023/07/21/git-shi-yong-shou-ce/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="DQN笔记">
+                                <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="git使用手册">
                                 
-                                <span class="card-title">DQN笔记</span>
+                                <span class="card-title">git使用手册</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    DQNDQN两个因素
- DQN 有一个记忆库用于学习之前的经历. 在之前的简介影片中提到过, Q learning 是一种 off-policy 离线学习法, 它能学习当前经历着的, 也能学习过去经历过的, 甚至是学习别人的经历. 所以每次
+                                    一 安装Linux
+sudo apt-get install git
+
+WIndows
+“Git”-&gt;“Git Bash”
+1.1 配置分布式版本控制，所有机器自报家门
+git config --global user.name "Y
                                 
                             </div>
                             <div class="publish-info">
@@ -638,25 +674,20 @@
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2023/07/21/git-shi-yong-shou-ce/">
+                        <a href="/2023/07/21/dqn-bi-ji/dqn-bi-ji/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="git使用手册">
+                                <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="DQN笔记">
                                 
-                                <span class="card-title">git使用手册</span>
+                                <span class="card-title">DQN笔记</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    一 安装Linux
-sudo apt-get install git
-
-WIndows
-“Git”-&gt;“Git Bash”
-1.1 配置分布式版本控制，所有机器自报家门
-git config --global user.name "Y
+                                    DQNDQN两个因素
+ DQN 有一个记忆库用于学习之前的经历. 在之前的简介影片中提到过, Q learning 是一种 off-policy 离线学习法, 它能学习当前经历着的, 也能学习过去经历过的, 甚至是学习别人的经历. 所以每次
                                 
                             </div>
                             <div class="publish-info">
@@ -1091,6 +1122,9 @@ $(function () {
     </a>
 </div>
 
+    
+    <!-- 样式二（飘动的彩带） -->
+    <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/piao.js" type="text/javascript"></script>
 
     <script src="/libs/materialize/materialize.min.js"></script>
     <script src="/libs/masonry/masonry.pkgd.min.js"></script>
@@ -1122,6 +1156,16 @@ $(function () {
     
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+    <!-- 冒泡 -->
+    
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            document.write(
+                '<script type="text/javascript" src="/libs/others/buble.js"><\/script>'
+            );
+        </script>
     
 
     

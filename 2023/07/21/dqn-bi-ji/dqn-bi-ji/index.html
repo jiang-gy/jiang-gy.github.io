@@ -20,6 +20,8 @@
 
 
     <title>DQN笔记 | 努力搬砖的眼镜狗</title>
+    <link rel="stylesheet" type="text/css" href="/css/loading.css">
+
     <link rel="icon" type="image/png" href="/meng.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -38,8 +40,36 @@
 
 
 
+<!-- 样式一（鼠标点击更换样式） -->
+<script src="https://g.joyinshare.com/hc/ribbon.min.js" type="text/javascript"></script>
+
 
 <body>
+
+    
+    <div id="loading-box">
+      <div class="loading-left-bg"></div>
+      <div class="loading-right-bg"></div>
+      <div class="spinner-box">
+        <div class="configure-border-1">
+          <div class="configure-core"></div>
+        </div>
+        <div class="configure-border-2">
+          <div class="configure-core"></div>
+        </div>
+        <div class="loading-word">加载中...</div>
+      </div>
+    </div>
+    <!-- 页面加载动画 -->
+    <script>
+      $(document).ready(function () {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loading-box').classList.add("loaded")
+      })
+    </script>
+  
+  
+
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
@@ -376,7 +406,7 @@
     }
 
     .github-corner svg {
-        color: #0f9d58;
+        color: #925EB0;
         fill: #fff;
         height: 64px;
         width: 64px;
@@ -1148,13 +1178,13 @@ new Valine({
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/01/21/bo-ke/bo-ke-da-jian/">
+                <a href="/2023/07/21/git-shi-yong-shou-ce/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="博客搭建">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="git使用手册">
                         
-                        <span class="card-title">博客搭建</span>
+                        <span class="card-title">git使用手册</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1165,7 +1195,7 @@ new Valine({
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-01-21
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-21
                         </span>
                         <span class="publish-author">
                             
@@ -1178,12 +1208,12 @@ new Valine({
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">Hexo博客</span>
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
-                    <a href="/tags/Markdown%E8%AF%AD%E6%B3%95/">
-                        <span class="chip bg-color">Markdown语法</span>
+                    <a href="/tags/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">强化学习</span>
                     </a>
                     
                 </div>
@@ -1197,7 +1227,7 @@ new Valine({
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/07/21/git-shi-yong-shou-ce/">
+                <a href="/2023/07/21/git/git-shi-yong-shou-ce/">
                     <div class="card-image">
                         
                         
@@ -1589,6 +1619,9 @@ $(function () {
     </a>
 </div>
 
+    
+    <!-- 样式二（飘动的彩带） -->
+    <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/piao.js" type="text/javascript"></script>
 
     <script src="/libs/materialize/materialize.min.js"></script>
     <script src="/libs/masonry/masonry.pkgd.min.js"></script>
@@ -1620,6 +1653,16 @@ $(function () {
     
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+    <!-- 冒泡 -->
+    
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            document.write(
+                '<script type="text/javascript" src="/libs/others/buble.js"><\/script>'
+            );
+        </script>
     
 
     

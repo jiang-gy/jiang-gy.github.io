@@ -34,16 +34,14 @@
 }
 
 body {
-    background-color: #eaeaea;
-    margin: 0;
-    color: #34495e;
     overflow-x: hidden;
-    overflow-y: auto;
-}
-
-body {
 	overflow-y: auto;
-	background:#eaeaea;
+    background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0% / cover, url("https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"), url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") 0px 0px; 
+    /* background: linear-gradient(60deg, rgba(224,255,125, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0% / cover; */
+    background-attachment: fixed;
+    margin: 0;
+    color: #4a76ef;
+	/* background:#eaeaea; */
 	cursor: url(https://yjlaugus.gitee.io/blog/img/body/OW-Arrow.cur), auto;
 }
 a {
@@ -249,7 +247,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #dd7c4f 0%, #c0321a 100%);
+    background-image: linear-gradient(to right, #efbd8a 0%, #D343BA 80%);
     /* //透明效果 值范围 0~1，看情况自己修改 */
     opacity: 0.8;  
 }
@@ -267,7 +265,7 @@ mark {
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background: linear-gradient(to right,#efbd8a 0%, #D343BA 80%);
     opacity: 0.8;
 }
 
@@ -1913,7 +1911,7 @@ footer .copy-right {
 }
 
 .top-scroll .btn-floating {
-    background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%);
+    background: linear-gradient(to bottom right, #efbd8a 0%, #D343BA 100%);
     width: 48px;
     height: 48px;
 }

@@ -20,6 +20,8 @@
 
 
     <title>个性化博客搭建记录 | 努力搬砖的眼镜狗</title>
+    <link rel="stylesheet" type="text/css" href="/css/loading.css">
+
     <link rel="icon" type="image/png" href="/meng.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -38,8 +40,36 @@
 
 
 
+<!-- 样式一（鼠标点击更换样式） -->
+<script src="https://g.joyinshare.com/hc/ribbon.min.js" type="text/javascript"></script>
+
 
 <body>
+
+    
+    <div id="loading-box">
+      <div class="loading-left-bg"></div>
+      <div class="loading-right-bg"></div>
+      <div class="spinner-box">
+        <div class="configure-border-1">
+          <div class="configure-core"></div>
+        </div>
+        <div class="configure-border-2">
+          <div class="configure-core"></div>
+        </div>
+        <div class="loading-word">加载中...</div>
+      </div>
+    </div>
+    <!-- 页面加载动画 -->
+    <script>
+      $(document).ready(function () {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loading-box').classList.add("loaded")
+      })
+    </script>
+  
+  
+
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
@@ -376,7 +406,7 @@
     }
 
     .github-corner svg {
-        color: #0f9d58;
+        color: #925EB0;
         fill: #fff;
         height: 64px;
         width: 64px;
@@ -1590,6 +1620,9 @@ $(function () {
     </a>
 </div>
 
+    
+    <!-- 样式二（飘动的彩带） -->
+    <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/piao.js" type="text/javascript"></script>
 
     <script src="/libs/materialize/materialize.min.js"></script>
     <script src="/libs/masonry/masonry.pkgd.min.js"></script>
@@ -1621,6 +1654,16 @@ $(function () {
     
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+    <!-- 冒泡 -->
+    
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            document.write(
+                '<script type="text/javascript" src="/libs/others/buble.js"><\/script>'
+            );
+        </script>
     
 
     
