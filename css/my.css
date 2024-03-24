@@ -1,13 +1,14 @@
 /* Here is your custom css styles. */
 @font-face{
-    font-family: 'STFANGSO';
-    src: url('../font/STFANGSO.TTF');
-    /* font-family: 'GenJyuuGothic';
-    src: url('../font/GenJyuuGothic-Normal-2.ttf');
-    font-family: 'GenWanMinJP-Medium-3';
-    src: url('../font/GenWanMinJP-Medium-3.ttf'); */
+    font-family: 'myfont';
+    /* src: url('../font/STFANGSO.TTF'); */
+    /* src: url('../font/GenJyuuGothic-Normal-2.ttf'); */
+    /* src: url('../font/GenWanMinJP-Medium-3.ttf');  */
+    src: url('../font/LXGWWenKaiMono-Bold.ttf');  
+
+    /* src: url('../font/LXGWWenKai-Regular.ttf'); */
 }
 
 body{
-    font-family: 'STFANGSO';
+    font-family: 'myfont';
 }
