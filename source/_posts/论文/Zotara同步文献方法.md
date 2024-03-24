@@ -1,5 +1,4 @@
-***
-
+---
 title: Zotara同步文献方法
 top: false
 cover: false
@@ -7,11 +6,9 @@ toc: true
 mathjax: false
 date: 2024-1-27 17:13:22
 tags:
-
-*   写作
-    categories:
-
-***
+ - 写作
+categories:
+---
 
 问题一：同步各个电脑笔记与数据
 

@@ -6,30 +6,28 @@ toc: true
 mathjax: false
 date: 2024-02-01 09:29:35
 coverImg:
-password:jgy123
-summary:
+password: jgy123
 tags:
-- 网络仿真
+ - 网络仿真
 categories:
 
 ---
-
 # NS3流量激励
 
 ## 一 涉及论文
 
--   Based on Deep Reinforcement Learning with Context Network and Experience pool optimization for Mix-Flow Scheduling in SD-DCN(2023)
-    -   Flash: Joint Flow Scheduling and Congestion Control in Data Center Networks
-    -   Inside the Social Network’s (Datacenter) Network（流量均在这里面）
--   Asymmetry-Aware Load Balancing With Adaptive Switching Granularity in Data Center(2019)
+- Based on Deep Reinforcement Learning with Context Network and Experience pool optimization for Mix-Flow Scheduling in SD-DCN(2023)
+  - Flash: Joint Flow Scheduling and Congestion Control in Data Center Networks
+  - Inside the Social Network’s (Datacenter) Network（流量均在这里面）
+- Asymmetry-Aware Load Balancing With Adaptive Switching Granularity in Data Center(2019)
 
 ## 二 代码仓库
 
--   Ammar, Doreid; Begin, Thomas; Guerin-Lassous, Isabelle (Eds.) (2011): A new tool for generating realistic Internet traffic in NS-3.
-    Location 4:	https://github.com/doreidammar/PPBP---network-traffic-generator---ns3
--   https://github.com/SoonyangZhang/possion-traffic/tree/master
--   [keddah - Hadoop Network Traffic Generator in NS3](https://github.com/deng113jie/keddah#keddah---hadoop-network-traffic-generator-in-ns3)
--   https://github.com/SHM91/NS3-RealisticTrafficGen1#ns3-realistictrafficgen
+- Ammar, Doreid; Begin, Thomas; Guerin-Lassous, Isabelle (Eds.) (2011): A new tool for generating realistic Internet traffic in NS-3.
+  Location 4:	https://github.com/doreidammar/PPBP---network-traffic-generator---ns3
+- https://github.com/SoonyangZhang/possion-traffic/tree/master
+- [keddah - Hadoop Network Traffic Generator in NS3](https://github.com/deng113jie/keddah#keddah---hadoop-network-traffic-generator-in-ns3)
+- https://github.com/SHM91/NS3-RealisticTrafficGen1#ns3-realistictrafficgen
 
 ## 三 理论介绍
 
@@ -88,4 +86,3 @@ int main() {
 }
 
 ```
-

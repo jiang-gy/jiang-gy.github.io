@@ -4,7 +4,7 @@
 
 # Site
 title: 努力搬砖的眼镜狗
-subtitle: '此去经年,应是归期'
+subtitle: '追寻星辰大海之旅'
 description: '记录工作与生活'
 keywords: 'jgy 计算机网络 强化学习 数据中心'
 author: 努力搬砖的眼镜狗
@@ -50,6 +50,11 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'tomorrow'
+  line_number: false    # default false
+  custom_css:
 prismjs:
   enable: true
   preprocess: true
@@ -97,7 +102,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: matery
+theme: materyJgy
 
 #个人配置
 # Search
@@ -129,7 +134,7 @@ feed:
   order_by: -date
 
 
-live2d:
+live2d:  #看板娘
     enable: true
     scriptFrom: local
     pluginRootPath: live2dw/
@@ -144,7 +149,7 @@ live2d:
         width: 150
         height: 300
     mobile:
-        show: false
+        show: true
     react:
         opacity: 0.7
 
@@ -154,3 +159,4 @@ deploy:
     type: 'git'
     repo: git@github.com:jiang-gy/jiang-gy.github.io.git
     branch: main
+
