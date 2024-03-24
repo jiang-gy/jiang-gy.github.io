@@ -1,0 +1,10 @@
+<pre><code class="cpp">Ptr&lt;Node&gt; node = m_ipv4-&gt;GetObject&lt;Node&gt; ();  //获取相应的结点模型
+Ptr&lt;TrafficControlLayer&gt; tc = node-&gt;GetObject&lt;TrafficControlLayer&gt; ();  //通过结点，获取相应的TC层
+Ipv4RoutingTableEntry* route = allRoutes.at (i);   
+uint32_t interfaceIdx = route-&gt;GetInterface ();  //获取队列端口号
+// cout&lt;&lt;&quot;ID &quot;&lt;&lt;m_ipv4-&gt;GetObject&lt;Node&gt; ()-&gt;GetId ()&lt;&lt;&quot;  interfaces &quot;&lt;&lt;interfaceIdx&lt;&lt;endl;
+Ptr&lt;NetDevice&gt; device = m_ipv4-&gt;GetNetDevice(interfaceIdx);  //获得对应的网络设备
+Ptr&lt;QueueDisc&gt; root = tc -&gt; GetRootQueueDiscOnDevice(device);  //获得相应网络设备对应的队列
+uint32_t rootBytes = root-&gt;GetNBytes();  //获得队列中包含的字节量信息
+cout&lt;&lt;&quot;ID &quot;&lt;&lt;m_ipv4-&gt;GetObject&lt;Node&gt; ()-&gt;GetId ()&lt;&lt;&quot;  interfaces &quot;&lt;&lt;interfaceIdx&lt;&lt;&quot; Bytes &quot;&lt;&lt;rootBytes&lt;&lt;endl;
+</code></pre>

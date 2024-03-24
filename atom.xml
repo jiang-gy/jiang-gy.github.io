@@ -52,6 +52,29 @@
   </entry>
   
   <entry>
+    <title>Hello World</title>
+    <link href="https://jiang-gy.github.io/2024/03/22/bo-ke/hello-world/"/>
+    <id>https://jiang-gy.github.io/2024/03/22/bo-ke/hello-world/</id>
+    <published>2024-03-22T15:06:42.639Z</published>
+    <updated>2024-03-24T05:45:17.355Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Hexo博客" scheme="https://jiang-gy.github.io/tags/Hexo%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
     <title></title>
     <link href="https://jiang-gy.github.io/2024/03/22/bo-ke/hexo-teng-xun-yun-yu-ming/"/>
     <id>https://jiang-gy.github.io/2024/03/22/bo-ke/hexo-teng-xun-yun-yu-ming/</id>
@@ -287,6 +310,23 @@
   </entry>
   
   <entry>
+    <title>NS3仿真</title>
+    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/"/>
+    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/</id>
+    <published>2024-02-01T01:29:35.000Z</published>
+    <updated>2024-03-24T05:51:16.917Z</updated>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    
+    <category term="网络仿真" scheme="https://jiang-gy.github.io/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>论文写作</title>
     <link href="https://jiang-gy.github.io/2024/01/27/lun-wen/lun-wen-xie-zuo/"/>
     <id>https://jiang-gy.github.io/2024/01/27/lun-wen/lun-wen-xie-zuo/</id>
@@ -390,57 +430,6 @@
     <category term="Hexo博客" scheme="https://jiang-gy.github.io/tags/Hexo%E5%8D%9A%E5%AE%A2/"/>
     
     <category term="Markdown语法" scheme="https://jiang-gy.github.io/tags/Markdown%E8%AF%AD%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>博客搭建</title>
-    <link href="https://jiang-gy.github.io/2024/01/21/bo-ke/bo-ke-da-jian/"/>
-    <id>https://jiang-gy.github.io/2024/01/21/bo-ke/bo-ke-da-jian/</id>
-    <published>2024-01-21T02:16:52.000Z</published>
-    <updated>2024-03-22T17:11:28.836Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Hexo笔记搭建记录文档&quot;&gt;&lt;a href=&quot;#Hexo笔记搭建记录文档&quot; class=&quot;headerlink&quot; title=&quot;Hexo笔记搭建记录文档&quot;&gt;&lt;/a&gt;Hexo笔记搭建记录文档&lt;/h1&gt;&lt;h2 id=&quot;一-Hexo网站的优势&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="Hexo博客" scheme="https://jiang-gy.github.io/tags/Hexo%E5%8D%9A%E5%AE%A2/"/>
-    
-    <category term="Markdown语法" scheme="https://jiang-gy.github.io/tags/Markdown%E8%AF%AD%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git使用手册</title>
-    <link href="https://jiang-gy.github.io/2023/07/21/git-shi-yong-shou-ce/"/>
-    <id>https://jiang-gy.github.io/2023/07/21/git-shi-yong-shou-ce/</id>
-    <published>2023-07-21T12:00:23.000Z</published>
-    <updated>2024-03-22T15:06:42.636Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一-安装&quot;&gt;&lt;a href=&quot;#一-安装&quot; class=&quot;headerlink&quot; title=&quot;一 安装&quot;&gt;&lt;/a&gt;一 安装&lt;/h2&gt;&lt;p&gt;Linux&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-bash&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="算法" scheme="https://jiang-gy.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="强化学习" scheme="https://jiang-gy.github.io/tags/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
