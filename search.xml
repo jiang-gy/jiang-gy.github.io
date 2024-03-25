@@ -108,19 +108,6 @@
     
     <entry>
       <title></title>
-      <link href="/2024/03/22/ns3-fang-zhen/ns3-xue-xi-zi-liao-hui-zong/"/>
-      <url>/2024/03/22/ns3-fang-zhen/ns3-xue-xi-zi-liao-hui-zong/</url>
-      
-        <content type="html"><![CDATA[<h2 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h2><h2 id="1-官方学习网址"><a href="#1-官方学习网址" class="headerlink" title="1 官方学习网址"></a>1 官方学习网址</h2><p><a href="https://www.nsnam.org/documentation/">NS3文档网址</a></p><p><a href="https://www.nsnam.org/tutorials/">Ns3官方学习网站</a></p><p>以下内容为官方网站复制内容</p><h3 id="Getting-started"><a href="#Getting-started" class="headerlink" title="Getting started"></a>Getting started</h3><ul><li><strong>Tutorial:</strong> The tutorial for our latest release is available in <a href="https://www.nsnam.org/docs/release/3.37/tutorial/html/index.html">HTML</a> and <a href="https://www.nsnam.org/docs/release/3.37/tutorial/ns-3-tutorial.pdf">PDF</a> versions.</li><li><strong>Installation instructions:</strong> We typically maintain this information on our <a href="https://www.nsnam.org/wiki/Installation">wiki</a>.</li><li><strong>Videos:</strong> The ns-3 Consortium has offered training and tutorial sessions at its <a href="https://www.nsnam.org/research/wns3/">annual meeting</a>, and recorded videos from prior sessions can be found from <a href="https://www.nsnam.org/consortium/activities/training/">this training page</a>. Note that due to the pandemic, in-person training sessions have not been offered since 2019. For some additional recorded sessions, please see also the <a href="https://www.nsnam.org/documentation/videos/">videos</a> page.</li><li><strong>Mailing lists:</strong> We have several <a href="https://www.nsnam.org/support/mailing-lists/">mailing lists</a>, but in particular, the <a href="https://groups.google.com/forum/#!forum/ns-3-users">ns-3-users Google Group forum</a>, answers many questions from people trying to get started.</li><li><strong>Chat:</strong> ns-3 discussions also take place in a <a href="https://ns-3.zulipchat.com/">Zulip</a> chatroom.</li></ul><h3 id="Development"><a href="#Development" class="headerlink" title="Development"></a>Development</h3><p>Most users will need to write new simulation scripts and possibly modify or extend the ns-3 libraries to conduct their work. The three main resources for this are our reference manual, model library documentation, and our Doxygen.</p><ul><li>We maintain a <strong>reference manual</strong> on the ns-3 core, and a separate <strong>model library</strong> documentation set, also in <a href="https://www.nsnam.org/ns-3-37/documentation/">several formats</a> for our latest release.</li><li>All of our APIs are documented using <a href="https://www.nsnam.org/docs/release/3.37/doxygen/index.html"><strong>Doxygen</strong></a>  【里面为程序中重要的API说明】</li><li>The ns-3 <a href="https://www.nsnam.org/developers/contributing-code/coding-style/">coding style</a> documentation is maintained on this site.</li></ul><h2 id="2-相关书籍"><a href="#2-相关书籍" class="headerlink" title="2 相关书籍"></a>2 相关书籍</h2><p>开源网络模拟器ns-3 - 架构与实践</p><p>电子书 <a href="https://weread.qq.com/web/bookDetail/21932bf07210dbdd2191d13">开源网络模拟器ns-3 - 架构与实践</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/2024/03/22/ns3-fang-zhen/ns3-chang-jian-wen-ti-chu-li/"/>
       <url>/2024/03/22/ns3-fang-zhen/ns3-chang-jian-wen-ti-chu-li/</url>
       
@@ -138,6 +125,19 @@
       <url>/2024/03/22/ns3-fang-zhen/ns3-dui-lie-mo-xing-jie-shao/</url>
       
         <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>队列模型位于TC(Traffic Control)层，TC层所有模型均在<code>src/traffic-control/</code>文件夹中，队列相关代码主要是 <code>src/traffic-control/model/queue-disc.cc</code>、<code>src/traffic-control/model/queue-disc.h</code>两个文件。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2024/03/22/ns3-fang-zhen/ns3-xue-xi-zi-liao-hui-zong/"/>
+      <url>/2024/03/22/ns3-fang-zhen/ns3-xue-xi-zi-liao-hui-zong/</url>
+      
+        <content type="html"><![CDATA[<h2 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h2><h2 id="1-官方学习网址"><a href="#1-官方学习网址" class="headerlink" title="1 官方学习网址"></a>1 官方学习网址</h2><p><a href="https://www.nsnam.org/documentation/">NS3文档网址</a></p><p><a href="https://www.nsnam.org/tutorials/">Ns3官方学习网站</a></p><p>以下内容为官方网站复制内容</p><h3 id="Getting-started"><a href="#Getting-started" class="headerlink" title="Getting started"></a>Getting started</h3><ul><li><strong>Tutorial:</strong> The tutorial for our latest release is available in <a href="https://www.nsnam.org/docs/release/3.37/tutorial/html/index.html">HTML</a> and <a href="https://www.nsnam.org/docs/release/3.37/tutorial/ns-3-tutorial.pdf">PDF</a> versions.</li><li><strong>Installation instructions:</strong> We typically maintain this information on our <a href="https://www.nsnam.org/wiki/Installation">wiki</a>.</li><li><strong>Videos:</strong> The ns-3 Consortium has offered training and tutorial sessions at its <a href="https://www.nsnam.org/research/wns3/">annual meeting</a>, and recorded videos from prior sessions can be found from <a href="https://www.nsnam.org/consortium/activities/training/">this training page</a>. Note that due to the pandemic, in-person training sessions have not been offered since 2019. For some additional recorded sessions, please see also the <a href="https://www.nsnam.org/documentation/videos/">videos</a> page.</li><li><strong>Mailing lists:</strong> We have several <a href="https://www.nsnam.org/support/mailing-lists/">mailing lists</a>, but in particular, the <a href="https://groups.google.com/forum/#!forum/ns-3-users">ns-3-users Google Group forum</a>, answers many questions from people trying to get started.</li><li><strong>Chat:</strong> ns-3 discussions also take place in a <a href="https://ns-3.zulipchat.com/">Zulip</a> chatroom.</li></ul><h3 id="Development"><a href="#Development" class="headerlink" title="Development"></a>Development</h3><p>Most users will need to write new simulation scripts and possibly modify or extend the ns-3 libraries to conduct their work. The three main resources for this are our reference manual, model library documentation, and our Doxygen.</p><ul><li>We maintain a <strong>reference manual</strong> on the ns-3 core, and a separate <strong>model library</strong> documentation set, also in <a href="https://www.nsnam.org/ns-3-37/documentation/">several formats</a> for our latest release.</li><li>All of our APIs are documented using <a href="https://www.nsnam.org/docs/release/3.37/doxygen/index.html"><strong>Doxygen</strong></a>  【里面为程序中重要的API说明】</li><li>The ns-3 <a href="https://www.nsnam.org/developers/contributing-code/coding-style/">coding style</a> documentation is maintained on this site.</li></ul><h2 id="2-相关书籍"><a href="#2-相关书籍" class="headerlink" title="2 相关书籍"></a>2 相关书籍</h2><p>开源网络模拟器ns-3 - 架构与实践</p><p>电子书 <a href="https://weread.qq.com/web/bookDetail/21932bf07210dbdd2191d13">开源网络模拟器ns-3 - 架构与实践</a></p>]]></content>
       
       
       
