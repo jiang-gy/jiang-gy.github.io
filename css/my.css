@@ -1,12 +1,19 @@
 /* Here is your custom css styles. */
 @font-face{
     font-family: 'myfont';
+    
+    src: url('../font/LXGWWenKaiGBScreen.TTF');
     /* src: url('../font/STFANGSO.TTF'); */
     /* src: url('../font/GenJyuuGothic-Normal-2.ttf'); */
     /* src: url('../font/GenWanMinJP-Medium-3.ttf');  */
-    src: url('../font/LXGWWenKaiMono-Bold.ttf');  
-
-    /* src: url('../font/LXGWWenKai-Regular.ttf'); */
+    /* src: url('../font/LXGWWenKai-Regular.ttf'),
+         url('../font/LXGWWenKai-Light.ttf'),
+         url('../font/LXGWWenKai-Bold.ttf'),
+         url('../font/LXGWWenKaiMono-Bold.ttf'),
+         url('../font/LXGWWenKaiMono-Light.ttf'),
+         url('../font/LXGWWenKaiMono-Regular.ttf'); */
+    font-weight: normal;
+    font-style: normal;
 }
 
 body{
