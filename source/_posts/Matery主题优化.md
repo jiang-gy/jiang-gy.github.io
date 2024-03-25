@@ -1,15 +1,7 @@
 ---
 title: Matery主题优化
-top: false
-cover: false
-toc: true
-mathjax: false
-date: 2024-03-23 11:02:14
-password:
-summary:
 tags:
- - Hexo博客
-categories:
+- Hexo博客
 ---
 
 主要参考博客[魔改记录](https://fenghen0918.github.io/2020/10/22/hexo/hexo-bo-ke-you-hua-pian-matery-yi/#toc-heading-1)，大佬博客总结得很详细，但是由于大佬blog是较早之前写的，有些功能仍然有些不适用，在配置过程中踩了一些坑，因此，此处记录一下过程（有用部分直接就cv了），推荐直接访问原博客。
@@ -193,6 +185,89 @@ menu:
 > 在配置支持前发布的文章中的表情并没有获得支持，并且连表情都不会显示，所以最好在配置之后再输入表情进行测试
 
 ### 1.4 新建文章自动打开本地Markdown编辑器
+#### 1.4.1 新建文章模板
+
+参考[Hexo-Matery主题细致美化(下)](https://marmalade.vip/Materysettings2.html)
+
+
+
+##### 新建文章模板修改
+
+首先为了新建文章方便，我们可以修改一下文章模板，可以将`/scaffolds/post.md`修改为如下代码：
+
+front-matter
+
+```front-matter
+---
+title: {{ title }}
+date: {{ date }}
+author: 
+img: 
+coverImg: 
+top: false
+cover: false
+toc: true
+mathjax: false
+password:
+summary:
+keywords:
+tags:
+categories:
+---
+```
+
+这样新建文章后 一些`Front-matter`参数不用你自己补充了，修改对应信息就可以了。
+
+##### Front-matter 选项详解
+
+`Front-matter` 选项中的所有内容均为**非必填**的。但原作者建议至少填写 `title` 和 `date` 的值。
+
+| 配置选项      | 默认值                         | 描述                                                         |
+| :------------ | :----------------------------- | :----------------------------------------------------------- |
+| title         | `Markdown` 的文件标题          | 文章标题，强烈建议填写此选项                                 |
+| date          | 文件创建时的日期时间           | 发布时间，强烈建议填写此选项，且最好保证全局唯一             |
+| author        | 根 `_config.yml` 中的 `author` | 文章作者                                                     |
+| img           | `featureImages` 中的某个值     | 文章特征图，推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如: `http://xxx.com/xxx.jpg` |
+| top           | `true`                         | 推荐文章（文章是否置顶），如果 `top` 值为 `true`，则会作为首页推荐文章 |
+| cover         | `false`                        | `v1.0.2`版本新增，表示该文章是否需要加入到首页轮播封面中     |
+| coverImg      | 无                             | `v1.0.2`版本新增，表示该文章在首页轮播封面需要显示的图片路径，如果没有，则默认使用文章的特色图片 |
+| password      | 无                             | 文章阅读密码，如果要对文章设置阅读验证密码的话，就可以设置 `password` 的值，该值必须是用 `SHA256` 加密后的密码，防止被他人识破。前提是在主题的 `config.yml` 中激活了 `verifyPassword` 选项 |
+| toc           | `true`                         | 是否开启 TOC，可以针对某篇文章单独关闭 TOC 的功能。前提是在主题的 `config.yml` 中激活了 `toc` 选项 |
+| mathjax       | `false`                        | 是否开启数学公式支持 ，本文章是否开启 `mathjax`，且需要在主题的 `_config.yml` 文件中也需要开启才行 |
+| summary       | 无                             | 文章摘要，自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要 |
+| categories    | 无                             | 文章分类，本主题的分类表示宏观上大的分类，只建议一篇文章一个分类 |
+| tags          | 无                             | 文章标签，一篇文章可以多个标签                               |
+| keywords      | 文章标题                       | 文章关键字，SEO 时需要                                       |
+| reprintPolicy | cc_by                          | 文章转载规则， 可以是 cc_by, cc_by_nd, cc_by_sa, cc_by_nc, cc_by_nc_nd, cc_by_nc_sa, cc0, noreprint 或 pay 中的一个 |
+
+##### 最全示例
+
+front-matter
+
+```front-matter
+---
+title: typora-vue-theme主题介绍
+date: 2018-09-07 09:25:00
+author: XX
+img: /source/images/xxx.jpg
+top: true
+cover: true
+coverImg: /images/1.jpg
+password: 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
+toc: false
+mathjax: false
+summary: 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
+categories: Markdown
+tags:
+  - Typora
+  - Markdown
+---
+```
+
+
+
+
+#### 1.4.2 自动打开本地Markdown编辑器
 
 > 写新文章时，需要控制台执行hexo new “文章名字”生成一篇新文章，但需要手动打开，挺麻烦，我们可以设置在生成之后自动打开
 
@@ -672,10 +747,17 @@ socialLink:
     ```
      将上面的 myFont 改成你自己的字体名称即可
     修改字体的坑：
-> 上传字体后网页不显示，找了很多方法，后来发现没有安装好字体导致浏览器无法显示该字体
-> 因此正常安装字体很重要。
-> 方法：注意此处为**所有用户安装**，而不是简单的安装
+> 上传字体后网页不显示，找了很多方法，浏览器还是无法显示该字体
+> 方法：为确保字体正常显示，注意此处为**所有用户安装**，而不是简单的安装
 > ![](https://gitee.com/jgyong/blogimg/raw/master/img/202403241501409.png)
+>
+> 但还是不行23333
+>
+> 最后发现是自己的字体文件有问题，但是该字体可以在其他软件如Obsidian中正常显示，但是在浏览器中就是不行。
+>
+> 后来找了一下该字体的其他版本 [Screen](https://github.com/lxgw/LxgwWenKai-Screen/releases)，竟然可以显示了。。。。感觉有点玄学在里面。。。。。实在是搞不清楚原因。。。。
+
+
 
 所以更好的方式是通过这种在线配置的方法[# 通过css的@font-face属性，在网页上显示用户电脑没有的字体。](https://blog.csdn.net/rsj1994/article/details/53037881#:~:text=%E5%9C%A8%E7%BD%91%E9%A1%B5%E4%B8%AD%EF%BC%8C%E6%88%91%E4%BB%AC%E5%8F%AF%E4%BB%A5%E7%94%A8CSS%E7%9A%84font-family%E5%B1%9E%E6%80%A7%E6%9D%A5%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93%EF%BC%8C%E7%84%B6%E8%80%8C%E5%AE%9A%E4%B9%89%E7%9A%84%E5%AD%97%E4%BD%93%E5%9C%A8%E7%94%A8%E6%88%B7%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%8A%E8%83%BD%E5%90%A6%E6%AD%A3%E7%A1%AE%E5%91%88%E7%8E%B0%E5%88%99%E8%A6%81%E7%9C%8B%E7%94%A8%E6%88%B7%E7%9A%84%E7%94%B5%E8%84%91%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E4%BA%86%E8%AF%A5%E5%AD%97%E4%BD%93%E3%80%82,%E6%88%91%E4%BB%AC%E7%BB%8F%E5%B8%B8%E8%83%BD%E7%9C%8B%E5%88%B0%E5%9B%BD%E5%A4%96%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E4%BA%86%E9%9D%9E%E5%B8%B8%E6%BC%82%E4%BA%AE%E7%9A%84%E5%AD%97%E4%BD%93%EF%BC%8C%E8%80%8C%E8%BF%99%E4%BA%9B%E5%AD%97%E4%BD%93%E9%80%9A%E5%B8%B8%E5%9C%A8%E7%94%A8%E6%88%B7%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%AD%E6%98%AF%E6%B2%A1%E6%9C%89%E5%AE%89%E8%A3%85%E7%9A%84%EF%BC%8C%E6%89%80%E4%BB%A5%E7%94%A8font-family%E5%B1%9E%E6%80%A7%E5%B0%B1%E6%97%A0%E6%B3%95%E5%AE%9E%E7%8E%B0%E4%BA%86%E3%80%82)，[# 如需网页上嵌入，请看这里](https://github.com/lxgw/LxgwWenKai/issues/24)由于时间关系，没有深入研究。
 

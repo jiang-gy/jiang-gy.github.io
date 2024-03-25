@@ -30,15 +30,15 @@ menu:
      - name: Musics
        url: /musics
        icon: fas fa-music
-     - name: Movies
-       url: /movies
-       icon: fas fa-film
-     - name: Books
-       url: /books
-       icon: fas fa-book
-     - name: Galleries
-       url: /galleries
-       icon: fas fa-image
+    #  - name: Movies
+    #    url: /movies
+    #    icon: fas fa-film
+    #  - name: Books
+    #    url: /books
+    #    icon: fas fa-book
+    #  - name: Galleries
+    #    url: /galleries
+    #    icon: fas fa-image
 
 # Website start time.
 # 站点运行开始时间.
@@ -543,6 +543,8 @@ featureImages:
 - /medias/featureimages/21.jpg
 - /medias/featureimages/22.jpg
 - /medias/featureimages/23.jpg
+- /medias/featureimages/24.jpg
+- /medias/featureimages/25.jpg
 
 # default configs that the default policy for every articles/posts
 # default 配置文章的默认转载规则
