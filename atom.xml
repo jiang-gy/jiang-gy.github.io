@@ -6,7 +6,7 @@
   <link href="https://jiang-gy.github.io/atom.xml" rel="self"/>
   
   <link href="https://jiang-gy.github.io/"/>
-  <updated>2024-03-25T12:02:37.022Z</updated>
+  <updated>2024-03-27T03:33:59.334Z</updated>
   <id>https://jiang-gy.github.io/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Windows相关</title>
+    <link href="https://jiang-gy.github.io/2024/03/27/windows-xiang-guan/"/>
+    <id>https://jiang-gy.github.io/2024/03/27/windows-xiang-guan/</id>
+    <published>2024-03-27T03:23:29.248Z</published>
+    <updated>2024-03-27T03:33:59.334Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-调整鼠标颜色&quot;&gt;&lt;a href=&quot;#1-调整鼠标颜色&quot; class=&quot;headerlink&quot; title=&quot;1 调整鼠标颜色&quot;&gt;&lt;/a&gt;1 调整鼠标颜色&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Windows" scheme="https://jiang-gy.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Matery主题优化</title>
     <link href="https://jiang-gy.github.io/2024/03/23/matery-zhu-ti-you-hua/"/>
     <id>https://jiang-gy.github.io/2024/03/23/matery-zhu-ti-you-hua/</id>
     <published>2024-03-23T03:02:14.300Z</published>
-    <updated>2024-03-25T12:02:37.022Z</updated>
+    <updated>2024-03-27T05:17:56.937Z</updated>
     
     
       
@@ -63,11 +86,11 @@
   </entry>
   
   <entry>
-    <title></title>
+    <title>Hexo+腾讯云域名</title>
     <link href="https://jiang-gy.github.io/2024/03/22/bo-ke/hexo-teng-xun-yun-yu-ming/"/>
     <id>https://jiang-gy.github.io/2024/03/22/bo-ke/hexo-teng-xun-yun-yu-ming/</id>
     <published>2024-03-22T15:06:42.637Z</published>
-    <updated>2024-03-22T15:06:42.637Z</updated>
+    <updated>2024-03-27T03:33:02.150Z</updated>
     
     
       
@@ -81,14 +104,16 @@
     
     
     
+    <category term="Hexo博客" scheme="https://jiang-gy.github.io/tags/Hexo%E5%8D%9A%E5%AE%A2/"/>
+    
   </entry>
   
   <entry>
-    <title></title>
+    <title>两个github配置同一台电脑上的公钥</title>
     <link href="https://jiang-gy.github.io/2024/03/22/git/liang-ge-github-pei-zhi-tong-yi-tai-dian-nao-shang-de-gong-yao/"/>
     <id>https://jiang-gy.github.io/2024/03/22/git/liang-ge-github-pei-zhi-tong-yi-tai-dian-nao-shang-de-gong-yao/</id>
     <published>2024-03-22T15:06:42.635Z</published>
-    <updated>2024-03-22T15:06:42.636Z</updated>
+    <updated>2024-03-27T04:21:43.195Z</updated>
     
     
       
@@ -103,140 +128,33 @@
     
     
     
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://jiang-gy.github.io/2024/03/22/ns3-fang-zhen/ns3-wang-luo-lu-you-mo-kuai/"/>
-    <id>https://jiang-gy.github.io/2024/03/22/ns3-fang-zhen/ns3-wang-luo-lu-you-mo-kuai/</id>
-    <published>2024-03-22T15:06:42.619Z</published>
-    <updated>2024-03-22T15:06:42.619Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-cpp&quot; data-language=&quot;cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;Ptr&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Node&lt;span</summary>
-        
-      
-    
-    
-    
+    <category term="git" scheme="https://jiang-gy.github.io/tags/git/"/>
     
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://jiang-gy.github.io/2024/03/22/ns3-fang-zhen/ns3trace-xi-tong-zong-jie/"/>
-    <id>https://jiang-gy.github.io/2024/03/22/ns3-fang-zhen/ns3trace-xi-tong-zong-jie/</id>
-    <published>2024-03-22T15:06:42.618Z</published>
-    <updated>2024-03-22T15:06:42.618Z</updated>
+    <title>NS3仿真</title>
+    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/"/>
+    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/</id>
+    <published>2024-02-01T01:29:35.000Z</published>
+    <updated>2024-03-27T03:28:00.358Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Ns3-Trace系统&quot;&gt;&lt;a href=&quot;#Ns3-Trace系统&quot; class=&quot;headerlink&quot; title=&quot;Ns3 Trace系统&quot;&gt;&lt;/a&gt;Ns3 Trace系统&lt;/h1&gt;&lt;h2 id=&quot;Trace变量配置&quot;&gt;&lt;a</summary>
-        
-      
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
     
     
     
+    
+    <category term="网络仿真" scheme="https://jiang-gy.github.io/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/"/>
     
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://jiang-gy.github.io/2024/03/22/ns3-fang-zhen/ns3-wen-jian-dui-xiang-mo-xing-jia-gou/"/>
-    <id>https://jiang-gy.github.io/2024/03/22/ns3-fang-zhen/ns3-wen-jian-dui-xiang-mo-xing-jia-gou/</id>
-    <published>2024-03-22T15:06:42.618Z</published>
-    <updated>2024-03-22T15:06:42.618Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Ns3对象之间的关联&quot;&gt;&lt;a href=&quot;#Ns3对象之间的关联&quot; class=&quot;headerlink&quot; title=&quot;Ns3对象之间的关联&quot;&gt;&lt;/a&gt;Ns3对象之间的关联&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-cpp&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://jiang-gy.github.io/2024/03/22/ns3-fang-zhen/ns3-xue-xi-zi-liao-hui-zong/"/>
-    <id>https://jiang-gy.github.io/2024/03/22/ns3-fang-zhen/ns3-xue-xi-zi-liao-hui-zong/</id>
-    <published>2024-03-22T15:06:42.617Z</published>
-    <updated>2024-03-22T15:06:42.617Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;学习资料&quot;&gt;&lt;a href=&quot;#学习资料&quot; class=&quot;headerlink&quot; title=&quot;学习资料&quot;&gt;&lt;/a&gt;学习资料&lt;/h2&gt;&lt;h2 id=&quot;1-官方学习网址&quot;&gt;&lt;a href=&quot;#1-官方学习网址&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://jiang-gy.github.io/2024/03/22/ns3-fang-zhen/ns3-chang-jian-wen-ti-chu-li/"/>
-    <id>https://jiang-gy.github.io/2024/03/22/ns3-fang-zhen/ns3-chang-jian-wen-ti-chu-li/</id>
-    <published>2024-03-22T15:06:42.617Z</published>
-    <updated>2024-03-22T15:06:42.617Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;编译问题&quot;&gt;&lt;a href=&quot;#编译问题&quot; class=&quot;headerlink&quot; title=&quot;编译问题&quot;&gt;&lt;/a&gt;编译问题&lt;/h2&gt;&lt;h3 id=&quot;1-NS3编译错误&quot;&gt;&lt;a href=&quot;#1-NS3编译错误&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://jiang-gy.github.io/2024/03/22/ns3-fang-zhen/ns3-dui-lie-mo-xing-jie-shao/"/>
-    <id>https://jiang-gy.github.io/2024/03/22/ns3-fang-zhen/ns3-dui-lie-mo-xing-jie-shao/</id>
-    <published>2024-03-22T15:06:42.617Z</published>
-    <updated>2024-03-22T15:06:42.618Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;队列模型位于TC(Traffic</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://jiang-gy.github.io/2024/03/22/ns3-fang-zhen/ns3-zhong-yuan-xin-xi/"/>
-    <id>https://jiang-gy.github.io/2024/03/22/ns3-fang-zhen/ns3-zhong-yuan-xin-xi/</id>
-    <published>2024-03-22T15:06:42.616Z</published>
-    <updated>2024-03-22T15:06:42.616Z</updated>
+    <title>NS3中元信息</title>
+    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-zhong-yuan-xin-xi/"/>
+    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-zhong-yuan-xin-xi/</id>
+    <published>2024-02-01T01:29:35.000Z</published>
+    <updated>2024-03-27T03:31:37.553Z</updated>
     
     
       
@@ -252,14 +170,16 @@
     
     
     
+    <category term="网络仿真" scheme="https://jiang-gy.github.io/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/"/>
+    
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://jiang-gy.github.io/2024/03/22/ns3-fang-zhen/ns3-zhong-wang-luo-fang-zhen/"/>
-    <id>https://jiang-gy.github.io/2024/03/22/ns3-fang-zhen/ns3-zhong-wang-luo-fang-zhen/</id>
-    <published>2024-03-22T15:06:42.616Z</published>
-    <updated>2024-03-22T15:06:42.616Z</updated>
+    <title>NS3中网络仿真</title>
+    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-zhong-wang-luo-fang-zhen/"/>
+    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-zhong-wang-luo-fang-zhen/</id>
+    <published>2024-02-01T01:29:35.000Z</published>
+    <updated>2024-03-27T03:31:32.315Z</updated>
     
     
       
@@ -274,14 +194,16 @@
     
     
     
+    <category term="网络仿真" scheme="https://jiang-gy.github.io/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/"/>
+    
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://jiang-gy.github.io/2024/03/22/ns3-fang-zhen/ns3-shi-yong-xin-de-mo-kuai/"/>
-    <id>https://jiang-gy.github.io/2024/03/22/ns3-fang-zhen/ns3-shi-yong-xin-de-mo-kuai/</id>
-    <published>2024-03-22T15:06:42.616Z</published>
-    <updated>2024-03-22T15:06:42.616Z</updated>
+    <title>NS3使用新的模块</title>
+    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-shi-yong-xin-de-mo-kuai/"/>
+    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-shi-yong-xin-de-mo-kuai/</id>
+    <published>2024-02-01T01:29:35.000Z</published>
+    <updated>2024-03-27T03:31:09.123Z</updated>
     
     
       
@@ -295,17 +217,140 @@
     
     
     
+    <category term="网络仿真" scheme="https://jiang-gy.github.io/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/"/>
+    
   </entry>
   
   <entry>
-    <title>NS3仿真</title>
-    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/"/>
-    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/</id>
+    <title>NS3学习资料汇总</title>
+    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-xue-xi-zi-liao-hui-zong/"/>
+    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-xue-xi-zi-liao-hui-zong/</id>
     <published>2024-02-01T01:29:35.000Z</published>
-    <updated>2024-03-24T05:51:16.917Z</updated>
+    <updated>2024-03-27T03:31:26.320Z</updated>
     
     
-    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;学习资料&quot;&gt;&lt;a href=&quot;#学习资料&quot; class=&quot;headerlink&quot; title=&quot;学习资料&quot;&gt;&lt;/a&gt;学习资料&lt;/h2&gt;&lt;h2 id=&quot;1-官方学习网址&quot;&gt;&lt;a href=&quot;#1-官方学习网址&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="网络仿真" scheme="https://jiang-gy.github.io/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NS3常见问题处理</title>
+    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-chang-jian-wen-ti-chu-li/"/>
+    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-chang-jian-wen-ti-chu-li/</id>
+    <published>2024-02-01T01:29:35.000Z</published>
+    <updated>2024-03-27T03:30:57.917Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;编译问题&quot;&gt;&lt;a href=&quot;#编译问题&quot; class=&quot;headerlink&quot; title=&quot;编译问题&quot;&gt;&lt;/a&gt;编译问题&lt;/h2&gt;&lt;h3 id=&quot;1-NS3编译错误&quot;&gt;&lt;a href=&quot;#1-NS3编译错误&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="网络仿真" scheme="https://jiang-gy.github.io/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NS3队列模型介绍</title>
+    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-dui-lie-mo-xing-jie-shao/"/>
+    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-dui-lie-mo-xing-jie-shao/</id>
+    <published>2024-02-01T01:29:35.000Z</published>
+    <updated>2024-03-27T03:31:03.954Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;队列模型位于TC(Traffic</summary>
+        
+      
+    
+    
+    
+    
+    <category term="网络仿真" scheme="https://jiang-gy.github.io/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ns3Trace系统总结</title>
+    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3trace-xi-tong-zong-jie/"/>
+    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3trace-xi-tong-zong-jie/</id>
+    <published>2024-02-01T01:29:35.000Z</published>
+    <updated>2024-03-27T03:31:43.462Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Ns3-Trace系统&quot;&gt;&lt;a href=&quot;#Ns3-Trace系统&quot; class=&quot;headerlink&quot; title=&quot;Ns3 Trace系统&quot;&gt;&lt;/a&gt;Ns3 Trace系统&lt;/h1&gt;&lt;h2 id=&quot;Trace变量配置&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="网络仿真" scheme="https://jiang-gy.github.io/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ns3文件对象模型架构</title>
+    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-wen-jian-dui-xiang-mo-xing-jia-gou/"/>
+    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-wen-jian-dui-xiang-mo-xing-jia-gou/</id>
+    <published>2024-02-01T01:29:35.000Z</published>
+    <updated>2024-03-27T03:31:19.245Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Ns3对象之间的关联&quot;&gt;&lt;a href=&quot;#Ns3对象之间的关联&quot; class=&quot;headerlink&quot; title=&quot;Ns3对象之间的关联&quot;&gt;&lt;/a&gt;Ns3对象之间的关联&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-cpp&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="网络仿真" scheme="https://jiang-gy.github.io/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ns3网络路由模块</title>
+    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-wang-luo-lu-you-mo-kuai/"/>
+    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-wang-luo-lu-you-mo-kuai/</id>
+    <published>2024-02-01T01:29:35.000Z</published>
+    <updated>2024-03-27T03:31:14.022Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-cpp&quot; data-language=&quot;cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;Ptr&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Node&lt;span</summary>
+        
+      
     
     
     
@@ -389,7 +434,7 @@
     <link href="https://jiang-gy.github.io/2024/01/21/my-new-post/"/>
     <id>https://jiang-gy.github.io/2024/01/21/my-new-post/</id>
     <published>2024-01-21T07:20:50.000Z</published>
-    <updated>2024-03-22T15:06:42.615Z</updated>
+    <updated>2024-03-27T03:32:04.785Z</updated>
     
     
     
@@ -417,31 +462,6 @@
     
     
     <category term="书法" scheme="https://jiang-gy.github.io/tags/%E4%B9%A6%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Markdown语法</title>
-    <link href="https://jiang-gy.github.io/2024/01/21/markdown/markdown-yu-fa/"/>
-    <id>https://jiang-gy.github.io/2024/01/21/markdown/markdown-yu-fa/</id>
-    <published>2024-01-21T02:16:52.000Z</published>
-    <updated>2024-03-22T15:06:42.615Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Markdown语法&quot;&gt;&lt;a href=&quot;#Markdown语法&quot; class=&quot;headerlink&quot; title=&quot;Markdown语法&quot;&gt;&lt;/a&gt;Markdown语法&lt;/h1&gt;&lt;h2 id=&quot;1-Markdown优势&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="Hexo博客" scheme="https://jiang-gy.github.io/tags/Hexo%E5%8D%9A%E5%AE%A2/"/>
-    
-    <category term="Markdown语法" scheme="https://jiang-gy.github.io/tags/Markdown%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   

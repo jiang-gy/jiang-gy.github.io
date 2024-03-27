@@ -544,21 +544,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-03-25
+                    2024-03-27
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    7k
+                    6.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    30 分
+                    29 分
                 </div>
                 
 
@@ -579,7 +579,7 @@
                 <p>主要参考博客<a target="_blank" rel="noopener" href="https://fenghen0918.github.io/2020/10/22/hexo/hexo-bo-ke-you-hua-pian-matery-yi/#toc-heading-1">魔改记录</a>，大佬博客总结得很详细，但是由于大佬blog是较早之前写的，有些功能仍然有些不适用，在配置过程中踩了一些坑，因此，此处记录一下过程（有用部分直接就cv了），推荐直接访问原博客。</p>
 <h2 id="1-基本页面功能"><a href="#1-基本页面功能" class="headerlink" title="1 基本页面功能"></a>1 基本页面功能</h2><p>此部分也可以参考原本的<code>read.me</code>,功能实现基本相似</p>
 <h3 id="1-1-增加页面"><a href="#1-1-增加页面" class="headerlink" title="1.1 增加页面"></a>1.1 增加页面</h3><blockquote>
-<p>增加页面的步骤都基本相同，创建<code>tags</code>标签页、<code>categories</code>分类页，<code>about</code>关于我页、 <code>contact</code>留言板页、<code>friends</code>友情链接页、均可以使用这个步骤</p>
+<p>增加页面的步骤都基本相同，创建<code>tags</code>标签页、<code>categories</code>分类页，<code>about</code>关于我页、&nbsp;<code>contact</code>留言板页、<code>friends</code>友情链接页、均可以使用这个步骤</p>
 </blockquote>
 <ol>
 <li><p>如果在你的博客 source 目录下还没有，就输入以下命令（站点目录打开的命令行）来新建一个：</p>
@@ -593,7 +593,7 @@ type: "页面的英文"    # 如：type: "tags"
 layout: "页面的英文" # 如：layout: "tags"
 ---<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
-<p>关于 <code>contact</code>留言板页：</p>
+<p>关于&nbsp;<code>contact</code>留言板页：</p>
 <p>留言板功能依赖于第三方评论系统，激活评论系统才有效果，下面会有介绍</p>
 <p>关于<code>friends</code>友情链接页：</p>
 <p>如果你想增加内容，在你的博客 source 目录下新建 <code>_data</code> 目录，在 <code>_data</code> 目录中新建 <code>friends.json</code> 文件，输入以下内容：</p>
@@ -652,7 +652,7 @@ date: 2020-06-15 15:19:35
 type: "bangumis"
 ---<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 <li>给二级菜单增加名称name,路径url和图标icon</li>
-<li>注意每个二级菜单模块前要加 <code>-</code></li>
+<li>注意每个二级菜单模块前要加&nbsp;<code>-</code></li>
 <li>二级菜单要缩进到一级菜单内<pre class="line-numbers language-none"><code class="language-none">爱好:
     icon: fas fa-bicycle
     children:
@@ -670,7 +670,7 @@ type: "bangumis"
 <li><p>创建音乐页面</p>
 <p> 输入命令</p>
  <pre class="line-numbers language-none"><code class="language-none">hexo new page musics<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p> 找到<code>source/musics/index.md</code>这个文件，修改这个文件，添加 <code>type: "music"</code></p>
+<p> 找到<code>source/musics/index.md</code>这个文件，修改这个文件，添加&nbsp;<code>type: "music"</code></p>
  <pre class="line-numbers language-none"><code class="language-none">---
 title: 音乐！音乐！
 date: 2020-06-16 14:45:30
@@ -698,7 +698,7 @@ type: 'music'
 <blockquote>
 <p>注意：此处界面最多显示十条歌曲，因此还存在问题</p>
 </blockquote>
-<h3 id="1-3-增加emoji支持"><a href="#1-3-增加emoji支持" class="headerlink" title="1.3 增加emoji支持"></a>1.3 增加emoji支持</h3><p>😄 使你markdown博客里的emoji表情跳动起来</p>
+<h3 id="1-3-增加emoji支持"><a href="#1-3-增加emoji支持" class="headerlink" title="1.3 增加emoji支持"></a>1.3 增加emoji支持</h3><p>😄&nbsp;使你markdown博客里的emoji表情跳动起来</p>
 <ol>
 <li><p>安装插件</p>
  <pre class="line-numbers language-none"><code class="language-none">npm install hexo-filter-github-emojis --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -717,135 +717,7 @@ type: 'music'
 <p>小坑：</p>
 <p>在配置支持前发布的文章中的表情并没有获得支持，并且连表情都不会显示，所以最好在配置之后再输入表情进行测试</p>
 </blockquote>
-<h3 id="1-4-新建文章自动打开本地Markdown编辑器"><a href="#1-4-新建文章自动打开本地Markdown编辑器" class="headerlink" title="1.4 新建文章自动打开本地Markdown编辑器"></a>1.4 新建文章自动打开本地Markdown编辑器</h3><h4 id="1-4-1-新建文章模板"><a href="#1-4-1-新建文章模板" class="headerlink" title="1.4.1 新建文章模板"></a>1.4.1 新建文章模板</h4><p>参考<a target="_blank" rel="noopener" href="https://marmalade.vip/Materysettings2.html">Hexo-Matery主题细致美化(下)</a></p>
-<h5 id="新建文章模板修改"><a href="#新建文章模板修改" class="headerlink" title="新建文章模板修改"></a>新建文章模板修改</h5><p>首先为了新建文章方便，我们可以修改一下文章模板，可以将<code>/scaffolds/post.md</code>修改为如下代码：</p>
-<p>front-matter</p>
-<pre class="line-numbers language-front-matter" data-language="front-matter"><code class="language-front-matter">---
-title: {{ title }}
-date: {{ date }}
-author: 
-img: 
-coverImg: 
-top: false
-cover: false
-toc: true
-mathjax: false
-password:
-summary:
-keywords:
-tags:
-categories:
----<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>这样新建文章后 一些<code>Front-matter</code>参数不用你自己补充了，修改对应信息就可以了。</p>
-<h5 id="Front-matter-选项详解"><a href="#Front-matter-选项详解" class="headerlink" title="Front-matter 选项详解"></a>Front-matter 选项详解</h5><p><code>Front-matter</code> 选项中的所有内容均为<strong>非必填</strong>的。但原作者建议至少填写 <code>title</code> 和 <code>date</code> 的值。</p>
-<table>
-<thead>
-<tr>
-<th align="left">配置选项</th>
-<th align="left">默认值</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">title</td>
-<td align="left"><code>Markdown</code> 的文件标题</td>
-<td align="left">文章标题，强烈建议填写此选项</td>
-</tr>
-<tr>
-<td align="left">date</td>
-<td align="left">文件创建时的日期时间</td>
-<td align="left">发布时间，强烈建议填写此选项，且最好保证全局唯一</td>
-</tr>
-<tr>
-<td align="left">author</td>
-<td align="left">根 <code>_config.yml</code> 中的 <code>author</code></td>
-<td align="left">文章作者</td>
-</tr>
-<tr>
-<td align="left">img</td>
-<td align="left"><code>featureImages</code> 中的某个值</td>
-<td align="left">文章特征图，推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如: <code>http://xxx.com/xxx.jpg</code></td>
-</tr>
-<tr>
-<td align="left">top</td>
-<td align="left"><code>true</code></td>
-<td align="left">推荐文章（文章是否置顶），如果 <code>top</code> 值为 <code>true</code>，则会作为首页推荐文章</td>
-</tr>
-<tr>
-<td align="left">cover</td>
-<td align="left"><code>false</code></td>
-<td align="left"><code>v1.0.2</code>版本新增，表示该文章是否需要加入到首页轮播封面中</td>
-</tr>
-<tr>
-<td align="left">coverImg</td>
-<td align="left">无</td>
-<td align="left"><code>v1.0.2</code>版本新增，表示该文章在首页轮播封面需要显示的图片路径，如果没有，则默认使用文章的特色图片</td>
-</tr>
-<tr>
-<td align="left">password</td>
-<td align="left">无</td>
-<td align="left">文章阅读密码，如果要对文章设置阅读验证密码的话，就可以设置 <code>password</code> 的值，该值必须是用 <code>SHA256</code> 加密后的密码，防止被他人识破。前提是在主题的 <code>config.yml</code> 中激活了 <code>verifyPassword</code> 选项</td>
-</tr>
-<tr>
-<td align="left">toc</td>
-<td align="left"><code>true</code></td>
-<td align="left">是否开启 TOC，可以针对某篇文章单独关闭 TOC 的功能。前提是在主题的 <code>config.yml</code> 中激活了 <code>toc</code> 选项</td>
-</tr>
-<tr>
-<td align="left">mathjax</td>
-<td align="left"><code>false</code></td>
-<td align="left">是否开启数学公式支持 ，本文章是否开启 <code>mathjax</code>，且需要在主题的 <code>_config.yml</code> 文件中也需要开启才行</td>
-</tr>
-<tr>
-<td align="left">summary</td>
-<td align="left">无</td>
-<td align="left">文章摘要，自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要</td>
-</tr>
-<tr>
-<td align="left">categories</td>
-<td align="left">无</td>
-<td align="left">文章分类，本主题的分类表示宏观上大的分类，只建议一篇文章一个分类</td>
-</tr>
-<tr>
-<td align="left">tags</td>
-<td align="left">无</td>
-<td align="left">文章标签，一篇文章可以多个标签</td>
-</tr>
-<tr>
-<td align="left">keywords</td>
-<td align="left">文章标题</td>
-<td align="left">文章关键字，SEO 时需要</td>
-</tr>
-<tr>
-<td align="left">reprintPolicy</td>
-<td align="left">cc_by</td>
-<td align="left">文章转载规则， 可以是 cc_by, cc_by_nd, cc_by_sa, cc_by_nc, cc_by_nc_nd, cc_by_nc_sa, cc0, noreprint 或 pay 中的一个</td>
-</tr>
-</tbody></table>
-<h5 id="最全示例"><a href="#最全示例" class="headerlink" title="最全示例"></a>最全示例</h5><p>front-matter</p>
-<pre class="line-numbers language-front-matter" data-language="front-matter"><code class="language-front-matter">---
-title: typora-vue-theme主题介绍
-date: 2018-09-07 09:25:00
-author: XX
-img: /source/images/xxx.jpg
-top: true
-cover: true
-coverImg: /images/1.jpg
-password: 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
-toc: false
-mathjax: false
-summary: 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
-categories: Markdown
-tags:
-  - Typora
-  - Markdown
----<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-<h4 id="1-4-2-自动打开本地Markdown编辑器"><a href="#1-4-2-自动打开本地Markdown编辑器" class="headerlink" title="1.4.2 自动打开本地Markdown编辑器"></a>1.4.2 自动打开本地Markdown编辑器</h4><blockquote>
+<h3 id="1-4-新建文章自动打开本地Markdown编辑器"><a href="#1-4-新建文章自动打开本地Markdown编辑器" class="headerlink" title="1.4 新建文章自动打开本地Markdown编辑器"></a>1.4 新建文章自动打开本地Markdown编辑器</h3><blockquote>
 <p>写新文章时，需要控制台执行hexo new “文章名字”生成一篇新文章，但需要手动打开，挺麻烦，我们可以设置在生成之后自动打开</p>
 </blockquote>
 <p>在站点根目录下新建scripts目录，然后在新建<code>auto_open.js</code>，在文件填入一下内容：</p>
@@ -968,7 +840,7 @@ music:
 
 <p>注意粘贴的位置和空格要正确，这里的位置随你自己设置，你也可以把简历作为第一个card，然后/source/about/index.md下面写上你的简历了（就像写博客一样）。</p>
 <blockquote>
-<p>中文显示为？？？<br>这是因为<strong>站点配置文件</strong>没有使用<code>utf-8</code>编码造成的，所以在<strong>站点配置文件</strong><code>_config.yml</code>中写中文网站名，然后把<strong>站点配置文件</strong>保存为<code>utf-8格式</code>。包括md文件，出现该问题，也要用同样的方式解决。</p>
+<p>中文显示为？？？<br>    这是因为<strong>站点配置文件</strong>没有使用<code>utf-8</code>编码造成的，所以在<strong>站点配置文件</strong><code>_config.yml</code>中写中文网站名，然后把<strong>站点配置文件</strong>保存为<code>utf-8格式</code>。包括md文件，出现该问题，也要用同样的方式解决。</p>
 </blockquote>
 <h3 id="1-12-配置404错误页面"><a href="#1-12-配置404错误页面" class="headerlink" title="1.12 配置404错误页面"></a>1.12 配置404错误页面</h3><p>站点根目录下的source文件夹下新建404.md文件，里面内容如下：</p>
 <pre class="line-numbers language-none"><code class="language-none">---
@@ -1010,6 +882,27 @@ description: "Oops～，我崩溃了！找不到你想要的页面了"
 
 <p>然后部署，再看看效果即可<a target="_blank" rel="noopener" href="http://localhost:4000/404/">http://localhost:4000/404/</a></p>
 <p><img src="https://sulog.oss-cn-hangzhou.aliyuncs.com/matery2-6.png" alt="image-20200619203902808"></p>
+<h3 id="1-13-不蒜子统计"><a href="#1-13-不蒜子统计" class="headerlink" title="1.13 不蒜子统计"></a>1.13 不蒜子统计</h3><h4 id="1-13-1-底部总浏览量和访问人数总是隐藏"><a href="#1-13-1-底部总浏览量和访问人数总是隐藏" class="headerlink" title="1.13.1 底部总浏览量和访问人数总是隐藏"></a>1.13.1 底部总浏览量和访问人数总是隐藏</h4><p><a target="_blank" rel="noopener" href="https://jingeg.gitee.io/2020/03/04/hexozhongmateryzhutidegexinghuadingzhi/#toc-heading-10">原链接网页</a><br>有时候请求busuanzi数据比较慢，然后浏览量和访问人数就会隐藏，可能是默认的，在matery.css中增加以下代码可以让它一直显示</p>
+<pre class="line-numbers language-none"><code class="language-none">   #busuanzi_container_site_pv,
+   #busuanzi_value_site_pv,
+   #busuanzi_container_site_uv{
+      display: inline !important;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="1-13-2-增加建站时间"><a href="#1-13-2-增加建站时间" class="headerlink" title="1.13.2 增加建站时间"></a>1.13.2 增加建站时间</h4><p><a target="_blank" rel="noopener" href="https://blog.bluesky01st.eu.org/posts/d76019f8.html">源网页</a></p>
+<p>在<code>themes/matery/_config.yml</code>找到以下内容(42行)：</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment"># Website start time.</span>
+<span class="token comment"># 站点运行开始时间.</span>
+<span class="token key atrule">time</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">year</span><span class="token punctuation">:</span>  <span class="token comment"># 年份</span>
+  <span class="token key atrule">month</span><span class="token punctuation">:</span>  <span class="token comment"># 月份</span>
+  <span class="token key atrule">date</span><span class="token punctuation">:</span>  <span class="token comment"># 日期</span>
+  <span class="token key atrule">hour</span><span class="token punctuation">:</span>  <span class="token comment"># 小时</span>
+  <span class="token key atrule">minute</span><span class="token punctuation">:</span>  <span class="token comment"># 分钟</span>
+  <span class="token key atrule">second</span><span class="token punctuation">:</span>  <span class="token comment"># 秒</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>修改为你的建站时间即可</p>
 <h2 id="2-视觉美化"><a href="#2-视觉美化" class="headerlink" title="2. 视觉美化"></a>2. 视觉美化</h2><h3 id="2-1-修改主题颜色及导航透明效果"><a href="#2-1-修改主题颜色及导航透明效果" class="headerlink" title="2.1 修改主题颜色及导航透明效果"></a>2.1 修改主题颜色及导航透明效果</h3><p>在主题文件的 /source/css/matery.css 文件中，搜索 .bg-color 来修改背景颜色：</p>
 <pre class="line-numbers language-none"><code class="language-none">/* 整体背景颜色，包括导航、移动端的导航、页尾、标签页等的背景颜色、透明效果. */
 .bg-color {
@@ -1025,8 +918,17 @@ description: "Oops～，我崩溃了！找不到你想要的页面了"
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h3 id="2-2-修改主题页面"><a href="#2-2-修改主题页面" class="headerlink" title="2.2 修改主题页面"></a>2.2 修改主题页面</h3><h4 id="2-2-1-修改-banner-图和文章特色图"><a href="#2-2-1-修改-banner-图和文章特色图" class="headerlink" title="2.2.1 修改 banner 图和文章特色图"></a>2.2.1 修改 banner 图和文章特色图</h4><p>你可以直接在 /source/medias/banner 文件夹中更换你喜欢的 banner 图片，主题代码中是每天动态切换一张，只需 7 张即可。</p>
-<p>如果想改为每小时或者每分钟切换banner图的话，可以在 /layout/_partial/bg-cover-content.ejs 文件的 <code>bannerUrl</code> 代码中，将getDay()改为getHours()或者getMinutes()即可，当然需要再上述文件夹中有足够多的图片，如换成每小时就需要24张图。</p>
+<p>如果想改为每小时或者每分钟切换banner图的话，可以在 /layout/_partial/bg-cover-content.ejs 文件的&nbsp;<code>bannerUrl</code>&nbsp;代码中，将getDay()改为getHours()或者getMinutes()即可，当然需要再上述文件夹中有足够多的图片，如换成每小时就需要24张图。</p>
 <pre class="line-numbers language-none"><code class="language-none">var bannerUrl = "&lt;%- theme.jsDelivr.url %&gt;&lt;%- url_for('/medias/banner/') %&gt;" + new Date().getDay() + '.jpg';<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>文章特色图显示<br>如果 <code>img</code> 属性不填写的话，文章特色图会根据文章标题的 <code>hashcode</code> 的值取余，然后选取主题中对应的特色图片，从而达到让所有文章的特色图<strong>各有特色</strong>。<br>在 <code>/source/medias/featureimages</code> 文件夹中默认有 24 张特色图片，你可以再增加或者减少，并需要在 <code>_config.yml</code> 做同步修改,增加或者减少图片的名称。</p>
+<pre class="line-numbers language-none"><code class="language-none">&nbsp;%% themes\materylayout\_partial\index-cover.ejs %%
+&nbsp;var featureImage = featureImages[Math.abs(hashCode(post.title) % imgCount)];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">themes\materyJgy\_config.yml
+featureImages:
+	XXXX.XXX<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://gitee.com/jgyong/blogimg/raw/master/img/202403271252109.png"><br>如果图片不显示的话，一定要仔细检查图片名字是否和<code>_config.yml</code>保持一致，特别注意图片的后缀是<code>jpg</code>还是<code>png</code></p>
 <h4 id="2-2-2-整体背景修改"><a href="#2-2-2-整体背景修改" class="headerlink" title="2.2.2 整体背景修改"></a>2.2.2 整体背景修改</h4><p>在<code>themes\Matery\source\css\matery.css</code>，ctrl+F快捷键查找<code>body</code><br>修改样式如下：<br>css</p>
 <pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span> <span class="token punctuation">{</span>
     <span class="token comment">/* background-color: #eaeaea; */</span>
@@ -1045,8 +947,8 @@ description: "Oops～，我崩溃了！找不到你想要的页面了"
 <p>忘记修改这个，导致导航条颜色没有修改成功</p>
 <p>css</p>
 <pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">.bg-color</span> <span class="token punctuation">{</span>
- <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>to right<span class="token punctuation">,</span> #6DD0F2 0%<span class="token punctuation">,</span> #F59ABE 100%<span class="token punctuation">)</span><span class="token punctuation">;</span>
- <span class="token property">opacity</span><span class="token punctuation">:</span> 0.8<span class="token punctuation">;</span>  <span class="token comment">/*透明效果 值范围 0~1，看情况自己修改*/</span>
+    <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>to right<span class="token punctuation">,</span> #6DD0F2 0%<span class="token punctuation">,</span> #F59ABE 100%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">opacity</span><span class="token punctuation">:</span> 0.8<span class="token punctuation">;</span>  <span class="token comment">/*透明效果 值范围 0~1，看情况自己修改*/</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 </blockquote>
 <h4 id="2-2-4-滚动条美化"><a href="#2-2-4-滚动条美化" class="headerlink" title="2.2.4 滚动条美化"></a>2.2.4 滚动条美化</h4><p>此处为优化页面中所有的滚动条，包括代码横向的滚动条和页面纵向的滚动条</p>
@@ -1117,7 +1019,7 @@ socialLink:
     &lt;/a&gt;
 &lt;% } %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="2-6-动态标题"><a href="#2-6-动态标题" class="headerlink" title="2.6 动态标题"></a>2.6 动态标题</h3><p><img src="https://sulog.oss-cn-hangzhou.aliyuncs.com/matery2-15.png" alt="image-20200619221831563"></p>
+<h3 id="2-6-标题"><a href="#2-6-标题" class="headerlink" title="2.6 标题"></a>2.6 标题</h3><h4 id="2-6-1-动态标题"><a href="#2-6-1-动态标题" class="headerlink" title="2.6.1 动态标题"></a>2.6.1 动态标题</h4><p><img src="https://sulog.oss-cn-hangzhou.aliyuncs.com/matery2-15.png" alt="image-20200619221831563"></p>
 <p><img src="https://sulog.oss-cn-hangzhou.aliyuncs.com/matery2-16.png" alt="image-20200619222009100"></p>
 <p>在主题文件下的<code>themes\matery\source\js</code>下新建<code>FunnyTitle.js</code>，增加以下代码</p>
 <pre class="line-numbers language-none"><code class="language-none">var OriginTitle = document.title;
@@ -1144,9 +1046,14 @@ document.addEventListener('visibilitychange', function () {
           document.hidden?(document.title="ヽ(●-`Д´-)ノ你要玩捉迷藏嘛",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ好哦！",st=setTimeout(function(){document.title=OriginTitile},3e3))
       })
   &lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+<h4 id="2-6-2-标题溢出"><a href="#2-6-2-标题溢出" class="headerlink" title="2.6.2 标题溢出"></a>2.6.2 标题溢出</h4><p><a target="_blank" rel="noopener" href="https://jingeg.gitee.io/2020/03/04/hexozhongmateryzhutidegexinghuadingzhi/#toc-heading-10">原网页</a><br>用手机浏览网站时网站名称稍微长点就会从导航栏掉下来，让人看着很不舒服。我选择用手机浏览时不显示logo图片只显示文字  </p>
+<p><img src="https://jingeg.gitee.io/images/matery5.png" alt="网站名称"></p>
+<p>解决办法：在matery.css中添加以下代码。不懂css的注意放置的位置(第六行后面)</p>
+<pre class="line-numbers language-none"><code class="language-none">header .brand-logo .logo-img{
+     display: none;
+ }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h3 id="2-7-修改全局字体（局限：只有浏览器安装才能正常显示）"><a href="#2-7-修改全局字体（局限：只有浏览器安装才能正常显示）" class="headerlink" title="2.7 修改全局字体（局限：只有浏览器安装才能正常显示）"></a>2.7 修改全局字体（局限：只有浏览器安装才能正常显示）</h3><ol>
-<li><p>在根目录下的 <code>source</code> 文件夹内创建一个名为 <code>font</code> 的文件夹，即文件夹路径为 <code>/source/font/</code> ，用来统一存放你要用到的字体。</p>
+<li><p>在根目录下的&nbsp;<code>source</code>&nbsp;文件夹内创建一个名为&nbsp;<code>font</code>&nbsp;的文件夹，即文件夹路径为&nbsp;<code>/source/font/</code>&nbsp;，用来统一存放你要用到的字体。</p>
 </li>
 <li><p>将你要用到的字体放入上述创建的文件夹内，字体名称最好为英文，如 /source/font/myFont.ttf</p>
 <blockquote>
@@ -1154,7 +1061,7 @@ document.addEventListener('visibilitychange', function () {
  </p>
 </blockquote>
 </li>
-<li><p>找到 <code>/themes/matery/source/css/</code>下的 my.css 文件，填入下面的代码：</p>
+<li><p>找到&nbsp;<code>/themes/matery/source/css/</code>下的 my.css 文件，填入下面的代码：</p>
  <pre class="line-numbers language-none"><code class="language-none">@font-face{
     font-family: 'myFont';
     src: url('../font/myFont.ttf');
@@ -1167,10 +1074,7 @@ body{
 </li>
 </ol>
 <blockquote>
-<p>上传字体后网页不显示，找了很多方法，浏览器还是无法显示该字体<br>方法：为确保字体正常显示，注意此处为<strong>所有用户安装</strong>，而不是简单的安装<br><img src="https://gitee.com/jgyong/blogimg/raw/master/img/202403241501409.png"></p>
-<p>但还是不行23333</p>
-<p>最后发现是自己的字体文件有问题，但是该字体可以在其他软件如Obsidian中正常显示，但是在浏览器中就是不行。</p>
-<p>后来找了一下该字体的其他版本 <a target="_blank" rel="noopener" href="https://github.com/lxgw/LxgwWenKai-Screen/releases">Screen</a>，竟然可以显示了。。。。感觉有点玄学在里面。。。。。实在是搞不清楚原因。。。。</p>
+<p>上传字体后网页不显示，找了很多方法，后来发现没有安装好字体导致浏览器无法显示该字体<br>因此正常安装字体很重要。<br>方法：注意此处为<strong>所有用户安装</strong>，而不是简单的安装<br><img src="https://gitee.com/jgyong/blogimg/raw/master/img/202403241501409.png"></p>
 </blockquote>
 <p>所以更好的方式是通过这种在线配置的方法<a target="_blank" rel="noopener" href="https://blog.csdn.net/rsj1994/article/details/53037881#:~:text=%E5%9C%A8%E7%BD%91%E9%A1%B5%E4%B8%AD%EF%BC%8C%E6%88%91%E4%BB%AC%E5%8F%AF%E4%BB%A5%E7%94%A8CSS%E7%9A%84font-family%E5%B1%9E%E6%80%A7%E6%9D%A5%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93%EF%BC%8C%E7%84%B6%E8%80%8C%E5%AE%9A%E4%B9%89%E7%9A%84%E5%AD%97%E4%BD%93%E5%9C%A8%E7%94%A8%E6%88%B7%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%8A%E8%83%BD%E5%90%A6%E6%AD%A3%E7%A1%AE%E5%91%88%E7%8E%B0%E5%88%99%E8%A6%81%E7%9C%8B%E7%94%A8%E6%88%B7%E7%9A%84%E7%94%B5%E8%84%91%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E4%BA%86%E8%AF%A5%E5%AD%97%E4%BD%93%E3%80%82,%E6%88%91%E4%BB%AC%E7%BB%8F%E5%B8%B8%E8%83%BD%E7%9C%8B%E5%88%B0%E5%9B%BD%E5%A4%96%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E4%BA%86%E9%9D%9E%E5%B8%B8%E6%BC%82%E4%BA%AE%E7%9A%84%E5%AD%97%E4%BD%93%EF%BC%8C%E8%80%8C%E8%BF%99%E4%BA%9B%E5%AD%97%E4%BD%93%E9%80%9A%E5%B8%B8%E5%9C%A8%E7%94%A8%E6%88%B7%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%AD%E6%98%AF%E6%B2%A1%E6%9C%89%E5%AE%89%E8%A3%85%E7%9A%84%EF%BC%8C%E6%89%80%E4%BB%A5%E7%94%A8font-family%E5%B1%9E%E6%80%A7%E5%B0%B1%E6%97%A0%E6%B3%95%E5%AE%9E%E7%8E%B0%E4%BA%86%E3%80%82"># 通过css的@font-face属性，在网页上显示用户电脑没有的字体。</a>，<a target="_blank" rel="noopener" href="https://github.com/lxgw/LxgwWenKai/issues/24"># 如需网页上嵌入，请看这里</a>由于时间关系，没有深入研究。</p>
 <h3 id="2-8-自定义鼠标样式"><a href="#2-8-自定义鼠标样式" class="headerlink" title="2.8 自定义鼠标样式"></a>2.8 自定义鼠标样式</h3><p>首先将鼠标样式下载到本地，推荐大家一个网站：<a target="_blank" rel="noopener" href="https://zhutix.com/ico/ori-cursors/">https://zhutix.com/ico/ori-cursors/</a></p>
@@ -1337,6 +1241,7 @@ div.loaded div.spinner-box {
 </ol>
 <p>在  标签中引入 loading.css 文件</p>
 <pre class="line-numbers language-none"><code class="language-none">&lt;link rel="stylesheet" type="text/css" href="&lt;%- theme.jsDelivr.url %&gt;&lt;%- url_for('/css/loading.css') %&gt;"&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 <p>引入样式文件后，引入结构文件 loading.ejs，插入在themes&gt;hexo-theme-matery&gt;layout&gt;layout.ejs  标签下第一行就行了</p>
 <pre class="line-numbers language-none"><code class="language-none">&lt;%- partial('_widget/loading') %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <ol start="4">
@@ -1964,18 +1869,17 @@ new Valine({
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/03/23/matery-zhu-ti-you-hua/">
+                <a href="/2024/03/27/windows-xiang-guan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Matery主题优化">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="Windows相关">
                         
-                        <span class="card-title">Matery主题优化</span>
+                        <span class="card-title">Windows相关</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1985,9 +1889,9 @@ new Valine({
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-03-23
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-03-27
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1996,12 +1900,11 @@ new Valine({
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">Hexo博客</span>
+                    <a href="/tags/Windows/">
+                        <span class="chip bg-color">Windows</span>
                     </a>
                     
                 </div>
@@ -2182,7 +2085,7 @@ new Valine({
 
     <footer class="page-footer bg-color">
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
@@ -2195,7 +2098,8 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">46.5k</span>&nbsp;字
+                class="white-color">46.2k</span>&nbsp;字
+            <br>
             
             
             
@@ -2228,6 +2132,50 @@ new Valine({
                 </span>
             
             <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2023";
+                    var startMonth = "6";
+                    var startDate = "28";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
             
             <br>
             

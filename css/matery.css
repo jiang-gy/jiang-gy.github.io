@@ -4,6 +4,9 @@
     .container {
         width: 95%;
     }
+    header .brand-logo .logo-img{
+        display: none;
+    }
 }
 
 /*中等屏幕下(平板类)的样式*/
@@ -1403,6 +1406,13 @@ thead {
     width: 4px;
     background: #0f9d58;
 }
+
+#busuanzi_container_site_pv,
+#busuanzi_value_site_pv,
+#busuanzi_container_site_uv{
+   display: inline !important;
+}
+
 
 @media only screen and (min-width: 900px) {
     #cd-timeline {

@@ -1,4 +1,5 @@
-<h2 id="编译问题"><a href="#编译问题" class="headerlink" title="编译问题"></a>编译问题</h2><h3 id="1-NS3编译错误"><a href="#1-NS3编译错误" class="headerlink" title="1 NS3编译错误"></a>1 NS3编译错误</h3><pre><code class="bash">cc1plus: all warnings being treated as errors
+<hr>
+<h2 id="title-NS3常见问题处理date-2024-02-01-09-29-35tags-网络仿真"><a href="#title-NS3常见问题处理date-2024-02-01-09-29-35tags-网络仿真" class="headerlink" title="title: NS3常见问题处理date: 2024-02-01 09:29:35tags: - 网络仿真"></a>title: NS3常见问题处理<br>date: 2024-02-01 09:29:35<br>tags:<br> - 网络仿真</h2><h2 id="编译问题"><a href="#编译问题" class="headerlink" title="编译问题"></a>编译问题</h2><h3 id="1-NS3编译错误"><a href="#1-NS3编译错误" class="headerlink" title="1 NS3编译错误"></a>1 NS3编译错误</h3><pre><code class="bash">cc1plus: all warnings being treated as errors
 </code></pre>
 <p>解决方法</p>
 <pre><code class="bash">CXXFLAGS=&quot;-Wno-error&quot; ./waf configure  #注意等号前后没有空格，进行该配置之后再进行编译 即可忽略警告
