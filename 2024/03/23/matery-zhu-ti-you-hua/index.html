@@ -6,7 +6,7 @@
     
     <meta charset="utf-8">
     <meta name="keywords" content="Matery主题优化, jgy 计算机网络 强化学习 数据中心">
-
+    <meta name="referrer" content="no-referrer-when-downgrade">
     <meta name="description" content="记录工作与生活">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -15,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="referrer" content="no-referrer">
+    <!-- <meta name="referrer" content="no-referrer"> -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
@@ -544,21 +544,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-03-27
+                    2024-03-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    6.6k
+                    7.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    29 分
+                    31 分
                 </div>
                 
 
@@ -888,8 +888,17 @@ description: "Oops～，我崩溃了！找不到你想要的页面了"
    #busuanzi_container_site_uv{
       display: inline !important;
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="1-13-2-增加建站时间"><a href="#1-13-2-增加建站时间" class="headerlink" title="1.13.2 增加建站时间"></a>1.13.2 增加建站时间</h4><p><a target="_blank" rel="noopener" href="https://blog.bluesky01st.eu.org/posts/d76019f8.html">源网页</a></p>
+<p>最终找到了一位大佬的解决方案：<a target="_blank" rel="noopener" href="https://blog.17lai.site/posts/84b4059a/#%E4%B8%8D%E8%92%9C%E5%AD%90-busuanzi-%E6%96%87%E7%AB%A0%E8%AE%A1%E6%95%B0%E5%87%BA%E9%94%99%E9%97%AE%E9%A2%98">基于Hexo的matery主题搭建博客常见问题篇6 | 夜法之书 (17lai.site)</a></p>
+<h4 id="1-13-2-不蒜子-busuanzi-文章计数出错问题"><a href="#1-13-2-不蒜子-busuanzi-文章计数出错问题" class="headerlink" title="1.13.2 不蒜子 (busuanzi) 文章计数出错问题"></a>1.13.2 不蒜子 (busuanzi) 文章计数出错问题</h4><p>参考博客<a target="_blank" rel="noopener" href="https://www.cnblogs.com/ranxi169/p/16715360.html">原网页</a><br>还是不能显示数字。<br>最终找到了一位大佬的解决方案：<a target="_blank" rel="noopener" href="https://blog.17lai.site/posts/84b4059a/#%E4%B8%8D%E8%92%9C%E5%AD%90-busuanzi-%E6%96%87%E7%AB%A0%E8%AE%A1%E6%95%B0%E5%87%BA%E9%94%99%E9%97%AE%E9%A2%98">基于Hexo的matery主题搭建博客常见问题篇6 | 夜法之书 (17lai.site)</a>出现这个原因，和 Chrome 85 版本 Referrer Policy 更改有关。什么是 Referrer，简单理解，就是请求 Web 服务器时，可以在 HTTP Request 的请求头 (header) 中加上当前页面的 URL，例如我们在浏览某个博客页面，需要加载一些图片，从服务器请求这些图片时，referrer 就是当前的博客页面 URL。从这里也可以看出，referrer 可能会暴露请求来源的某些信息或者隐私，有一定的隐私或安全风险。之前版本的 Chrome 浏览器，如果网站没有指定自己的 Referrer Policy，那么 Chrome 默认 policy 是 no-referrer-when-downgrade，在 Chrome 85 版本中，为了保护用户的隐私，默认的 Referrer Policy 则变成了 strict-origin-when-cross-origin。</p>
+<ul>
+<li>no-referrer-when-downgrade: 当两个网站的 http 协议安全等级相当，或者目的网站安全协议等级高于当前网站(HTTP –&gt; HTTP, HTTPS –&gt; HTTPS, HTTP –&gt; HTTPS)， referer 将会包含源网站的域名，路径，查询字符串；如果目的网站安全协议等级低于源网站 (HTTPS –&gt; HTTP)，将不会发送这些信息。</li>
+<li>strict-origin-when-cross-origin： 只有当做同一域名请求时 (源网址和目标网址是同一域名），才发送域名，路径和请求字符串，当两个网站安全协议相当时，发送源网站的域名(没有具体路径信息和查询字符串)，如果目标网站安全协议等级低于源网站，不发送 header 信息。</li>
+</ul>
+<p>不蒜子统计博客文章访问量就是通过 referer 来计算的，通过上面的分析，如果 Referrer Policy 是 strict-origin-when-cross-origin，不蒜子接收到的只有博客的域名，没有文章的具体路径，所以具体某个文章的 PV 统计会出现错误。</p>
+<p>修复方法：</p>
+<p>在主题文件夹下/layout/_partial/head.ejs中添加</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>referrer<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no-referrer-when-downgrade<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="1-13-3-增加建站时间"><a href="#1-13-3-增加建站时间" class="headerlink" title="1.13.3 增加建站时间"></a>1.13.3 增加建站时间</h4><p><a target="_blank" rel="noopener" href="https://blog.bluesky01st.eu.org/posts/d76019f8.html">源网页</a></p>
 <p>在<code>themes/matery/_config.yml</code>找到以下内容(42行)：</p>
 <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment"># Website start time.</span>
 <span class="token comment"># 站点运行开始时间.</span>
@@ -1347,7 +1356,7 @@ buble:
 <p>注意：由于gulp版本更新，老版本的设置方式不适用，此处未做优化</p>
 </blockquote>
 <h3 id="3-2-CDN加速"><a href="#3-2-CDN加速" class="headerlink" title="3.2 CDN加速"></a>3.2 CDN加速</h3><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>此次主要依靠各位大佬的记录，优化博客界面，对于主题<code>matery</code>修改了一些样式，增加了一些功能。但对于前端页面的知识还是了解特别少，博客优化方面还有很多需要学习的地方，下面记录一下各位大佬的博客链接，方便以后优化页面，了解相关知识。再次感谢各位大佬的知识分享。<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43662760/category_11551976.html"># matery主题优化专栏</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42429718/article/details/105723193?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522171118467516800227433663%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&amp;request_id=171118467516800227433663&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_ecpm_v1~rank_v31_ecpm-1-105723193-null-null.nonecase&amp;utm_term=matery&amp;spm=1018.2226.3001.4450"># 【源码开放】Hexo+Github+Coding 博客butterfly 和 matery 主题 搭建完全教程【整理】</a></p>
-<p><a target="_blank" rel="noopener" href="https://fenghen0918.github.io/2020/10/22/hexo/hexo-bo-ke-you-hua-pian-matery-yi/#toc-heading-1">魔改记录</a><br><a target="_blank" rel="noopener" href="https://yafine66.gitee.io/posts/20200317173728-8c84.html">大佬原始文件</a></p>
+<p><a target="_blank" rel="noopener" href="https://fenghen0918.github.io/2020/10/22/hexo/hexo-bo-ke-you-hua-pian-matery-yi/#toc-heading-1">魔改记录</a><br><a target="_blank" rel="noopener" href="https://yafine66.gitee.io/posts/20200317173728-8c84.html">大佬原始文件</a><br><a target="_blank" rel="noopener" href="https://blog.17lai.site/posts/84b4059a/#%E4%B8%8D%E8%92%9C%E5%AD%90-busuanzi-%E6%96%87%E7%AB%A0%E8%AE%A1%E6%95%B0%E5%87%BA%E9%94%99%E9%97%AE%E9%A2%98">基于Hexo的matery主题搭建博客常见问题篇6 | 夜法之书 (17lai.site)</a></p>
 
                 
             </div>
@@ -2098,7 +2107,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">46.2k</span>&nbsp;字
+                class="white-color">46.8k</span>&nbsp;字
             <br>
             
             
