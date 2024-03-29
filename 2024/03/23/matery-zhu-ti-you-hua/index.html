@@ -551,7 +551,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    7.3k
+                    7.4k
                 </div>
                 
 
@@ -948,8 +948,9 @@ featureImages:
     <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>60deg<span class="token punctuation">,</span> <span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span> 165<span class="token punctuation">,</span> 150<span class="token punctuation">,</span> 0.5<span class="token punctuation">)</span> 5%<span class="token punctuation">,</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 228<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 0.35<span class="token punctuation">)</span><span class="token punctuation">)</span> 0% 0% / cover<span class="token punctuation">,</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">"https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"</span><span class="token punctuation">)</span></span><span class="token punctuation">,</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">"https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg"</span><span class="token punctuation">)</span></span> 0px 0px<span class="token punctuation">;</span>
     <span class="token property">background-attachment</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">color</span><span class="token punctuation">:</span> #7F95D1<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+     <span class="token comment">/* 字体颜色*/</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #7F95D1<span class="token punctuation">;</span>  
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="2-2-3-导航条颜色"><a href="#2-2-3-导航条颜色" class="headerlink" title="2.2.3 导航条颜色"></a>2.2.3 导航条颜色</h4><p>修改<code>themes\Matery\source\css\matery.css</code>样式</p>
 <p>快捷键ctrl+F查找定位到<code>#4cbf30</code>（浅绿色）和<code>#0f9d58</code>（深绿色）还有首页字体颜色，</p>
@@ -1065,7 +1066,7 @@ document.addEventListener('visibilitychange', function () {
 <pre class="line-numbers language-none"><code class="language-none">header .brand-logo .logo-img{
      display: none;
  }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-7-修改全局字体（局限：只有浏览器安装才能正常显示）"><a href="#2-7-修改全局字体（局限：只有浏览器安装才能正常显示）" class="headerlink" title="2.7 修改全局字体（局限：只有浏览器安装才能正常显示）"></a>2.7 修改全局字体（局限：只有浏览器安装才能正常显示）</h3><ol>
+<h3 id="2-7-修改全局字体"><a href="#2-7-修改全局字体" class="headerlink" title="2.7 修改全局字体"></a>2.7 修改全局字体</h3><h4 id="2-7-1-修改全局字体样式"><a href="#2-7-1-修改全局字体样式" class="headerlink" title="2.7.1 修改全局字体样式"></a>2.7.1 修改全局字体样式</h4><ol>
 <li><p>在根目录下的&nbsp;<code>source</code>&nbsp;文件夹内创建一个名为&nbsp;<code>font</code>&nbsp;的文件夹，即文件夹路径为&nbsp;<code>/source/font/</code>&nbsp;，用来统一存放你要用到的字体。</p>
 </li>
 <li><p>将你要用到的字体放入上述创建的文件夹内，字体名称最好为英文，如 /source/font/myFont.ttf</p>
@@ -1087,9 +1088,17 @@ body{
 </li>
 </ol>
 <blockquote>
-<p>上传字体后网页不显示，找了很多方法，后来发现没有安装好字体导致浏览器无法显示该字体<br>因此正常安装字体很重要。<br>方法：注意此处为<strong>所有用户安装</strong>，而不是简单的安装<br><img src="https://gitee.com/jgyong/blogimg/raw/master/img/202403241501409.png"></p>
+<p>上传字体后网页不显示，找了很多方法，后来发现是字体文件出了问题<br>方法：注意此处为<strong>所有用户安装</strong>，而不是简单的安装<br><img src="https://gitee.com/jgyong/blogimg/raw/master/img/202403241501409.png"></p>
 </blockquote>
-<p>所以更好的方式是通过这种在线配置的方法<a target="_blank" rel="noopener" href="https://blog.csdn.net/rsj1994/article/details/53037881#:~:text=%E5%9C%A8%E7%BD%91%E9%A1%B5%E4%B8%AD%EF%BC%8C%E6%88%91%E4%BB%AC%E5%8F%AF%E4%BB%A5%E7%94%A8CSS%E7%9A%84font-family%E5%B1%9E%E6%80%A7%E6%9D%A5%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93%EF%BC%8C%E7%84%B6%E8%80%8C%E5%AE%9A%E4%B9%89%E7%9A%84%E5%AD%97%E4%BD%93%E5%9C%A8%E7%94%A8%E6%88%B7%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%8A%E8%83%BD%E5%90%A6%E6%AD%A3%E7%A1%AE%E5%91%88%E7%8E%B0%E5%88%99%E8%A6%81%E7%9C%8B%E7%94%A8%E6%88%B7%E7%9A%84%E7%94%B5%E8%84%91%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E4%BA%86%E8%AF%A5%E5%AD%97%E4%BD%93%E3%80%82,%E6%88%91%E4%BB%AC%E7%BB%8F%E5%B8%B8%E8%83%BD%E7%9C%8B%E5%88%B0%E5%9B%BD%E5%A4%96%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E4%BA%86%E9%9D%9E%E5%B8%B8%E6%BC%82%E4%BA%AE%E7%9A%84%E5%AD%97%E4%BD%93%EF%BC%8C%E8%80%8C%E8%BF%99%E4%BA%9B%E5%AD%97%E4%BD%93%E9%80%9A%E5%B8%B8%E5%9C%A8%E7%94%A8%E6%88%B7%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%AD%E6%98%AF%E6%B2%A1%E6%9C%89%E5%AE%89%E8%A3%85%E7%9A%84%EF%BC%8C%E6%89%80%E4%BB%A5%E7%94%A8font-family%E5%B1%9E%E6%80%A7%E5%B0%B1%E6%97%A0%E6%B3%95%E5%AE%9E%E7%8E%B0%E4%BA%86%E3%80%82"># 通过css的@font-face属性，在网页上显示用户电脑没有的字体。</a>，<a target="_blank" rel="noopener" href="https://github.com/lxgw/LxgwWenKai/issues/24"># 如需网页上嵌入，请看这里</a>由于时间关系，没有深入研究。</p>
+<p>当一个字体虽然安装但不显示，可以尝试搜索其他的字体文件，可能该文件只适合于软件显示而不适合浏览器网页<br>所以更好的方式是通过这种在线配置的方法<a target="_blank" rel="noopener" href="https://blog.csdn.net/rsj1994/article/details/53037881#:~:text=%E5%9C%A8%E7%BD%91%E9%A1%B5%E4%B8%AD%EF%BC%8C%E6%88%91%E4%BB%AC%E5%8F%AF%E4%BB%A5%E7%94%A8CSS%E7%9A%84font-family%E5%B1%9E%E6%80%A7%E6%9D%A5%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93%EF%BC%8C%E7%84%B6%E8%80%8C%E5%AE%9A%E4%B9%89%E7%9A%84%E5%AD%97%E4%BD%93%E5%9C%A8%E7%94%A8%E6%88%B7%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%8A%E8%83%BD%E5%90%A6%E6%AD%A3%E7%A1%AE%E5%91%88%E7%8E%B0%E5%88%99%E8%A6%81%E7%9C%8B%E7%94%A8%E6%88%B7%E7%9A%84%E7%94%B5%E8%84%91%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E4%BA%86%E8%AF%A5%E5%AD%97%E4%BD%93%E3%80%82,%E6%88%91%E4%BB%AC%E7%BB%8F%E5%B8%B8%E8%83%BD%E7%9C%8B%E5%88%B0%E5%9B%BD%E5%A4%96%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E4%BA%86%E9%9D%9E%E5%B8%B8%E6%BC%82%E4%BA%AE%E7%9A%84%E5%AD%97%E4%BD%93%EF%BC%8C%E8%80%8C%E8%BF%99%E4%BA%9B%E5%AD%97%E4%BD%93%E9%80%9A%E5%B8%B8%E5%9C%A8%E7%94%A8%E6%88%B7%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%AD%E6%98%AF%E6%B2%A1%E6%9C%89%E5%AE%89%E8%A3%85%E7%9A%84%EF%BC%8C%E6%89%80%E4%BB%A5%E7%94%A8font-family%E5%B1%9E%E6%80%A7%E5%B0%B1%E6%97%A0%E6%B3%95%E5%AE%9E%E7%8E%B0%E4%BA%86%E3%80%82"># 通过css的@font-face属性，在网页上显示用户电脑没有的字体。</a>，<a target="_blank" rel="noopener" href="https://github.com/lxgw/LxgwWenKai/issues/24"># 如需网页上嵌入，请看这里</a>由于时间关系，没有深入研究。</p>
+<h4 id="2-7-2-修改全局字体大小"><a href="#2-7-2-修改全局字体大小" class="headerlink" title="2.7.2 修改全局字体大小"></a>2.7.2 修改全局字体大小</h4><p>在<code>matery.css</code>中修改<code>font-size</code>的值</p>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">#articleContent p</span> <span class="token punctuation">{</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 2px 2px 10px<span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 1.2rem<span class="token punctuation">;</span>
+    <span class="token property">line-height</span><span class="token punctuation">:</span> 1.85rem<span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 <h3 id="2-8-自定义鼠标样式"><a href="#2-8-自定义鼠标样式" class="headerlink" title="2.8 自定义鼠标样式"></a>2.8 自定义鼠标样式</h3><p>首先将鼠标样式下载到本地，推荐大家一个网站：<a target="_blank" rel="noopener" href="https://zhutix.com/ico/ori-cursors/">https://zhutix.com/ico/ori-cursors/</a></p>
 <p>以我的为例，我将鼠标指针样式放在了主题文件夹下的medias目录下，然后打开<code>themes\matery\source\css</code>下的<strong>my.css</strong>文件，添加内容如下：</p>
 <pre class="line-numbers language-none"><code class="language-none">*{
@@ -2138,7 +2147,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">46.9k</span>&nbsp;字
+                class="white-color">47k</span>&nbsp;字
             <br>
             
             

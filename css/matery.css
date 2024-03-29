@@ -43,7 +43,8 @@ body {
     /* background: linear-gradient(60deg, rgba(224,255,125, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0% / cover; */
     background-attachment: fixed;
     margin: 0;
-    color: #4a76ef;
+    /* 字體顏色 */
+    color: #8E236B;  
 	/* background:#eaeaea; */
 	cursor: url(https://yjlaugus.gitee.io/blog/img/body/OW-Arrow.cur), auto;
 }
@@ -92,7 +93,7 @@ h6 {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.0rem;
     line-height: 1.5rem;
 }
 
@@ -256,7 +257,7 @@ mark {
 }
 
 .text-color {
-    color: #000000 !important;
+    color: #6c61af !important;
 }
 
 .white-color {
@@ -1175,7 +1176,7 @@ article .article-tags .chip {
 
 #articleContent p {
     margin: 2px 2px 10px;
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     line-height: 1.85rem;
 }
 
