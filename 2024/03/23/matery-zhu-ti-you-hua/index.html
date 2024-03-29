@@ -33,9 +33,9 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery.min.js"></script>
-<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="努力搬砖的眼镜狗" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="努力搬砖的眼镜狗" type="application/atom+xml">
 </head>
 
 
@@ -544,21 +544,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-03-28
+                    2024-03-29
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    7.2k
+                    7.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    31 分
+                    32 分
                 </div>
                 
 
@@ -1356,9 +1356,36 @@ buble:
 <li>通过在线配置字体的方式，使得未安装该字体的浏览器也能正常显示</li>
 </ol>
 <h2 id="3-博客优化"><a href="#3-博客优化" class="headerlink" title="3 博客优化"></a>3 博客优化</h2><p>此处并未进行修改，工作放在以后</p>
-<h3 id="3-1-gulp代码压缩"><a href="#3-1-gulp代码压缩" class="headerlink" title="3.1 gulp代码压缩"></a>3.1 gulp代码压缩</h3><blockquote>
-<p>注意：由于gulp版本更新，老版本的设置方式不适用，此处未做优化</p>
-</blockquote>
+<h3 id="3-1-gulp代码压缩"><a href="#3-1-gulp代码压缩" class="headerlink" title="3.1 gulp代码压缩"></a>3.1 gulp代码压缩</h3><h4 id="hexo-neat"><a href="#hexo-neat" class="headerlink" title="hexo-neat"></a>hexo-neat</h4><p><a target="_blank" rel="noopener" href="https://adaning.github.io/posts/42790.html">源网站</a><br>使用<a target="_blank" rel="noopener" href="https://github.com/rozbo/hexo-neat">hexo-neat</a>更为简单, 美中不足的是这个插件有俩小bug:</p>
+<ul>
+<li>压缩<code>.md</code>文件会使 markdown 语法的代码块消失.</li>
+<li>会删除全角空格.</li>
+</ul>
+<p>但是它避免了国内<code>npm</code>的使用问题. 所以我推荐这种方式.</p>
+<p>在博客根目录命令行输入:</p>
+<p>bash</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">cnpm <span class="token function">install</span> hexo-neat <span class="token parameter variable">--save</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>然后在Hexo配置文件末尾加入(已针对matery的bug优化):</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment">#hexo-neat 优化提速插件（去掉HTML、css、js的blank字符）</span>
+<span class="token key atrule">neat_enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token key atrule">neat_html</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">exclude</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token string">'**/*.md'</span>
+<span class="token key atrule">neat_css</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">exclude</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token string">'**/*.min.css'</span>
+<span class="token key atrule">neat_js</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">mangle</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">output</span><span class="token punctuation">:</span>
+  <span class="token key atrule">compress</span><span class="token punctuation">:</span>
+  <span class="token key atrule">exclude</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token string">'**/*.min.js'</span>
+    <span class="token punctuation">-</span> <span class="token string">'**/**/instantpage.js'</span>
+    <span class="token punctuation">-</span> <span class="token string">'**/matery.js'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="3-2-CDN加速"><a href="#3-2-CDN加速" class="headerlink" title="3.2 CDN加速"></a>3.2 CDN加速</h3><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>此次主要依靠各位大佬的记录，优化博客界面，对于主题<code>matery</code>修改了一些样式，增加了一些功能。但对于前端页面的知识还是了解特别少，博客优化方面还有很多需要学习的地方，下面记录一下各位大佬的博客链接，方便以后优化页面，了解相关知识。再次感谢各位大佬的知识分享。<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43662760/category_11551976.html"># matery主题优化专栏</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42429718/article/details/105723193?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522171118467516800227433663%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&amp;request_id=171118467516800227433663&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_ecpm_v1~rank_v31_ecpm-1-105723193-null-null.nonecase&amp;utm_term=matery&amp;spm=1018.2226.3001.4450"># 【源码开放】Hexo+Github+Coding 博客butterfly 和 matery 主题 搭建完全教程【整理】</a></p>
 <p><a target="_blank" rel="noopener" href="https://fenghen0918.github.io/2020/10/22/hexo/hexo-bo-ke-you-hua-pian-matery-yi/#toc-heading-1">魔改记录</a><br><a target="_blank" rel="noopener" href="https://yafine66.gitee.io/posts/20200317173728-8c84.html">大佬原始文件</a><br><a target="_blank" rel="noopener" href="https://blog.17lai.site/posts/84b4059a/#%E4%B8%8D%E8%92%9C%E5%AD%90-busuanzi-%E6%96%87%E7%AB%A0%E8%AE%A1%E6%95%B0%E5%87%BA%E9%94%99%E9%97%AE%E9%A2%98">基于Hexo的matery主题搭建博客常见问题篇6 | 夜法之书 (17lai.site)</a></p>
 
@@ -2111,7 +2138,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">46.8k</span>&nbsp;字
+                class="white-color">46.9k</span>&nbsp;字
             <br>
             
             
