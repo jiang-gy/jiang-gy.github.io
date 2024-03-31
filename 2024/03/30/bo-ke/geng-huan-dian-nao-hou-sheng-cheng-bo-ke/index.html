@@ -584,21 +584,29 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1-通过分支方式复制"><a href="#1-通过分支方式复制" class="headerlink" title="1 通过分支方式复制"></a>1 通过分支方式复制</h2><p>不推荐，因为这样的话仓库变为公有，所有人都能访问<br>作者：直上云霄<br>链接：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/21193762/answer/489124966">https://www.zhihu.com/question/21193762/answer/489124966</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。  </p>
-<h3 id="git分支进行多终端工作"><a href="#git分支进行多终端工作" class="headerlink" title="git分支进行多终端工作"></a>git分支进行多终端工作</h3><p>问题来了，如果你现在在自己的笔记本上写的博客，部署在了网站上，那么你在家里用台式机，或者实验室的台式机，发现你电脑里面没有博客的文件，或者要换电脑了，最后不知道怎么移动文件，怎么办？<br>在这里我们就可以利用git的分支系统进行多终端工作了，这样每次打开不一样的电脑，只需要进行简单的配置和在github上把文件同步下来，就可以无缝操作了。</p>
-<h3 id="机制"><a href="#机制" class="headerlink" title="机制"></a>机制</h3><p>机制是这样的，由于<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=hexo%20d&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:489124966%7D">hexo d</a>上传部署到github的其实是hexo编译后的文件，是用来生成网页的，不包含源文件。</p>
-<p><img src="https://picx.zhimg.com/80/v2-32ab30d0d28b916a204c03de4ed0fc4f_720w.webp?source=1def8aca"></p>
+                <h2 id="1-通过分支方式复制">1 通过分支方式复制</h2>
+<p>不推荐，因为这样的话仓库变为公有，所有人都能访问<br>
+作者：直上云霄<br>
+链接：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/21193762/answer/489124966">https://www.zhihu.com/question/21193762/answer/489124966</a><br>
+来源：知乎<br>
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<h3 id="git分支进行多终端工作">git分支进行多终端工作</h3>
+<p>问题来了，如果你现在在自己的笔记本上写的博客，部署在了网站上，那么你在家里用台式机，或者实验室的台式机，发现你电脑里面没有博客的文件，或者要换电脑了，最后不知道怎么移动文件，怎么办？<br>
+在这里我们就可以利用git的分支系统进行多终端工作了，这样每次打开不一样的电脑，只需要进行简单的配置和在github上把文件同步下来，就可以无缝操作了。</p>
+<h3 id="机制">机制</h3>
+<p>机制是这样的，由于<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=hexo%20d&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A489124966%7D">hexo d</a>上传部署到github的其实是hexo编译后的文件，是用来生成网页的，不包含源文件。</p>
+<p><img src="https://picx.zhimg.com/80/v2-32ab30d0d28b916a204c03de4ed0fc4f_720w.webp?source=1def8aca" alt=""></p>
 <p>也就是上传的是在本地目录里自动生成的<code>.deploy_git</code>里面。</p>
-<p>其他文件 ，包括我们写在source 里面的，和<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:489124966%7D">配置文件</a>，主题文件，都没有上传到github</p>
-<p><img src="https://pic1.zhimg.com/80/v2-59bb330178a4e010d9818911f789082b_720w.webp?source=1def8aca"></p>
+<p>其他文件 ，包括我们写在source 里面的，和<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A489124966%7D">配置文件</a>，主题文件，都没有上传到github</p>
+<p><img src="https://pic1.zhimg.com/80/v2-59bb330178a4e010d9818911f789082b_720w.webp?source=1def8aca" alt=""></p>
 <p>所以可以利用git的分支管理，将源文件上传到github的另一个分支即可。</p>
-<h3 id="上传分支"><a href="#上传分支" class="headerlink" title="上传分支"></a>上传分支</h3><p>首先，先在github上新建一个hexo分支，如图：</p>
-<p><img src="https://picx.zhimg.com/80/v2-ebb3e05632e85ab036663390305caa1c_720w.webp?source=1def8aca"></p>
-<p>然后在这个仓库的settings中，选择默认分支为<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=hexo%E5%88%86%E6%94%AF&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:489124966%7D">hexo分支</a>（这样每次同步的时候就不用指定分支，比较方便）。</p>
-<p><img src="https://picx.zhimg.com/80/v2-1899b6219f3787832652813b958b9b3d_720w.webp?source=1def8aca"></p>
+<h3 id="上传分支">上传分支</h3>
+<p>首先，先在github上新建一个hexo分支，如图：</p>
+<p><img src="https://picx.zhimg.com/80/v2-ebb3e05632e85ab036663390305caa1c_720w.webp?source=1def8aca" alt=""></p>
+<p>然后在这个仓库的settings中，选择默认分支为<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=hexo%E5%88%86%E6%94%AF&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A489124966%7D">hexo分支</a>（这样每次同步的时候就不用指定分支，比较方便）。</p>
+<p><img src="https://picx.zhimg.com/80/v2-1899b6219f3787832652813b958b9b3d_720w.webp?source=1def8aca" alt=""></p>
 <p>然后在本地的任意目录下，打开git bash，</p>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">git clone git@github.com:ZJUFangzh/ZJUFangzh.github.io.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>将其克隆到本地，因为默认分支已经设成了hexo，所以clone时只clone了hexo。</p>
 <p>接下来在克隆到本地的<code>ZJUFangzh.github.io</code>中，把除了.git 文件夹外的所有文件都删掉</p>
 <p>把之前我们写的博客源文件全部复制过来，除了<code>.deploy_git</code>。这里应该说一句，复制过来的源文件应该有一个<code>.gitignore</code>，用来忽略一些不需要的文件，如果没有的话，自己新建一个，在里面写上如下，表示这些类型文件不需要git：</p>
@@ -609,27 +617,25 @@ db.json
 node_modules/
 public/
 .deploy*/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>注意，如果你之前克隆过<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=theme&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:489124966%7D">theme</a>中的主题文件，那么应该把主题文件中的<code>.git</code>文件夹删掉，因为git不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了了。<br>而后</p>
+<p>注意，如果你之前克隆过<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=theme&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A489124966%7D">theme</a>中的主题文件，那么应该把主题文件中的<code>.git</code>文件夹删掉，因为git不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了了。<br>
+而后</p>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">git add .
 git commit –m "add branch"
 git push <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <p>这样就上传完了，可以去你的github上看一看hexo分支有没有上传上去，其中<code>node_modules</code>、<code>public</code>、<code>db.json</code>已经被忽略掉了，没有关系，不需要上传的，因为在别的电脑上需要重新输入命令安装 。</p>
-<p><img src="https://pic1.zhimg.com/80/v2-a94330ca825f4debde8ce7ceeb8f8394_720w.webp?source=1def8aca"></p>
+<p><img src="https://pic1.zhimg.com/80/v2-a94330ca825f4debde8ce7ceeb8f8394_720w.webp?source=1def8aca" alt=""></p>
 <p>这样就上传完了。</p>
-<h3 id="更换电脑操作"><a href="#更换电脑操作" class="headerlink" title="更换电脑操作"></a><strong>更换电脑操作</strong></h3><p>一样的，跟之前的环境搭建一样，</p>
+<h3 id="更换电脑操作"><strong>更换电脑操作</strong></h3>
+<p>一样的，跟之前的环境搭建一样，</p>
 <ul>
 <li>安装git</li>
 </ul>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">sudo apt-get install git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <ul>
 <li>设置git全局邮箱和用户名</li>
 </ul>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">git config --global user.name "yourgithubname"
 git config --global user.email "yourgithubemail"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
 <ul>
 <li>设置ssh key</li>
 </ul>
@@ -638,44 +644,40 @@ git config --global user.email "yourgithubemail"<span aria-hidden="true" class="
 #验证是否成功
 ssh -T git@github.com
 ssh -T git@git.coding.net #(有coding平台的话)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <ul>
-<li>安装<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=nodejs&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:489124966%7D">nodejs</a></li>
+<li>安装<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=nodejs&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A489124966%7D">nodejs</a></li>
 </ul>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">sudo apt-get install nodejs
 sudo apt-get install npm<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <ul>
-<li>安装hexo<pre class="line-numbers language-text" data-language="text"><code class="language-text">sudo npm install hexo-cli -g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li>安装hexo</li>
 </ul>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">sudo npm install hexo-cli -g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>但是已经不需要初始化了，</p>
 <p>直接在任意文件夹下，</p>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">git clone git@………………<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>然后进入克隆到的文件夹：</p>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">cd xxx.github.io
 npm install
 npm install hexo-deployer-git --save<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <p>生成，部署：</p>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">hexo g
 hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
 <p>然后就可以开始写你的新博客了</p>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">hexo new newpage<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p><strong>Tips:</strong></p>
 <ol>
-<li>不要忘了，每次写完最好都把<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E6%BA%90%E6%96%87%E4%BB%B6&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:489124966%7D">源文件</a>上传一下</li>
+<li>不要忘了，每次写完最好都把<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E6%BA%90%E6%96%87%E4%BB%B6&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A489124966%7D">源文件</a>上传一下</li>
 </ol>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">git add .
 git commit –m "xxxx"
 git push <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <ol>
 <li>如果是在已经编辑过的电脑上，已经有clone文件夹了，那么，每次只要和远端同步一下就行了</li>
 </ol>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">git pull<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="2-建立另外的仓库"><a href="#2-建立另外的仓库" class="headerlink" title="2 建立另外的仓库"></a>2 建立另外的仓库</h2><p>将源文件放在一个新的私有仓库中，以后直接在私有仓库中更改内容后，直接在私有仓库</p>
+<h2 id="2-建立另外的仓库">2 建立另外的仓库</h2>
+<p>将源文件放在一个新的私有仓库中，以后直接在私有仓库中更改内容后，直接在私有仓库</p>
 <pre class="line-numbers language-none"><code class="language-none">hexo g &amp; hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>即可；不用担心仓库地址不一致问题，在源文件中使用该命令，···会直接部署到相应github网站仓库的域名中。</p>
 
@@ -1203,18 +1205,17 @@ new Valine({
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/03/30/bo-ke/geng-huan-dian-nao-hou-sheng-cheng-bo-ke/">
+                <a href="/2024/03/31/sheng-huo/phd-qiu-xue-zhi-lu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="更换电脑后生成博客">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="PHD求学之旅">
                         
-                        <span class="card-title">更换电脑后生成博客</span>
+                        <span class="card-title">PHD求学之旅</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1224,9 +1225,9 @@ new Valine({
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-03-30
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-03-31
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1235,16 +1236,11 @@ new Valine({
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">Hexo博客</span>
-                    </a>
-                    
-                    <a href="/tags/git/">
-                        <span class="chip bg-color">git</span>
+                    <a href="/tags/%E7%94%9F%E6%B4%BB/">
+                        <span class="chip bg-color">生活</span>
                     </a>
                     
                 </div>
@@ -1438,7 +1434,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">48.3k</span>&nbsp;字
+                class="white-color">35.8k</span>&nbsp;字
             <br>
             
             

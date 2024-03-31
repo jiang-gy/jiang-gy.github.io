@@ -555,7 +555,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    275
+                    276
                 </div>
                 
 
@@ -584,17 +584,15 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="DQN"><a href="#DQN" class="headerlink" title="DQN"></a>DQN</h1><p>DQN两个因素</p>
-<p> DQN 有一个记忆库用于学习之前的经历. 在之前的简介影片中提到过, Q learning 是一种 off-policy 离线学习法, 它能学习当前经历着的, 也能学习过去经历过的, 甚至是学习别人的经历. 所以每次 DQN 更新的时候, 我们都可以随机抽取一些之前的经历进行学习. 随机抽取这种做法打乱了经历之间的相关性, 也使得神经网络更新更有效率. Fixed Q-targets 也是一种打乱相关性的机理, 如果使用 fixed Q-targets, 我们就会在 DQN 中使用到两个结构相同但参数不同的神经网络, 预测 Q 估计 的神经网络具备最新的参数, 而预测 Q 现实 的神经网络使用的参数则是很久以前的. 有了这两种提升手段, DQN 才能在一些游戏中超越人类.</p>
-<h2 id="2-程序运行"><a href="#2-程序运行" class="headerlink" title="2. 程序运行"></a>2. 程序运行</h2><p>安装TensorFlow</p>
+                <h1>DQN</h1>
+<p>DQN两个因素</p>
+<p>DQN 有一个记忆库用于学习之前的经历. 在之前的简介影片中提到过, Q learning 是一种 off-policy 离线学习法, 它能学习当前经历着的, 也能学习过去经历过的, 甚至是学习别人的经历. 所以每次 DQN 更新的时候, 我们都可以随机抽取一些之前的经历进行学习. 随机抽取这种做法打乱了经历之间的相关性, 也使得神经网络更新更有效率. Fixed Q-targets 也是一种打乱相关性的机理, 如果使用 fixed Q-targets, 我们就会在 DQN 中使用到两个结构相同但参数不同的神经网络, 预测 Q 估计 的神经网络具备最新的参数, 而预测 Q 现实 的神经网络使用的参数则是很久以前的. 有了这两种提升手段, DQN 才能在一些游戏中超越人类.</p>
+<h2 id="2-程序运行">2. 程序运行</h2>
+<p>安装TensorFlow</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pip3 <span class="token function">install</span> <span class="token assign-left variable">tensorflow</span><span class="token operator">==</span><span class="token number">1.0</span>.0<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>将脚本中<code>output_graph=True</code>设置后</p>
 <p>运行</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">tensorboard <span class="token parameter variable">--logdir</span><span class="token operator">=</span>logs<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 
                 
             </div>
@@ -1173,7 +1171,7 @@ new Valine({
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/07/21/git-shi-yong-shou-ce/">
+                <a href="/2023/07/21/git/git-shi-yong-shou-ce/">
                     <div class="card-image">
                         
                         
@@ -1203,12 +1201,8 @@ new Valine({
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%AE%97%E6%B3%95/">
-                        <span class="chip bg-color">算法</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/">
-                        <span class="chip bg-color">强化学习</span>
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
                 </div>
@@ -1357,7 +1351,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">48.3k</span>&nbsp;字
+                class="white-color">35.8k</span>&nbsp;字
             <br>
             
             

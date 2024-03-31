@@ -6,7 +6,7 @@
   <link href="https://jiang-gy.github.io/atom.xml" rel="self"/>
   
   <link href="https://jiang-gy.github.io/"/>
-  <updated>2024-03-30T03:25:36.878Z</updated>
+  <updated>2024-03-31T06:51:24.032Z</updated>
   <id>https://jiang-gy.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PHD求学之旅</title>
+    <link href="https://jiang-gy.github.io/2024/03/31/sheng-huo/phd-qiu-xue-zhi-lu/"/>
+    <id>https://jiang-gy.github.io/2024/03/31/sheng-huo/phd-qiu-xue-zhi-lu/</id>
+    <published>2024-03-31T02:32:29.000Z</published>
+    <updated>2024-03-31T06:51:24.032Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在xidian研究生期间主要工作是做项目，科研相关经历较少；然而，在各种机遇促使下，在研究生毕业时选择了读工程博士；自己当年的同学直博已经快毕业时（5年），自己才刚刚入学；心态上也有很多波动。既然选择了这条路，就要不顾一切的走下去，在网上也看到博士的相关博客，也想回顾一下自</summary>
+        
+      
+    
+    
+    
+    
+    <category term="生活" scheme="https://jiang-gy.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>更换电脑后生成博客</title>
@@ -28,10 +51,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;1-通过分支方式复制&quot;&gt;1 通过分支方式复制&lt;/h2&gt;
-&lt;p&gt;不推荐，因为这样的话仓库变为公有，所有人都能访问&lt;br&gt;
-作者：直上云霄&lt;br&gt;
-链接：&lt;a</summary>
+    <summary type="html">&lt;h2 id=&quot;1-通过分支方式复制&quot;&gt;&lt;a href=&quot;#1-通过分支方式复制&quot; class=&quot;headerlink&quot; title=&quot;1 通过分支方式复制&quot;&gt;&lt;/a&gt;1</summary>
         
       
     
@@ -142,7 +162,7 @@
     <link href="https://jiang-gy.github.io/2024/03/30/bo-ke/matery-zhu-ti-you-hua/"/>
     <id>https://jiang-gy.github.io/2024/03/30/bo-ke/matery-zhu-ti-you-hua/</id>
     <published>2024-03-30T02:42:34.290Z</published>
-    <updated>2024-03-30T03:25:03.801Z</updated>
+    <updated>2024-03-30T03:27:15.933Z</updated>
     
     
       
@@ -161,9 +181,30 @@
   </entry>
   
   <entry>
+    <title></title>
+    <link href="https://jiang-gy.github.io/2024/03/19/nei-wang-chuan-tou/da-jian-jiao-cheng-bu-zou/"/>
+    <id>https://jiang-gy.github.io/2024/03/19/nei-wang-chuan-tou/da-jian-jiao-cheng-bu-zou/</id>
+    <published>2024-03-19T01:27:54.752Z</published>
+    <updated>2024-03-21T02:44:14.536Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一-什么是内网穿透&quot;&gt;&lt;a href=&quot;#一-什么是内网穿透&quot; class=&quot;headerlink&quot; title=&quot;一 什么是内网穿透&quot;&gt;&lt;/a&gt;一</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>NS3仿真</title>
-    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/"/>
-    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/</id>
+    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-fang-zhen/"/>
+    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-fang-zhen/</id>
     <published>2024-02-01T01:29:35.000Z</published>
     <updated>2024-03-27T03:28:00.358Z</updated>
     
@@ -178,20 +219,18 @@
   </entry>
   
   <entry>
-    <title>NS3中元信息</title>
-    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-zhong-yuan-xin-xi/"/>
-    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-zhong-yuan-xin-xi/</id>
+    <title>NS3使用新的模块</title>
+    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-shi-yong-xin-de-mo-kuai/"/>
+    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-shi-yong-xin-de-mo-kuai/</id>
     <published>2024-02-01T01:29:35.000Z</published>
-    <updated>2024-03-27T03:31:37.553Z</updated>
+    <updated>2024-03-27T03:31:09.123Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;元信息是关于Ns3中ObjectBase与其各种子类的辅助信息。每一个类有且仅有唯一一组元信息。元信息是实现对象聚合、属性与Trace变量配置的基础。例如对象聚合数据利用元信息的类名与父类TypeId查找对象。&lt;/p&gt;
-&lt;p&gt;元信息管理接口：TypeId类&lt;/p&gt;
-&lt;p&gt;T</summary>
+    <summary type="html">&lt;p&gt;&lt;a</summary>
         
       
     
@@ -227,41 +266,20 @@
   </entry>
   
   <entry>
-    <title>NS3使用新的模块</title>
-    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-shi-yong-xin-de-mo-kuai/"/>
-    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-shi-yong-xin-de-mo-kuai/</id>
+    <title>NS3中元信息</title>
+    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-zhong-yuan-xin-xi/"/>
+    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-zhong-yuan-xin-xi/</id>
     <published>2024-02-01T01:29:35.000Z</published>
-    <updated>2024-03-27T03:31:09.123Z</updated>
+    <updated>2024-03-27T03:31:37.553Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="网络仿真" scheme="https://jiang-gy.github.io/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>NS3常见问题处理</title>
-    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-chang-jian-wen-ti-chu-li/"/>
-    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-chang-jian-wen-ti-chu-li/</id>
-    <published>2024-02-01T01:29:35.000Z</published>
-    <updated>2024-03-27T03:30:57.917Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;编译问题&quot;&gt;&lt;a href=&quot;#编译问题&quot; class=&quot;headerlink&quot; title=&quot;编译问题&quot;&gt;&lt;/a&gt;编译问题&lt;/h2&gt;&lt;h3 id=&quot;1-NS3编译错误&quot;&gt;&lt;a href=&quot;#1-NS3编译错误&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;p&gt;元信息是关于Ns3中ObjectBase与其各种子类的辅助信息。每一个类有且仅有唯一一组元信息。元信息是实现对象聚合、属性与Trace变量配置的基础。例如对象聚合数据利用元信息的类名与父类TypeId查找对象。&lt;/p&gt;
+&lt;p&gt;元信息管理接口：TypeId类&lt;/p&gt;
+&lt;p&gt;T</summary>
         
       
     
@@ -296,6 +314,29 @@
   </entry>
   
   <entry>
+    <title>Ns3Trace系统总结</title>
+    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3trace-xi-tong-zong-jie/"/>
+    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3trace-xi-tong-zong-jie/</id>
+    <published>2024-02-01T01:29:35.000Z</published>
+    <updated>2024-03-27T03:31:43.462Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Ns3-Trace系统&quot;&gt;&lt;a href=&quot;#Ns3-Trace系统&quot; class=&quot;headerlink&quot; title=&quot;Ns3 Trace系统&quot;&gt;&lt;/a&gt;Ns3 Trace系统&lt;/h1&gt;&lt;h2 id=&quot;Trace变量配置&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="网络仿真" scheme="https://jiang-gy.github.io/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>NS3队列模型介绍</title>
     <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-dui-lie-mo-xing-jie-shao/"/>
     <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-dui-lie-mo-xing-jie-shao/</id>
@@ -319,18 +360,18 @@
   </entry>
   
   <entry>
-    <title>Ns3Trace系统总结</title>
-    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3trace-xi-tong-zong-jie/"/>
-    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3trace-xi-tong-zong-jie/</id>
+    <title>NS3常见问题处理</title>
+    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-chang-jian-wen-ti-chu-li/"/>
+    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-chang-jian-wen-ti-chu-li/</id>
     <published>2024-02-01T01:29:35.000Z</published>
-    <updated>2024-03-27T03:31:43.462Z</updated>
+    <updated>2024-03-27T03:30:57.917Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Ns3-Trace系统&quot;&gt;&lt;a href=&quot;#Ns3-Trace系统&quot; class=&quot;headerlink&quot; title=&quot;Ns3 Trace系统&quot;&gt;&lt;/a&gt;Ns3 Trace系统&lt;/h1&gt;&lt;h2 id=&quot;Trace变量配置&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;h2 id=&quot;编译问题&quot;&gt;&lt;a href=&quot;#编译问题&quot; class=&quot;headerlink&quot; title=&quot;编译问题&quot;&gt;&lt;/a&gt;编译问题&lt;/h2&gt;&lt;h3 id=&quot;1-NS3编译错误&quot;&gt;&lt;a href=&quot;#1-NS3编译错误&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -416,7 +457,7 @@
     <link href="https://jiang-gy.github.io/2024/01/27/lun-wen/lun-wen-xie-zuo/"/>
     <id>https://jiang-gy.github.io/2024/01/27/lun-wen/lun-wen-xie-zuo/</id>
     <published>2024-01-27T09:13:22.000Z</published>
-    <updated>2024-03-22T17:11:56.018Z</updated>
+    <updated>2024-03-31T02:30:42.785Z</updated>
     
     
       
@@ -431,42 +472,6 @@
     
     
     <category term="写作" scheme="https://jiang-gy.github.io/tags/%E5%86%99%E4%BD%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Latex使用方式</title>
-    <link href="https://jiang-gy.github.io/2024/01/26/latex/latex-yu-fa/"/>
-    <id>https://jiang-gy.github.io/2024/01/26/latex/latex-yu-fa/</id>
-    <published>2024-01-26T07:24:28.000Z</published>
-    <updated>2024-03-22T15:06:42.614Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Latex使用方式&quot;&gt;&lt;a href=&quot;#Latex使用方式&quot; class=&quot;headerlink&quot; title=&quot;Latex使用方式&quot;&gt;&lt;/a&gt;Latex使用方式&lt;/h1&gt;&lt;h2 id=&quot;1-Latex优势&quot;&gt;&lt;a href=&quot;#1-Latex优势&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="Latex" scheme="https://jiang-gy.github.io/tags/Latex/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>My New Post</title>
-    <link href="https://jiang-gy.github.io/2024/01/21/my-new-post/"/>
-    <id>https://jiang-gy.github.io/2024/01/21/my-new-post/</id>
-    <published>2024-01-21T07:20:50.000Z</published>
-    <updated>2024-03-27T03:32:04.785Z</updated>
-    
-    
-    
-    
     
   </entry>
   
