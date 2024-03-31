@@ -5,7 +5,7 @@
 <head>
     
     <meta charset="utf-8">
-    <meta name="keywords" content="两个github配置同一台电脑上的公钥, jgy 计算机网络 强化学习 数据中心">
+    <meta name="keywords" content="Hexo+腾讯云域名, jgy 计算机网络 强化学习 数据中心">
     <meta name="referrer" content="no-referrer-when-downgrade">
     <meta name="description" content="记录工作与生活">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>两个github配置同一台电脑上的公钥 | 努力搬砖的眼镜狗</title>
+    <title>Hexo+腾讯云域名 | 努力搬砖的眼镜狗</title>
     <link rel="stylesheet" type="text/css" href="/css/loading.css">
 
     <link rel="icon" type="image/png" href="/meng.png">
@@ -397,12 +397,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">两个github配置同一台电脑上的公钥</h1>
+                    <h1 class="description center-align post-title">Hexo+腾讯云域名</h1>
                 </div>
             </div>
         </div>
@@ -521,8 +521,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/git/">
-                                <span class="chip bg-color">git</span>
+                            <a href="/tags/Hexo%E5%8D%9A%E5%AE%A2/">
+                                <span class="chip bg-color">Hexo博客</span>
                             </a>
                         
                     </div>
@@ -537,7 +537,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-03-22
+                    2024-03-30
                 </div>
                 
 
@@ -551,7 +551,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    472
+                    368
                 </div>
                 
 
@@ -580,37 +580,26 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h5 id="一、另外生成一份SSH-key"><a href="#一、另外生成一份SSH-key" class="headerlink" title="一、另外生成一份SSH key"></a>一、另外生成一份SSH key</h5><p>执行命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ssh-keygen <span class="token parameter variable">-t</span> rsa <span class="token parameter variable">-f</span> /c/Users/Administrator/.ssh/id_rsa_second <span class="token parameter variable">-C</span> <span class="token string">"xxxxx@163.com"</span> <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>生成成功会在.ssh目录下看到多出两个文件：id_rsa_second和id_rsa_second.pub，同样我们把新生成的公钥添加到gitLab新账号上。</p>
-<h5 id="二：添加密钥到-SSH-Agent"><a href="#二：添加密钥到-SSH-Agent" class="headerlink" title="二：添加密钥到 SSH Agent"></a>二：添加密钥到 SSH Agent</h5><p>执行命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ssh-agent <span class="token function">bash</span>
-ssh-add /c/Users/Administrator/.ssh/id_rsa_second<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<h5 id="三、配置config文件"><a href="#三、配置config文件" class="headerlink" title="三、配置config文件"></a>三、配置config文件</h5><p>.ssh目录下默认是没有config文件的，我们手动在.ssh目录下创建一个config文件（不需要后缀）。然后用编辑器打开config文件，给新账号单独配置一个Host，Host要取一个别名，每个Host主要配置HostName和IdentityFile即可。如下：</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">Host gitLab<span class="token operator">-</span>second
-HostName gitLab<span class="token punctuation">.</span>com
-PreferredAuthentications publickey
-IdentityFile <span class="token operator">~</span><span class="token operator">/</span><span class="token punctuation">.</span>ssh<span class="token operator">/</span>id_rsa_second<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>检查是否配置成功：</p>
-<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">ssh <span class="token operator">-</span>T git<span class="token variable">@gitLab</span><span class="token operator">-</span><span class="token keyword">second</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>如果看到自己的昵称则表示配置成功，如：Hi (you name)! You’ve successfully authenticated, but GITEE.COM does not provide shell access.<br> 配置完成后，在连接非默认帐号的gitLab仓库时，远程库的地址要对应地做一些修改，比如现在克隆second帐号下的一个仓库xxxxx：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone git@gitLab-second:name/xxxxx.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>其实此时就可以使用了，但是网上还有其他配置</p>
-<h5 id="四、取消全局的用户名和邮箱配置"><a href="#四、取消全局的用户名和邮箱配置" class="headerlink" title="四、取消全局的用户名和邮箱配置"></a>四、取消全局的用户名和邮箱配置</h5><p>因为一台电脑上配置了多个git账号，所以就不能再配置全局的用户名和邮箱了，而是在不同的仓库下，配置相应的局部用户名和邮箱即可。 打开 git bash，输入以下命令取消全局配置：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css">css复制代码git config --global --unset user.name
-git config --global --unset user.email<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<h5 id="五、为某个仓库配置用户名和邮箱"><a href="#五、为某个仓库配置用户名和邮箱" class="headerlink" title="五、为某个仓库配置用户名和邮箱"></a>五、为某个仓库配置用户名和邮箱</h5><p>进入某个仓库根目录，打开 git bash,输入以下命令为其配置局部用户名和邮箱：</p>
-<pre class="line-numbers language-lua" data-language="lua"><code class="language-lua">git config user<span class="token punctuation">.</span>name <span class="token string">"xx"</span>
-git config user<span class="token punctuation">.</span>email <span class="token string">"xx@xx.com"</span>
-git config <span class="token comment">--list   （查看配置）</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6992519940074897444">https://juejin.cn/post/6992519940074897444</a></p>
+                <h3 id="1-购买域名"><a href="#1-购买域名" class="headerlink" title="1 购买域名"></a>1 购买域名</h3><p>如果想要免费的域名，可以到下面网址购买：<a href="https://cloud.tencent.com/developer/tools/blog-entry?target=http://www.dot.tk/en/index.html?lang=en&amp;source=article&amp;objectId=1964349">http://www.dot.tk/en/index.html?lang=en</a> (没有尝试过)</p>
+<p>如果有条件，最好到阿里云或者腾讯云等地方<a target="_blank" rel="noopener" href="https://cloud.tencent.com/act/pro/domain-sales?from_column=20065&amp;from=20065">购买域名</a>，1元优惠域名还是很多的。</p>
+<p>此处注意实名认证+购买域名后，需要经过一定的时间，域名才会生效。</p>
+<p>本网站在腾讯云购买的域名，因此本文主要以腾讯云为案例介绍</p>
+<h3 id="2-具体步骤"><a href="#2-具体步骤" class="headerlink" title="2 具体步骤"></a>2 具体步骤</h3><p>其余步骤网上资料挺多，这里就不写了。</p>
+<p>腾讯云与阿里云等平台的管理台差不多。此次介绍腾讯云如何进入管理台。</p>
+<p>进入腾讯云的管理控制台-域名与网站-云解析 DNS，进入域名的解析设置。</p>
+<p>后面主要步骤主要参考链接2进行</p>
+<p>注意CNAME中直接填写user+github.io即可，不需要https和多余的//</p>
+<p>主要存在的问题可能是报错：</p>
+<p>Domain does not resolve to the GitHub Pages server. For more information, see</p>
+<p>主要是DNS没有配置好，可以重点看一下参考链接3。配置好的截图应该是这样的。</p>
+<p><img src="https://img-blog.csdnimg.cn/20201110175924108.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzY0NTI4Nw==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p>配置多个IP是为了防止自己网站ip变化。腾讯云最多配置两个，但是也不影响使用</p>
+<p><img src="/2024/03/30/bo-ke/hexo-teng-xun-yun-yu-ming/Users\ANTL\AppData\Roaming\Typora\typora-user-images\image-20240308151249838.png" alt="image-20240308151249838"></p>
+<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><ol>
+<li><a target="_blank" rel="noopener" href="https://cloud.tencent.com/document/product/302/3446#cc909468-2c70-4a0a-b4d0-132a3846762b">腾讯云DNS解析</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/i_do_not_know_you/article/details/105594269">Github Pages 绑定域名遇到的坑</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43645287/article/details/109603945?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=Domain%27s%20DNS%20record%20could%20not%20&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-2-.first_rank_v2_pc_rank_v29&amp;spm=1018.2226.3001.4187">github页面绑定域名/Domain‘s DNS record could not be retrieved</a></li>
+</ol>
 
                 
             </div>
@@ -637,7 +626,7 @@ git config <span class="token comment">--list   （查看配置）</span><span a
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jiang-gy.github.io/2024/03/22/git/liang-ge-github-pei-zhi-tong-yi-tai-dian-nao-shang-de-gong-yao/">https://jiang-gy.github.io/2024/03/22/git/liang-ge-github-pei-zhi-tong-yi-tai-dian-nao-shang-de-gong-yao/</a>
+                    <a href="https://jiang-gy.github.io/2024/03/30/bo-ke/hexo-teng-xun-yun-yu-ming/">https://jiang-gy.github.io/2024/03/30/bo-ke/hexo-teng-xun-yun-yu-ming/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -675,8 +664,8 @@ git config <span class="token comment">--list   （查看配置）</span><span a
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/git/">
-                                    <span class="chip bg-color">git</span>
+                                <a href="/tags/Hexo%E5%8D%9A%E5%AE%A2/">
+                                    <span class="chip bg-color">Hexo博客</span>
                                 </a>
                             
                         </div>
@@ -1136,13 +1125,13 @@ new Valine({
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/03/22/bo-ke/hexo-teng-xun-yun-yu-ming/">
+                <a href="/2024/03/30/bo-ke/geng-huan-dian-nao-hou-sheng-cheng-bo-ke/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Hexo+腾讯云域名">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="更换电脑后生成博客">
                         
-                        <span class="card-title">Hexo+腾讯云域名</span>
+                        <span class="card-title">更换电脑后生成博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1153,7 +1142,7 @@ new Valine({
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-03-22
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-03-30
                         </span>
                         <span class="publish-author">
                             
@@ -1170,6 +1159,10 @@ new Valine({
                         <span class="chip bg-color">Hexo博客</span>
                     </a>
                     
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1181,24 +1174,24 @@ new Valine({
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/02/01/ns3-fang-zhen/">
+                <a href="/2024/03/30/bo-ke/hello-world/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="NS3仿真">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Hello World">
                         
-                        <span class="card-title">NS3仿真</span>
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Here's something encrypted, password is required to continue reading.
+                            
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-02-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-03-30
                             </span>
                         <span class="publish-author">
                             
@@ -1211,8 +1204,8 @@ new Valine({
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/">
-                        <span class="chip bg-color">网络仿真</span>
+                    <a href="/tags/Hexo%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">Hexo博客</span>
                     </a>
                     
                 </div>
@@ -1361,7 +1354,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">48.1k</span>&nbsp;字
+                class="white-color">48.3k</span>&nbsp;字
             <br>
             
             
