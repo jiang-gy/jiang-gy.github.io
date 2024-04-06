@@ -28,7 +28,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;1-影视&quot;&gt;1</summary>
+    <summary type="html">&lt;h2 id=&quot;1-影视&quot;&gt;&lt;a href=&quot;#1-影视&quot; class=&quot;headerlink&quot; title=&quot;1 影视&quot;&gt;&lt;/a&gt;1</summary>
         
       
     
@@ -53,7 +53,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;一-什么是内网穿透&quot;&gt;一</summary>
+    <summary type="html">&lt;h2 id=&quot;一-什么是内网穿透&quot;&gt;&lt;a href=&quot;#一-什么是内网穿透&quot; class=&quot;headerlink&quot; title=&quot;一 什么是内网穿透&quot;&gt;&lt;/a&gt;一</summary>
         
       
     
@@ -76,11 +76,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;出差携带物品&quot;&gt;出差携带物品&lt;/h2&gt;
-&lt;h3 id=&quot;1-背包&quot;&gt;1 背包&lt;/h3&gt;
-&lt;p&gt;背包一定要带两个，两个包一方面容纳的东西多，另一方面减轻重量&lt;br&gt;
-两个包，双肩包放电脑及电子产品，手提包放日常衣服及路上吃的&lt;br&gt;
-&lt;strong&gt;1</summary>
+    <summary type="html">&lt;h2 id=&quot;出差携带物品&quot;&gt;&lt;a href=&quot;#出差携带物品&quot; class=&quot;headerlink&quot; title=&quot;出差携带物品&quot;&gt;&lt;/a&gt;出差携带物品&lt;/h2&gt;&lt;h3 id=&quot;1-背包&quot;&gt;&lt;a href=&quot;#1-背包&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -139,10 +135,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;1-通过分支方式复制&quot;&gt;1 通过分支方式复制&lt;/h2&gt;
-&lt;p&gt;不推荐，因为这样的话仓库变为公有，所有人都能访问&lt;br&gt;
-作者：直上云霄&lt;br&gt;
-链接：&lt;a</summary>
+    <summary type="html">&lt;h2 id=&quot;1-通过分支方式复制&quot;&gt;&lt;a href=&quot;#1-通过分支方式复制&quot; class=&quot;headerlink&quot; title=&quot;1 通过分支方式复制&quot;&gt;&lt;/a&gt;1</summary>
         
       
     
@@ -167,8 +160,7 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;1-购买域名&quot;&gt;1 购买域名&lt;/h3&gt;
-&lt;p&gt;如果想要免费的域名，可以到下面网址购买：&lt;a</summary>
+    <summary type="html">&lt;h3 id=&quot;1-购买域名&quot;&gt;&lt;a href=&quot;#1-购买域名&quot; class=&quot;headerlink&quot; title=&quot;1 购买域名&quot;&gt;&lt;/a&gt;1 购买域名&lt;/h3&gt;&lt;p&gt;如果想要免费的域名，可以到下面网址购买：&lt;a</summary>
         
       
     
@@ -214,9 +206,8 @@
       
         
         
-    <summary type="html">&lt;h5 id=&quot;一、另外生成一份SSH-key&quot;&gt;一、另外生成一份SSH key&lt;/h5&gt;
-&lt;p&gt;执行命令：&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code</summary>
+    <summary type="html">&lt;h5 id=&quot;一、另外生成一份SSH-key&quot;&gt;&lt;a href=&quot;#一、另外生成一份SSH-key&quot; class=&quot;headerlink&quot; title=&quot;一、另外生成一份SSH key&quot;&gt;&lt;/a&gt;一、另外生成一份SSH key&lt;/h5&gt;&lt;p&gt;执行命令：&lt;/p&gt;
+&lt;pre</summary>
         
       
     
@@ -239,11 +230,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;1-调整鼠标颜色&quot;&gt;1 调整鼠标颜色&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://support.hp.com/cn-zh/document/c00217076&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;打开【开始菜单】-</summary>
+    <summary type="html">&lt;h2 id=&quot;1-调整鼠标颜色&quot;&gt;&lt;a href=&quot;#1-调整鼠标颜色&quot; class=&quot;headerlink&quot; title=&quot;1 调整鼠标颜色&quot;&gt;&lt;/a&gt;1 调整鼠标颜色&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
         
       
     
@@ -303,6 +290,23 @@
   </entry>
   
   <entry>
+    <title>NS3仿真</title>
+    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-fang-zhen/"/>
+    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-fang-zhen/</id>
+    <published>2024-02-01T01:29:35.000Z</published>
+    <updated>2024-03-27T03:28:00.358Z</updated>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    
+    <category term="网络仿真" scheme="https://jiang-gy.github.io/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>NS3中网络仿真</title>
     <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-zhong-wang-luo-fang-zhen/"/>
     <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-zhong-wang-luo-fang-zhen/</id>
@@ -314,30 +318,10 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;1-无线仿真&quot;&gt;1 无线仿真&lt;/h2&gt;
-&lt;p&gt;以&lt;code&gt;wifi-ap.cc&lt;/code&gt;为例&lt;/p&gt;
-&lt;h3 id=&quot;1-前提知识&quot;&gt;1. 前提知识&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Packet::EnablePrinting</summary>
+    <summary type="html">&lt;h2 id=&quot;1-无线仿真&quot;&gt;&lt;a href=&quot;#1-无线仿真&quot; class=&quot;headerlink&quot; title=&quot;1 无线仿真&quot;&gt;&lt;/a&gt;1 无线仿真&lt;/h2&gt;&lt;p&gt;以&lt;code&gt;wifi-ap.cc&lt;/code&gt;为例&lt;/p&gt;
+&lt;h3 id=&quot;1-前提知识&quot;&gt;&lt;a</summary>
         
       
-    
-    
-    
-    
-    <category term="网络仿真" scheme="https://jiang-gy.github.io/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>NS3仿真</title>
-    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-fang-zhen/"/>
-    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-fang-zhen/</id>
-    <published>2024-02-01T01:29:35.000Z</published>
-    <updated>2024-03-27T03:28:00.358Z</updated>
-    
-    
-    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
     
     
     
@@ -381,10 +365,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;学习资料&quot;&gt;学习资料&lt;/h2&gt;
-&lt;h2 id=&quot;1-官方学习网址&quot;&gt;1 官方学习网址&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.nsnam.org/documentation/&quot;&gt;NS3文档网址&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a</summary>
+    <summary type="html">&lt;h2 id=&quot;学习资料&quot;&gt;&lt;a href=&quot;#学习资料&quot; class=&quot;headerlink&quot; title=&quot;学习资料&quot;&gt;&lt;/a&gt;学习资料&lt;/h2&gt;&lt;h2 id=&quot;1-官方学习网址&quot;&gt;&lt;a href=&quot;#1-官方学习网址&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -407,9 +388,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;编译问题&quot;&gt;编译问题&lt;/h2&gt;
-&lt;h3 id=&quot;1-NS3编译错误&quot;&gt;1 NS3编译错误&lt;/h3&gt;
-&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code</summary>
+    <summary type="html">&lt;h2 id=&quot;编译问题&quot;&gt;&lt;a href=&quot;#编译问题&quot; class=&quot;headerlink&quot; title=&quot;编译问题&quot;&gt;&lt;/a&gt;编译问题&lt;/h2&gt;&lt;h3 id=&quot;1-NS3编译错误&quot;&gt;&lt;a href=&quot;#1-NS3编译错误&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -432,8 +411,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;介绍&quot;&gt;介绍&lt;/h2&gt;
-&lt;p&gt;队列模型位于TC(Traffic Control)层，TC层所有模型均在&lt;code&gt;src/traffic-control/&lt;/code&gt;文件夹中，队列相关代码主要是</summary>
+    <summary type="html">&lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;队列模型位于TC(Traffic</summary>
         
       
     
@@ -456,8 +434,7 @@
       
         
         
-    <summary type="html">&lt;h1&gt;Ns3 Trace系统&lt;/h1&gt;
-&lt;h2</summary>
+    <summary type="html">&lt;h1 id=&quot;Ns3-Trace系统&quot;&gt;&lt;a href=&quot;#Ns3-Trace系统&quot; class=&quot;headerlink&quot; title=&quot;Ns3 Trace系统&quot;&gt;&lt;/a&gt;Ns3 Trace系统&lt;/h1&gt;&lt;h2 id=&quot;Trace变量配置&quot;&gt;&lt;a</summary>
         
       
     
@@ -480,8 +457,7 @@
       
         
         
-    <summary type="html">&lt;h1&gt;Ns3对象之间的关联&lt;/h1&gt;
-&lt;pre class=&quot;line-numbers language-cpp&quot; data-language=&quot;cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;m_ipv4&lt;span class=&quot;token</summary>
+    <summary type="html">&lt;h1 id=&quot;Ns3对象之间的关联&quot;&gt;&lt;a href=&quot;#Ns3对象之间的关联&quot; class=&quot;headerlink&quot; title=&quot;Ns3对象之间的关联&quot;&gt;&lt;/a&gt;Ns3对象之间的关联&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-cpp&quot;</summary>
         
       
     

@@ -566,8 +566,7 @@
                             <div class="summary block-with-text">
                                 
                                     主要参考博客魔改记录，大佬博客总结得很详细，但是由于大佬blog是较早之前写的，有些功能仍然有些不适用，在配置过程中踩了一些坑，因此，此处记录一下过程（有用部分直接就cv了），推荐直接访问原博客。
-1 基本页面功能
-此部分也可以参考原本的r
+1 基本页面功能此部分也可以参考原本的re
                                 
                             </div>
                             <div class="publish-info">
@@ -683,13 +682,11 @@
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    1 无线仿真
-以wifi-ap.cc为例
+                                    1 无线仿真以wifi-ap.cc为例
 1. 前提知识
-
 Packet::EnablePrinting ();
 
- 在ns-3中，Packet::EnablePrinting()是一个用于启用或禁用数据包（Packet）的打印输出的方法。
+ 在ns-3中，Packet::EnablePrinting()是一个用于启用或禁用数据包（Packet）的打印输出的方法。ns
                                 
                             </div>
                             <div class="publish-info">
@@ -745,7 +742,7 @@ Packet::EnablePrinting ();
                             <div class="summary block-with-text">
                                 
                                     
-  3ff77c54aa7a66ade165d2786cc07e2f94d73489c9330247d34aaa275992e2a1f5843d7ebc847ca57a26cb5dcdddf69ba806692292932e340decd
+  3ff77c54aa7a66ade165d2786cc07e2fdd46875b24eddaf879b443fffb7cb652b9b23fd8c7070a97fc12aacebe202c65188ade5b234d14dddcaf1
                                 
                             </div>
                             <div class="publish-info">
@@ -856,14 +853,11 @@ Packet::EnablePrinting ();
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    学习资料
-1 官方学习网址
-NS3文档网址
+                                    学习资料1 官方学习网址NS3文档网址
 Ns3官方学习网站
 以下内容为官方网站复制内容
 Getting started
-
-Tutorial: The tutorial for our latest release is availabl
+Tutorial: The tutorial for our latest release is available i
                                 
                             </div>
                             <div class="publish-info">
@@ -918,11 +912,10 @@ Tutorial: The tutorial for our latest release is availabl
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    编译问题
-1 NS3编译错误
-cc1plus: all warnings being treated as errors
+                                    编译问题1 NS3编译错误cc1plus: all warnings being treated as errors
+
 解决方法
-CXXFLAGS="-Wno-error" ./waf configure  #注意等号前后没有空格，进行该
+CXXFLAGS="-Wno-error" ./waf configure  #注意等号前后没有空格，进行该配
                                 
                             </div>
                             <div class="publish-info">
@@ -977,8 +970,7 @@ CXXFLAGS="-Wno-error" ./waf configure  #注意等号前后没有空格，进行�
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    介绍
-队列模型位于TC(Traffic Control)层，TC层所有模型均在src/traffic-control/文件夹中，队列相关代码主要是 src/traffic-control/model/queue-disc.cc、src/tr
+                                    介绍队列模型位于TC(Traffic Control)层，TC层所有模型均在src/traffic-control/文件夹中，队列相关代码主要是 src/traffic-control/model/queue-disc.cc、src/tra
                                 
                             </div>
                             <div class="publish-info">
@@ -1033,10 +1025,8 @@ CXXFLAGS="-Wno-error" ./waf configure  #注意等号前后没有空格，进行�
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    Ns3 Trace系统
-Trace变量配置
-​	由于Ns3初始化并没有提供Trace变量的初始值，创建变量时无法根据配置好的函数指针初始化Trace变量，因此只能在已存在的C++对象上配置Trace变量。
-​	在对象未创建、未分配内存时，T
+                                    Ns3 Trace系统Trace变量配置​	由于Ns3初始化并没有提供Trace变量的初始值，创建变量时无法根据配置好的函数指针初始化Trace变量，因此只能在已存在的C++对象上配置Trace变量。
+​	在对象未创建、未分配内存时，Tra
                                 
                             </div>
                             <div class="publish-info">
@@ -1079,24 +1069,20 @@ Trace变量配置
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
                     <div class="card">
-                        <a href="/2024/02/01/ns3-fang-zhen/ns3-wen-jian-dui-xiang-mo-xing-jia-gou/">
+                        <a href="/2024/02/01/ns3-fang-zhen/ns3-wang-luo-lu-you-mo-kuai/">
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="Ns3文件对象模型架构">
+                                <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Ns3网络路由模块">
                                 
-                                <span class="card-title">Ns3文件对象模型架构</span>
+                                <span class="card-title">Ns3网络路由模块</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    Ns3对象之间的关联
-m_ipv4-&gt;GetObject&lt;Node&gt; ()-&gt;GetId ()
-网络层对象
-具体代码存在于src/internet/model/ipv4-l3-protocol.h中
-/**
- * \
+                                    Ptr&lt;Node&gt; node = m_ipv4-&gt;GetObject&lt;Node&gt; ();  //获取相应的结点模型
+Ptr&lt;TrafficControlLayer&gt; tc = node-&gt;Ge
                                 
                             </div>
                             <div class="publish-info">
@@ -1225,7 +1211,7 @@ m_ipv4-&gt;GetObject&lt;Node&gt; ()-&gt;GetId ()
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">36.2k</span>&nbsp;字
+                class="white-color">36.1k</span>&nbsp;字
             <br>
             
             

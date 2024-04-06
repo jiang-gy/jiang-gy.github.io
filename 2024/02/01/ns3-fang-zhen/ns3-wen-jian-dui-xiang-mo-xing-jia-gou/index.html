@@ -551,7 +551,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    130
+                    129
                 </div>
                 
 
@@ -580,10 +580,9 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1>Ns3对象之间的关联</h1>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">m_ipv4<span class="token operator">-&gt;</span><span class="token generic-function"><span class="token function">GetObject</span><span class="token generic class-name"><span class="token operator">&lt;</span>Node<span class="token operator">&gt;</span></span></span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token function">GetId</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="网络层对象">网络层对象</h2>
-<p>具体代码存在于<code>src/internet/model/ipv4-l3-protocol.h</code>中</p>
+                <h1 id="Ns3对象之间的关联"><a href="#Ns3对象之间的关联" class="headerlink" title="Ns3对象之间的关联"></a>Ns3对象之间的关联</h1><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">m_ipv4<span class="token operator">-&gt;</span><span class="token generic-function"><span class="token function">GetObject</span><span class="token generic class-name"><span class="token operator">&lt;</span>Node<span class="token operator">&gt;</span></span></span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token function">GetId</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="网络层对象"><a href="#网络层对象" class="headerlink" title="网络层对象"></a>网络层对象</h2><p>具体代码存在于<code>src/internet/model/ipv4-l3-protocol.h</code>中</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">/**
  * \brief Get an interface.
  * \param i interface index
@@ -596,8 +595,8 @@ Ptr<span class="token operator">&lt;</span>Ipv4Interface<span class="token opera
 <span class="token keyword">int32_t</span> <span class="token function">GetInterfaceForPrefix</span> <span class="token punctuation">(</span>Ipv4Address addr<span class="token punctuation">,</span> Ipv4Mask mask<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
 <span class="token keyword">int32_t</span> <span class="token function">GetInterfaceForDevice</span> <span class="token punctuation">(</span>Ptr<span class="token operator">&lt;</span><span class="token keyword">const</span> NetDevice<span class="token operator">&gt;</span> device<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
 <span class="token keyword">bool</span> <span class="token function">IsDestinationAddress</span> <span class="token punctuation">(</span>Ipv4Address address<span class="token punctuation">,</span> <span class="token keyword">uint32_t</span> iif<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="链路层对象">链路层对象</h2>
-<p>主要文件位于<code>src/network/model/net-device.h</code></p>
+
+<h2 id="链路层对象"><a href="#链路层对象" class="headerlink" title="链路层对象"></a>链路层对象</h2><p>主要文件位于<code>src/network/model/net-device.h</code></p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">/**
  * \param index ifIndex of the device 
  */</span>
@@ -607,6 +606,7 @@ Ptr<span class="token operator">&lt;</span>Ipv4Interface<span class="token opera
  */</span>
 <span class="token keyword">virtual</span> <span class="token keyword">uint32_t</span> <span class="token function">GetIfIndex</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> <span class="token keyword">const</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 
                 
             </div>
@@ -1411,7 +1411,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">36.2k</span>&nbsp;字
+                class="white-color">36.1k</span>&nbsp;字
             <br>
             
             
