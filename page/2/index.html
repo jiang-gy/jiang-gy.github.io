@@ -3,10 +3,10 @@
 
 
 <head>
-    
+    <meta name="referrer" content="no-referrer" />
     <meta charset="utf-8">
     <meta name="keywords" content="jgy 计算机网络 强化学习 数据中心">
-    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- <meta name="referrer" content="no-referrer-when-downgrade"> -->
     <meta name="description" content="记录工作与生活">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -450,6 +450,94 @@
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2024/03/30/bo-ke/matery-zhu-ti-you-hua/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Matery主题优化">
+                            
+                            <span class="card-title">Matery主题优化</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                主要参考博客魔改记录，大佬博客总结得很详细，但是由于大佬blog是较早之前写的，有些功能仍然有些不适用，在配置过程中踩了一些坑，因此，此处记录一下过程（有用部分直接就cv了），推荐直接访问原博客。
+1 基本页面功能此部分也可以参考原本的re
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-03-30
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                努力搬砖的眼镜狗
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Hexo%E5%8D%9A%E5%AE%A2/">
+                            <span class="chip bg-color">Hexo博客</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2024/02/01/ns3-fang-zhen/ns3-zhong-yuan-xin-xi/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="NS3中元信息">
+                            
+                            <span class="card-title">NS3中元信息</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                元信息是关于Ns3中ObjectBase与其各种子类的辅助信息。每一个类有且仅有唯一一组元信息。元信息是实现对象聚合、属性与Trace变量配置的基础。例如对象聚合数据利用元信息的类名与父类TypeId查找对象。
+元信息管理接口：TypeId
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-02-01
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                努力搬砖的眼镜狗
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/">
+                            <span class="chip bg-color">网络仿真</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2024/02/01/ns3-fang-zhen/ns3-zhong-wang-luo-fang-zhen/">
                         <div class="card-image">
                             
@@ -764,21 +852,24 @@ CXXFLAGS="-Wno-error" ./waf configure  #注意等号前后没有空格，进行�
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2024/02/01/ns3-fang-zhen/ns3-wang-luo-lu-you-mo-kuai/">
+                    <a href="/2024/02/01/ns3-fang-zhen/ns3-wen-jian-dui-xiang-mo-xing-jia-gou/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Ns3网络路由模块">
+                            <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="Ns3文件对象模型架构">
                             
-                            <span class="card-title">Ns3网络路由模块</span>
+                            <span class="card-title">Ns3文件对象模型架构</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                Ptr&lt;Node&gt; node = m_ipv4-&gt;GetObject&lt;Node&gt; ();  //获取相应的结点模型
-Ptr&lt;TrafficControlLayer&gt; tc = node-&gt;Ge
+                                Ns3对象之间的关联m_ipv4-&gt;GetObject&lt;Node&gt; ()-&gt;GetId ()
+
+网络层对象具体代码存在于src/internet/model/ipv4-l3-protocol.h中
+/**
+ * \b
                             
                         </div>
                         <div class="publish-info">
@@ -808,24 +899,21 @@ Ptr&lt;TrafficControlLayer&gt; tc = node-&gt;Ge
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2024/02/01/ns3-fang-zhen/ns3-wen-jian-dui-xiang-mo-xing-jia-gou/">
+                    <a href="/2024/02/01/ns3-fang-zhen/ns3-wang-luo-lu-you-mo-kuai/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="Ns3文件对象模型架构">
+                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Ns3网络路由模块">
                             
-                            <span class="card-title">Ns3文件对象模型架构</span>
+                            <span class="card-title">Ns3网络路由模块</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                Ns3对象之间的关联m_ipv4-&gt;GetObject&lt;Node&gt; ()-&gt;GetId ()
-
-网络层对象具体代码存在于src/internet/model/ipv4-l3-protocol.h中
-/**
- * \b
+                                Ptr&lt;Node&gt; node = m_ipv4-&gt;GetObject&lt;Node&gt; ();  //获取相应的结点模型
+Ptr&lt;TrafficControlLayer&gt; tc = node-&gt;Ge
                             
                         </div>
                         <div class="publish-info">
@@ -892,102 +980,6 @@ https://www.cnblogs.com/jianghaonan0818/p/153
                         
                         <a href="/tags/%E5%86%99%E4%BD%9C/">
                             <span class="chip bg-color">写作</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2024/01/27/lun-wen/lun-wen-xie-zuo/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="论文写作">
-                            
-                            <span class="card-title">论文写作</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                论文写作结果分析1 写作方法
-以下内容来源于ChatGPT
-
-科技论文中的结果分析部分是非常关键的，它不仅仅是简单地陈述实验结果，更要深入剖析数据，解释观察到的现象，并将结果与研究问题或假设联系起来。以下是一个通用的科技论文结果分析部分的写
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-01-27
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                努力搬砖的眼镜狗
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E5%86%99%E4%BD%9C/">
-                            <span class="chip bg-color">写作</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2024/01/26/latex/latex-yu-fa/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Latex使用方式">
-                            
-                            <span class="card-title">Latex使用方式</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Latex使用方式1 Latex优势
-使用固定模板，格式固定，只需套用模板即可生成文章
-
-2 Latex图表1. 表格
-设定表格宽度^1
-
-\usepackage{graphicx} # 记得加宏包
-\resizebox{\linewidt
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-01-26
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                努力搬砖的眼镜狗
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/Latex/">
-                            <span class="chip bg-color">Latex</span>
                         </a>
                         
                     </div>
@@ -1097,7 +1089,7 @@ https://www.cnblogs.com/jianghaonan0818/p/153
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">36.1k</span>&nbsp;字
+                class="white-color">36.5k</span>&nbsp;字
             <br>
             
             

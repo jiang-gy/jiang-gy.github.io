@@ -6,7 +6,7 @@
   <link href="https://jiang-gy.github.io/atom.xml" rel="self"/>
   
   <link href="https://jiang-gy.github.io/"/>
-  <updated>2024-04-06T03:42:40.947Z</updated>
+  <updated>2024-04-06T06:15:39.504Z</updated>
   <id>https://jiang-gy.github.io/</id>
   
   <author>
@@ -17,18 +17,68 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>gitee图床显示问题</title>
+    <link href="https://jiang-gy.github.io/2024/04/06/bo-ke/gitee-tu-chuang-xian-shi-wen-ti/"/>
+    <id>https://jiang-gy.github.io/2024/04/06/bo-ke/gitee-tu-chuang-xian-shi-wen-ti/</id>
+    <published>2024-04-06T06:07:28.000Z</published>
+    <updated>2024-04-06T06:15:39.504Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;使用gitee图床，当上传图片大于1M时，出现无法加载的现象。原因是&lt;strong&gt;图片大于 1M，请登录后查看&lt;/strong&gt;。可以查看链接&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Hexo博客" scheme="https://jiang-gy.github.io/tags/Hexo%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="git" scheme="https://jiang-gy.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>gitee图床＋Hexo不显示图片问题</title>
+    <link href="https://jiang-gy.github.io/2024/04/06/bo-ke/gitee-tu-chuang-hexo-bu-xian-shi-tu-pian-wen-ti/"/>
+    <id>https://jiang-gy.github.io/2024/04/06/bo-ke/gitee-tu-chuang-hexo-bu-xian-shi-tu-pian-wen-ti/</id>
+    <published>2024-04-06T05:54:23.000Z</published>
+    <updated>2024-04-06T06:06:46.057Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天使用hexo</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Hexo博客" scheme="https://jiang-gy.github.io/tags/Hexo%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="git" scheme="https://jiang-gy.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
     <title>书影记录</title>
     <link href="https://jiang-gy.github.io/2024/04/06/sheng-huo/shu-ying-ji-lu/"/>
     <id>https://jiang-gy.github.io/2024/04/06/sheng-huo/shu-ying-ji-lu/</id>
     <published>2024-04-06T03:33:07.000Z</published>
-    <updated>2024-04-06T03:42:40.947Z</updated>
+    <updated>2024-04-06T05:10:31.540Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;1-影视&quot;&gt;&lt;a href=&quot;#1-影视&quot; class=&quot;headerlink&quot; title=&quot;1 影视&quot;&gt;&lt;/a&gt;1</summary>
+    <summary type="html">&lt;h2 id=&quot;1-影视&quot;&gt;&lt;a href=&quot;#1-影视&quot; class=&quot;headerlink&quot; title=&quot;1 影视&quot;&gt;&lt;/a&gt;1 影视&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
         
       
     
@@ -246,7 +296,7 @@
     <link href="https://jiang-gy.github.io/2024/03/30/bo-ke/matery-zhu-ti-you-hua/"/>
     <id>https://jiang-gy.github.io/2024/03/30/bo-ke/matery-zhu-ti-you-hua/</id>
     <published>2024-03-30T02:42:34.290Z</published>
-    <updated>2024-04-06T04:20:29.925Z</updated>
+    <updated>2024-04-06T05:04:57.996Z</updated>
     
     
       
@@ -290,23 +340,6 @@
   </entry>
   
   <entry>
-    <title>NS3仿真</title>
-    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-fang-zhen/"/>
-    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-fang-zhen/</id>
-    <published>2024-02-01T01:29:35.000Z</published>
-    <updated>2024-03-27T03:28:00.358Z</updated>
-    
-    
-    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
-    
-    
-    
-    
-    <category term="网络仿真" scheme="https://jiang-gy.github.io/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/"/>
-    
-  </entry>
-  
-  <entry>
     <title>NS3中网络仿真</title>
     <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-zhong-wang-luo-fang-zhen/"/>
     <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-zhong-wang-luo-fang-zhen/</id>
@@ -322,6 +355,23 @@
 &lt;h3 id=&quot;1-前提知识&quot;&gt;&lt;a</summary>
         
       
+    
+    
+    
+    
+    <category term="网络仿真" scheme="https://jiang-gy.github.io/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NS3仿真</title>
+    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-fang-zhen/"/>
+    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-fang-zhen/</id>
+    <published>2024-02-01T01:29:35.000Z</published>
+    <updated>2024-03-27T03:28:00.358Z</updated>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
     
     
     
@@ -412,52 +462,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;队列模型位于TC(Traffic</summary>
-        
-      
-    
-    
-    
-    
-    <category term="网络仿真" scheme="https://jiang-gy.github.io/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ns3Trace系统总结</title>
-    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3trace-xi-tong-zong-jie/"/>
-    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3trace-xi-tong-zong-jie/</id>
-    <published>2024-02-01T01:29:35.000Z</published>
-    <updated>2024-03-27T03:31:43.462Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Ns3-Trace系统&quot;&gt;&lt;a href=&quot;#Ns3-Trace系统&quot; class=&quot;headerlink&quot; title=&quot;Ns3 Trace系统&quot;&gt;&lt;/a&gt;Ns3 Trace系统&lt;/h1&gt;&lt;h2 id=&quot;Trace变量配置&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="网络仿真" scheme="https://jiang-gy.github.io/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ns3文件对象模型架构</title>
-    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-wen-jian-dui-xiang-mo-xing-jia-gou/"/>
-    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-wen-jian-dui-xiang-mo-xing-jia-gou/</id>
-    <published>2024-02-01T01:29:35.000Z</published>
-    <updated>2024-03-27T03:31:19.245Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Ns3对象之间的关联&quot;&gt;&lt;a href=&quot;#Ns3对象之间的关联&quot; class=&quot;headerlink&quot; title=&quot;Ns3对象之间的关联&quot;&gt;&lt;/a&gt;Ns3对象之间的关联&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-cpp&quot;</summary>
         
       
     
