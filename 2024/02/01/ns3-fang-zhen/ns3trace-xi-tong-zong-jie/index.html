@@ -551,7 +551,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    309
+                    310
                 </div>
                 
 
@@ -580,9 +580,12 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Ns3-Trace系统"><a href="#Ns3-Trace系统" class="headerlink" title="Ns3 Trace系统"></a>Ns3 Trace系统</h1><h2 id="Trace变量配置"><a href="#Trace变量配置" class="headerlink" title="Trace变量配置"></a>Trace变量配置</h2><p>​	由于Ns3初始化并没有提供Trace变量的初始值，创建变量时无法根据配置好的函数指针初始化Trace变量，因此只能在已存在的C++对象上配置Trace变量。</p>
+                <h1>Ns3 Trace系统</h1>
+<h2 id="Trace变量配置">Trace变量配置</h2>
+<p>​	由于Ns3初始化并没有提供Trace变量的初始值，创建变量时无法根据配置好的函数指针初始化Trace变量，因此只能在已存在的C++对象上配置Trace变量。</p>
 <p>​	在对象未创建、未分配内存时，Trace变量是无法配置的，即使配置相关属性，也不能成功使用。因此，Trace变量的配置操作必须放在网络拓扑用户应用建立完成之后，但必须放在<code>Simulation::Run()</code>之前。为保证每次成功配置并成功运行，十分建议养成在<strong>程序末尾配置Trace + 开启仿真运行的习惯</strong>。</p>
-<h3 id="1-ipv4-l3-protocol发送数据包"><a href="#1-ipv4-l3-protocol发送数据包" class="headerlink" title="1. ipv4-l3-protocol发送数据包"></a>1. ipv4-l3-protocol发送数据包</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//src/internet/model/ipv4-l3-protocol.cc</span>
+<h3 id="1-ipv4-l3-protocol发送数据包">1. ipv4-l3-protocol发送数据包</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//src/internet/model/ipv4-l3-protocol.cc</span>
 TypeId 
 <span class="token class-name">Ipv4L3Protocol</span><span class="token double-colon punctuation">::</span><span class="token function">GetTypeId</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
@@ -612,9 +615,6 @@ TypeId
   <span class="token comment">/// and will be changed to \c Ptr&lt;const Ipv4&gt; in a future release.</span>
   TracedCallback<span class="token operator">&lt;</span>Ptr<span class="token operator">&lt;</span><span class="token keyword">const</span> Packet<span class="token operator">&gt;</span><span class="token punctuation">,</span> Ptr<span class="token operator">&lt;</span>Ipv4<span class="token operator">&gt;</span><span class="token punctuation">,</span>  <span class="token keyword">uint32_t</span><span class="token operator">&gt;</span> m_txTrace<span class="token punctuation">;</span>
 <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
 
                 
             </div>
@@ -1140,13 +1140,13 @@ new Valine({
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/02/01/ns3-fang-zhen/ns3-xue-xi-zi-liao-hui-zong/">
+                <a href="/2024/02/01/ns3-fang-zhen/ns3-dui-lie-mo-xing-jie-shao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="NS3学习资料汇总">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="NS3队列模型介绍">
                         
-                        <span class="card-title">NS3学习资料汇总</span>
+                        <span class="card-title">NS3队列模型介绍</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1185,13 +1185,13 @@ new Valine({
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/02/01/ns3-fang-zhen/ns3-dui-lie-mo-xing-jie-shao/">
+                <a href="/2024/02/01/ns3-fang-zhen/ns3-wen-jian-dui-xiang-mo-xing-jia-gou/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="NS3队列模型介绍">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="Ns3文件对象模型架构">
                         
-                        <span class="card-title">NS3队列模型介绍</span>
+                        <span class="card-title">Ns3文件对象模型架构</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1365,7 +1365,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">35.7k</span>&nbsp;字
+                class="white-color">36k</span>&nbsp;字
             <br>
             
             
