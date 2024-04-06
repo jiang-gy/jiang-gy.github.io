@@ -5,7 +5,7 @@
 <head>
     <meta name="referrer" content="no-referrer" />
     <meta charset="utf-8">
-    <meta name="keywords" content="DQN笔记, jgy 计算机网络 强化学习 数据中心">
+    <meta name="keywords" content="Mystery主题优化(二)--页面优化, jgy 计算机网络 强化学习 数据中心">
     <!-- <meta name="referrer" content="no-referrer-when-downgrade"> -->
     <meta name="description" content="记录工作与生活">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>DQN笔记 | 努力搬砖的眼镜狗</title>
+    <title>Mystery主题优化(二)--页面优化 | 努力搬砖的眼镜狗</title>
     <link rel="stylesheet" type="text/css" href="/css/loading.css">
 
     <link rel="icon" type="image/png" href="/meng.png">
@@ -397,12 +397,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">DQN笔记</h1>
+                    <h1 class="description center-align post-title">Mystery主题优化(二)--页面优化</h1>
                 </div>
             </div>
         </div>
@@ -521,12 +521,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%AE%97%E6%B3%95/">
-                                <span class="chip bg-color">算法</span>
-                            </a>
-                        
-                            <a href="/tags/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/">
-                                <span class="chip bg-color">强化学习</span>
+                            <a href="/tags/Hexo%E5%8D%9A%E5%AE%A2/">
+                                <span class="chip bg-color">Hexo博客</span>
                             </a>
                         
                     </div>
@@ -541,7 +537,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-07-21
+                    2024-04-06
                 </div>
                 
 
@@ -555,14 +551,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    275
+                    993
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    5 分
                 </div>
                 
 
@@ -584,17 +580,212 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="DQN"><a href="#DQN" class="headerlink" title="DQN"></a>DQN</h1><p>DQN两个因素</p>
-<p> DQN 有一个记忆库用于学习之前的经历. 在之前的简介影片中提到过, Q learning 是一种 off-policy 离线学习法, 它能学习当前经历着的, 也能学习过去经历过的, 甚至是学习别人的经历. 所以每次 DQN 更新的时候, 我们都可以随机抽取一些之前的经历进行学习. 随机抽取这种做法打乱了经历之间的相关性, 也使得神经网络更新更有效率. Fixed Q-targets 也是一种打乱相关性的机理, 如果使用 fixed Q-targets, 我们就会在 DQN 中使用到两个结构相同但参数不同的神经网络, 预测 Q 估计 的神经网络具备最新的参数, 而预测 Q 现实 的神经网络使用的参数则是很久以前的. 有了这两种提升手段, DQN 才能在一些游戏中超越人类.</p>
-<h2 id="2-程序运行"><a href="#2-程序运行" class="headerlink" title="2. 程序运行"></a>2. 程序运行</h2><p>安装TensorFlow</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pip3 <span class="token function">install</span> <span class="token assign-left variable">tensorflow</span><span class="token operator">==</span><span class="token number">1.0</span>.0<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <p>针对mytery中有序列表、分割线以及特定标签美化。<br>主要内容来自于网站<a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1858299">Typecho美化主题教程</a>，并做部分修改。欢迎访问原网页。</p>
+<h2 id="1-美化有序标签"><a href="#1-美化有序标签" class="headerlink" title="1 美化有序标签"></a>1 美化有序标签</h2><p>将以下代码加入到主题设置自定义Css样式中</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">ol<span class="token punctuation">{</span>
+  list<span class="token operator">-</span>style<span class="token operator">:</span> none<span class="token punctuation">;</span>  <span class="token comment">/* 隐藏原来的 1. 2. 等序号样式 */</span>
+  counter<span class="token operator">-</span>reset<span class="token operator">:</span> ol<span class="token operator">-</span>li<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-<p>将脚本中<code>output_graph=True</code>设置后</p>
-<p>运行</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">tensorboard <span class="token parameter variable">--logdir</span><span class="token operator">=</span>logs<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+ol li<span class="token operator">:</span>before <span class="token punctuation">{</span>
+    <span class="token literal-property property">display</span><span class="token operator">:</span> block<span class="token punctuation">;</span>
+    <span class="token literal-property property">float</span><span class="token operator">:</span> left<span class="token punctuation">;</span>
+    <span class="token literal-property property">width</span><span class="token operator">:</span> 19px<span class="token punctuation">;</span>   <span class="token comment">/* 宽度和高度需要根据自己的字体大小进行修正 */</span>
+    <span class="token literal-property property">height</span><span class="token operator">:</span> 19px<span class="token punctuation">;</span>
+    line<span class="token operator">-</span>height<span class="token operator">:</span> 19px<span class="token punctuation">;</span>
+    <span class="token literal-property property">margin</span><span class="token operator">:</span> 4px 12px <span class="token number">0</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">color</span><span class="token operator">:</span> #fff<span class="token punctuation">;</span>
+    font<span class="token operator">-</span>size<span class="token operator">:</span> 16px<span class="token punctuation">;</span>
+    font<span class="token operator">-</span>weight<span class="token operator">:</span> <span class="token number">300</span><span class="token punctuation">;</span>
+    font<span class="token operator">-</span>style<span class="token operator">:</span> normal<span class="token punctuation">;</span>
+    background<span class="token operator">-</span>color<span class="token operator">:</span> #49b1f5<span class="token punctuation">;</span>
+    border<span class="token operator">-</span>radius<span class="token operator">:</span> <span class="token number">50</span><span class="token operator">%</span><span class="token punctuation">;</span>
+    text<span class="token operator">-</span>align<span class="token operator">:</span> center<span class="token punctuation">;</span>
+    <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token function">counter</span><span class="token punctuation">(</span>ol<span class="token operator">-</span>li<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    counter<span class="token operator">-</span>increment<span class="token operator">:</span> ol<span class="token operator">-</span>li<span class="token punctuation">;</span>
+    <span class="token literal-property property">transition</span><span class="token operator">:</span> all <span class="token punctuation">.</span>5s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>这时候我们发现这个有序标签还没旋转动起来，那么我们在css中接着加入以下代码。</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">ol li<span class="token operator">:</span>hover<span class="token operator">:</span><span class="token operator">:</span>before<span class="token punctuation">{</span>
+    <span class="token literal-property property">transform</span><span class="token operator">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>360deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">-</span>webkit<span class="token operator">-</span>transform<span class="token operator">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>360deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">-</span>moz<span class="token operator">-</span>transform<span class="token operator">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>360deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">-</span>o<span class="token operator">-</span>transform<span class="token operator">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>360deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">-</span>ms<span class="token operator">-</span>transform<span class="token operator">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>360deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h3><ol>
+<li>one</li>
+<li>two</li>
+</ol>
+<h2 id="2-美化分隔符hr样式"><a href="#2-美化分隔符hr样式" class="headerlink" title="2 美化分隔符hr样式"></a>2 美化分隔符hr样式</h2><p>把下面代码加入到css中即可。</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">/* 美化 hr 样式 */</span>
+hr <span class="token punctuation">{</span>
+    <span class="token literal-property property">position</span><span class="token operator">:</span> relative<span class="token punctuation">;</span>
+    <span class="token literal-property property">margin</span><span class="token operator">:</span> 2rem auto<span class="token punctuation">;</span>
+    <span class="token literal-property property">width</span><span class="token operator">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token operator">%</span> <span class="token operator">-</span> 4px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">border</span><span class="token operator">:</span> 2px dashed #a4d8fa<span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> #fff<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+ 
+hr <span class="token punctuation">{</span>
+    box<span class="token operator">-</span>sizing<span class="token operator">:</span> content<span class="token operator">-</span>box<span class="token punctuation">;</span>
+    <span class="token literal-property property">height</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">overflow</span><span class="token operator">:</span> visible<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+ 
+<span class="token literal-property property">hr</span><span class="token operator">:</span>before <span class="token punctuation">{</span>
+    <span class="token literal-property property">position</span><span class="token operator">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token literal-property property">top</span><span class="token operator">:</span> <span class="token operator">-</span>10px<span class="token punctuation">;</span>
+    <span class="token literal-property property">left</span><span class="token operator">:</span> <span class="token number">5</span><span class="token operator">%</span><span class="token punctuation">;</span>
+    z<span class="token operator">-</span>index<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">color</span><span class="token operator">:</span> #49b1f5<span class="token punctuation">;</span>
+    <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token string">'\f0c4'</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">font</span><span class="token operator">:</span> normal normal normal 14px<span class="token operator">/</span><span class="token number">1</span> FontAwesome<span class="token punctuation">;</span>
+    font<span class="token operator">-</span>size<span class="token operator">:</span> 20px<span class="token punctuation">;</span>
+    <span class="token operator">-</span>webkit<span class="token operator">-</span>transition<span class="token operator">:</span> all 1s ease<span class="token operator">-</span><span class="token keyword">in</span><span class="token operator">-</span>out<span class="token punctuation">;</span>
+    <span class="token operator">-</span>moz<span class="token operator">-</span>transition<span class="token operator">:</span> all 1s ease<span class="token operator">-</span><span class="token keyword">in</span><span class="token operator">-</span>out<span class="token punctuation">;</span>
+    <span class="token operator">-</span>o<span class="token operator">-</span>transition<span class="token operator">:</span> all 1s ease<span class="token operator">-</span><span class="token keyword">in</span><span class="token operator">-</span>out<span class="token punctuation">;</span>
+    <span class="token operator">-</span>ms<span class="token operator">-</span>transition<span class="token operator">:</span> all 1s ease<span class="token operator">-</span><span class="token keyword">in</span><span class="token operator">-</span>out<span class="token punctuation">;</span>
+    <span class="token literal-property property">transition</span><span class="token operator">:</span> all 1s ease<span class="token operator">-</span><span class="token keyword">in</span><span class="token operator">-</span>out<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+ 
+<span class="token literal-property property">hr</span><span class="token operator">:</span>hover<span class="token operator">:</span><span class="token operator">:</span>before<span class="token punctuation">{</span>
+    <span class="token literal-property property">left</span><span class="token operator">:</span> <span class="token number">95</span><span class="token operator">%</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="演示-1"><a href="#演示-1" class="headerlink" title="演示"></a>演示</h3><hr>
+<h2 id="3-note标签样式"><a href="#3-note标签样式" class="headerlink" title="3 note标签样式"></a>3 note标签样式</h2><p>打开 <code>themes/hexo-theme-matery-2.0.0/layout/_partial/head.ejs</code> 文件，添加以下内容</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token operator">&lt;</span>link href<span class="token operator">=</span><span class="token string">"https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css"</span> rel<span class="token operator">=</span><span class="token string">"stylesheet"</span><span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>把下面代码加入到css中即可。</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token punctuation">.</span>tip <span class="token punctuation">{</span>
+    <span class="token literal-property property">position</span><span class="token operator">:</span> relative<span class="token punctuation">;</span>
+    <span class="token literal-property property">color</span><span class="token operator">:</span> #fff<span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> #20a0ff<span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> <span class="token operator">-</span>webkit<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>linear<span class="token punctuation">,</span>left top<span class="token punctuation">,</span>right top<span class="token punctuation">,</span><span class="token function">from</span><span class="token punctuation">(</span>#20a0ff<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">to</span><span class="token punctuation">(</span>#20b8ff<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> <span class="token operator">-</span>webkit<span class="token operator">-</span>linear<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>left<span class="token punctuation">,</span>#20a0ff<span class="token punctuation">,</span>#20b8ff<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> linear<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>90deg<span class="token punctuation">,</span>#20a0ff<span class="token punctuation">,</span>#20b8ff<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">padding</span><span class="token operator">:</span> 6px 20px<span class="token punctuation">;</span>
+    border<span class="token operator">-</span>radius<span class="token operator">:</span> 10px<span class="token punctuation">;</span>
+    <span class="token operator">-</span>webkit<span class="token operator">-</span>box<span class="token operator">-</span>shadow<span class="token operator">:</span> <span class="token number">0</span> 3px 5px <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">,</span><span class="token number">160</span><span class="token punctuation">,</span><span class="token number">255</span><span class="token punctuation">,</span><span class="token number">.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    box<span class="token operator">-</span>shadow<span class="token operator">:</span> <span class="token number">0</span> 3px 5px <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">,</span><span class="token number">160</span><span class="token punctuation">,</span><span class="token number">255</span><span class="token punctuation">,</span><span class="token number">.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    margin<span class="token operator">-</span>bottom<span class="token operator">:</span> 20px
+<span class="token punctuation">}</span>
+ 
+<span class="token punctuation">.</span>tip p <span class="token punctuation">{</span>
+    <span class="token literal-property property">margin</span><span class="token operator">:</span> 5px <span class="token number">0</span><span class="token operator">!</span>important
+<span class="token punctuation">}</span>
+ 
+<span class="token punctuation">.</span>tip<span class="token operator">:</span>before <span class="token punctuation">{</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> #20a0ff<span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> <span class="token operator">-</span>webkit<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>linear<span class="token punctuation">,</span>left bottom<span class="token punctuation">,</span>left top<span class="token punctuation">,</span><span class="token function">from</span><span class="token punctuation">(</span>#0092ff<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">to</span><span class="token punctuation">(</span>#20b8ff<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> <span class="token operator">-</span>webkit<span class="token operator">-</span>linear<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>bottom<span class="token punctuation">,</span>#0092ff<span class="token punctuation">,</span>#20b8ff<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> linear<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>0deg<span class="token punctuation">,</span>#0092ff<span class="token punctuation">,</span>#20b8ff<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    border<span class="token operator">-</span>radius<span class="token operator">:</span> <span class="token number">50</span><span class="token operator">%</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">color</span><span class="token operator">:</span> #fff<span class="token punctuation">;</span>
+    <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token string">"\f129"</span><span class="token punctuation">;</span>
+    font<span class="token operator">-</span>size<span class="token operator">:</span> 12px<span class="token punctuation">;</span>
+    <span class="token literal-property property">position</span><span class="token operator">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token literal-property property">width</span><span class="token operator">:</span> 24px<span class="token punctuation">;</span>
+    <span class="token literal-property property">height</span><span class="token operator">:</span> 24px<span class="token punctuation">;</span>
+    line<span class="token operator">-</span>height<span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">.</span>5px<span class="token punctuation">;</span>
+    <span class="token literal-property property">left</span><span class="token operator">:</span> <span class="token operator">-</span>12px<span class="token punctuation">;</span>
+    <span class="token literal-property property">top</span><span class="token operator">:</span> <span class="token operator">-</span>12px<span class="token punctuation">;</span>
+    <span class="token operator">-</span>webkit<span class="token operator">-</span>box<span class="token operator">-</span>shadow<span class="token operator">:</span> <span class="token number">0</span> <span class="token number">0</span> <span class="token number">0</span> <span class="token number">2</span><span class="token punctuation">.</span>5px #fff<span class="token punctuation">;</span>
+    box<span class="token operator">-</span>shadow<span class="token operator">:</span> <span class="token number">0</span> <span class="token number">0</span> <span class="token number">0</span> <span class="token number">2</span><span class="token punctuation">.</span>5px #fff<span class="token punctuation">;</span>
+    font<span class="token operator">-</span>weight<span class="token operator">:</span> <span class="token number">600</span><span class="token punctuation">;</span>
+    font<span class="token operator">-</span>family<span class="token operator">:</span> <span class="token string">"Font Awesome 5 Free"</span><span class="token punctuation">;</span>
+    text<span class="token operator">-</span>align<span class="token operator">:</span> center
+<span class="token punctuation">}</span>
+ 
+<span class="token punctuation">.</span>btn<span class="token punctuation">,</span><span class="token punctuation">.</span>getit a <span class="token punctuation">{</span>
+    <span class="token literal-property property">position</span><span class="token operator">:</span> relative
+<span class="token punctuation">}</span>
+ 
+<span class="token punctuation">.</span>well <span class="token punctuation">.</span>tip<span class="token operator">:</span>before <span class="token punctuation">{</span>
+    <span class="token operator">-</span>webkit<span class="token operator">-</span>box<span class="token operator">-</span>shadow<span class="token operator">:</span> <span class="token number">0</span> <span class="token number">0</span> <span class="token number">0</span> <span class="token number">2</span><span class="token punctuation">.</span>5px #f7f8f9<span class="token punctuation">;</span>
+    box<span class="token operator">-</span>shadow<span class="token operator">:</span> <span class="token number">0</span> <span class="token number">0</span> <span class="token number">0</span> <span class="token number">2</span><span class="token punctuation">.</span>5px #f7f8f9
+<span class="token punctuation">}</span>
+ 
+<span class="token punctuation">.</span>tip ol <span class="token punctuation">{</span>
+    <span class="token literal-property property">margin</span><span class="token operator">:</span> <span class="token number">0</span>
+<span class="token punctuation">}</span>
+ 
+<span class="token punctuation">.</span>tip<span class="token punctuation">.</span>success <span class="token punctuation">{</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> #61be33<span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> <span class="token operator">-</span>webkit<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>linear<span class="token punctuation">,</span>left top<span class="token punctuation">,</span>right top<span class="token punctuation">,</span><span class="token function">from</span><span class="token punctuation">(</span>#61be33<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">to</span><span class="token punctuation">(</span>#8fce44<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> <span class="token operator">-</span>webkit<span class="token operator">-</span>linear<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>left<span class="token punctuation">,</span>#61be33<span class="token punctuation">,</span>#8fce44<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> linear<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>90deg<span class="token punctuation">,</span>#61be33<span class="token punctuation">,</span>#8fce44<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    text<span class="token operator">-</span>shadow<span class="token operator">:</span> <span class="token number">0</span> <span class="token operator">-</span>1px #61be33<span class="token punctuation">;</span>
+    <span class="token operator">-</span>webkit<span class="token operator">-</span>box<span class="token operator">-</span>shadow<span class="token operator">:</span> <span class="token number">0</span> 3px 5px <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">104</span><span class="token punctuation">,</span><span class="token number">195</span><span class="token punctuation">,</span><span class="token number">59</span><span class="token punctuation">,</span><span class="token number">.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    box<span class="token operator">-</span>shadow<span class="token operator">:</span> <span class="token number">0</span> 3px 5px <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">104</span><span class="token punctuation">,</span><span class="token number">195</span><span class="token punctuation">,</span><span class="token number">59</span><span class="token punctuation">,</span><span class="token number">.5</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+ 
+<span class="token punctuation">.</span>tip<span class="token punctuation">.</span>success<span class="token operator">:</span>before <span class="token punctuation">{</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> <span class="token operator">-</span>webkit<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>linear<span class="token punctuation">,</span>left bottom<span class="token punctuation">,</span>left top<span class="token punctuation">,</span><span class="token function">from</span><span class="token punctuation">(</span>#52bb1d<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">to</span><span class="token punctuation">(</span>#95d34b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> <span class="token operator">-</span>webkit<span class="token operator">-</span>linear<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>bottom<span class="token punctuation">,</span>#52bb1d<span class="token punctuation">,</span>#95d34b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> linear<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>0deg<span class="token punctuation">,</span>#52bb1d<span class="token punctuation">,</span>#95d34b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token string">"\f00c"</span><span class="token punctuation">;</span>
+    text<span class="token operator">-</span>shadow<span class="token operator">:</span> <span class="token number">0</span> <span class="token operator">-</span>1px #61be33
+<span class="token punctuation">}</span>
+ 
+<span class="token punctuation">.</span>tip<span class="token punctuation">.</span>warning <span class="token punctuation">{</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> #ff953f<span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> <span class="token operator">-</span>webkit<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>linear<span class="token punctuation">,</span>left top<span class="token punctuation">,</span>right top<span class="token punctuation">,</span><span class="token function">from</span><span class="token punctuation">(</span>#ff953f<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">to</span><span class="token punctuation">(</span>#ffb449<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> <span class="token operator">-</span>webkit<span class="token operator">-</span>linear<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>left<span class="token punctuation">,</span>#ff953f<span class="token punctuation">,</span>#ffb449<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> linear<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>90deg<span class="token punctuation">,</span>#ff953f<span class="token punctuation">,</span>#ffb449<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    text<span class="token operator">-</span>shadow<span class="token operator">:</span> <span class="token number">0</span> <span class="token operator">-</span>1px #ff953f<span class="token punctuation">;</span>
+    <span class="token operator">-</span>webkit<span class="token operator">-</span>box<span class="token operator">-</span>shadow<span class="token operator">:</span> <span class="token number">0</span> 3px 5px <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">,</span><span class="token number">154</span><span class="token punctuation">,</span><span class="token number">73</span><span class="token punctuation">,</span><span class="token number">.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    box<span class="token operator">-</span>shadow<span class="token operator">:</span> <span class="token number">0</span> 3px 5px <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">,</span><span class="token number">154</span><span class="token punctuation">,</span><span class="token number">73</span><span class="token punctuation">,</span><span class="token number">.5</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+ 
+<span class="token punctuation">.</span>tip<span class="token punctuation">.</span>warning<span class="token operator">:</span>before <span class="token punctuation">{</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> <span class="token operator">-</span>webkit<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>linear<span class="token punctuation">,</span>left bottom<span class="token punctuation">,</span>left top<span class="token punctuation">,</span><span class="token function">from</span><span class="token punctuation">(</span>#ff8f35<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">to</span><span class="token punctuation">(</span>#ffc149<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> <span class="token operator">-</span>webkit<span class="token operator">-</span>linear<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>bottom<span class="token punctuation">,</span>#ff8f35<span class="token punctuation">,</span>#ffc149<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> linear<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>0deg<span class="token punctuation">,</span>#ff8f35<span class="token punctuation">,</span>#ffc149<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token string">"\f12a"</span><span class="token punctuation">;</span>
+    text<span class="token operator">-</span>shadow<span class="token operator">:</span> <span class="token number">0</span> <span class="token operator">-</span>1px #ff953f
+<span class="token punctuation">}</span>
+ 
+<span class="token punctuation">.</span>tip<span class="token punctuation">.</span>error <span class="token punctuation">{</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> #ff4949<span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> <span class="token operator">-</span>webkit<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>linear<span class="token punctuation">,</span>left top<span class="token punctuation">,</span>right top<span class="token punctuation">,</span><span class="token function">from</span><span class="token punctuation">(</span>#ff4949<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">to</span><span class="token punctuation">(</span>#ff7849<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> <span class="token operator">-</span>webkit<span class="token operator">-</span>linear<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>left<span class="token punctuation">,</span>#ff4949<span class="token punctuation">,</span>#ff7849<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> linear<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>90deg<span class="token punctuation">,</span>#ff4949<span class="token punctuation">,</span>#ff7849<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    text<span class="token operator">-</span>shadow<span class="token operator">:</span> <span class="token number">0</span> <span class="token operator">-</span>1px #ff4949<span class="token punctuation">;</span>
+    <span class="token operator">-</span>webkit<span class="token operator">-</span>box<span class="token operator">-</span>shadow<span class="token operator">:</span> <span class="token number">0</span> 3px 5px <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">,</span><span class="token number">73</span><span class="token punctuation">,</span><span class="token number">73</span><span class="token punctuation">,</span><span class="token number">.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    box<span class="token operator">-</span>shadow<span class="token operator">:</span> <span class="token number">0</span> 3px 5px <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">,</span><span class="token number">73</span><span class="token punctuation">,</span><span class="token number">73</span><span class="token punctuation">,</span><span class="token number">.5</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+ 
+<span class="token punctuation">.</span>tip<span class="token punctuation">.</span>error<span class="token operator">:</span>before <span class="token punctuation">{</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> <span class="token operator">-</span>webkit<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>linear<span class="token punctuation">,</span>left bottom<span class="token punctuation">,</span>left top<span class="token punctuation">,</span><span class="token function">from</span><span class="token punctuation">(</span>#ff3838<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">to</span><span class="token punctuation">(</span>#ff7849<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> <span class="token operator">-</span>webkit<span class="token operator">-</span>linear<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>bottom<span class="token punctuation">,</span>#ff3838<span class="token punctuation">,</span>#ff7849<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> linear<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>0deg<span class="token punctuation">,</span>#ff3838<span class="token punctuation">,</span>#ff7849<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token string">"\f00d"</span><span class="token punctuation">;</span>
+    text<span class="token operator">-</span>shadow<span class="token operator">:</span> <span class="token number">0</span> <span class="token operator">-</span>1px #ff4949
+<span class="token punctuation">}</span>
+ 
+<span class="token comment">/*夜间适配*/</span>
+<span class="token punctuation">.</span>night <span class="token punctuation">.</span>tip <span class="token punctuation">{</span>
+    <span class="token literal-property property">filter</span><span class="token operator">:</span> <span class="token function">brightness</span><span class="token punctuation">(</span><span class="token number">0.7</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+ 
+<span class="token comment">/* snote夜间模式 */</span>
+<span class="token punctuation">.</span>night <span class="token punctuation">.</span>tip<span class="token punctuation">{</span>
+  <span class="token literal-property property">color</span><span class="token operator">:</span> #4c4948<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>同上面所标签样式一下，均使用 HTML 标签的方式在 md 中写入：</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">'tip'</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>p<span class="token operator">&gt;</span>默认情况<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">'tip success'</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>p<span class="token operator">&gt;</span>success<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">'tip error'</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>p<span class="token operator">&gt;</span>error<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">'tip warning'</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>p<span class="token operator">&gt;</span>warning<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="演示-2"><a href="#演示-2" class="headerlink" title="演示"></a>演示</h3><div class="tip"><p>默认情况</p><p></p></div>
+<div class="tip success"><p>success</p><p></p></div>
+<div class="tip error"><p>error</p><p></p></div>
+<div class="tip warning"><p>warning</p><p></p></div>
 
 
-
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a target="_blank" rel="noopener" href="https://fenghen0918.github.io/2020/10/22/hexo/hexo-bo-ke-you-hua-pian-matery-yi/#toc-heading-16"># Hexo博客优化篇(matery)(一)</a><br><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1858299">Typecho美化主题教程</a><br><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/2149011">Matery之Note标签优化</a></p>
 
                 
             </div>
@@ -621,7 +812,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jiang-gy.github.io/2023/07/21/dqn-bi-ji/dqn-bi-ji/">https://jiang-gy.github.io/2023/07/21/dqn-bi-ji/dqn-bi-ji/</a>
+                    <a href="https://jiang-gy.github.io/2024/04/06/bo-ke/mystery-zhu-ti-you-hua-er-ye-mian-you-hua/">https://jiang-gy.github.io/2024/04/06/bo-ke/mystery-zhu-ti-you-hua-er-ye-mian-you-hua/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -659,12 +850,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E7%AE%97%E6%B3%95/">
-                                    <span class="chip bg-color">算法</span>
-                                </a>
-                            
-                                <a href="/tags/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/">
-                                    <span class="chip bg-color">强化学习</span>
+                                <a href="/tags/Hexo%E5%8D%9A%E5%AE%A2/">
+                                    <span class="chip bg-color">Hexo博客</span>
                                 </a>
                             
                         </div>
@@ -1120,17 +1307,18 @@ new Valine({
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2024/01/21/bo-ke/bo-ke-da-jian/">
+                <a href="/2024/04/06/bo-ke/mystery-zhu-ti-you-hua-er-ye-mian-you-hua/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="博客搭建">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="Mystery主题优化(二)--页面优化">
                         
-                        <span class="card-title">博客搭建</span>
+                        <span class="card-title">Mystery主题优化(二)--页面优化</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1140,9 +1328,55 @@ new Valine({
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-01-21
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-04-06
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            努力搬砖的眼镜狗
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Hexo%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">Hexo博客</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/04/06/bo-ke/gitee-tu-chuang-xian-shi-wen-ti/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="gitee图床显示问题">
+                        
+                        <span class="card-title">gitee图床显示问题</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-04-06
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1157,51 +1391,6 @@ new Valine({
                     <a href="/tags/Hexo%E5%8D%9A%E5%AE%A2/">
                         <span class="chip bg-color">Hexo博客</span>
                     </a>
-                    
-                    <a href="/tags/Markdown%E8%AF%AD%E6%B3%95/">
-                        <span class="chip bg-color">Markdown语法</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2023/07/21/git/git-shi-yong-shou-ce/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="git使用手册">
-                        
-                        <span class="card-title">git使用手册</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-21
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            努力搬砖的眼镜狗
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
                     
                     <a href="/tags/git/">
                         <span class="chip bg-color">git</span>

@@ -31,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
     <link rel="stylesheet" type="text/css" href="/css/matery.css">
     <link rel="stylesheet" type="text/css" href="/css/my.css">
-
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
     <script src="/libs/jquery/jquery.min.js"></script>
 <meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
@@ -581,6 +581,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>主要参考博客<a target="_blank" rel="noopener" href="https://fenghen0918.github.io/2020/10/22/hexo/hexo-bo-ke-you-hua-pian-matery-yi/#toc-heading-1">魔改记录</a>，大佬博客总结得很详细，但是由于大佬blog是较早之前写的，有些功能仍然有些不适用，在配置过程中踩了一些坑，因此，此处记录一下过程（有用部分直接就cv了），推荐直接访问原博客。</p>
+<hr>
 <h2 id="1-基本页面功能"><a href="#1-基本页面功能" class="headerlink" title="1 基本页面功能"></a>1 基本页面功能</h2><p>此部分也可以参考原本的<code>read.me</code>,功能实现基本相似</p>
 <h3 id="1-1-增加页面"><a href="#1-1-增加页面" class="headerlink" title="1.1 增加页面"></a>1.1 增加页面</h3><blockquote>
 <p>增加页面的步骤都基本相同，创建<code>tags</code>标签页、<code>categories</code>分类页，<code>about</code>关于我页、&nbsp;<code>contact</code>留言板页、<code>friends</code>友情链接页、均可以使用这个步骤</p>
@@ -1157,9 +1158,8 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
 &lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="2-10-页面加载动画添加"><a href="#2-10-页面加载动画添加" class="headerlink" title="2.10 页面加载动画添加"></a>2.10 页面加载动画添加</h3><p>主要按照博客<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43662760/article/details/122311217"># Matery主题自定义(六)页面加载动画</a>进行，建议访问原博客</p>
 <ol>
-<li>在 <code>themes&gt;hexo-theme-matery&gt;layout&gt;_widget</code> 下创建一个 loading.ejs 文件，将下面的代码 cv 进去</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">&lt;% if (theme.preloader.enable) { %&gt;
+<li><p>在 <code>themes&gt;hexo-theme-matery&gt;layout&gt;_widget</code> 下创建一个 loading.ejs 文件，将下面的代码 cv 进去</p>
+ <pre class="line-numbers language-none"><code class="language-none">&lt;% if (theme.preloader.enable) { %&gt;
   &lt;div id="loading-box"&gt;
     &lt;div class="loading-left-bg"&gt;&lt;/div&gt;
     &lt;div class="loading-right-bg"&gt;&lt;/div&gt;
@@ -1181,11 +1181,9 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
     })
   &lt;/script&gt;
 &lt;% } %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<ol start="2">
-<li>完成了结构代码，下面就开始样式代码了，不然没有样式的动画也太丑了，下面的就是样式代码<br>当然，在复制粘贴代码之前，需要先创建样式文件<br>在 themes&gt;hexo-theme-matery&gt;source&gt;css&gt; 下创建一个新的文件 loading.css，在将下面的代码复制粘贴</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">#loading-box .loading-left-bg,
+</li>
+<li><p>完成了结构代码，下面就开始样式代码了，不然没有样式的动画也太丑了，下面的就是样式代码<br>当然，在复制粘贴代码之前，需要先创建样式文件<br>在 themes&gt;hexo-theme-matery&gt;source&gt;css&gt; 下创建一个新的文件 loading.css，在将下面的代码复制粘贴</p>
+ <pre class="line-numbers language-none"><code class="language-none">#loading-box .loading-left-bg,
 #loading-box .loading-right-bg {
   position: fixed;
   z-index: 1000;
@@ -1296,26 +1294,22 @@ div.loaded div.spinner-box {
   }
 }
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<ol start="3">
-<li>添加至页面<br>在将加载动画添加至页面中<br>找到 themes&gt;hexo-theme-matery&gt;layout&gt;_partial&gt;head.ejs 文件，这个文件专门用来引入样式文件和配置网页信息</li>
-</ol>
-<p>在  标签中引入 loading.css 文件</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;link rel="stylesheet" type="text/css" href="&lt;%- theme.jsDelivr.url %&gt;&lt;%- url_for('/css/loading.css') %&gt;"&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>引入样式文件后，引入结构文件 loading.ejs，插入在themes&gt;hexo-theme-matery&gt;layout&gt;layout.ejs  标签下第一行就行了</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;%- partial('_widget/loading') %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<ol start="4">
-<li>配置<br>最后在主题配置文件中进行配置 _config.yml，true 是开启；false 是关闭</li>
+</li>
+<li><p>添加至页面<br> 在将加载动画添加至页面中<br> 找到 themes&gt;hexo-theme-matery&gt;layout&gt;_partial&gt;head.ejs 文件，这个文件专门用来引入样式文件和配置网页信息</p>
+<p> 在  标签中引入 loading.css 文件</p>
+ <pre class="line-numbers language-none"><code class="language-none">&lt;link rel="stylesheet" type="text/css" href="&lt;%- theme.jsDelivr.url %&gt;&lt;%- url_for('/css/loading.css') %&gt;"&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p> 引入样式文件后，引入结构文件 loading.ejs，插入在themes&gt;hexo-theme-matery&gt;layout&gt;layout.ejs  标签下第一行就行了</p>
+ <pre class="line-numbers language-none"><code class="language-none">&lt;%- partial('_widget/loading') %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p>配置<br>最后在主题配置文件中进行配置 _config.yml，true 是开启；false 是关闭</p>
+</li>
 </ol>
 <pre class="line-numbers language-none"><code class="language-none"># 是否开启页面加载动画
 preloader:
   enable: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h3 id="2-11-图片冒泡功能"><a href="#2-11-图片冒泡功能" class="headerlink" title="2.11 图片冒泡功能"></a>2.11 图片冒泡功能</h3><p>同样是参考同一作者的博客<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43662760/article/details/122311008">图片冒泡功能</a></p>
 <ol>
-<li>创建 buble.js<br>在 <code>themes&gt;hexo-theme-matery&gt;source&gt;libs&gt;others</code> 下创建一个新的文件 <code>buble.js</code>，将下面的代码 CV 到 <code>buble.js</code> 中</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">// 上升的气泡
+<li><p>创建 buble.js<br> 在 <code>themes&gt;hexo-theme-matery&gt;source&gt;libs&gt;others</code> 下创建一个新的文件 <code>buble.js</code>，将下面的代码 CV 到 <code>buble.js</code> 中</p>
+ <pre class="line-numbers language-none"><code class="language-none">// 上升的气泡
 function buble () {
   $('.carousel-item, .pd-header').circleMagic({
     radius: 10,
@@ -1379,13 +1373,15 @@ function buble () {
     }(), window.addEventListener("scroll", c, !1), window.addEventListener("resize", s, !1)
   }
 }(jQuery);
-buble()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ol start="2">
-<li>_config.yml 配置<br>接着将这个文件在主题的配置文件（_config.yml）中 lib:js: 下引入，大约在 458 行<pre class="line-numbers language-none"><code class="language-none">buble: /libs/others/buble.js<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-在主题的配置文件（_config.yml）中添加下面的代码<pre class="line-numbers language-none"><code class="language-none"># banner 冒泡
+buble()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>_config.yml 配置<br>接着将这个文件在主题的配置文件（_config.yml）中 lib:js: 下引入，大约在 458 行</p>
+<pre class="line-numbers language-none"><code class="language-none">buble: /libs/others/buble.js<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在主题的配置文件（_config.yml）中添加下面的代码</p>
+<pre class="line-numbers language-none"><code class="language-none"># banner 冒泡
 buble:
   enable: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
-<li>引用<br>在 themes&gt;hexo-theme-matery&gt;layout&gt;layout.ejs 这的 body 标签中添加下面的代码</li>
+<li><p>引用<br>在 themes&gt;hexo-theme-matery&gt;layout&gt;layout.ejs 这的 body 标签中添加下面的代码</p>
+</li>
 </ol>
 <pre class="line-numbers language-none"><code class="language-none">&lt;!-- 冒泡 --&gt;
 &lt;% if (theme.buble.enable) { %&gt;
@@ -1435,7 +1431,7 @@ buble:
     <span class="token punctuation">-</span> <span class="token string">'**/**/instantpage.js'</span>
     <span class="token punctuation">-</span> <span class="token string">'**/matery.js'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="3-2-CDN加速"><a href="#3-2-CDN加速" class="headerlink" title="3.2 CDN加速"></a>3.2 CDN加速</h3><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>此次主要依靠各位大佬的记录，优化博客界面，对于主题<code>matery</code>修改了一些样式，增加了一些功能。但对于前端页面的知识还是了解特别少，博客优化方面还有很多需要学习的地方，下面记录一下各位大佬的博客链接，方便以后优化页面，了解相关知识。再次感谢各位大佬的知识分享。<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43662760/category_11551976.html"># matery主题优化专栏</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42429718/article/details/105723193?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522171118467516800227433663%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&amp;request_id=171118467516800227433663&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_ecpm_v1~rank_v31_ecpm-1-105723193-null-null.nonecase&amp;utm_term=matery&amp;spm=1018.2226.3001.4450"># 【源码开放】Hexo+Github+Coding 博客butterfly 和 matery 主题 搭建完全教程【整理】</a></p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a target="_blank" rel="noopener" href="https://fenghen0918.github.io/2020/10/22/hexo/hexo-bo-ke-you-hua-pian-matery-yi/#toc-heading-1">魔改记录</a><br><a target="_blank" rel="noopener" href="https://yafine66.gitee.io/posts/20200317173728-8c84.html">大佬原始文件</a><br><a target="_blank" rel="noopener" href="https://blog.17lai.site/posts/84b4059a/#%E4%B8%8D%E8%92%9C%E5%AD%90-busuanzi-%E6%96%87%E7%AB%A0%E8%AE%A1%E6%95%B0%E5%87%BA%E9%94%99%E9%97%AE%E9%A2%98">基于Hexo的matery主题搭建博客常见问题篇6 | 夜法之书 (17lai.site)</a><br><a target="_blank" rel="noopener" href="https://marmalade.vip/Materysettings1.html"># Hexo-Matery主题细致美化(上)</a></p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a target="_blank" rel="noopener" href="https://fenghen0918.github.io/2020/10/22/hexo/hexo-bo-ke-you-hua-pian-matery-yi/#toc-heading-1">魔改记录</a><br><a target="_blank" rel="noopener" href="https://yafine66.gitee.io/posts/20200317173728-8c84.html">大佬原始文件</a><br><a target="_blank" rel="noopener" href="https://blog.17lai.site/posts/84b4059a/#%E4%B8%8D%E8%92%9C%E5%AD%90-busuanzi-%E6%96%87%E7%AB%A0%E8%AE%A1%E6%95%B0%E5%87%BA%E9%94%99%E9%97%AE%E9%A2%98">基于Hexo的matery主题搭建博客常见问题篇6 | 夜法之书 (17lai.site)</a><br><a target="_blank" rel="noopener" href="https://marmalade.vip/Materysettings1.html"># Hexo-Matery主题细致美化(上)</a><br><a target="_blank" rel="noopener" href="https://lovelijunyi.gitee.io/posts/b8ec.html">Matery主题搭建与优化教程超详细解析</a></p>
 
                 
             </div>
@@ -2006,19 +2002,19 @@ new Valine({
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/02/01/ns3-fang-zhen/ns3-zhong-yuan-xin-xi/">
+                <a href="/2024/02/01/ns3-fang-zhen/ns3-fang-zhen/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="NS3中元信息">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="NS3仿真">
                         
-                        <span class="card-title">NS3中元信息</span>
+                        <span class="card-title">NS3仿真</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Here's something encrypted, password is required to continue reading.
                         
                     </div>
                     <div class="publish-info">
@@ -2240,7 +2236,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">36.5k</span>&nbsp;字
+                class="white-color">37.5k</span>&nbsp;字
             <br>
             
             
