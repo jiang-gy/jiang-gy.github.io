@@ -443,9 +443,11 @@
                 <div class="tag-title center-align">
                     <i class="fas fa-comments"></i>&nbsp;&nbsp;留言板
                 </div>
-                <h2 id="畅所欲言"><a href="#畅所欲言" class="headerlink" title="畅所欲言"></a>畅所欲言</h2><hr>
+                <h2 id="畅所欲言">畅所欲言</h2>
+<hr>
 <p>在这里可以留下你的足迹，欢迎在下方留言，欢迎交换友链，一起交流学习！</p>
-<h2 id="友链"><a href="#友链" class="headerlink" title="友链"></a>友链</h2><hr>
+<h2 id="友链">友链</h2>
+<hr>
 <p>博客名称: 努力搬砖的眼镜狗的博客</p>
 <p>博客网址: <a href="https://jiang-gy.github.io/">https://jiang-gy.github.io/</a></p>
 <p>博客介绍: 努力提升技术</p>
@@ -760,6 +762,60 @@ new Valine({
 
     <footer class="page-footer bg-color">
     
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="500923365"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
     <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
@@ -773,7 +829,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">35.7k</span>&nbsp;字
+                class="white-color">36.2k</span>&nbsp;字
             <br>
             
             
@@ -869,7 +925,12 @@ new Valine({
         <i class="fas fa-rss"></i>
     </a>
 
-</div>
+
+ 
+	<a href="https://blog.csdn.net/m0_49448331?type=blog" class="tooltipped" target="_blank" data-tooltip="关注我的CSDN: https://blog.csdn.net/m0_49448331?type=blog" data-position="top" data-delay="50"> 
+	<i class="fab fa-csdn">C</i>
+    </a> 
+ </div>
     </div>
     <!-- add by jgy:添加统计
      -->
