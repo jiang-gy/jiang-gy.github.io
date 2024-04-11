@@ -6,7 +6,7 @@
   <link href="https://jiang-gy.github.io/atom.xml" rel="self"/>
   
   <link href="https://jiang-gy.github.io/"/>
-  <updated>2024-04-06T07:28:07.995Z</updated>
+  <updated>2024-04-10T13:36:46.954Z</updated>
   <id>https://jiang-gy.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VScode SSH连接出现：Could not establish connection to 262&#92;273&#92;326&#92;252&#92;26513001325&#92;3421321&#92;371&#92;2651304&#92;326问题</title>
+    <link href="https://jiang-gy.github.io/2024/04/09/vscode/vscode-ssh-lian-jie-chu-xian-could-not-establish-connection-to-jia-yi-da-dui-shu-zi-de-wen-ti/"/>
+    <id>https://jiang-gy.github.io/2024/04/09/vscode/vscode-ssh-lian-jie-chu-xian-could-not-establish-connection-to-jia-yi-da-dui-shu-zi-de-wen-ti/</id>
+    <published>2024-04-09T09:40:57.000Z</published>
+    <updated>2024-04-10T13:36:46.954Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天打算利用ModelArts-HuaweiCloud镜像测试一些程序，使用Vscode远程连接，没想到出现以下错误。&lt;br&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Vscode" scheme="https://jiang-gy.github.io/tags/Vscode/"/>
+    
+    <category term="ssh" scheme="https://jiang-gy.github.io/tags/ssh/"/>
+    
+  </entry>
   
   <entry>
     <title>Mystery主题优化(二)--页面优化</title>
@@ -142,14 +167,18 @@
     <link href="https://jiang-gy.github.io/2024/04/06/sheng-huo/chu-chai-zhun-bei/"/>
     <id>https://jiang-gy.github.io/2024/04/06/sheng-huo/chu-chai-zhun-bei/</id>
     <published>2024-04-06T03:13:06.000Z</published>
-    <updated>2024-04-06T03:19:44.066Z</updated>
+    <updated>2024-04-07T01:10:45.252Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;出差携带物品&quot;&gt;&lt;a href=&quot;#出差携带物品&quot; class=&quot;headerlink&quot; title=&quot;出差携带物品&quot;&gt;&lt;/a&gt;出差携带物品&lt;/h2&gt;&lt;h3 id=&quot;1-背包&quot;&gt;&lt;a href=&quot;#1-背包&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;出差携带物品&quot;&gt;出差携带物品&lt;/h2&gt;
+&lt;h3 id=&quot;1-背包&quot;&gt;1 背包&lt;/h3&gt;
+&lt;p&gt;背包一定要带两个，两个包一方面容纳的东西多，另一方面减轻重量&lt;br&gt;
+两个包，双肩包放电脑及电子产品，手提包放日常衣服及路上吃的&lt;br&gt;
+&lt;strong&gt;1</summary>
         
       
     
@@ -439,29 +468,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;学习资料&quot;&gt;&lt;a href=&quot;#学习资料&quot; class=&quot;headerlink&quot; title=&quot;学习资料&quot;&gt;&lt;/a&gt;学习资料&lt;/h2&gt;&lt;h2 id=&quot;1-官方学习网址&quot;&gt;&lt;a href=&quot;#1-官方学习网址&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="网络仿真" scheme="https://jiang-gy.github.io/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>NS3常见问题处理</title>
-    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-chang-jian-wen-ti-chu-li/"/>
-    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-chang-jian-wen-ti-chu-li/</id>
-    <published>2024-02-01T01:29:35.000Z</published>
-    <updated>2024-03-27T03:30:57.917Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;编译问题&quot;&gt;&lt;a href=&quot;#编译问题&quot; class=&quot;headerlink&quot; title=&quot;编译问题&quot;&gt;&lt;/a&gt;编译问题&lt;/h2&gt;&lt;h3 id=&quot;1-NS3编译错误&quot;&gt;&lt;a href=&quot;#1-NS3编译错误&quot; class=&quot;headerlink&quot;</summary>
         
       
     
