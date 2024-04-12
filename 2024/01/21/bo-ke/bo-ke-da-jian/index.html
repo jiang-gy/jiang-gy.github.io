@@ -33,7 +33,12 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
     <script src="/libs/jquery/jquery.min.js"></script>
-<meta name="generator" content="Hexo 6.3.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="努力搬砖的眼镜狗" type="application/atom+xml">
 </head>
@@ -42,6 +47,12 @@
 
 <!-- 样式一（鼠标点击更换样式） -->
 <script src="https://g.joyinshare.com/hc/ribbon.min.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
 
 <body>
 
@@ -555,7 +566,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    527
+                    542
                 </div>
                 
 
@@ -584,47 +595,49 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Hexo笔记搭建记录文档"><a href="#Hexo笔记搭建记录文档" class="headerlink" title="Hexo笔记搭建记录文档"></a>Hexo笔记搭建记录文档</h1><h2 id="一-Hexo网站的优势"><a href="#一-Hexo网站的优势" class="headerlink" title="一 Hexo网站的优势"></a>一 Hexo网站的优势</h2><p>博客平台如CSDN，博客园，简书等平台，用户可以直接在上面发表，缺点是比较不自由，会受到平台的各种限制和恶心的广告。</p>
+                <h1 id="hexo笔记搭建记录文档"><a class="markdownIt-Anchor" href="#hexo笔记搭建记录文档"></a> Hexo笔记搭建记录文档</h1>
+<h2 id="一-hexo网站的优势"><a class="markdownIt-Anchor" href="#一-hexo网站的优势"></a> 一 Hexo网站的优势</h2>
+<p>博客平台如CSDN，博客园，简书等平台，用户可以直接在上面发表，缺点是比较不自由，会受到平台的各种限制和恶心的广告。</p>
 <p>购买域名和服务器成本太高了，花力气去自己搭这么一个网站，还要定期的维护它，成本精力较大。</p>
 <p>那么就有第三种选择，直接在github page平台上托管我们的博客。这样就可以安心的来写作，又不需要定期维护，而且hexo作为一个快速简洁的博客框架，用它来搭建博客真的非常容易。</p>
 <p>Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。</p>
-<h2 id="二-环境配置"><a href="#二-环境配置" class="headerlink" title="二 环境配置"></a>二 环境配置</h2><p>参考链接<a href="%5B%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%5D(https://blog.csdn.net/sinat_37781304/article/details/82729029?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168845286916800222814197%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=168845286916800222814197&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-82729029-null-null.142%5Ev88%5Econtrol_2,239%5Ev2%5Einsert_chatgpt&amp;utm_term=hexo&amp;spm=1018.2226.3001.4449)">^1</a></p>
+<h2 id="二-环境配置"><a class="markdownIt-Anchor" href="#二-环境配置"></a> 二 环境配置</h2>
+<p>参考链接<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
 <p>常见命令</p>
 <ol>
 <li>Create a new post</li>
 </ol>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
 <ol start="2">
 <li>Run server</li>
 </ol>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
 <ol start="3">
 <li>Generate static files</li>
 </ol>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
 <ol start="4">
 <li>Deploy to remote sites</li>
 </ol>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h2 id="三-文章加密"><a href="#三-文章加密" class="headerlink" title="三 文章加密"></a>三 文章加密</h2><p>有些文章需要设置为私密，此时需要为文章添加密码。<a href="%5BHexo%E5%8D%9A%E6%96%87%E5%8A%A0%E5%AF%86%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93%5D(https://blog.csdn.net/qq_24754061/article/details/106569222)">^3</a></p>
+<h2 id="三-文章加密"><a class="markdownIt-Anchor" href="#三-文章加密"></a> 三 文章加密</h2>
+<p>有些文章需要设置为私密，此时需要为文章添加密码。<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></p>
 <ol>
 <li>安装插件hexo-blog-encrypt：</li>
 </ol>
 <pre class="line-numbers language-git" data-language="git"><code class="language-git">npm install –save hexo-blog-encrypt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <ol start="2">
-<li><p>然后在hexo全局配置文件_config.yml 中启用该插件：</p>
+<li>
+<p>然后在hexo全局配置文件_config.yml 中启用该插件：</p>
 <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment"># Security</span>
 <span class="token key atrule">encrypt</span><span class="token punctuation">:</span>
-    <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
-<li><p>在需要加密的文章头部添加所要求的字段，如：password，abstract，message等。</p>
+    <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+<li>
+<p>在需要加密的文章头部添加所要求的字段，如：password，abstract，message等。</p>
 </li>
 </ol>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">---
@@ -636,24 +649,33 @@ message: 这里需要密码才能访问。
 wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
 ---
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="* 常见问题"></a>* 常见问题</h2><h3 id="1-npm下载报错npm-ERR-code-ETIMEDOUT-npm-ERR"><a href="#1-npm下载报错npm-ERR-code-ETIMEDOUT-npm-ERR" class="headerlink" title="1. npm下载报错npm ERR! code ETIMEDOUT npm ERR!"></a>1. npm下载报错npm ERR! code ETIMEDOUT npm ERR!</h3><p>主要是网络配置问题[^2]</p>
+<h2 id="常见问题"><a class="markdownIt-Anchor" href="#常见问题"></a> * 常见问题</h2>
+<h3 id="1-npm下载报错npm-err-code-etimedout-npm-err"><a class="markdownIt-Anchor" href="#1-npm下载报错npm-err-code-etimedout-npm-err"></a> 1. npm下载报错npm ERR! code ETIMEDOUT npm ERR!</h3>
+<p>主要是网络配置问题<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup></p>
 <ol>
 <li>查看npm镜像设置</li>
 </ol>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">npm config <span class="token keyword">get</span> registry<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <ol start="2">
 <li>将npm设置为淘宝镜像</li>
 </ol>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">npm config <span class="token keyword">set</span> registry https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>registry<span class="token punctuation">.</span>npm<span class="token punctuation">.</span>taobao<span class="token punctuation">.</span>org<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <ol start="3">
 <li>再次查看npm镜像设置</li>
 </ol>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">npm config <span class="token keyword">get</span> registry<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>[^2]: <a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_46695182/article/details/127846670">npm下载报错npm ERR!</a></p>
+<h2 id="参考链接"><a class="markdownIt-Anchor" href="#参考链接"></a> 参考链接</h2>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_37781304/article/details/82729029?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168845286916800222814197%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=168845286916800222814197&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-82729029-null-null.142%5Ev88%5Econtrol_2,239%5Ev2%5Einsert_chatgpt&amp;utm_term=hexo&amp;spm=1018.2226.3001.4449">如何搭建博客</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_24754061/article/details/106569222">Hexo博文加密思路总结</a> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_46695182/article/details/127846670">npm下载报错npm ERR!</a> <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 
                 
             </div>
@@ -1470,7 +1492,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">37.9k</span>&nbsp;字
+                class="white-color">39.1k</span>&nbsp;字
             <br>
             
             

@@ -33,7 +33,12 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
     <script src="/libs/jquery/jquery.min.js"></script>
-<meta name="generator" content="Hexo 6.3.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="努力搬砖的眼镜狗" type="application/atom+xml">
 </head>
@@ -42,6 +47,12 @@
 
 <!-- 样式一（鼠标点击更换样式） -->
 <script src="https://g.joyinshare.com/hc/ribbon.min.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
 
 <body>
 
@@ -582,15 +593,19 @@
             <div id="articleContent">
                 <p>主要参考博客<a target="_blank" rel="noopener" href="https://fenghen0918.github.io/2020/10/22/hexo/hexo-bo-ke-you-hua-pian-matery-yi/#toc-heading-1">魔改记录</a>，大佬博客总结得很详细，但是由于大佬blog是较早之前写的，有些功能仍然有些不适用，在配置过程中踩了一些坑，因此，此处记录一下过程（有用部分直接就cv了），推荐直接访问原博客。</p>
 <hr>
-<h2 id="1-基本页面功能"><a href="#1-基本页面功能" class="headerlink" title="1 基本页面功能"></a>1 基本页面功能</h2><p>此部分也可以参考原本的<code>read.me</code>,功能实现基本相似</p>
-<h3 id="1-1-增加页面"><a href="#1-1-增加页面" class="headerlink" title="1.1 增加页面"></a>1.1 增加页面</h3><blockquote>
+<h2 id="1-基本页面功能"><a class="markdownIt-Anchor" href="#1-基本页面功能"></a> 1 基本页面功能</h2>
+<p>此部分也可以参考原本的<code>read.me</code>,功能实现基本相似</p>
+<h3 id="11-增加页面"><a class="markdownIt-Anchor" href="#11-增加页面"></a> 1.1 增加页面</h3>
+<blockquote>
 <p>增加页面的步骤都基本相同，创建<code>tags</code>标签页、<code>categories</code>分类页，<code>about</code>关于我页、&nbsp;<code>contact</code>留言板页、<code>friends</code>友情链接页、均可以使用这个步骤</p>
 </blockquote>
 <ol>
-<li><p>如果在你的博客 source 目录下还没有，就输入以下命令（站点目录打开的命令行）来新建一个：</p>
+<li>
+<p>如果在你的博客 source 目录下还没有，就输入以下命令（站点目录打开的命令行）来新建一个：</p>
  <pre class="line-numbers language-none"><code class="language-none">hexo new page "页面的英文"     # 如：hexo new page "tags"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
-<li><p>编辑你刚刚新建的页面文件 /source/tags/index.md，至少需要以下内容：</p>
+<li>
+<p>编辑你刚刚新建的页面文件 /source/tags/index.md，至少需要以下内容：</p>
  <pre class="line-numbers language-none"><code class="language-none">---
 title: tags
 date: 2020-06-19 16:23:38
@@ -621,12 +636,15 @@ layout: "页面的英文" # 如：layout: "tags"
     "introduction": "平凡的脚步也可以走出伟大的行程",
     "url": "https://me.csdn.net/jlh912008548",
     "title": "前去学习"
-}]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+}]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 </ol>
-<h3 id="1-2-菜单导航配置"><a href="#1-2-菜单导航配置" class="headerlink" title="1.2 菜单导航配置"></a>1.2 菜单导航配置</h3><blockquote>
+<h3 id="12-菜单导航配置"><a class="markdownIt-Anchor" href="#12-菜单导航配置"></a> 1.2 菜单导航配置</h3>
+<blockquote>
 <p>关于导航的配置都在主题配置文件中</p>
 </blockquote>
-<h4 id="1-2-1-配置基本菜单导航的名称、路径url和图标icon"><a href="#1-2-1-配置基本菜单导航的名称、路径url和图标icon" class="headerlink" title="1.2.1 配置基本菜单导航的名称、路径url和图标icon"></a>1.2.1 配置基本菜单导航的名称、路径url和图标icon</h4><ul>
+<h4 id="121-配置基本菜单导航的名称-路径url和图标icon"><a class="markdownIt-Anchor" href="#121-配置基本菜单导航的名称-路径url和图标icon"></a> 1.2.1 配置基本菜单导航的名称、路径url和图标icon</h4>
+<ul>
 <li>导航名称可以设置成中文/英文</li>
 <li>图标icon可以更换，具体属性值可以在<a target="_blank" rel="noopener" href="https://fontawesome.com/icons">fontawesome</a>中查找</li>
 </ul>
@@ -649,16 +667,20 @@ layout: "页面的英文" # 如：layout: "tags"
   友人帐: #可以使用中文，也可以在对应的md中设置title:友人帐
     url: /friends
     icon: fas fa-address-book<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h4 id="1-2-2-二级菜单配置方法"><a href="#1-2-2-二级菜单配置方法" class="headerlink" title="1.2.2 二级菜单配置方法"></a>1.2.2 二级菜单配置方法</h4><ol>
+<h4 id="122-二级菜单配置方法"><a class="markdownIt-Anchor" href="#122-二级菜单配置方法"></a> 1.2.2 二级菜单配置方法</h4>
+<ol>
 <li>在需要添加二级菜单的一级菜单下添加children关键字(如:爱好菜单下添加children)，一级菜单不需要增加url属性</li>
 <li>创建二级页面，步骤与创建页面步骤相同，编辑md时不需要<code>layout</code>属性 <pre class="line-numbers language-none"><code class="language-none">---
 title: 追番
 date: 2020-06-15 15:19:35
 type: "bangumis"
----<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+---<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 <li>给二级菜单增加名称name,路径url和图标icon</li>
 <li>注意每个二级菜单模块前要加&nbsp;<code>-</code></li>
-<li>二级菜单要缩进到一级菜单内<pre class="line-numbers language-none"><code class="language-none">爱好:
+<li>二级菜单要缩进到一级菜单内</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">爱好:
     icon: fas fa-bicycle
     children:
       - name: 追番
@@ -666,63 +688,72 @@ type: "bangumis"
         icon: fas fa-play-circle
       - name: 音乐
         url: /musics
-        icon: fas fa-music<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-</ol>
-<h4 id="以网易云音乐为例"><a href="#以网易云音乐为例" class="headerlink" title="以网易云音乐为例"></a>以网易云音乐为例</h4><blockquote>
+        icon: fas fa-music<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="以网易云音乐为例"><a class="markdownIt-Anchor" href="#以网易云音乐为例"></a> 以网易云音乐为例</h4>
+<blockquote>
 <p>这个就非常简单了，不需要安装任何插件，只需要创建新页面，配置二级导航即可</p>
 </blockquote>
 <ol>
-<li><p>创建音乐页面</p>
-<p> 输入命令</p>
+<li>
+<p>创建音乐页面</p>
+<p>输入命令</p>
  <pre class="line-numbers language-none"><code class="language-none">hexo new page musics<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p> 找到<code>source/musics/index.md</code>这个文件，修改这个文件，添加&nbsp;<code>type: "music"</code></p>
+<p>找到<code>source/musics/index.md</code>这个文件，修改这个文件，添加&nbsp;<code>type: "music"</code></p>
  <pre class="line-numbers language-none"><code class="language-none">---
 title: 音乐！音乐！
 date: 2020-06-16 14:45:30
 type: 'music'
 ---<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p> 在index.md文件中增加以下内容</p>
+<p>在index.md文件中增加以下内容</p>
  <pre class="line-numbers language-none"><code class="language-none">&lt;iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=530 height=520 src="//music.163.com/outchain/player?type=0&amp;id=2817562565&amp;auto=1&amp;height=430"&gt;&lt;/iframe&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <blockquote>
 <p>第二行的id的那串数字，需要改成你想要的歌单id</p>
 <p>查看自己id的方式：</p>
 <ol>
-<li><p>点击网易云音乐软件，找到想设置的歌单→分享→复制链接</p>
+<li>
+<p>点击网易云音乐软件，找到想设置的歌单→分享→复制链接</p>
 </li>
-<li><p><a target="_blank" rel="noopener" href="https://music.163.com/playlist?id=531558923&amp;userid=375531677">https://music.163.com/playlist?id=531558923&amp;userid=375531677</a></p>
+<li>
+<p><a target="_blank" rel="noopener" href="https://music.163.com/playlist?id=531558923&amp;userid=375531677">https://music.163.com/playlist?id=531558923&amp;userid=375531677</a></p>
 </li>
-<li><p>id则是你想要的id，<strong>不是</strong>后面的userid</p>
+<li>
+<p>id则是你想要的id，<strong>不是</strong>后面的userid</p>
 </li>
 </ol>
 </blockquote>
 </li>
-<li><p>配置音乐页面为二级导航栏</p>
-<p> 参考上边的二级导航栏配置方式</p>
+<li>
+<p>配置音乐页面为二级导航栏</p>
+<p>参考上边的二级导航栏配置方式</p>
 </li>
 </ol>
 <blockquote>
 <p>注意：此处界面最多显示十条歌曲，因此还存在问题</p>
 </blockquote>
-<h3 id="1-3-增加emoji支持"><a href="#1-3-增加emoji支持" class="headerlink" title="1.3 增加emoji支持"></a>1.3 增加emoji支持</h3><p>😄&nbsp;使你markdown博客里的emoji表情跳动起来</p>
+<h3 id="13-增加emoji支持"><a class="markdownIt-Anchor" href="#13-增加emoji支持"></a> 1.3 增加emoji支持</h3>
+<p>😄&nbsp;使你markdown博客里的emoji表情跳动起来</p>
 <ol>
-<li><p>安装插件</p>
+<li>
+<p>安装插件</p>
  <pre class="line-numbers language-none"><code class="language-none">npm install hexo-filter-github-emojis --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
-<li><p>在 Hexo 根目录下的 _config.yml 文件中，新增以下的配置项：</p>
+<li>
+<p>在 Hexo 根目录下的 _config.yml 文件中，新增以下的配置项：</p>
  <pre class="line-numbers language-none"><code class="language-none">githubEmojis:
   enable: true
   className: github-emoji
   inject: true
   styles:
   customEmojis:<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p> 重新部署即可查看</p>
+<p>重新部署即可查看</p>
 </li>
 </ol>
 <blockquote>
 <p>小坑：</p>
 <p>在配置支持前发布的文章中的表情并没有获得支持，并且连表情都不会显示，所以最好在配置之后再输入表情进行测试</p>
 </blockquote>
-<h3 id="1-4-新建文章自动打开本地Markdown编辑器"><a href="#1-4-新建文章自动打开本地Markdown编辑器" class="headerlink" title="1.4 新建文章自动打开本地Markdown编辑器"></a>1.4 新建文章自动打开本地Markdown编辑器</h3><blockquote>
+<h3 id="14-新建文章自动打开本地markdown编辑器"><a class="markdownIt-Anchor" href="#14-新建文章自动打开本地markdown编辑器"></a> 1.4 新建文章自动打开本地Markdown编辑器</h3>
+<blockquote>
 <p>写新文章时，需要控制台执行hexo new “文章名字”生成一篇新文章，但需要手动打开，挺麻烦，我们可以设置在生成之后自动打开</p>
 </blockquote>
 <p>在站点根目录下新建scripts目录，然后在新建<code>auto_open.js</code>，在文件填入一下内容：</p>
@@ -737,23 +768,27 @@ type: 'music'
 hexo.on('new', function(data){
   spawn('start  "D:\Program Files\Typora\Typora.exe" ' + data.path);
 });<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <blockquote>
 <p>其中”D:\Program Files\Typora\Typora.exe”是我本地编辑器的路径，只需要改为你本地编辑器的路径即可，然后在执行<code>hexo cl &amp;&amp; hexo g -d</code>，部署到GitHub即可，以后在发布文章就会自动打开编辑器。</p>
 </blockquote>
-<h3 id="1-5-代码高亮"><a href="#1-5-代码高亮" class="headerlink" title="1.5 代码高亮"></a>1.5 代码高亮</h3><p>由于 Hexo 自带的代码高亮主题显示不好看，用一个插件来替换它</p>
+<h3 id="15-代码高亮"><a class="markdownIt-Anchor" href="#15-代码高亮"></a> 1.5 代码高亮</h3>
+<p>由于 Hexo 自带的代码高亮主题显示不好看，用一个插件来替换它</p>
 <ol>
-<li><p>安装插件</p>
+<li>
+<p>安装插件</p>
  <pre class="line-numbers language-none"><code class="language-none">npm i -S hexo-prism-plugin<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
-<li><p>修改 Hexo 站点配置文件 _config.yml 中 highlight.enable 的值为 false，并新增 prism 插件相关的配置，主要配置如下：</p>
+<li>
+<p>修改 Hexo 站点配置文件 _config.yml 中 highlight.enable 的值为 false，并新增 prism 插件相关的配置，主要配置如下：</p>
  <pre class="line-numbers language-none"><code class="language-none">prism_plugin:
   mode: 'preprocess'    # realtime/preprocess
   theme: 'tomorrow'
   line_number: false    # default false
-  custom_css:<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+  custom_css:<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 </ol>
-<h3 id="1-6-添加友链"><a href="#1-6-添加友链" class="headerlink" title="1.6 添加友链"></a>1.6 添加友链</h3><p>在<code>\source\_data\friends.json</code>添加json字符串</p>
+<h3 id="16-添加友链"><a class="markdownIt-Anchor" href="#16-添加友链"></a> 1.6 添加友链</h3>
+<p>在<code>\source\_data\friends.json</code>添加json字符串</p>
 <p>欢迎小伙伴分享友链呀~</p>
 <p><strong>Matery版：</strong></p>
 <p>交换友链还请评论此格式哦~🌿</p>
@@ -765,7 +800,6 @@ hexo.on('new', function(data){
     <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"https://sulog.top/"</span><span class="token punctuation">,</span>
     <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"前去关照"</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>添加CSDN,此处参考<a target="_blank" rel="noopener" href="https://marmalade.vip/Materysettings1.html"># Hexo-Matery主题细致美化(上)</a></p>
 <pre class="line-numbers language-none"><code class="language-none">{
 
@@ -775,40 +809,52 @@ hexo.on('new', function(data){
 &nbsp; &nbsp; "url": "https://blog.csdn.net/m0_49448331?type=blog",
 &nbsp; &nbsp; "title": "CSDN"
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="1-7-搜索功能"><a href="#1-7-搜索功能" class="headerlink" title="1.7 搜索功能"></a>1.7 搜索功能</h3><p>实现文章内容搜索</p>
+<h3 id="17-搜索功能"><a class="markdownIt-Anchor" href="#17-搜索功能"></a> 1.7 搜索功能</h3>
+<p>实现文章内容搜索</p>
 <ol>
-<li><p>安装插件</p>
+<li>
+<p>安装插件</p>
  <pre class="line-numbers language-none"><code class="language-none">npm install hexo-generator-search --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
-<li><p>在 Hexo 站点配置文件 _config.yml 中，新增以下的配置项：</p>
+<li>
+<p>在 Hexo 站点配置文件 _config.yml 中，新增以下的配置项：</p>
  <pre class="line-numbers language-none"><code class="language-none">search:
   path: search.xml
-  field: post<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+  field: post<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
 </ol>
-<h3 id="1-8-中文链接转拼音"><a href="#1-8-中文链接转拼音" class="headerlink" title="1.8 中文链接转拼音"></a>1.8 中文链接转拼音</h3><p>如果你的文章名称是中文的，那么 Hexo 默认生成的文章链接也会有中文，这样不利于 SEO，且 gitment 评论对中文链接也不支持。我们可以用 hexo-permalink-pinyin Hexo 插件使在生成文章时生成中文拼音的永久链接。</p>
+<h3 id="18-中文链接转拼音"><a class="markdownIt-Anchor" href="#18-中文链接转拼音"></a> 1.8 中文链接转拼音</h3>
+<p>如果你的文章名称是中文的，那么 Hexo 默认生成的文章链接也会有中文，这样不利于 SEO，且 gitment 评论对中文链接也不支持。我们可以用 hexo-permalink-pinyin Hexo 插件使在生成文章时生成中文拼音的永久链接。</p>
 <ol>
-<li><p>安装插件</p>
+<li>
+<p>安装插件</p>
  <pre class="line-numbers language-none"><code class="language-none">npm i hexo-permalink-pinyin --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
-<li><p>在 Hexo 站点配置文件 _config.yml 中，新增以下的配置项：</p>
+<li>
+<p>在 Hexo 站点配置文件 _config.yml 中，新增以下的配置项：</p>
  <pre class="line-numbers language-none"><code class="language-none">permalink_pinyin:
   enable: true
-  separator: '-' # default: '-'<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+  separator: '-' # default: '-'<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
 </ol>
-<h3 id="1-9-文章字数统计插件"><a href="#1-9-文章字数统计插件" class="headerlink" title="1.9 文章字数统计插件"></a>1.9 文章字数统计插件</h3><p>用于在文章中显示文章字数、阅读时长信息</p>
+<h3 id="19-文章字数统计插件"><a class="markdownIt-Anchor" href="#19-文章字数统计插件"></a> 1.9 文章字数统计插件</h3>
+<p>用于在文章中显示文章字数、阅读时长信息</p>
 <ol>
-<li><p>安装插件</p>
+<li>
+<p>安装插件</p>
  <pre class="line-numbers language-none"><code class="language-none">npm i --save hexo-wordcount<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
-<li><p>在<strong>主题</strong>配置文件_config.yml 文件中，<strong>激活</strong>以下配置项即可：</p>
+<li>
+<p>在<strong>主题</strong>配置文件_config.yml 文件中，<strong>激活</strong>以下配置项即可：</p>
  <pre class="line-numbers language-none"><code class="language-none">wordCount:
   enable: false # 将这个值设置为 true 即可.
   postWordCount: true
   min2read: true
-  totalCount: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+  totalCount: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
 </ol>
-<h3 id="1-10-配置音乐播放器"><a href="#1-10-配置音乐播放器" class="headerlink" title="1.10 配置音乐播放器"></a>1.10 配置音乐播放器</h3><p>想支持音乐播放，在<strong>主题</strong>的 _config.yml 配置文件中激活music配置即可：</p>
+<h3 id="110-配置音乐播放器"><a class="markdownIt-Anchor" href="#110-配置音乐播放器"></a> 1.10 配置音乐播放器</h3>
+<p>想支持音乐播放，在<strong>主题</strong>的 _config.yml 配置文件中激活music配置即可：</p>
 <pre class="line-numbers language-none"><code class="language-none"># 是否在首页显示音乐.
 music:
   enable: true
@@ -828,7 +874,6 @@ music:
   volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
   listFolded: false  # 列表默认折叠
   hideLrc: true     # 隐藏歌词<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <blockquote>
 <p>属性介绍：</p>
 <p>server可选netease（网易云音乐），tencent（QQ音乐），kugou（酷狗音乐），xiami（虾米音乐），baidu（百度音乐）</p>
@@ -840,7 +885,8 @@ music:
 <p>matery主题不支持pjax异步机制，在切换页面时音乐也会切换，不会继续一首歌播放</p>
 <p>所以这个功能比较鸡肋，在于自己取舍</p>
 </blockquote>
-<h3 id="1-11-关于我页面添加个人简历"><a href="#1-11-关于我页面添加个人简历" class="headerlink" title="1.11 关于我页面添加个人简历"></a>1.11 关于我页面添加个人简历</h3><p>打开theme/matery/layout/about.ejs文件，大约在13行。有一个<code>card</code>标签，找出其对应结尾的标签，大约在61行左右，然后在下面新增如下代码</p>
+<h3 id="111-关于我页面添加个人简历"><a class="markdownIt-Anchor" href="#111-关于我页面添加个人简历"></a> 1.11 关于我页面添加个人简历</h3>
+<p>打开theme/matery/layout/about.ejs文件，大约在13行。有一个<code>card</code>标签，找出其对应结尾的标签，大约在61行左右，然后在下面新增如下代码</p>
 <pre class="line-numbers language-none"><code class="language-none">&lt;div class="card"&gt;
      &lt;div class="card-content"&gt;
          &lt;div class="card-content article-card-content"&gt;
@@ -853,12 +899,13 @@ music:
            &lt;/div&gt;
       &lt;/div&gt;
 &lt;/div&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>注意粘贴的位置和空格要正确，这里的位置随你自己设置，你也可以把简历作为第一个card，然后/source/about/index.md下面写上你的简历了（就像写博客一样）。</p>
 <blockquote>
-<p>中文显示为？？？<br>    这是因为<strong>站点配置文件</strong>没有使用<code>utf-8</code>编码造成的，所以在<strong>站点配置文件</strong><code>_config.yml</code>中写中文网站名，然后把<strong>站点配置文件</strong>保存为<code>utf-8格式</code>。包括md文件，出现该问题，也要用同样的方式解决。</p>
+<p>中文显示为？？？<br>
+这是因为<strong>站点配置文件</strong>没有使用<code>utf-8</code>编码造成的，所以在<strong>站点配置文件</strong><code>_config.yml</code>中写中文网站名，然后把<strong>站点配置文件</strong>保存为<code>utf-8格式</code>。包括md文件，出现该问题，也要用同样的方式解决。</p>
 </blockquote>
-<h3 id="1-12-配置404错误页面"><a href="#1-12-配置404错误页面" class="headerlink" title="1.12 配置404错误页面"></a>1.12 配置404错误页面</h3><p>站点根目录下的source文件夹下新建404.md文件，里面内容如下：</p>
+<h3 id="112-配置404错误页面"><a class="markdownIt-Anchor" href="#112-配置404错误页面"></a> 1.12 配置404错误页面</h3>
+<p>站点根目录下的source文件夹下新建404.md文件，里面内容如下：</p>
 <pre class="line-numbers language-none"><code class="language-none">---
 title: 404
 date: 2020-6-18 16:41:10
@@ -866,7 +913,6 @@ type: "404"
 layout: "404"
 description: "Oops～，我崩溃了！找不到你想要的页面了"
 ---<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>在主题文件夹的layout目录下新建404.ejs文件，添加内容如下：</p>
 <pre class="line-numbers language-none"><code class="language-none">&lt;style type="text/css"&gt;
     /* don't remove. */
@@ -895,17 +941,22 @@ description: "Oops～，我崩溃了！找不到你想要的页面了"
     // 每天切换 banner 图.  Switch banner image every day.
     $('.bg-cover').css('background-image', 'url(https://cdn.jsdelivr.net/gh/Yafine/cdn@3.3.1/source/medias/banner/' + new Date().getDay() + '.jpg)');
 &lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>然后部署，再看看效果即可<a target="_blank" rel="noopener" href="http://localhost:4000/404/">http://localhost:4000/404/</a></p>
 <p><img src="https://sulog.oss-cn-hangzhou.aliyuncs.com/matery2-6.png" alt="image-20200619203902808"></p>
-<h3 id="1-13-不蒜子统计"><a href="#1-13-不蒜子统计" class="headerlink" title="1.13 不蒜子统计"></a>1.13 不蒜子统计</h3><h4 id="1-13-1-底部总浏览量和访问人数总是隐藏"><a href="#1-13-1-底部总浏览量和访问人数总是隐藏" class="headerlink" title="1.13.1 底部总浏览量和访问人数总是隐藏"></a>1.13.1 底部总浏览量和访问人数总是隐藏</h4><p><a target="_blank" rel="noopener" href="https://jingeg.gitee.io/2020/03/04/hexozhongmateryzhutidegexinghuadingzhi/#toc-heading-10">原链接网页</a><br>有时候请求busuanzi数据比较慢，然后浏览量和访问人数就会隐藏，可能是默认的，在matery.css中增加以下代码可以让它一直显示</p>
+<h3 id="113-不蒜子统计"><a class="markdownIt-Anchor" href="#113-不蒜子统计"></a> 1.13 不蒜子统计</h3>
+<h4 id="1131-底部总浏览量和访问人数总是隐藏"><a class="markdownIt-Anchor" href="#1131-底部总浏览量和访问人数总是隐藏"></a> 1.13.1 底部总浏览量和访问人数总是隐藏</h4>
+<p><a target="_blank" rel="noopener" href="https://jingeg.gitee.io/2020/03/04/hexozhongmateryzhutidegexinghuadingzhi/#toc-heading-10">原链接网页</a><br>
+有时候请求busuanzi数据比较慢，然后浏览量和访问人数就会隐藏，可能是默认的，在matery.css中增加以下代码可以让它一直显示</p>
 <pre class="line-numbers language-none"><code class="language-none">   #busuanzi_container_site_pv,
    #busuanzi_value_site_pv,
    #busuanzi_container_site_uv{
       display: inline !important;
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>最终找到了一位大佬的解决方案：<a target="_blank" rel="noopener" href="https://blog.17lai.site/posts/84b4059a/#%E4%B8%8D%E8%92%9C%E5%AD%90-busuanzi-%E6%96%87%E7%AB%A0%E8%AE%A1%E6%95%B0%E5%87%BA%E9%94%99%E9%97%AE%E9%A2%98">基于Hexo的matery主题搭建博客常见问题篇6 | 夜法之书 (17lai.site)</a></p>
-<h4 id="1-13-2-不蒜子-busuanzi-文章计数出错问题"><a href="#1-13-2-不蒜子-busuanzi-文章计数出错问题" class="headerlink" title="1.13.2 不蒜子 (busuanzi) 文章计数出错问题"></a>1.13.2 不蒜子 (busuanzi) 文章计数出错问题</h4><p>参考博客<a target="_blank" rel="noopener" href="https://www.cnblogs.com/ranxi169/p/16715360.html">原网页</a><br>还是不能显示数字。<br>最终找到了一位大佬的解决方案：<a target="_blank" rel="noopener" href="https://blog.17lai.site/posts/84b4059a/#%E4%B8%8D%E8%92%9C%E5%AD%90-busuanzi-%E6%96%87%E7%AB%A0%E8%AE%A1%E6%95%B0%E5%87%BA%E9%94%99%E9%97%AE%E9%A2%98">基于Hexo的matery主题搭建博客常见问题篇6 | 夜法之书 (17lai.site)</a>出现这个原因，和 Chrome 85 版本 Referrer Policy 更改有关。什么是 Referrer，简单理解，就是请求 Web 服务器时，可以在 HTTP Request 的请求头 (header) 中加上当前页面的 URL，例如我们在浏览某个博客页面，需要加载一些图片，从服务器请求这些图片时，referrer 就是当前的博客页面 URL。从这里也可以看出，referrer 可能会暴露请求来源的某些信息或者隐私，有一定的隐私或安全风险。之前版本的 Chrome 浏览器，如果网站没有指定自己的 Referrer Policy，那么 Chrome 默认 policy 是 no-referrer-when-downgrade，在 Chrome 85 版本中，为了保护用户的隐私，默认的 Referrer Policy 则变成了 strict-origin-when-cross-origin。</p>
+<h4 id="1132-不蒜子-busuanzi-文章计数出错问题"><a class="markdownIt-Anchor" href="#1132-不蒜子-busuanzi-文章计数出错问题"></a> 1.13.2 不蒜子 (busuanzi) 文章计数出错问题</h4>
+<p>参考博客<a target="_blank" rel="noopener" href="https://www.cnblogs.com/ranxi169/p/16715360.html">原网页</a><br>
+还是不能显示数字。<br>
+最终找到了一位大佬的解决方案：<a target="_blank" rel="noopener" href="https://blog.17lai.site/posts/84b4059a/#%E4%B8%8D%E8%92%9C%E5%AD%90-busuanzi-%E6%96%87%E7%AB%A0%E8%AE%A1%E6%95%B0%E5%87%BA%E9%94%99%E9%97%AE%E9%A2%98">基于Hexo的matery主题搭建博客常见问题篇6 | 夜法之书 (17lai.site)</a>出现这个原因，和 Chrome 85 版本 Referrer Policy 更改有关。什么是 Referrer，简单理解，就是请求 Web 服务器时，可以在 HTTP Request 的请求头 (header) 中加上当前页面的 URL，例如我们在浏览某个博客页面，需要加载一些图片，从服务器请求这些图片时，referrer 就是当前的博客页面 URL。从这里也可以看出，referrer 可能会暴露请求来源的某些信息或者隐私，有一定的隐私或安全风险。之前版本的 Chrome 浏览器，如果网站没有指定自己的 Referrer Policy，那么 Chrome 默认 policy 是 no-referrer-when-downgrade，在 Chrome 85 版本中，为了保护用户的隐私，默认的 Referrer Policy 则变成了 strict-origin-when-cross-origin。</p>
 <ul>
 <li>no-referrer-when-downgrade: 当两个网站的 http 协议安全等级相当，或者目的网站安全协议等级高于当前网站(HTTP –&gt; HTTP, HTTPS –&gt; HTTPS, HTTP –&gt; HTTPS)， referer 将会包含源网站的域名，路径，查询字符串；如果目的网站安全协议等级低于源网站 (HTTPS –&gt; HTTP)，将不会发送这些信息。</li>
 <li>strict-origin-when-cross-origin： 只有当做同一域名请求时 (源网址和目标网址是同一域名），才发送域名，路径和请求字符串，当两个网站安全协议相当时，发送源网站的域名(没有具体路径信息和查询字符串)，如果目标网站安全协议等级低于源网站，不发送 header 信息。</li>
@@ -914,7 +965,8 @@ description: "Oops～，我崩溃了！找不到你想要的页面了"
 <p>修复方法：</p>
 <p>在主题文件夹下/layout/_partial/head.ejs中添加</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>referrer<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no-referrer-when-downgrade<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h4 id="1-13-3-增加建站时间"><a href="#1-13-3-增加建站时间" class="headerlink" title="1.13.3 增加建站时间"></a>1.13.3 增加建站时间</h4><p><a target="_blank" rel="noopener" href="https://blog.bluesky01st.eu.org/posts/d76019f8.html">源网页</a></p>
+<h4 id="1133-增加建站时间"><a class="markdownIt-Anchor" href="#1133-增加建站时间"></a> 1.13.3 增加建站时间</h4>
+<p><a target="_blank" rel="noopener" href="https://blog.bluesky01st.eu.org/posts/d76019f8.html">源网页</a></p>
 <p>在<code>themes/matery/_config.yml</code>找到以下内容(42行)：</p>
 <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment"># Website start time.</span>
 <span class="token comment"># 站点运行开始时间.</span>
@@ -926,13 +978,16 @@ description: "Oops～，我崩溃了！找不到你想要的页面了"
   <span class="token key atrule">hour</span><span class="token punctuation">:</span>  <span class="token comment"># 小时</span>
   <span class="token key atrule">minute</span><span class="token punctuation">:</span>  <span class="token comment"># 分钟</span>
   <span class="token key atrule">second</span><span class="token punctuation">:</span>  <span class="token comment"># 秒</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>修改为你的建站时间即可</p>
-<h3 id="1-13-写作设置"><a href="#1-13-写作设置" class="headerlink" title="1.13 写作设置"></a>1.13 写作设置</h3><p>目录中不显示一级标题，查阅了大部分网页发现一般有如下建议：</p>
+<h3 id="113-写作设置"><a class="markdownIt-Anchor" href="#113-写作设置"></a> 1.13 写作设置</h3>
+<p>目录中不显示一级标题，查阅了大部分网页发现一般有如下建议：</p>
 <blockquote>
-<p>建议正文的标题从二级标题开始，支持从一级标题开始只是为了兼容，之所以这样建议，是因为文章 title 是一级标题，正文如果需要标题，就往下一级从二级开始，这样很合理，不要跳级。<br>  注意：之后的markdown也要养成二级标题的习惯</p>
+<p>建议正文的标题从二级标题开始，支持从一级标题开始只是为了兼容，之所以这样建议，是因为文章 title 是一级标题，正文如果需要标题，就往下一级从二级开始，这样很合理，不要跳级。<br>
+注意：之后的markdown也要养成二级标题的习惯</p>
 </blockquote>
-<h2 id="2-视觉美化"><a href="#2-视觉美化" class="headerlink" title="2. 视觉美化"></a>2. 视觉美化</h2><h3 id="2-1-修改主题颜色及导航透明效果"><a href="#2-1-修改主题颜色及导航透明效果" class="headerlink" title="2.1 修改主题颜色及导航透明效果"></a>2.1 修改主题颜色及导航透明效果</h3><p>在主题文件的 /source/css/matery.css 文件中，搜索 .bg-color 来修改背景颜色：</p>
+<h2 id="2-视觉美化"><a class="markdownIt-Anchor" href="#2-视觉美化"></a> 2. 视觉美化</h2>
+<h3 id="21-修改主题颜色及导航透明效果"><a class="markdownIt-Anchor" href="#21-修改主题颜色及导航透明效果"></a> 2.1 修改主题颜色及导航透明效果</h3>
+<p>在主题文件的 /source/css/matery.css 文件中，搜索 .bg-color 来修改背景颜色：</p>
 <pre class="line-numbers language-none"><code class="language-none">/* 整体背景颜色，包括导航、移动端的导航、页尾、标签页等的背景颜色、透明效果. */
 .bg-color {
     background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
@@ -945,20 +1000,25 @@ description: "Oops～，我崩溃了！找不到你想要的页面了"
 @keyframes rainbow {
     /* 动态切换背景颜色. */
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="2-2-修改主题页面"><a href="#2-2-修改主题页面" class="headerlink" title="2.2 修改主题页面"></a>2.2 修改主题页面</h3><h4 id="2-2-1-修改-banner-图和文章特色图"><a href="#2-2-1-修改-banner-图和文章特色图" class="headerlink" title="2.2.1 修改 banner 图和文章特色图"></a>2.2.1 修改 banner 图和文章特色图</h4><p>你可以直接在 /source/medias/banner 文件夹中更换你喜欢的 banner 图片，主题代码中是每天动态切换一张，只需 7 张即可。</p>
+<h3 id="22-修改主题页面"><a class="markdownIt-Anchor" href="#22-修改主题页面"></a> 2.2 修改主题页面</h3>
+<h4 id="221-修改-banner-图和文章特色图"><a class="markdownIt-Anchor" href="#221-修改-banner-图和文章特色图"></a> 2.2.1 修改 banner 图和文章特色图</h4>
+<p>你可以直接在 /source/medias/banner 文件夹中更换你喜欢的 banner 图片，主题代码中是每天动态切换一张，只需 7 张即可。</p>
 <p>如果想改为每小时或者每分钟切换banner图的话，可以在 /layout/_partial/bg-cover-content.ejs 文件的&nbsp;<code>bannerUrl</code>&nbsp;代码中，将getDay()改为getHours()或者getMinutes()即可，当然需要再上述文件夹中有足够多的图片，如换成每小时就需要24张图。</p>
 <pre class="line-numbers language-none"><code class="language-none">var bannerUrl = "&lt;%- theme.jsDelivr.url %&gt;&lt;%- url_for('/medias/banner/') %&gt;" + new Date().getDay() + '.jpg';<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>文章特色图显示<br>如果 <code>img</code> 属性不填写的话，文章特色图会根据文章标题的 <code>hashcode</code> 的值取余，然后选取主题中对应的特色图片，从而达到让所有文章的特色图<strong>各有特色</strong>。<br>在 <code>/source/medias/featureimages</code> 文件夹中默认有 24 张特色图片，你可以再增加或者减少，并需要在 <code>_config.yml</code> 做同步修改,增加或者减少图片的名称。</p>
+<p>文章特色图显示<br>
+如果 <code>img</code> 属性不填写的话，文章特色图会根据文章标题的 <code>hashcode</code> 的值取余，然后选取主题中对应的特色图片，从而达到让所有文章的特色图<strong>各有特色</strong>。<br>
+在 <code>/source/medias/featureimages</code> 文件夹中默认有 24 张特色图片，你可以再增加或者减少，并需要在 <code>_config.yml</code> 做同步修改,增加或者减少图片的名称。</p>
 <pre class="line-numbers language-none"><code class="language-none">&nbsp;%% themes\materylayout\_partial\index-cover.ejs %%
 &nbsp;var featureImage = featureImages[Math.abs(hashCode(post.title) % imgCount)];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <pre class="line-numbers language-none"><code class="language-none">themes\materyJgy\_config.yml
 featureImages:
 	XXXX.XXX<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<p><img src="https://gitee.com/jgyong/blogimg/raw/master/img/202403271252109.png"><br>如果图片不显示的话，一定要仔细检查图片名字是否和<code>_config.yml</code>保持一致，特别注意图片的后缀是<code>jpg</code>还是<code>png</code></p>
-<h4 id="2-2-2-整体背景修改"><a href="#2-2-2-整体背景修改" class="headerlink" title="2.2.2 整体背景修改"></a>2.2.2 整体背景修改</h4><p>在<code>themes\Matery\source\css\matery.css</code>，ctrl+F快捷键查找<code>body</code><br>修改样式如下：<br>css</p>
+<p><img src="https://gitee.com/jgyong/blogimg/raw/master/img/202403271252109.png" alt=""><br>
+如果图片不显示的话，一定要仔细检查图片名字是否和<code>_config.yml</code>保持一致，特别注意图片的后缀是<code>jpg</code>还是<code>png</code></p>
+<h4 id="222-整体背景修改"><a class="markdownIt-Anchor" href="#222-整体背景修改"></a> 2.2.2 整体背景修改</h4>
+<p>在<code>themes\Matery\source\css\matery.css</code>，ctrl+F快捷键查找<code>body</code><br>
+修改样式如下：<br>
+css</p>
 <pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span> <span class="token punctuation">{</span>
     <span class="token comment">/* background-color: #eaeaea; */</span>
     <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>60deg<span class="token punctuation">,</span> <span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span> 165<span class="token punctuation">,</span> 150<span class="token punctuation">,</span> 0.5<span class="token punctuation">)</span> 5%<span class="token punctuation">,</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 228<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 0.35<span class="token punctuation">)</span><span class="token punctuation">)</span> 0% 0% / cover<span class="token punctuation">,</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">"https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"</span><span class="token punctuation">)</span></span><span class="token punctuation">,</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">"https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg"</span><span class="token punctuation">)</span></span> 0px 0px<span class="token punctuation">;</span>
@@ -967,8 +1027,8 @@ featureImages:
      <span class="token comment">/* 字体颜色*/</span>
     <span class="token property">color</span><span class="token punctuation">:</span> #7F95D1<span class="token punctuation">;</span>  
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="2-2-3-导航条颜色"><a href="#2-2-3-导航条颜色" class="headerlink" title="2.2.3 导航条颜色"></a>2.2.3 导航条颜色</h4><p>修改<code>themes\Matery\source\css\matery.css</code>样式</p>
+<h4 id="223-导航条颜色"><a class="markdownIt-Anchor" href="#223-导航条颜色"></a> 2.2.3 导航条颜色</h4>
+<p>修改<code>themes\Matery\source\css\matery.css</code>样式</p>
 <p>快捷键ctrl+F查找定位到<code>#4cbf30</code>（浅绿色）和<code>#0f9d58</code>（深绿色）还有首页字体颜色，</p>
 <p>然后将其修改为你喜欢的颜色</p>
 <blockquote>
@@ -981,7 +1041,8 @@ featureImages:
     <span class="token property">opacity</span><span class="token punctuation">:</span> 0.8<span class="token punctuation">;</span>  <span class="token comment">/*透明效果 值范围 0~1，看情况自己修改*/</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 </blockquote>
-<h4 id="2-2-4-滚动条美化"><a href="#2-2-4-滚动条美化" class="headerlink" title="2.2.4 滚动条美化"></a>2.2.4 滚动条美化</h4><p>此处为优化页面中所有的滚动条，包括代码横向的滚动条和页面纵向的滚动条</p>
+<h4 id="224-滚动条美化"><a class="markdownIt-Anchor" href="#224-滚动条美化"></a> 2.2.4 滚动条美化</h4>
+<p>此处为优化页面中所有的滚动条，包括代码横向的滚动条和页面纵向的滚动条</p>
 <p>在<code>themes\Matery\source\css\matery.css</code></p>
 <p>样式添加如下：</p>
 <p>css</p>
@@ -999,8 +1060,8 @@ featureImages:
     <span class="token property">width</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
     <span class="token property">height</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="2-2-5-目录透明化"><a href="#2-2-5-目录透明化" class="headerlink" title="2.2.5 目录透明化"></a>2.2.5 目录透明化</h4><p>增加样式在<code>themes\Matery\layout\_partial\post-detail-toc.ejs</code></p>
+<h4 id="225-目录透明化"><a class="markdownIt-Anchor" href="#225-目录透明化"></a> 2.2.5 目录透明化</h4>
+<p>增加样式在<code>themes\Matery\layout\_partial\post-detail-toc.ejs</code></p>
 <p><strong>修改</strong>内容如下：</p>
 <p>ejs</p>
 <pre class="line-numbers language-ejs" data-language="ejs"><code class="language-ejs">.toc-widget {
@@ -1010,16 +1071,20 @@ background-color: rgb(255, 255, 255,0.7);
 border-radius: 10px;
 box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07), 0 2px 5px -5px rgba(0, 0, 0, .1) !important;
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-<h3 id="2-3-修改页脚、跳动红心"><a href="#2-3-修改页脚、跳动红心" class="headerlink" title="2.3 修改页脚、跳动红心"></a>2.3 修改页脚、跳动红心</h3><h4 id="2-3-1-跳动红心"><a href="#2-3-1-跳动红心" class="headerlink" title="2.3.1 跳动红心"></a>2.3.1 跳动红心</h4><ol>
-<li><p>在文件的最下面加上以下代码</p>
+<h3 id="23-修改页脚-跳动红心"><a class="markdownIt-Anchor" href="#23-修改页脚-跳动红心"></a> 2.3 修改页脚、跳动红心</h3>
+<h4 id="231-跳动红心"><a class="markdownIt-Anchor" href="#231-跳动红心"></a> 2.3.1 跳动红心</h4>
+<ol>
+<li>
+<p>在文件的最下面加上以下代码</p>
  <pre class="line-numbers language-none"><code class="language-none">&lt;head&gt;&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"&gt;&lt;/head&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
-<li><p>将需要加跳动红心的地方加上以下代码</p>
- <pre class="line-numbers language-none"><code class="language-none">&lt;i id="heartbeat" class="fa fas fa-heartbeat"&gt;&lt;/i&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li>
+<p>将需要加跳动红心的地方加上以下代码</p>
+ <pre class="line-numbers language-none"><code class="language-none">&lt;i id="heartbeat" class="fa fas fa-heartbeat"&gt;&lt;/i&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
 </ol>
-<h4 id="2-3-2-修改页脚"><a href="#2-3-2-修改页脚" class="headerlink" title="2.3.2 修改页脚"></a>2.3.2 修改页脚</h4><p>修改的地方<code>themes\matery\layout\_partial/footer.ejs</code>文件中，包括站点、使用的主题、访问量等。</p>
+<h4 id="232-修改页脚"><a class="markdownIt-Anchor" href="#232-修改页脚"></a> 2.3.2 修改页脚</h4>
+<p>修改的地方<code>themes\matery\layout\_partial/footer.ejs</code>文件中，包括站点、使用的主题、访问量等。</p>
 <p><img src="https://sulog.oss-cn-hangzhou.aliyuncs.com/matery2-14.png" alt="image-20200619215304130"></p>
 <p>我的配置：</p>
 <pre class="line-numbers language-none"><code class="language-none">&lt;div class="col s12 m8 l8 copy-right"&gt;
@@ -1028,8 +1093,10 @@ box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07), 0
     &lt;br&gt;快乐每一天！
     &lt;br&gt;
 &lt;% if (theme.postInfo.totalCount) { %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-4-修改打赏二维码"><a href="#2-4-修改打赏二维码" class="headerlink" title="2.4 修改打赏二维码"></a>2.4 修改打赏二维码</h3><p>在主题文件的 source/medias/reward 文件中，你可以替换成你的的微信和支付宝的打赏二维码图片。</p>
-<h3 id="2-5-修改社交链接"><a href="#2-5-修改社交链接" class="headerlink" title="2.5 修改社交链接"></a>2.5 修改社交链接</h3><p>在主题配置文件_config.yml中，搜索<code>socialLink</code>，不配置值代表不启用，这是我的配置：</p>
+<h3 id="24-修改打赏二维码"><a class="markdownIt-Anchor" href="#24-修改打赏二维码"></a> 2.4 修改打赏二维码</h3>
+<p>在主题文件的 source/medias/reward 文件中，你可以替换成你的的微信和支付宝的打赏二维码图片。</p>
+<h3 id="25-修改社交链接"><a class="markdownIt-Anchor" href="#25-修改社交链接"></a> 2.5 修改社交链接</h3>
+<p>在主题配置文件_config.yml中，搜索<code>socialLink</code>，不配置值代表不启用，这是我的配置：</p>
 <pre class="line-numbers language-none"><code class="language-none"># 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
   github:  https://github.com/fenghen0918
@@ -1041,7 +1108,6 @@ socialLink:
   zhihu: # https://www.zhihu.com/xxx
   rss:  # true、false
   weixin: https://cdn.jsdelivr.net/gh/fenghen0918/fenghen0918.github.io/medias/imgs/wechat.png<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>其中的weixin我是用的图片链接，会跳转到一个新的标签页，之后还需要修改ejs文件，文件在主题目录下的layout文件夹下的_partial文件夹，修改social-link.ejs，添加相关的配置，我个人添加的配置如下：</p>
 <pre class="line-numbers language-none"><code class="language-none">&lt;% if (theme.socialLink.weixin) { %&gt;
     &lt;a href="&lt;%= theme.socialLink.weixin %&gt;" class="tooltipped" target="_blank" data-tooltip="微信联系我: " data-position="top" data-delay="50"&gt;
@@ -1062,8 +1128,9 @@ socialLink:
 &lt;% } %&gt;
 
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="2-6-标题"><a href="#2-6-标题" class="headerlink" title="2.6 标题"></a>2.6 标题</h3><h4 id="2-6-1-动态标题"><a href="#2-6-1-动态标题" class="headerlink" title="2.6.1 动态标题"></a>2.6.1 动态标题</h4><p><img src="https://sulog.oss-cn-hangzhou.aliyuncs.com/matery2-15.png" alt="image-20200619221831563"></p>
+<h3 id="26-标题"><a class="markdownIt-Anchor" href="#26-标题"></a> 2.6 标题</h3>
+<h4 id="261-动态标题"><a class="markdownIt-Anchor" href="#261-动态标题"></a> 2.6.1 动态标题</h4>
+<p><img src="https://sulog.oss-cn-hangzhou.aliyuncs.com/matery2-15.png" alt="image-20200619221831563"></p>
 <p><img src="https://sulog.oss-cn-hangzhou.aliyuncs.com/matery2-16.png" alt="image-20200619222009100"></p>
 <p>在主题文件下的<code>themes\matery\source\js</code>下新建<code>FunnyTitle.js</code>，增加以下代码</p>
 <pre class="line-numbers language-none"><code class="language-none">var OriginTitle = document.title;
@@ -1082,7 +1149,6 @@ document.addEventListener('visibilitychange', function () {
         }, 2000);
     }
 });<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>在<code>themes/matery/layout/layout.ejs</code>文件中添加如下代码：</p>
 <pre class="line-numbers language-none"><code class="language-none">&lt;script type="text/javascript"&gt;
       var OriginTitile=document.title,st;
@@ -1090,22 +1156,28 @@ document.addEventListener('visibilitychange', function () {
           document.hidden?(document.title="ヽ(●-`Д´-)ノ你要玩捉迷藏嘛",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ好哦！",st=setTimeout(function(){document.title=OriginTitile},3e3))
       })
   &lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h4 id="2-6-2-标题溢出"><a href="#2-6-2-标题溢出" class="headerlink" title="2.6.2 标题溢出"></a>2.6.2 标题溢出</h4><p><a target="_blank" rel="noopener" href="https://jingeg.gitee.io/2020/03/04/hexozhongmateryzhutidegexinghuadingzhi/#toc-heading-10">原网页</a><br>用手机浏览网站时网站名称稍微长点就会从导航栏掉下来，让人看着很不舒服。我选择用手机浏览时不显示logo图片只显示文字  </p>
+<h4 id="262-标题溢出"><a class="markdownIt-Anchor" href="#262-标题溢出"></a> 2.6.2 标题溢出</h4>
+<p><a target="_blank" rel="noopener" href="https://jingeg.gitee.io/2020/03/04/hexozhongmateryzhutidegexinghuadingzhi/#toc-heading-10">原网页</a><br>
+用手机浏览网站时网站名称稍微长点就会从导航栏掉下来，让人看着很不舒服。我选择用手机浏览时不显示logo图片只显示文字</p>
 <p><img src="https://jingeg.gitee.io/images/matery5.png" alt="网站名称"></p>
 <p>解决办法：在matery.css中添加以下代码。不懂css的注意放置的位置(第六行后面)</p>
 <pre class="line-numbers language-none"><code class="language-none">header .brand-logo .logo-img{
      display: none;
  }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-7-修改全局字体"><a href="#2-7-修改全局字体" class="headerlink" title="2.7 修改全局字体"></a>2.7 修改全局字体</h3><h4 id="2-7-1-修改全局字体样式"><a href="#2-7-1-修改全局字体样式" class="headerlink" title="2.7.1 修改全局字体样式"></a>2.7.1 修改全局字体样式</h4><ol>
-<li><p>在根目录下的&nbsp;<code>source</code>&nbsp;文件夹内创建一个名为&nbsp;<code>font</code>&nbsp;的文件夹，即文件夹路径为&nbsp;<code>/source/font/</code>&nbsp;，用来统一存放你要用到的字体。</p>
+<h3 id="27-修改全局字体"><a class="markdownIt-Anchor" href="#27-修改全局字体"></a> 2.7 修改全局字体</h3>
+<h4 id="271-修改全局字体样式"><a class="markdownIt-Anchor" href="#271-修改全局字体样式"></a> 2.7.1 修改全局字体样式</h4>
+<ol>
+<li>
+<p>在根目录下的&nbsp;<code>source</code>&nbsp;文件夹内创建一个名为&nbsp;<code>font</code>&nbsp;的文件夹，即文件夹路径为&nbsp;<code>/source/font/</code>&nbsp;，用来统一存放你要用到的字体。</p>
 </li>
-<li><p>将你要用到的字体放入上述创建的文件夹内，字体名称最好为英文，如 /source/font/myFont.ttf</p>
+<li>
+<p>将你要用到的字体放入上述创建的文件夹内，字体名称最好为英文，如 /source/font/myFont.ttf</p>
 <blockquote>
-<p>字体下载推荐：<a target="_blank" rel="noopener" href="http://www.diyiziti.com/">http://www.diyiziti.com/</a>
- </p>
+<p>字体下载推荐：<a target="_blank" rel="noopener" href="http://www.diyiziti.com/">http://www.diyiziti.com/</a></p>
 </blockquote>
 </li>
-<li><p>找到&nbsp;<code>/themes/matery/source/css/</code>下的 my.css 文件，填入下面的代码：</p>
+<li>
+<p>找到&nbsp;<code>/themes/matery/source/css/</code>下的 my.css 文件，填入下面的代码：</p>
  <pre class="line-numbers language-none"><code class="language-none">@font-face{
     font-family: 'myFont';
     src: url('../font/myFont.ttf');
@@ -1114,14 +1186,19 @@ document.addEventListener('visibilitychange', function () {
 body{
     font-family: 'myFont';
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>  将上面的 myFont 改成你自己的字体名称即可<br> 修改字体的坑：</p>
+<p>将上面的 myFont 改成你自己的字体名称即可<br>
+修改字体的坑：</p>
 </li>
 </ol>
 <blockquote>
-<p>上传字体后网页不显示，找了很多方法，后来发现是字体文件出了问题<br>方法：注意此处为<strong>所有用户安装</strong>，而不是简单的安装<br><img src="https://gitee.com/jgyong/blogimg/raw/master/img/202403241501409.png"></p>
+<p>上传字体后网页不显示，找了很多方法，后来发现是字体文件出了问题<br>
+方法：注意此处为<strong>所有用户安装</strong>，而不是简单的安装<br>
+<img src="https://gitee.com/jgyong/blogimg/raw/master/img/202403241501409.png" alt=""></p>
 </blockquote>
-<p>当一个字体虽然安装但不显示，可以尝试搜索其他的字体文件，可能该文件只适合于软件显示而不适合浏览器网页<br>所以更好的方式是通过这种在线配置的方法<a target="_blank" rel="noopener" href="https://blog.csdn.net/rsj1994/article/details/53037881#:~:text=%E5%9C%A8%E7%BD%91%E9%A1%B5%E4%B8%AD%EF%BC%8C%E6%88%91%E4%BB%AC%E5%8F%AF%E4%BB%A5%E7%94%A8CSS%E7%9A%84font-family%E5%B1%9E%E6%80%A7%E6%9D%A5%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93%EF%BC%8C%E7%84%B6%E8%80%8C%E5%AE%9A%E4%B9%89%E7%9A%84%E5%AD%97%E4%BD%93%E5%9C%A8%E7%94%A8%E6%88%B7%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%8A%E8%83%BD%E5%90%A6%E6%AD%A3%E7%A1%AE%E5%91%88%E7%8E%B0%E5%88%99%E8%A6%81%E7%9C%8B%E7%94%A8%E6%88%B7%E7%9A%84%E7%94%B5%E8%84%91%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E4%BA%86%E8%AF%A5%E5%AD%97%E4%BD%93%E3%80%82,%E6%88%91%E4%BB%AC%E7%BB%8F%E5%B8%B8%E8%83%BD%E7%9C%8B%E5%88%B0%E5%9B%BD%E5%A4%96%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E4%BA%86%E9%9D%9E%E5%B8%B8%E6%BC%82%E4%BA%AE%E7%9A%84%E5%AD%97%E4%BD%93%EF%BC%8C%E8%80%8C%E8%BF%99%E4%BA%9B%E5%AD%97%E4%BD%93%E9%80%9A%E5%B8%B8%E5%9C%A8%E7%94%A8%E6%88%B7%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%AD%E6%98%AF%E6%B2%A1%E6%9C%89%E5%AE%89%E8%A3%85%E7%9A%84%EF%BC%8C%E6%89%80%E4%BB%A5%E7%94%A8font-family%E5%B1%9E%E6%80%A7%E5%B0%B1%E6%97%A0%E6%B3%95%E5%AE%9E%E7%8E%B0%E4%BA%86%E3%80%82"># 通过css的@font-face属性，在网页上显示用户电脑没有的字体。</a>，<a target="_blank" rel="noopener" href="https://github.com/lxgw/LxgwWenKai/issues/24"># 如需网页上嵌入，请看这里</a>由于时间关系，没有深入研究。</p>
-<h4 id="2-7-2-修改全局字体大小"><a href="#2-7-2-修改全局字体大小" class="headerlink" title="2.7.2 修改全局字体大小"></a>2.7.2 修改全局字体大小</h4><p>在<code>matery.css</code>中修改<code>font-size</code>的值</p>
+<p>当一个字体虽然安装但不显示，可以尝试搜索其他的字体文件，可能该文件只适合于软件显示而不适合浏览器网页<br>
+所以更好的方式是通过这种在线配置的方法<a target="_blank" rel="noopener" href="https://blog.csdn.net/rsj1994/article/details/53037881#:~:text=%E5%9C%A8%E7%BD%91%E9%A1%B5%E4%B8%AD%EF%BC%8C%E6%88%91%E4%BB%AC%E5%8F%AF%E4%BB%A5%E7%94%A8CSS%E7%9A%84font-family%E5%B1%9E%E6%80%A7%E6%9D%A5%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93%EF%BC%8C%E7%84%B6%E8%80%8C%E5%AE%9A%E4%B9%89%E7%9A%84%E5%AD%97%E4%BD%93%E5%9C%A8%E7%94%A8%E6%88%B7%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%8A%E8%83%BD%E5%90%A6%E6%AD%A3%E7%A1%AE%E5%91%88%E7%8E%B0%E5%88%99%E8%A6%81%E7%9C%8B%E7%94%A8%E6%88%B7%E7%9A%84%E7%94%B5%E8%84%91%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E4%BA%86%E8%AF%A5%E5%AD%97%E4%BD%93%E3%80%82,%E6%88%91%E4%BB%AC%E7%BB%8F%E5%B8%B8%E8%83%BD%E7%9C%8B%E5%88%B0%E5%9B%BD%E5%A4%96%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E4%BA%86%E9%9D%9E%E5%B8%B8%E6%BC%82%E4%BA%AE%E7%9A%84%E5%AD%97%E4%BD%93%EF%BC%8C%E8%80%8C%E8%BF%99%E4%BA%9B%E5%AD%97%E4%BD%93%E9%80%9A%E5%B8%B8%E5%9C%A8%E7%94%A8%E6%88%B7%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%AD%E6%98%AF%E6%B2%A1%E6%9C%89%E5%AE%89%E8%A3%85%E7%9A%84%EF%BC%8C%E6%89%80%E4%BB%A5%E7%94%A8font-family%E5%B1%9E%E6%80%A7%E5%B0%B1%E6%97%A0%E6%B3%95%E5%AE%9E%E7%8E%B0%E4%BA%86%E3%80%82"># 通过css的@font-face属性，在网页上显示用户电脑没有的字体。</a>，<a target="_blank" rel="noopener" href="https://github.com/lxgw/LxgwWenKai/issues/24"># 如需网页上嵌入，请看这里</a>由于时间关系，没有深入研究。</p>
+<h4 id="272-修改全局字体大小"><a class="markdownIt-Anchor" href="#272-修改全局字体大小"></a> 2.7.2 修改全局字体大小</h4>
+<p>在<code>matery.css</code>中修改<code>font-size</code>的值</p>
 <pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">#articleContent p</span> <span class="token punctuation">{</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> 2px 2px 10px<span class="token punctuation">;</span>
     <span class="token property">font-size</span><span class="token punctuation">:</span> 1.2rem<span class="token punctuation">;</span>
@@ -1138,8 +1215,8 @@ body{
     <span class="token property">font-size</span><span class="token punctuation">:</span> 1.2rem<span class="token punctuation">;</span>
 
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="2-8-自定义鼠标样式"><a href="#2-8-自定义鼠标样式" class="headerlink" title="2.8 自定义鼠标样式"></a>2.8 自定义鼠标样式</h3><p>首先将鼠标样式下载到本地，推荐大家一个网站：<a target="_blank" rel="noopener" href="https://zhutix.com/ico/ori-cursors/">https://zhutix.com/ico/ori-cursors/</a></p>
+<h3 id="28-自定义鼠标样式"><a class="markdownIt-Anchor" href="#28-自定义鼠标样式"></a> 2.8 自定义鼠标样式</h3>
+<p>首先将鼠标样式下载到本地，推荐大家一个网站：<a target="_blank" rel="noopener" href="https://zhutix.com/ico/ori-cursors/">https://zhutix.com/ico/ori-cursors/</a></p>
 <p>以我的为例，我将鼠标指针样式放在了主题文件夹下的medias目录下，然后打开<code>themes\matery\source\css</code>下的<strong>my.css</strong>文件，添加内容如下：</p>
 <pre class="line-numbers language-none"><code class="language-none">*{
     cursor: url("/medias/imgs/zhengchang.ico"),auto!important;
@@ -1147,18 +1224,26 @@ body{
 :active{
     cursor: url("/medias/imgs/dianji.ico"),auto!important;
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-9-页面特效效果增加"><a href="#2-9-页面特效效果增加" class="headerlink" title="2.9 页面特效效果增加"></a>2.9 页面特效效果增加</h3><p>个人认为效果还是动态彩带效果最好</p>
-<h4 id="2-9-1-添加背景动态彩带效果"><a href="#2-9-1-添加背景动态彩带效果" class="headerlink" title="2.9.1 添加背景动态彩带效果"></a>2.9.1 添加背景动态彩带效果</h4><p>参考链接<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/69211731"># Hexo 博客美化合集（不断更新）</a>和<a target="_blank" rel="noopener" href="https://kaizynx.github.io/2020/03/19/Sakura_setting/"># Hexo-Sakura主题配置</a>，链接1提供的代码有误，与链接2提供的内容结合才可以实现该功能。<br><img src="https://gitee.com/jgyong/blogimg/raw/master/img/202403241328890.png" alt="彩带效果"><br>实现方法：在 \themes\material-x\layout\layout.ejs 文件的body前面添加如下代码：</p>
+<h3 id="29-页面特效效果增加"><a class="markdownIt-Anchor" href="#29-页面特效效果增加"></a> 2.9 页面特效效果增加</h3>
+<p>个人认为效果还是动态彩带效果最好</p>
+<h4 id="291-添加背景动态彩带效果"><a class="markdownIt-Anchor" href="#291-添加背景动态彩带效果"></a> 2.9.1 添加背景动态彩带效果</h4>
+<p>参考链接<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/69211731"># Hexo 博客美化合集（不断更新）</a>和<a target="_blank" rel="noopener" href="https://kaizynx.github.io/2020/03/19/Sakura_setting/"># Hexo-Sakura主题配置</a>，链接1提供的代码有误，与链接2提供的内容结合才可以实现该功能。<br>
+<img src="https://gitee.com/jgyong/blogimg/raw/master/img/202403241328890.png" alt="彩带效果"><br>
+实现方法：在 \themes\material-x\layout\layout.ejs 文件的body前面添加如下代码：</p>
 <pre class="line-numbers language-ejs" data-language="ejs"><code class="language-ejs"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/piao.js<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>还可以参考<a target="_blank" rel="noopener" href="https://iymark.com/articles/649.html"># js代码为你得网站加入动态彩色飘带</a>，将彩带文件更改为本地文件，此处未做尝试</p>
-<h4 id="2-9-2-樱花飘落"><a href="#2-9-2-樱花飘落" class="headerlink" title="2.9.2 樱花飘落"></a>2.9.2 樱花飘落</h4><p>此处作者博客中没有写相关代码，而且个人认为添加樱花效果反而显得页面很乱，这里没有记录</p>
-<h4 id="2-9-3-背景动态科技线条"><a href="#2-9-3-背景动态科技线条" class="headerlink" title="2.9.3 背景动态科技线条"></a>2.9.3 背景动态科技线条</h4><pre class="line-numbers language-none"><code class="language-none">&lt;!--动态线条背景--&gt;
+<h4 id="292-樱花飘落"><a class="markdownIt-Anchor" href="#292-樱花飘落"></a> 2.9.2 樱花飘落</h4>
+<p>此处作者博客中没有写相关代码，而且个人认为添加樱花效果反而显得页面很乱，这里没有记录</p>
+<h4 id="293-背景动态科技线条"><a class="markdownIt-Anchor" href="#293-背景动态科技线条"></a> 2.9.3 背景动态科技线条</h4>
+<pre class="line-numbers language-none"><code class="language-none">&lt;!--动态线条背景--&gt;
 &lt;script type="text/javascript"
 color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"&gt;
 &lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-10-页面加载动画添加"><a href="#2-10-页面加载动画添加" class="headerlink" title="2.10 页面加载动画添加"></a>2.10 页面加载动画添加</h3><p>主要按照博客<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43662760/article/details/122311217"># Matery主题自定义(六)页面加载动画</a>进行，建议访问原博客</p>
+<h3 id="210-页面加载动画添加"><a class="markdownIt-Anchor" href="#210-页面加载动画添加"></a> 2.10 页面加载动画添加</h3>
+<p>主要按照博客<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43662760/article/details/122311217"># Matery主题自定义(六)页面加载动画</a>进行，建议访问原博客</p>
 <ol>
-<li><p>在 <code>themes&gt;hexo-theme-matery&gt;layout&gt;_widget</code> 下创建一个 loading.ejs 文件，将下面的代码 cv 进去</p>
+<li>
+<p>在 <code>themes&gt;hexo-theme-matery&gt;layout&gt;_widget</code> 下创建一个 loading.ejs 文件，将下面的代码 cv 进去</p>
  <pre class="line-numbers language-none"><code class="language-none">&lt;% if (theme.preloader.enable) { %&gt;
   &lt;div id="loading-box"&gt;
     &lt;div class="loading-left-bg"&gt;&lt;/div&gt;
@@ -1182,7 +1267,10 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
   &lt;/script&gt;
 &lt;% } %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
-<li><p>完成了结构代码，下面就开始样式代码了，不然没有样式的动画也太丑了，下面的就是样式代码<br>当然，在复制粘贴代码之前，需要先创建样式文件<br>在 themes&gt;hexo-theme-matery&gt;source&gt;css&gt; 下创建一个新的文件 loading.css，在将下面的代码复制粘贴</p>
+<li>
+<p>完成了结构代码，下面就开始样式代码了，不然没有样式的动画也太丑了，下面的就是样式代码<br>
+当然，在复制粘贴代码之前，需要先创建样式文件<br>
+在 themes&gt;hexo-theme-matery&gt;source&gt;css&gt; 下创建一个新的文件 loading.css，在将下面的代码复制粘贴</p>
  <pre class="line-numbers language-none"><code class="language-none">#loading-box .loading-left-bg,
 #loading-box .loading-right-bg {
   position: fixed;
@@ -1295,20 +1383,29 @@ div.loaded div.spinner-box {
 }
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
-<li><p>添加至页面<br> 在将加载动画添加至页面中<br> 找到 themes&gt;hexo-theme-matery&gt;layout&gt;_partial&gt;head.ejs 文件，这个文件专门用来引入样式文件和配置网页信息</p>
-<p> 在  标签中引入 loading.css 文件</p>
+<li>
+<p>添加至页面<br>
+在将加载动画添加至页面中<br>
+找到 themes&gt;hexo-theme-matery&gt;layout&gt;_partial&gt;head.ejs 文件，这个文件专门用来引入样式文件和配置网页信息</p>
+<p>在  标签中引入 loading.css 文件</p>
  <pre class="line-numbers language-none"><code class="language-none">&lt;link rel="stylesheet" type="text/css" href="&lt;%- theme.jsDelivr.url %&gt;&lt;%- url_for('/css/loading.css') %&gt;"&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p> 引入样式文件后，引入结构文件 loading.ejs，插入在themes&gt;hexo-theme-matery&gt;layout&gt;layout.ejs  标签下第一行就行了</p>
- <pre class="line-numbers language-none"><code class="language-none">&lt;%- partial('_widget/loading') %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-<li><p>配置<br>最后在主题配置文件中进行配置 _config.yml，true 是开启；false 是关闭</p>
+<p>引入样式文件后，引入结构文件 loading.ejs，插入在themes&gt;hexo-theme-matery&gt;layout&gt;layout.ejs  标签下第一行就行了</p>
+ <pre class="line-numbers language-none"><code class="language-none">&lt;%- partial('_widget/loading') %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li>
+<p>配置<br>
+最后在主题配置文件中进行配置 _config.yml，true 是开启；false 是关闭</p>
 </li>
 </ol>
 <pre class="line-numbers language-none"><code class="language-none"># 是否开启页面加载动画
 preloader:
   enable: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-11-图片冒泡功能"><a href="#2-11-图片冒泡功能" class="headerlink" title="2.11 图片冒泡功能"></a>2.11 图片冒泡功能</h3><p>同样是参考同一作者的博客<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43662760/article/details/122311008">图片冒泡功能</a></p>
+<h3 id="211-图片冒泡功能"><a class="markdownIt-Anchor" href="#211-图片冒泡功能"></a> 2.11 图片冒泡功能</h3>
+<p>同样是参考同一作者的博客<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43662760/article/details/122311008">图片冒泡功能</a></p>
 <ol>
-<li><p>创建 buble.js<br> 在 <code>themes&gt;hexo-theme-matery&gt;source&gt;libs&gt;others</code> 下创建一个新的文件 <code>buble.js</code>，将下面的代码 CV 到 <code>buble.js</code> 中</p>
+<li>
+<p>创建 buble.js<br>
+在 <code>themes&gt;hexo-theme-matery&gt;source&gt;libs&gt;others</code> 下创建一个新的文件 <code>buble.js</code>，将下面的代码 CV 到 <code>buble.js</code> 中</p>
  <pre class="line-numbers language-none"><code class="language-none">// 上升的气泡
 function buble () {
   $('.carousel-item, .pd-header').circleMagic({
@@ -1373,14 +1470,20 @@ function buble () {
     }(), window.addEventListener("scroll", c, !1), window.addEventListener("resize", s, !1)
   }
 }(jQuery);
-buble()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li><p>_config.yml 配置<br>接着将这个文件在主题的配置文件（_config.yml）中 lib:js: 下引入，大约在 458 行</p>
+buble()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li>
+<p>_config.yml 配置<br>
+接着将这个文件在主题的配置文件（_config.yml）中 lib:js: 下引入，大约在 458 行</p>
 <pre class="line-numbers language-none"><code class="language-none">buble: /libs/others/buble.js<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>在主题的配置文件（_config.yml）中添加下面的代码</p>
 <pre class="line-numbers language-none"><code class="language-none"># banner 冒泡
 buble:
-  enable: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
-<li><p>引用<br>在 themes&gt;hexo-theme-matery&gt;layout&gt;layout.ejs 这的 body 标签中添加下面的代码</p>
+  enable: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+<li>
+<p>引用<br>
+在 themes&gt;hexo-theme-matery&gt;layout&gt;layout.ejs 这的 body 标签中添加下面的代码</p>
 </li>
 </ol>
 <pre class="line-numbers language-none"><code class="language-none">&lt;!-- 冒泡 --&gt;
@@ -1394,13 +1497,18 @@ buble:
     &lt;/script&gt;
 &lt;% } %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>banner 冒泡的效果就完成了</p>
-<h3 id="待优化功能"><a href="#待优化功能" class="headerlink" title="待优化功能"></a>待优化功能</h3><ol>
+<h3 id="待优化功能"><a class="markdownIt-Anchor" href="#待优化功能"></a> 待优化功能</h3>
+<ol>
 <li>夜间模式</li>
 <li>点击图片翻转</li>
 <li>通过在线配置字体的方式，使得未安装该字体的浏览器也能正常显示</li>
 </ol>
-<h2 id="3-博客优化"><a href="#3-博客优化" class="headerlink" title="3 博客优化"></a>3 博客优化</h2><p>此处并未进行修改，工作放在以后</p>
-<h3 id="3-1-gulp代码压缩"><a href="#3-1-gulp代码压缩" class="headerlink" title="3.1 gulp代码压缩"></a>3.1 gulp代码压缩</h3><h4 id="hexo-neat"><a href="#hexo-neat" class="headerlink" title="hexo-neat"></a>hexo-neat</h4><p><a target="_blank" rel="noopener" href="https://adaning.github.io/posts/42790.html">源网站</a><br>使用<a target="_blank" rel="noopener" href="https://github.com/rozbo/hexo-neat">hexo-neat</a>更为简单, 美中不足的是这个插件有俩小bug:</p>
+<h2 id="3-博客优化"><a class="markdownIt-Anchor" href="#3-博客优化"></a> 3 博客优化</h2>
+<p>此处并未进行修改，工作放在以后</p>
+<h3 id="31-gulp代码压缩"><a class="markdownIt-Anchor" href="#31-gulp代码压缩"></a> 3.1 gulp代码压缩</h3>
+<h4 id="hexo-neat"><a class="markdownIt-Anchor" href="#hexo-neat"></a> hexo-neat</h4>
+<p><a target="_blank" rel="noopener" href="https://adaning.github.io/posts/42790.html">源网站</a><br>
+使用<a target="_blank" rel="noopener" href="https://github.com/rozbo/hexo-neat">hexo-neat</a>更为简单, 美中不足的是这个插件有俩小bug:</p>
 <ul>
 <li>压缩<code>.md</code>文件会使 markdown 语法的代码块消失.</li>
 <li>会删除全角空格.</li>
@@ -1409,7 +1517,6 @@ buble:
 <p>在博客根目录命令行输入:</p>
 <p>bash</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">cnpm <span class="token function">install</span> hexo-neat <span class="token parameter variable">--save</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>然后在Hexo配置文件末尾加入(已针对matery的bug优化):</p>
 <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment">#hexo-neat 优化提速插件（去掉HTML、css、js的blank字符）</span>
 <span class="token key atrule">neat_enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
@@ -1430,8 +1537,17 @@ buble:
     <span class="token punctuation">-</span> <span class="token string">'**/*.min.js'</span>
     <span class="token punctuation">-</span> <span class="token string">'**/**/instantpage.js'</span>
     <span class="token punctuation">-</span> <span class="token string">'**/matery.js'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="3-2-CDN加速"><a href="#3-2-CDN加速" class="headerlink" title="3.2 CDN加速"></a>3.2 CDN加速</h3><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>此次主要依靠各位大佬的记录，优化博客界面，对于主题<code>matery</code>修改了一些样式，增加了一些功能。但对于前端页面的知识还是了解特别少，博客优化方面还有很多需要学习的地方，下面记录一下各位大佬的博客链接，方便以后优化页面，了解相关知识。再次感谢各位大佬的知识分享。<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43662760/category_11551976.html"># matery主题优化专栏</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42429718/article/details/105723193?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522171118467516800227433663%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&amp;request_id=171118467516800227433663&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_ecpm_v1~rank_v31_ecpm-1-105723193-null-null.nonecase&amp;utm_term=matery&amp;spm=1018.2226.3001.4450"># 【源码开放】Hexo+Github+Coding 博客butterfly 和 matery 主题 搭建完全教程【整理】</a></p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a target="_blank" rel="noopener" href="https://fenghen0918.github.io/2020/10/22/hexo/hexo-bo-ke-you-hua-pian-matery-yi/#toc-heading-1">魔改记录</a><br><a target="_blank" rel="noopener" href="https://yafine66.gitee.io/posts/20200317173728-8c84.html">大佬原始文件</a><br><a target="_blank" rel="noopener" href="https://blog.17lai.site/posts/84b4059a/#%E4%B8%8D%E8%92%9C%E5%AD%90-busuanzi-%E6%96%87%E7%AB%A0%E8%AE%A1%E6%95%B0%E5%87%BA%E9%94%99%E9%97%AE%E9%A2%98">基于Hexo的matery主题搭建博客常见问题篇6 | 夜法之书 (17lai.site)</a><br><a target="_blank" rel="noopener" href="https://marmalade.vip/Materysettings1.html"># Hexo-Matery主题细致美化(上)</a><br><a target="_blank" rel="noopener" href="https://lovelijunyi.gitee.io/posts/b8ec.html">Matery主题搭建与优化教程超详细解析</a></p>
+<h3 id="32-cdn加速"><a class="markdownIt-Anchor" href="#32-cdn加速"></a> 3.2 CDN加速</h3>
+<h2 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h2>
+<p>此次主要依靠各位大佬的记录，优化博客界面，对于主题<code>matery</code>修改了一些样式，增加了一些功能。但对于前端页面的知识还是了解特别少，博客优化方面还有很多需要学习的地方，下面记录一下各位大佬的博客链接，方便以后优化页面，了解相关知识。再次感谢各位大佬的知识分享。<br>
+<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43662760/category_11551976.html"># matery主题优化专栏</a><br>
+<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42429718/article/details/105723193?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522171118467516800227433663%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&amp;request_id=171118467516800227433663&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_ecpm_v1~rank_v31_ecpm-1-105723193-null-null.nonecase&amp;utm_term=matery&amp;spm=1018.2226.3001.4450"># 【源码开放】Hexo+Github+Coding 博客butterfly 和 matery 主题 搭建完全教程【整理】</a></p>
+<h2 id="参考链接"><a class="markdownIt-Anchor" href="#参考链接"></a> 参考链接</h2>
+<p><a target="_blank" rel="noopener" href="https://fenghen0918.github.io/2020/10/22/hexo/hexo-bo-ke-you-hua-pian-matery-yi/#toc-heading-1">魔改记录</a><br>
+<a target="_blank" rel="noopener" href="https://yafine66.gitee.io/posts/20200317173728-8c84.html">大佬原始文件</a><br>
+<a target="_blank" rel="noopener" href="https://blog.17lai.site/posts/84b4059a/#%E4%B8%8D%E8%92%9C%E5%AD%90-busuanzi-%E6%96%87%E7%AB%A0%E8%AE%A1%E6%95%B0%E5%87%BA%E9%94%99%E9%97%AE%E9%A2%98">基于Hexo的matery主题搭建博客常见问题篇6 | 夜法之书 (17lai.site)</a><br>
+<a target="_blank" rel="noopener" href="https://marmalade.vip/Materysettings1.html"># Hexo-Matery主题细致美化(上)</a><br>
+<a target="_blank" rel="noopener" href="https://lovelijunyi.gitee.io/posts/b8ec.html">Matery主题搭建与优化教程超详细解析</a></p>
 
                 
             </div>
@@ -2236,7 +2352,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">37.9k</span>&nbsp;字
+                class="white-color">39.1k</span>&nbsp;字
             <br>
             
             

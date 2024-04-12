@@ -6,7 +6,7 @@
   <link href="https://jiang-gy.github.io/atom.xml" rel="self"/>
   
   <link href="https://jiang-gy.github.io/"/>
-  <updated>2024-04-10T13:36:46.954Z</updated>
+  <updated>2024-04-12T01:50:59.617Z</updated>
   <id>https://jiang-gy.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何理解矩阵乘法</title>
+    <link href="https://jiang-gy.github.io/2024/04/11/shu-xue-xiang-guan/ru-he-li-jie-ju-zhen-cheng-fa/"/>
+    <id>https://jiang-gy.github.io/2024/04/11/shu-xue-xiang-guan/ru-he-li-jie-ju-zhen-cheng-fa/</id>
+    <published>2024-04-11T02:32:31.000Z</published>
+    <updated>2024-04-12T01:50:59.617Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-从计算的角度行列&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-从计算的角度行列&quot;&gt;&lt;/a&gt; 1</summary>
+        
+      
+    
+    
+    
+    
+    <category term="数学知识" scheme="https://jiang-gy.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
   
   <entry>
     <title>VScode SSH连接出现：Could not establish connection to 262&#92;273&#92;326&#92;252&#92;26513001325&#92;3421321&#92;371&#92;2651304&#92;326问题</title>
@@ -28,7 +51,8 @@
       
         
         
-    <summary type="html">&lt;p&gt;今天打算利用ModelArts-HuaweiCloud镜像测试一些程序，使用Vscode远程连接，没想到出现以下错误。&lt;br&gt;&lt;img</summary>
+    <summary type="html">&lt;p&gt;今天打算利用ModelArts-HuaweiCloud镜像测试一些程序，使用Vscode远程连接，没想到出现以下错误。&lt;br&gt;
+&lt;img</summary>
         
       
     
@@ -53,7 +77,8 @@
       
         
         
-    <summary type="html">&lt;p&gt;针对mytery中有序列表、分割线以及特定标签美化。&lt;br&gt;主要内容来自于网站&lt;a</summary>
+    <summary type="html">&lt;p&gt;针对mytery中有序列表、分割线以及特定标签美化。&lt;br&gt;
+主要内容来自于网站&lt;a</summary>
         
       
     
@@ -151,7 +176,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;一-什么是内网穿透&quot;&gt;&lt;a href=&quot;#一-什么是内网穿透&quot; class=&quot;headerlink&quot; title=&quot;一 什么是内网穿透&quot;&gt;&lt;/a&gt;一</summary>
+    <summary type="html">&lt;h2 id=&quot;一-什么是内网穿透&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#一-什么是内网穿透&quot;&gt;&lt;/a&gt; 一</summary>
         
       
     
@@ -174,11 +199,8 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;出差携带物品&quot;&gt;出差携带物品&lt;/h2&gt;
-&lt;h3 id=&quot;1-背包&quot;&gt;1 背包&lt;/h3&gt;
-&lt;p&gt;背包一定要带两个，两个包一方面容纳的东西多，另一方面减轻重量&lt;br&gt;
-两个包，双肩包放电脑及电子产品，手提包放日常衣服及路上吃的&lt;br&gt;
-&lt;strong&gt;1</summary>
+    <summary type="html">&lt;h2 id=&quot;出差携带物品&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#出差携带物品&quot;&gt;&lt;/a&gt; 出差携带物品&lt;/h2&gt;
+&lt;h3 id=&quot;1-背包&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-背包&quot;&gt;&lt;/a&gt; 1</summary>
         
       
     
@@ -237,7 +259,10 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;1-通过分支方式复制&quot;&gt;&lt;a href=&quot;#1-通过分支方式复制&quot; class=&quot;headerlink&quot; title=&quot;1 通过分支方式复制&quot;&gt;&lt;/a&gt;1</summary>
+    <summary type="html">&lt;h2 id=&quot;1-通过分支方式复制&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-通过分支方式复制&quot;&gt;&lt;/a&gt; 1 通过分支方式复制&lt;/h2&gt;
+&lt;p&gt;不推荐，因为这样的话仓库变为公有，所有人都能访问&lt;br&gt;
+作者：直上云霄&lt;br&gt;
+链接：&lt;a</summary>
         
       
     
@@ -262,7 +287,8 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;1-购买域名&quot;&gt;&lt;a href=&quot;#1-购买域名&quot; class=&quot;headerlink&quot; title=&quot;1 购买域名&quot;&gt;&lt;/a&gt;1 购买域名&lt;/h3&gt;&lt;p&gt;如果想要免费的域名，可以到下面网址购买：&lt;a</summary>
+    <summary type="html">&lt;h3 id=&quot;1-购买域名&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-购买域名&quot;&gt;&lt;/a&gt; 1 购买域名&lt;/h3&gt;
+&lt;p&gt;如果想要免费的域名，可以到下面网址购买：&lt;a</summary>
         
       
     
@@ -308,7 +334,8 @@
       
         
         
-    <summary type="html">&lt;h5 id=&quot;一、另外生成一份SSH-key&quot;&gt;&lt;a href=&quot;#一、另外生成一份SSH-key&quot; class=&quot;headerlink&quot; title=&quot;一、另外生成一份SSH key&quot;&gt;&lt;/a&gt;一、另外生成一份SSH key&lt;/h5&gt;&lt;p&gt;执行命令：&lt;/p&gt;
+    <summary type="html">&lt;h5 id=&quot;一-另外生成一份ssh-key&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#一-另外生成一份ssh-key&quot;&gt;&lt;/a&gt; 一、另外生成一份SSH key&lt;/h5&gt;
+&lt;p&gt;执行命令：&lt;/p&gt;
 &lt;pre</summary>
         
       
@@ -332,7 +359,8 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;1-调整鼠标颜色&quot;&gt;&lt;a href=&quot;#1-调整鼠标颜色&quot; class=&quot;headerlink&quot; title=&quot;1 调整鼠标颜色&quot;&gt;&lt;/a&gt;1 调整鼠标颜色&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+    <summary type="html">&lt;h2 id=&quot;1-调整鼠标颜色&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-调整鼠标颜色&quot;&gt;&lt;/a&gt; 1 调整鼠标颜色&lt;/h2&gt;
+&lt;p&gt;&lt;a</summary>
         
       
     
@@ -403,7 +431,8 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;1-无线仿真&quot;&gt;&lt;a href=&quot;#1-无线仿真&quot; class=&quot;headerlink&quot; title=&quot;1 无线仿真&quot;&gt;&lt;/a&gt;1 无线仿真&lt;/h2&gt;&lt;p&gt;以&lt;code&gt;wifi-ap.cc&lt;/code&gt;为例&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;1-无线仿真&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-无线仿真&quot;&gt;&lt;/a&gt; 1 无线仿真&lt;/h2&gt;
+&lt;p&gt;以&lt;code&gt;wifi-ap.cc&lt;/code&gt;为例&lt;/p&gt;
 &lt;h3 id=&quot;1-前提知识&quot;&gt;&lt;a</summary>
         
       
@@ -445,29 +474,6 @@
         
         
     <summary type="html">&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="网络仿真" scheme="https://jiang-gy.github.io/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>NS3学习资料汇总</title>
-    <link href="https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-xue-xi-zi-liao-hui-zong/"/>
-    <id>https://jiang-gy.github.io/2024/02/01/ns3-fang-zhen/ns3-xue-xi-zi-liao-hui-zong/</id>
-    <published>2024-02-01T01:29:35.000Z</published>
-    <updated>2024-03-27T03:31:26.320Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;学习资料&quot;&gt;&lt;a href=&quot;#学习资料&quot; class=&quot;headerlink&quot; title=&quot;学习资料&quot;&gt;&lt;/a&gt;学习资料&lt;/h2&gt;&lt;h2 id=&quot;1-官方学习网址&quot;&gt;&lt;a href=&quot;#1-官方学习网址&quot; class=&quot;headerlink&quot;</summary>
         
       
     

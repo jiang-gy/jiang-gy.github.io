@@ -33,7 +33,12 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
     <script src="/libs/jquery/jquery.min.js"></script>
-<meta name="generator" content="Hexo 6.3.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="努力搬砖的眼镜狗" type="application/atom+xml">
 </head>
@@ -42,6 +47,12 @@
 
 <!-- 样式一（鼠标点击更换样式） -->
 <script src="https://g.joyinshare.com/hc/ribbon.min.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
 
 <body>
 
@@ -551,7 +562,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    309
+                    310
                 </div>
                 
 
@@ -580,9 +591,12 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Ns3-Trace系统"><a href="#Ns3-Trace系统" class="headerlink" title="Ns3 Trace系统"></a>Ns3 Trace系统</h1><h2 id="Trace变量配置"><a href="#Trace变量配置" class="headerlink" title="Trace变量配置"></a>Trace变量配置</h2><p>​	由于Ns3初始化并没有提供Trace变量的初始值，创建变量时无法根据配置好的函数指针初始化Trace变量，因此只能在已存在的C++对象上配置Trace变量。</p>
+                <h1 id="ns3-trace系统"><a class="markdownIt-Anchor" href="#ns3-trace系统"></a> Ns3 Trace系统</h1>
+<h2 id="trace变量配置"><a class="markdownIt-Anchor" href="#trace变量配置"></a> Trace变量配置</h2>
+<p>​	由于Ns3初始化并没有提供Trace变量的初始值，创建变量时无法根据配置好的函数指针初始化Trace变量，因此只能在已存在的C++对象上配置Trace变量。</p>
 <p>​	在对象未创建、未分配内存时，Trace变量是无法配置的，即使配置相关属性，也不能成功使用。因此，Trace变量的配置操作必须放在网络拓扑用户应用建立完成之后，但必须放在<code>Simulation::Run()</code>之前。为保证每次成功配置并成功运行，十分建议养成在<strong>程序末尾配置Trace + 开启仿真运行的习惯</strong>。</p>
-<h3 id="1-ipv4-l3-protocol发送数据包"><a href="#1-ipv4-l3-protocol发送数据包" class="headerlink" title="1. ipv4-l3-protocol发送数据包"></a>1. ipv4-l3-protocol发送数据包</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//src/internet/model/ipv4-l3-protocol.cc</span>
+<h3 id="1-ipv4-l3-protocol发送数据包"><a class="markdownIt-Anchor" href="#1-ipv4-l3-protocol发送数据包"></a> 1. ipv4-l3-protocol发送数据包</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//src/internet/model/ipv4-l3-protocol.cc</span>
 TypeId 
 <span class="token class-name">Ipv4L3Protocol</span><span class="token double-colon punctuation">::</span><span class="token function">GetTypeId</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
@@ -612,9 +626,6 @@ TypeId
   <span class="token comment">/// and will be changed to \c Ptr&lt;const Ipv4&gt; in a future release.</span>
   TracedCallback<span class="token operator">&lt;</span>Ptr<span class="token operator">&lt;</span><span class="token keyword">const</span> Packet<span class="token operator">&gt;</span><span class="token punctuation">,</span> Ptr<span class="token operator">&lt;</span>Ipv4<span class="token operator">&gt;</span><span class="token punctuation">,</span>  <span class="token keyword">uint32_t</span><span class="token operator">&gt;</span> m_txTrace<span class="token punctuation">;</span>
 <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
 
                 
             </div>
@@ -1419,7 +1430,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">37.9k</span>&nbsp;字
+                class="white-color">39.1k</span>&nbsp;字
             <br>
             
             

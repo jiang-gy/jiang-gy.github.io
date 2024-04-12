@@ -33,7 +33,12 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
     <script src="/libs/jquery/jquery.min.js"></script>
-<meta name="generator" content="Hexo 6.3.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="努力搬砖的眼镜狗" type="application/atom+xml">
 </head>
@@ -42,6 +47,12 @@
 
 <!-- 样式一（鼠标点击更换样式） -->
 <script src="https://g.joyinshare.com/hc/ribbon.min.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
 
 <body>
 
@@ -552,8 +563,10 @@
                             <div class="title center-align">博客搭建</div>
                             <div class="description center-align">
                                 
-                                    Hexo笔记搭建记录文档一 Hexo网站的优势博客平台如CSDN，博客园，简书等平台，用户可以直接在上面发表，缺点是比较不自由，会受到平台的各种限制和恶心的广告。
-购买域名和服务器成本太高了，花力气去自己搭这么一个网站，还要定期的维护它，成
+                                     Hexo笔记搭建记录文档
+ 一 Hexo网站的优势
+博客平台如CSDN，博客园，简书等平台，用户可以直接在上面发表，缺点是比较不自由，会受到平台的各种限制和恶心的广告。
+购买域名和服务器成本太高了，花力气去自己搭这么一个网站，还要定期的维
                                 
                             </div>
                             <div class="cover-btns">
@@ -576,10 +589,13 @@
                             <div class="title center-align">论文写作</div>
                             <div class="description center-align">
                                 
-                                    论文写作结果分析1 写作方法
+                                     论文写作
+ 结果分析
+ 1 写作方法
+
 以下内容来源于ChatGPT
 
-科技论文中的结果分析部分是非常关键的，它不仅仅是简单地陈述实验结果，更要深入剖析数据，解释观察到的现象，并将结果与研究问题或假设联系起来。以下是一个通用的科技论文结果分析部分的写
+科技论文中的结果分析部分是非常关键的，它不仅仅是简单地陈述实验结果，更要深入剖析数据，解释观察到的现象，并将结果与研究问题或假设联系起来。以下是一个通用的科技论文结果
                                 
                             </div>
                             <div class="cover-btns">
@@ -709,6 +725,50 @@
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2024/04/11/shu-xue-xiang-guan/ru-he-li-jie-ju-zhen-cheng-fa/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="如何理解矩阵乘法">
+                            
+                            <span class="card-title">如何理解矩阵乘法</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                 1 从计算的角度：行*列
+正常按照数学理解是将前面矩阵理解为行向量的组合，后面矩阵为列向量的组合。常见的切分方式即前面行切，后面列切。在分布式机器学习中，前面矩阵常表示数据，切分对应并行方式为数据并行；后面矩阵表示模型，切分对应的并行方式
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-04-11
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                努力搬砖的眼镜狗
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
+                            <span class="chip bg-color">数学知识</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2024/04/09/vscode/vscode-ssh-lian-jie-chu-xian-could-not-establish-connection-to-jia-yi-da-dui-shu-zi-de-wen-ti/">
                         <div class="card-image">
                             
@@ -722,7 +782,10 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                今天打算利用ModelArts-HuaweiCloud镜像测试一些程序，使用Vscode远程连接，没想到出现以下错误。尝试更改VScode的执行权限，将其变为管理员执行方式，还是不起作用查询HUAWEI ModelArts官方网址，查找到一
+                                今天打算利用ModelArts-HuaweiCloud镜像测试一些程序，使用Vscode远程连接，没想到出现以下错误。
+
+尝试更改VScode的执行权限，将其变为管理员执行方式，还是不起作用
+查询HUAWEI ModelArts官方网址，查
                             
                         </div>
                         <div class="publish-info">
@@ -769,10 +832,12 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                针对mytery中有序列表、分割线以及特定标签美化。主要内容来自于网站Typecho美化主题教程，并做部分修改。欢迎访问原网页。
-1 美化有序标签将以下代码加入到主题设置自定义Css样式中
+                                针对mytery中有序列表、分割线以及特定标签美化。
+主要内容来自于网站Typecho美化主题教程，并做部分修改。欢迎访问原网页。
+ 1 美化有序标签
+将以下代码加入到主题设置自定义Css样式中
 ol{
-  list-style: none;  
+  list-style: none
                             
                         </div>
                         <div class="publish-info">
@@ -815,10 +880,13 @@ ol{
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                使用gitee图床，当上传图片大于1M时，出现无法加载的现象。原因是图片大于 1M，请登录后查看。可以查看链接# Picgo使用Gitee平台搭建图床照片无法显示解决方法：
+                                使用gitee图床，当上传图片大于1M时，出现无法加载的现象。原因是图片大于 1M，请登录后查看。可以查看链接# Picgo使用Gitee平台搭建图床照片无法显示
+解决方法：
 
-使用github（配合加速方式） 以下几种方式均可
-github
+使用github（配合加速方式）
+以下几种方式均可
+
+gith
                             
                         </div>
                         <div class="publish-info">
@@ -913,11 +981,8 @@ github
                         <div class="summary block-with-text">
                             
                                 默认情况 success error warning
+ 1 影视
 
-
-
-
-1 影视
 
                             
                         </div>
@@ -965,7 +1030,8 @@ github
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                一 什么是内网穿透1内网穿透是我们在进行网络连接时的一种术语，也叫做NAT穿透，即在计算机是局域网内的时候，外网与内网的计算机的节点进行连接时所需要的连接通信，有时候就会出现内网穿透不支的情况。内网穿透的功能就是，当我们在端口映射时设置时，
+                                 一 什么是内网穿透
+1内网穿透是我们在进行网络连接时的一种术语，也叫做NAT穿透，即在计算机是局域网内的时候，外网与内网的计算机的节点进行连接时所需要的连接通信，有时候就会出现内网穿透不支的情况。内网穿透的功能就是，当我们在端口映射时设置
                             
                         </div>
                         <div class="publish-info">
@@ -1008,12 +1074,12 @@ github
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                出差携带物品
-1 背包
+                                 出差携带物品
+ 1 背包
 背包一定要带两个，两个包一方面容纳的东西多，另一方面减轻重量
 两个包，双肩包放电脑及电子产品，手提包放日常衣服及路上吃的
 1 电子产品
-手机 ipad 充电宝 数据线（三合一、typeC） 充电头（2个）(一个充电宝
+手机 ipad 充电宝 数据线（三合一、typeC） 充电头（2个）(一个充
                             
                         </div>
                         <div class="publish-info">
@@ -1132,7 +1198,12 @@ github
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                1 通过分支方式复制不推荐，因为这样的话仓库变为公有，所有人都能访问作者：直上云霄链接：https://www.zhihu.com/question/21193762/answer/489124966来源：知乎著作权归作者所有。商业转载请联
+                                 1 通过分支方式复制
+不推荐，因为这样的话仓库变为公有，所有人都能访问
+作者：直上云霄
+链接：https://www.zhihu.com/question/21193762/answer/489124966
+来源：知乎
+著作权归作者所有。
                             
                         </div>
                         <div class="publish-info">
@@ -1179,52 +1250,10 @@ github
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                1 购买域名如果想要免费的域名，可以到下面网址购买：http://www.dot.tk/en/index.html?lang=en (没有尝试过)
+                                 1 购买域名
+如果想要免费的域名，可以到下面网址购买：http://www.dot.tk/en/index.html?lang=en (没有尝试过)
 如果有条件，最好到阿里云或者腾讯云等地方购买域名，1元优惠域名还是很多的。
-此处注意实名认证
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-03-30
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                努力搬砖的眼镜狗
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/Hexo%E5%8D%9A%E5%AE%A2/">
-                            <span class="chip bg-color">Hexo博客</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2024/03/30/bo-ke/hello-world/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Hello World">
-                            
-                            <span class="card-title">Hello World</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+此处注意实名
                             
                         </div>
                         <div class="publish-info">
@@ -1353,7 +1382,7 @@ github
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">37.9k</span>&nbsp;字
+                class="white-color">39.1k</span>&nbsp;字
             <br>
             
             

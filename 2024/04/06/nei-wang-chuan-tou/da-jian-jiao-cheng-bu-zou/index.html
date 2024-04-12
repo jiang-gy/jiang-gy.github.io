@@ -33,7 +33,12 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
     <script src="/libs/jquery/jquery.min.js"></script>
-<meta name="generator" content="Hexo 6.3.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="努力搬砖的眼镜狗" type="application/atom+xml">
 </head>
@@ -42,6 +47,12 @@
 
 <!-- 样式一（鼠标点击更换样式） -->
 <script src="https://g.joyinshare.com/hc/ribbon.min.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
 
 <body>
 
@@ -558,7 +569,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    12 分
+                    13 分
                 </div>
                 
 
@@ -580,43 +591,116 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一-什么是内网穿透"><a href="#一-什么是内网穿透" class="headerlink" title="一 什么是内网穿透"></a>一 什么是内网穿透</h2><p>1内网穿透是我们在进行网络连接时的一种术语，也叫做NAT穿透，即在计算机是局域网内的时候，外网与内网的计算机的节点进行连接时所需要的连接通信，有时候就会出现内网穿透不支的情况。内网穿透的功能就是，当我们在端口映射时设置时，内网穿透起到了地址转换的功能，也就是把公网的地址进行翻译，转成为一种私有的地址，然后再采用路由的方式ADSL的宽带路由器，具有一个动态或者是固定的公网IP，最后ADSL直接在 交换机 上，这样所有的电脑都可以共享上网。内网穿透除了可以实现内网之间机器的网络通信功通之外，还可以解决UDP中出现的数据传输不稳定问题。</p>
+                <h2 id="一-什么是内网穿透"><a class="markdownIt-Anchor" href="#一-什么是内网穿透"></a> 一 什么是内网穿透</h2>
+<p>1内网穿透是我们在进行网络连接时的一种术语，也叫做NAT穿透，即在计算机是局域网内的时候，外网与内网的计算机的节点进行连接时所需要的连接通信，有时候就会出现内网穿透不支的情况。内网穿透的功能就是，当我们在端口映射时设置时，内网穿透起到了地址转换的功能，也就是把公网的地址进行翻译，转成为一种私有的地址，然后再采用路由的方式ADSL的宽带路由器，具有一个动态或者是固定的公网IP，最后ADSL直接在 交换机 上，这样所有的电脑都可以共享上网。内网穿透除了可以实现内网之间机器的网络通信功通之外，还可以解决UDP中出现的数据传输不稳定问题。</p>
 <p>简单说，就是A客户端要访问B客户端，通过一台服务器进行桥接，桥接有两种方式，一种是相互转发，另一个是告诉对方的地址，自己就当一个介绍人的角色。</p>
-<h2 id="二-使用场景有哪些"><a href="#二-使用场景有哪些" class="headerlink" title="二 使用场景有哪些"></a>二 使用场景有哪些</h2><p>首先我们参考一下本人自己画的图</p>
-<p><img src="https://gitee.com/jgyong/blogimg/raw/master/img/202403211044654.png" alt="Pasted image 20240319094327"><br>1.小明的电脑和张三家里的电脑分别处在两个不同的局域网内，如果小明想访问张三家电脑的资源，这时就需要运用到内网穿透。借助frp端口映射技术进行内网穿透<br>2.张三在家办公想用家里的电脑，访问公司的电脑资源，这时也可以借助frp工具进行内网穿透进行实现</p>
+<h2 id="二-使用场景有哪些"><a class="markdownIt-Anchor" href="#二-使用场景有哪些"></a> 二 使用场景有哪些</h2>
+<p>首先我们参考一下本人自己画的图</p>
+<p><img src="https://gitee.com/jgyong/blogimg/raw/master/img/202403211044654.png" alt="Pasted image 20240319094327"><br>
+1.小明的电脑和张三家里的电脑分别处在两个不同的局域网内，如果小明想访问张三家电脑的资源，这时就需要运用到内网穿透。借助frp端口映射技术进行内网穿透<br>
+2.张三在家办公想用家里的电脑，访问公司的电脑资源，这时也可以借助frp工具进行内网穿透进行实现</p>
 <p>总结：在一个可以访问互联网的设备上，访问一个内网中的资源。</p>
-<h2 id="三-frp简介"><a href="#三-frp简介" class="headerlink" title="三 frp简介"></a>三 frp简介</h2><p>frp 是一个开源、简洁易用、高性能的内网穿透和反向代理软件，支持 tcp, udp, http, https等协议。<br>frp 是一个可用于内网穿透的高性能的反向代理应用，分为服务端frps和客户端frpc，支持 tcp, udp, http, https 协议。详情可浏览该项目的Github主页: <a target="_blank" rel="noopener" href="https://github.com/fatedier/frp/">https://github.com/fatedier/frp/</a></p>
-<h3 id="1-frp的作用"><a href="#1-frp的作用" class="headerlink" title="1 frp的作用"></a>1 frp的作用</h3><p>利用处于内网或防火墙后的机器，对外网环境提供 http 或 https 服务。<br>对于 http, https 服务支持基于域名的虚拟主机，支持自定义域名绑定，使多个域名可以共用一个80端口。<br>利用处于内网或防火墙后的机器，对外网环境提供 tcp 和 udp 服务，例如在家里通过 ssh 访问处于公司内网环境内的主机。</p>
-<h3 id="2-frp工作原理"><a href="#2-frp工作原理" class="headerlink" title="2 frp工作原理"></a>2 frp工作原理</h3><p>1.服务端运行，监听一个主端口，等待客户端的连接；<br>2.客户端连接到服务端的主端口，同时告诉服务端要监听的端口和转发类型；<br>3.服务端fork新的进程监听客户端指定的端口；<br>4.外网用户连接到客户端指定的端口，服务端通过和客户端的连接将数据转发到客户端；<br>5.客户端进程再将数据转发到本地服务，从而实现内网对外暴露服务的能力。</p>
-<h3 id="3-实验环境的准备"><a href="#3-实验环境的准备" class="headerlink" title="3 实验环境的准备"></a>3 实验环境的准备</h3><p>frp实验准备<br>1台vps：vps拥有公网地址(这里我用的阿里云vps)<br>2台linux/windows虚拟机<br>1台可以联网的设备(这里我用的kali)</p>
+<h2 id="三-frp简介"><a class="markdownIt-Anchor" href="#三-frp简介"></a> 三 frp简介</h2>
+<p>frp 是一个开源、简洁易用、高性能的内网穿透和反向代理软件，支持 tcp, udp, http, https等协议。<br>
+frp 是一个可用于内网穿透的高性能的反向代理应用，分为服务端frps和客户端frpc，支持 tcp, udp, http, https 协议。详情可浏览该项目的Github主页: <a target="_blank" rel="noopener" href="https://github.com/fatedier/frp/">https://github.com/fatedier/frp/</a></p>
+<h3 id="1-frp的作用"><a class="markdownIt-Anchor" href="#1-frp的作用"></a> 1 frp的作用</h3>
+<p>利用处于内网或防火墙后的机器，对外网环境提供 http 或 https 服务。<br>
+对于 http, https 服务支持基于域名的虚拟主机，支持自定义域名绑定，使多个域名可以共用一个80端口。<br>
+利用处于内网或防火墙后的机器，对外网环境提供 tcp 和 udp 服务，例如在家里通过 ssh 访问处于公司内网环境内的主机。</p>
+<h3 id="2-frp工作原理"><a class="markdownIt-Anchor" href="#2-frp工作原理"></a> 2 frp工作原理</h3>
+<p>1.服务端运行，监听一个主端口，等待客户端的连接；<br>
+2.客户端连接到服务端的主端口，同时告诉服务端要监听的端口和转发类型；<br>
+3.服务端fork新的进程监听客户端指定的端口；<br>
+4.外网用户连接到客户端指定的端口，服务端通过和客户端的连接将数据转发到客户端；<br>
+5.客户端进程再将数据转发到本地服务，从而实现内网对外暴露服务的能力。</p>
+<h3 id="3-实验环境的准备"><a class="markdownIt-Anchor" href="#3-实验环境的准备"></a> 3 实验环境的准备</h3>
+<p>frp实验准备<br>
+1台vps：vps拥有公网地址(这里我用的阿里云vps)<br>
+2台linux/windows虚拟机<br>
+1台可以联网的设备(这里我用的kali)</p>
 <p>拓展：为frp的原理是利用服务端（所准备的VPS）进行转发，因而VPS的速度直接决定了之后连接的质量。</p>
-<p>实验环境	需要计算机可以上网，vps拥有公网地址<br>kali	192.168.0.55		(测试机[能访问baidu即可])<br>linux 192.168.0.208		(clint[内网机器])<br>Win7  192.168.0.213		(clint[内网机器])<br>vps   your-vps-ip			(server[公网机器])</p>
+<p>实验环境	需要计算机可以上网，vps拥有公网地址<br>
+kali	192.168.0.55		(测试机[能访问baidu即可])<br>
+linux 192.168.0.208		(clint[内网机器])<br>
+Win7  192.168.0.213		(clint[内网机器])<br>
+vps   your-vps-ip			(server[公网机器])</p>
 <pre><code>这里做实验做了两个内网机器供大家学习。两种方法。
-    如果需要访问内网的网页服务，可以购买的域名。
+	如果需要访问内网的网页服务，可以购买的域名。
 </code></pre>
-<h3 id="vps"><a href="#vps" class="headerlink" title="vps"></a>vps</h3><p>如果是第一次买，推荐需要的朋友选择这两款其中一款(笔者买的是第二款相对多了1核)<br>这是新人专区的特惠(如果直接从阿里云产品里购买里比较贵)</p>
+<h3 id="vps"><a class="markdownIt-Anchor" href="#vps"></a> vps</h3>
+<p>如果是第一次买，推荐需要的朋友选择这两款其中一款(笔者买的是第二款相对多了1核)<br>
+这是新人专区的特惠(如果直接从阿里云产品里购买里比较贵)</p>
 <p><a target="_blank" rel="noopener" href="https://www.aliyun.com/activity/1111/index?spm=5176.21103406.J_6174043250.1.53321719sUISzv&amp;scm=20140722.M_1294.P_3426.MO_466-ID_5976783-CID_21937-ST_3606-V_1">https://www.aliyun.com/activity/1111/index?spm=5176.21103406.J_6174043250.1.53321719sUISzv&amp;scm=20140722.M_1294.P_3426.MO_466-ID_5976783-CID_21937-ST_3606-V_1</a></p>
 <p>这里给大家贴上链接地址。新人活动应该是一直存在，如果链接失效，大家寻找一波一定会有收货。</p>
-<p>域名<br>因为大家基本上是自用，这里给大家推荐一些，适合大众的域名购买<br>如果大家有阿里vps了，可以直接从这里进入(下方我也会贴上链接地址)</p>
-<p>万网链接地址<br><a target="_blank" rel="noopener" href="https://wanwang.aliyun.com/domain/?spm=5176.10173289.0.0.2f6b2e77depa6w">https://wanwang.aliyun.com/domain/?spm=5176.10173289.0.0.2f6b2e77depa6w</a><br>点击新用户专享<br>这里大家输入自己的网址信息，查询后可以1元购买未被注册的域名<br>接着大家把购买的域名添加到这里，然后解析设置，按照阿里云的帮助信息填写好。</p>
+<p>域名<br>
+因为大家基本上是自用，这里给大家推荐一些，适合大众的域名购买<br>
+如果大家有阿里vps了，可以直接从这里进入(下方我也会贴上链接地址)</p>
+<p>万网链接地址<br>
+<a target="_blank" rel="noopener" href="https://wanwang.aliyun.com/domain/?spm=5176.10173289.0.0.2f6b2e77depa6w">https://wanwang.aliyun.com/domain/?spm=5176.10173289.0.0.2f6b2e77depa6w</a><br>
+点击新用户专享<br>
+这里大家输入自己的网址信息，查询后可以1元购买未被注册的域名<br>
+接着大家把购买的域名添加到这里，然后解析设置，按照阿里云的帮助信息填写好。</p>
 <p>域名是需要备案的，这里我们可以以后在弄</p>
-<p>1.frp的使用<br>1.1  serve服务端设置<br>SSH连接到VPS之后运行如下命令查看处理器架构，根据架构下载不同版本的frp arch查看结果，如果是“X86_64“即可选择”amd64”，运行如下命令，根据架构不同，选择相应版本并进行下载。<br>​<br>先下载 frp客户端</p>
+<p>1.frp的使用<br>
+1.1  serve服务端设置<br>
+SSH连接到VPS之后运行如下命令查看处理器架构，根据架构下载不同版本的frp arch查看结果，如果是“X86_64“即可选择”amd64”，运行如下命令，根据架构不同，选择相应版本并进行下载。<br>
+​<br>
+先下载 frp客户端</p>
 <p>wget <a target="_blank" rel="noopener" href="https://github.com/fatedier/frp/releases/download/v0.22.0/frp_0.22.0_linux_amd64.tar.gz">https://github.com/fatedier/frp/releases/download/v0.22.0/frp_0.22.0_linux_amd64.tar.gz</a></p>
-<p>这里因为是github如果下载慢可以在外面下好上传到vps里<br>然后解压<br>tar -zxvf frp_0.22.0_linux_amd64.tar.gz<br>文件夹改个名，方便使用<br>cp -r frp_0.22.0_linux_amd64 frp<br>把解压出来的文件夹复制到你想要的目录下，为了方便我直接放在用户目录下了，进入该目录<br>cd frp<br>查看一下文件<br>ls -a<br>我们只需要关注如下几个文件</p>
+<p>这里因为是github如果下载慢可以在外面下好上传到vps里<br>
+然后解压<br>
+tar -zxvf frp_0.22.0_linux_amd64.tar.gz<br>
+文件夹改个名，方便使用<br>
+cp -r frp_0.22.0_linux_amd64 frp<br>
+把解压出来的文件夹复制到你想要的目录下，为了方便我直接放在用户目录下了，进入该目录<br>
+cd frp<br>
+查看一下文件<br>
+ls -a<br>
+我们只需要关注如下几个文件</p>
 <pre class="line-numbers language-none"><code class="language-none">frps
 frps.ini
 frpc
 frpc.ini<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>前两个文件（s结尾代表server）分别是服务端程序和服务端配置文件，后两个文件（c结尾代表client）分别是客户端程序和客户端配置文件。<br>因为我们正在配置服务端，可以删除客户端的两个文件<br>rm frpc<br>rm frpc.ini<br>然后修改frps.ini文件<br>vim frps.ini<br>这个文件应有如下格式<br>[common]<br>bind_port = 7000<br>dashboard_port = 7500<br>token = 12345678<br>dashboard_user = admin<br>dashboard_pwd = admin<br>vhost_http_port = 10080<br>vhost_https_port = 10443<br>如果没有必要，端口均可使用默认值，token、user和password项请自行设置。<br>“bind_port”表示用于客户端和服务端连接的端口，这个端口号我们之后在配置客户端的时候要用到。<br>“dashboard_port”是服务端仪表板的端口，若使用7500端口，在配置完成服务启动后可以通过浏览器访问 x.x.x.x:7500 （其中x.x.x.x为VPS的IP）查看frp服务运行信息。<br>“token”是用于客户端和服务端连接的口令，请自行设置并记录，稍后会用到。<br>“dashboard_user”和“dashboard_pwd”表示打开仪表板页面登录的用户名和密码，自行设置即可。<br>“vhost_http_port”和“vhost_https_port”用于反向代理HTTP主机时使用，本文不涉及HTTP协议，因而照抄或者删除这两条均可。</p>
+<p>前两个文件（s结尾代表server）分别是服务端程序和服务端配置文件，后两个文件（c结尾代表client）分别是客户端程序和客户端配置文件。<br>
+因为我们正在配置服务端，可以删除客户端的两个文件<br>
+rm frpc<br>
+rm frpc.ini<br>
+然后修改frps.ini文件<br>
+vim frps.ini<br>
+这个文件应有如下格式<br>
+[common]<br>
+bind_port = 7000<br>
+dashboard_port = 7500<br>
+token = 12345678<br>
+dashboard_user = admin<br>
+dashboard_pwd = admin<br>
+vhost_http_port = 10080<br>
+vhost_https_port = 10443<br>
+如果没有必要，端口均可使用默认值，token、user和password项请自行设置。<br>
+“bind_port”表示用于客户端和服务端连接的端口，这个端口号我们之后在配置客户端的时候要用到。<br>
+“dashboard_port”是服务端仪表板的端口，若使用7500端口，在配置完成服务启动后可以通过浏览器访问 x.x.x.x:7500 （其中x.x.x.x为VPS的IP）查看frp服务运行信息。<br>
+“token”是用于客户端和服务端连接的口令，请自行设置并记录，稍后会用到。<br>
+“dashboard_user”和“dashboard_pwd”表示打开仪表板页面登录的用户名和密码，自行设置即可。<br>
+“vhost_http_port”和“vhost_https_port”用于反向代理HTTP主机时使用，本文不涉及HTTP协议，因而照抄或者删除这两条均可。</p>
 <p>可以运行frps的服务端</p>
-<p>./frps -c frps.ini<br>如果看到屏幕输出这样一段内容，即表示运行正常，如果出现错误提示，请检查上面的步骤。</p>
-<p>2019/01/12 15:22:39 [I] [service.go:130] frps tcp listen on 0.0.0.0:7000<br>2019/01/12 15:22:39 [I] [service.go:172] http service listen on 0.0.0.0:10080<br>2019/01/12 15:22:39 [I] [service.go:193] https service listen on 0.0.0.0:10443<br>2019/01/12 15:22:39 [I] [service.go:216] Dashboard listen on 0.0.0.0:7500<br>2019/01/12 15:22:39 [I] [root.go:210] Start frps success</p>
+<p>./frps -c frps.ini<br>
+如果看到屏幕输出这样一段内容，即表示运行正常，如果出现错误提示，请检查上面的步骤。</p>
+<p>2019/01/12 15:22:39 [I] [service.go:130] frps tcp listen on 0.0.0.0:7000<br>
+2019/01/12 15:22:39 [I] [service.go:172] http service listen on 0.0.0.0:10080<br>
+2019/01/12 15:22:39 [I] [service.go:193] https service listen on 0.0.0.0:10443<br>
+2019/01/12 15:22:39 [I] [service.go:216] Dashboard listen on 0.0.0.0:7500<br>
+2019/01/12 15:22:39 [I] [root.go:210] Start frps success</p>
 <p>此时访问 x.x.x.x:7500 并使用自己设置的用户名密码登录，即可看到仪表板界面</p>
-<p>1.2 服务端后台运行<br>我们的服务端仅运行在前台，如果Ctrl+C停止或者关闭SSH窗口后，frps均会停止运行，因而我们使用 nohup命令将其运行在后台。</p>
-<p>nohup ./frps -c frps.ini &amp;<br>输出如下内容即表示正常运行</p>
-<p>nohup: ignoring input and appending output to ‘nohup.out’<br>此时可先使用Ctrl+C关闭nohup，frps依然会在后台运行，使用jobs命令查看后台运行的程序​jobs<br>在结果中我们可以看到frps正在后台正常运行</p>
-<p>[1]+  Running                 nohup ./frps -c frps.ini &amp;<br>此时访问 x.x.x.x:7500 依然可以打开仪表板界面，至此，服务端即设置完成。<br>这里有个坑，这里设置了后台运行。如果更改了配置需要重新运行这个程序 需要先结束这个进程</p>
+<p>1.2 服务端后台运行<br>
+我们的服务端仅运行在前台，如果Ctrl+C停止或者关闭SSH窗口后，frps均会停止运行，因而我们使用 nohup命令将其运行在后台。</p>
+<p>nohup ./frps -c frps.ini &amp;<br>
+输出如下内容即表示正常运行</p>
+<p>nohup: ignoring input and appending output to ‘nohup.out’<br>
+此时可先使用Ctrl+C关闭nohup，frps依然会在后台运行，使用jobs命令查看后台运行的程序​jobs<br>
+在结果中我们可以看到frps正在后台正常运行</p>
+<p>[1]+  Running                 nohup ./frps -c frps.ini &amp;<br>
+此时访问 x.x.x.x:7500 依然可以打开仪表板界面，至此，服务端即设置完成。<br>
+这里有个坑，这里设置了后台运行。如果更改了配置需要重新运行这个程序 需要先结束这个进程</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ps</span> <span class="token parameter variable">-aux</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"frps"</span> 
 $ <span class="token function">ps</span> a
 <span class="token comment"># 显示所有程序</span>
@@ -625,34 +709,96 @@ $ <span class="token function">ps</span> u
 $ <span class="token function">ps</span> x
 <span class="token comment"># 较长，较详细的显示该PID的信息</span>
 <span class="token function">kill</span> <span class="token parameter variable">-9</span> <span class="token comment"># id号</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-<p>1.3客户端设置<br>这里我运用的linux主机设备，和windows都进行了测试</p>
-<p>frp的客户端就是我们想要真正进行访问的那台设备，<br>大多数情况下应该会是一台Windows主机<br>Linux配置方法类似</p>
-<p>下载链接<br><a target="_blank" rel="noopener" href="https://github.com/fatedier/frp/releases">https://github.com/fatedier/frp/releases</a><br>这里的坑，win7下用的和 linux下用的程序不同</p>
-<p>根据客户端设备的情况选择相应的frp程序进行下载<br>用文本编辑器打开frpc.ini，与服务端类似，内容如下。</p>
-<p>[common]<br>server_addr = x.x.x.x<br>server_port = 7000<br>token = 12345678<br>[rdp]<br>type = tcp<br>local_ip = 127.0.0.1<br>local_port = 3389<br>remote_port = 7001<br>[smb]<br>type = tcp<br>local_ip = 127.0.0.1<br>local_port = 445<br>remote_port = 7002<br>这里需要注意<br>[common]<br>server_addr = x.x.x.x 这里是vps地址<br>server_port = 7000 这里是上面写的sever端口<br>token = 12345678 这里是上面server的token<br>其中common字段下的三项即为服务端的设置。</p>
-<p>“server_addr”为服务端IP地址，填入即可。<br>“server_port”为服务器端口，填入你设置的端口号即可，如果未改变就是7000<br>“token”是你在服务器上设置的连接口令，原样填入即可。</p>
+<p>1.3客户端设置<br>
+这里我运用的linux主机设备，和windows都进行了测试</p>
+<p>frp的客户端就是我们想要真正进行访问的那台设备，<br>
+大多数情况下应该会是一台Windows主机<br>
+Linux配置方法类似</p>
+<p>下载链接<br>
+<a target="_blank" rel="noopener" href="https://github.com/fatedier/frp/releases">https://github.com/fatedier/frp/releases</a><br>
+这里的坑，win7下用的和 linux下用的程序不同</p>
+<p>根据客户端设备的情况选择相应的frp程序进行下载<br>
+用文本编辑器打开frpc.ini，与服务端类似，内容如下。</p>
+<p>[common]<br>
+server_addr = x.x.x.x<br>
+server_port = 7000<br>
+token = 12345678<br>
+[rdp]<br>
+type = tcp<br>
+local_ip = 127.0.0.1<br>
+local_port = 3389<br>
+remote_port = 7001<br>
+[smb]<br>
+type = tcp<br>
+local_ip = 127.0.0.1<br>
+local_port = 445<br>
+remote_port = 7002<br>
+这里需要注意<br>
+[common]<br>
+server_addr = x.x.x.x 这里是vps地址<br>
+server_port = 7000 这里是上面写的sever端口<br>
+token = 12345678 这里是上面server的token<br>
+其中common字段下的三项即为服务端的设置。</p>
+<p>“server_addr”为服务端IP地址，填入即可。<br>
+“server_port”为服务器端口，填入你设置的端口号即可，如果未改变就是7000<br>
+“token”是你在服务器上设置的连接口令，原样填入即可。</p>
 <p>frp实际使用时，会按照端口号进行对应的转发，原理如下图所示。（侵权请联系删除）</p>
 <p>frpc.ini的rdp、smb字段都是自己定义的规则，自定义端口对应时格式如下。</p>
-<p>“[xxx]”表示一个规则名称，自己定义，便于查询即可。<br>“type”表示转发的协议类型，有TCP和UDP等选项可以选择，如有需要请自行查询frp手册。<br>“local_port”是本地应用的端口号，按照实际应用工作在本机的端口号填写即可。<br>“remote_port”是该条规则在服务端开放的端口号，自己填写并记录即可。<br>RDP，即Remote Desktop 远程桌面，Windows的RDP默认端口是3389，协议为TCP，建议使用frp远程连接前，在局域网中测试好，能够成功连接后再使用frp穿透连接。</p>
+<p>“[xxx]”表示一个规则名称，自己定义，便于查询即可。<br>
+“type”表示转发的协议类型，有TCP和UDP等选项可以选择，如有需要请自行查询frp手册。<br>
+“local_port”是本地应用的端口号，按照实际应用工作在本机的端口号填写即可。<br>
+“remote_port”是该条规则在服务端开放的端口号，自己填写并记录即可。<br>
+RDP，即Remote Desktop 远程桌面，Windows的RDP默认端口是3389，协议为TCP，建议使用frp远程连接前，在局域网中测试好，能够成功连接后再使用frp穿透连接。</p>
 <p>SMB，即Windows文件共享所使用的协议，默认端口号445，协议TCP，本条规则可实现远程文件访问。</p>
-<p>frpc程序不能直接双击运行！<br>配置好frpc.ini文件后</p>
-<p>在cmd命令行 或者powershell运行<br>frpc.exe</p>
+<p>frpc程序不能直接双击运行！<br>
+配置好frpc.ini文件后</p>
+<p>在cmd命令行 或者powershell运行<br>
+frpc.exe</p>
 <p>如果看到屏幕输出这样一段内容，即表示运行正常，如果出现错误提示，请检查上面的步骤。</p>
-<p>2019/01/12 16:14:56 [I] [service.go:205] login to server success, get run id [2b65b4e58a5917ac], server udp port [0]<br>2019/01/12 16:14:56 [I] [proxy_manager.go:136] [2b65b4e58a5917ac] proxy added: [rdp smb]<br>2019/01/12 16:14:56 [I] [control.go:143] [smb] start proxy success<br>2019/01/12 16:14:56 [I] [control.go:143] [rdp] start proxy success</p>
+<p>2019/01/12 16:14:56 [I] [service.go:205] login to server success, get run id [2b65b4e58a5917ac], server udp port [0]<br>
+2019/01/12 16:14:56 [I] [proxy_manager.go:136] [2b65b4e58a5917ac] proxy added: [rdp smb]<br>
+2019/01/12 16:14:56 [I] [control.go:143] [smb] start proxy success<br>
+2019/01/12 16:14:56 [I] [control.go:143] [rdp] start proxy success</p>
 <p>这里运用kali里的工具可以直接访问vps的7001端口进入远程桌面的Win7</p>
 <p>redesktop you-vps-ip:端口</p>
-<p>1.4结果测试<br>参考链接 -中文frp手册<br><a target="_blank" rel="noopener" href="https://www.bookstack.cn/read/frp/spilt.8.spilt.3.README_zh.md">https://www.bookstack.cn/read/frp/spilt.8.spilt.3.README_zh.md</a><br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/sanduzxcvbnm/p/8508741.html">https://www.cnblogs.com/sanduzxcvbnm/p/8508741.html</a></p>
+<p>1.4结果测试<br>
+参考链接 -中文frp手册<br>
+<a target="_blank" rel="noopener" href="https://www.bookstack.cn/read/frp/spilt.8.spilt.3.README_zh.md">https://www.bookstack.cn/read/frp/spilt.8.spilt.3.README_zh.md</a><br>
+<a target="_blank" rel="noopener" href="https://www.cnblogs.com/sanduzxcvbnm/p/8508741.html">https://www.cnblogs.com/sanduzxcvbnm/p/8508741.html</a></p>
 <p>还有诸多方法待实验,例如dns…</p>
-<p>1.4.1 用kali进行测试 3389远程连接是否成功。<br>这里运用了一台可以上网的 kali<br>需要进行测试的是远程连接一台Win7<br>1<br>2<br>这个地址是我们的vps地址，端口为上方设置的端口</p>
-<p>1.4.2 在web端实现 可以访问内网8080端口数据<br>这里利用linux 测试了 web服务<br>1<br>1.通过自定义域名访问部署于内网的 web 服务<br>修改 frps.ini 文件，设置 http 访问端口为 8060：</p>
-<h1 id="frps-ini"><a href="#frps-ini" class="headerlink" title="frps.ini"></a>frps.ini</h1><p>[common]<br>bind_port = 7000<br>dashboard_port = 7500<br>token = 12345678<br>dashboard_user = admin<br>dashboard_pwd = admin<br>vhost_http_port = 8060<br>vhost_https_port = 8090</p>
-<p>2.启动 frps；<br>./frps -c ./frps.ini</p>
-<p>3.修改 frpc.ini 文件，假设 frps 所在的服务器的 IP 为 x.x.x.x，local_port 为本地机器上 web 服务对应的端口, 绑定自定义域名 <a target="_blank" rel="noopener" href="http://www.yourdomain.com/">www.yourdomain.com</a>:</p>
-<h1 id="frpc-ini"><a href="#frpc-ini" class="headerlink" title="frpc.ini"></a>frpc.ini</h1><p>[common]<br>server_addr = your-vps-ip<br>server_port = 7000<br>token = 12345678<br>[web]<br>type = http<br>local_port = 8080<br>custom_domains = <a target="_blank" rel="noopener" href="http://www.yourdomain.com/">www.yourdomain.com</a><br>这里输入的域名 是vps的域名，加上frp的端口就进入到了内网的tomcat</p>
+<p>1.4.1 用kali进行测试 3389远程连接是否成功。<br>
+这里运用了一台可以上网的 kali<br>
+需要进行测试的是远程连接一台Win7<br>
+1<br>
+2<br>
+这个地址是我们的vps地址，端口为上方设置的端口</p>
+<p>1.4.2 在web端实现 可以访问内网8080端口数据<br>
+这里利用linux 测试了 web服务<br>
+1<br>
+1.通过自定义域名访问部署于内网的 web 服务<br>
+修改 frps.ini 文件，设置 http 访问端口为 8060：</p>
+<h1 id="frpsini"><a class="markdownIt-Anchor" href="#frpsini"></a> frps.ini</h1>
+<p>[common]<br>
+bind_port = 7000<br>
+dashboard_port = 7500<br>
+token = 12345678<br>
+dashboard_user = admin<br>
+dashboard_pwd = admin<br>
+vhost_http_port = 8060<br>
+vhost_https_port = 8090</p>
+<p>2.启动 frps；<br>
+./frps -c ./frps.ini</p>
+<p>3.修改 frpc.ini 文件，假设 frps 所在的服务器的 IP 为 x.x.x.x，local_port 为本地机器上 web 服务对应的端口, 绑定自定义域名 <a target="_blank" rel="noopener" href="http://www.yourdomain.com">www.yourdomain.com</a>:</p>
+<h1 id="frpcini"><a class="markdownIt-Anchor" href="#frpcini"></a> frpc.ini</h1>
+<p>[common]<br>
+server_addr = your-vps-ip<br>
+server_port = 7000<br>
+token = 12345678<br>
+[web]<br>
+type = http<br>
+local_port = 8080<br>
+custom_domains = <a target="_blank" rel="noopener" href="http://www.yourdomain.com">www.yourdomain.com</a><br>
+这里输入的域名 是vps的域名，加上frp的端口就进入到了内网的tomcat</p>
 <p>最后在frp管理界面可以查看详情（例如走的一些流量或者详细信息）</p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43213815/article/details/121336968"># 使用frp配置内网(穿透[保姆级教程])</a></p>
 
@@ -1463,7 +1609,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">37.9k</span>&nbsp;字
+                class="white-color">39.1k</span>&nbsp;字
             <br>
             
             

@@ -33,7 +33,12 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
     <script src="/libs/jquery/jquery.min.js"></script>
-<meta name="generator" content="Hexo 6.3.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="努力搬砖的眼镜狗" type="application/atom+xml">
 </head>
@@ -42,6 +47,12 @@
 
 <!-- 样式一（鼠标点击更换样式） -->
 <script src="https://g.joyinshare.com/hc/ribbon.min.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
 
 <body>
 
@@ -450,6 +461,54 @@
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2024/02/01/ns3-fang-zhen/ns3-wen-jian-dui-xiang-mo-xing-jia-gou/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="Ns3文件对象模型架构">
+                            
+                            <span class="card-title">Ns3文件对象模型架构</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                 Ns3对象之间的关联
+m_ipv4-&gt;GetObject&lt;Node&gt; ()-&gt;GetId ()
+ 网络层对象
+具体代码存在于src/internet/model/ipv4-l3-protocol.h中
+/**
+ *
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-02-01
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                努力搬砖的眼镜狗
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/">
+                            <span class="chip bg-color">网络仿真</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2024/02/01/ns3-fang-zhen/ns3-wang-luo-lu-you-mo-kuai/">
                         <div class="card-image">
                             
@@ -553,10 +612,13 @@ https://www.cnblogs.com/jianghaonan0818/p/153
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                论文写作结果分析1 写作方法
+                                 论文写作
+ 结果分析
+ 1 写作方法
+
 以下内容来源于ChatGPT
 
-科技论文中的结果分析部分是非常关键的，它不仅仅是简单地陈述实验结果，更要深入剖析数据，解释观察到的现象，并将结果与研究问题或假设联系起来。以下是一个通用的科技论文结果分析部分的写
+科技论文中的结果分析部分是非常关键的，它不仅仅是简单地陈述实验结果，更要深入剖析数据，解释观察到的现象，并将结果与研究问题或假设联系起来。以下是一个通用的科技论文结果
                             
                         </div>
                         <div class="publish-info">
@@ -599,14 +661,18 @@ https://www.cnblogs.com/jianghaonan0818/p/153
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                Latex使用方式1 Latex优势
+                                 Latex使用方式
+ 1 Latex优势
+
 使用固定模板，格式固定，只需套用模板即可生成文章
 
-2 Latex图表1. 表格
-设定表格宽度^1
+ 2 Latex图表
+ 1. 表格
+
+设定表格宽度[1]
 
 \usepackage{graphicx} # 记得加宏包
-\resizebox{\linewidt
+\resizebox{
                             
                         </div>
                         <div class="publish-info">
@@ -649,10 +715,12 @@ https://www.cnblogs.com/jianghaonan0818/p/153
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                行楷注意事项1. 手指发力
+                                 行楷注意事项
+ 1. 手指发力
+
 先调整坐姿：双脚落地，上身保持挺直，略微前倾，以便观察字的布局；头部端正，保证视线的角度不发生偏移。
 轻松握笔，不要太用力。手腕呈自然直线状态，切忌内弯。
-书写本稍微左倾，这个角度多大合适呢？和地轴倾斜的角度保持
+书写本稍微左倾，这个角度多大合适呢？和地轴倾斜的
                             
                         </div>
                         <div class="publish-info">
@@ -695,12 +763,16 @@ https://www.cnblogs.com/jianghaonan0818/p/153
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                Markdown语法1 Markdown优势
+                                 Markdown语法
+ 1 Markdown优势
+
 相对于word，操作方便，打开迅速
 主题丰富，较为美观
 
-2 Markdown语法1 脚注，尾注参考文章[^1]
-1.脚注，尾注：主要用于注释说明内容 (参看使用场景)。脚注/尾注的特点是可以在
+ 2 Markdown语法
+ 1 脚注，尾注
+参考文章[1]
+1.脚注，尾注：主要用于注释说明内容 (参看使用场景)。脚注/尾注
                             
                         </div>
                         <div class="publish-info">
@@ -747,8 +819,10 @@ https://www.cnblogs.com/jianghaonan0818/p/153
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                Hexo笔记搭建记录文档一 Hexo网站的优势博客平台如CSDN，博客园，简书等平台，用户可以直接在上面发表，缺点是比较不自由，会受到平台的各种限制和恶心的广告。
-购买域名和服务器成本太高了，花力气去自己搭这么一个网站，还要定期的维护它，成
+                                 Hexo笔记搭建记录文档
+ 一 Hexo网站的优势
+博客平台如CSDN，博客园，简书等平台，用户可以直接在上面发表，缺点是比较不自由，会受到平台的各种限制和恶心的广告。
+购买域名和服务器成本太高了，花力气去自己搭这么一个网站，还要定期的维
                             
                         </div>
                         <div class="publish-info">
@@ -795,8 +869,9 @@ https://www.cnblogs.com/jianghaonan0818/p/153
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                DQNDQN两个因素
- DQN 有一个记忆库用于学习之前的经历. 在之前的简介影片中提到过, Q learning 是一种 off-policy 离线学习法, 它能学习当前经历着的, 也能学习过去经历过的, 甚至是学习别人的经历. 所以每次
+                                 DQN
+DQN两个因素
+DQN 有一个记忆库用于学习之前的经历. 在之前的简介影片中提到过, Q learning 是一种 off-policy 离线学习法, 它能学习当前经历着的, 也能学习过去经历过的, 甚至是学习别人的经历. 所以每
                             
                         </div>
                         <div class="publish-info">
@@ -843,13 +918,14 @@ https://www.cnblogs.com/jianghaonan0818/p/153
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                一 安装Linux
+                                 一 安装
+Linux
 sudo apt-get install git
-
 WIndows
 “Git”-&gt;“Git Bash”
-1.1 配置分布式版本控制，所有机器自报家门
-git config --global user.name "Y
+ 1.1 配置
+分布式版本控制，所有机器自报家门
+git config --global user.name
                             
                         </div>
                         <div class="publish-info">
@@ -928,8 +1004,10 @@ git config --global user.name "Y
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                个性化博客搭建记录1 介绍本文博客主要使用matery主题。主题的网址为https://blinkfox.github.io/
-关于该博客的主要介绍参见链接https://blinkfox.github.io/2018/09/28/qian
+                                 个性化博客搭建记录
+ 1 介绍
+本文博客主要使用matery主题。主题的网址为https://blinkfox.github.io/
+关于该博客的主要介绍参见链接https://blinkfox.github.io/2018/09/28/
                             
                         </div>
                         <div class="publish-info">
@@ -1066,7 +1144,7 @@ git config --global user.name "Y
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">37.9k</span>&nbsp;字
+                class="white-color">39.1k</span>&nbsp;字
             <br>
             
             
