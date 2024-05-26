@@ -1408,11 +1408,11 @@ thead {
     background: #0f9d58;
 }
 
-#busuanzi_container_site_pv,
+/* #busuanzi_container_site_pv,
 #busuanzi_value_site_pv,
 #busuanzi_container_site_uv{
    display: inline !important;
-}
+} */
 
 
 @media only screen and (min-width: 900px) {

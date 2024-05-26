@@ -37,7 +37,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.1.1">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="努力搬砖的眼镜狗" type="application/atom+xml">
 </head>
@@ -173,31 +173,6 @@
     
   </li>
   
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="" class="waves-effect waves-light">
-
-      
-      <i class="fas fa-list" style="zoom: 0.6;"></i>
-      
-      <span>Medias</span>
-      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
-    </a>
-    <ul class="sub-nav menus_item_child ">
-      
-      <li>
-        <a href="/musics">
-          
-          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>Musics</span>
-        </a>
-      </li>
-      
-    </ul>
-    
-  </li>
-  
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
@@ -300,31 +275,6 @@
 			
 			友情链接
 		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="javascript:;">
-			
-				<i class="fa-fw fas fa-list"></i>
-			
-			Medias
-			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
-		</a>
-            <ul  style="background:  ;" >
-              
-                <li>
-
-                  <a href="/musics " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
-			      
-		          <span>Musics</span>
-                  </a>
-                </li>
-              
-            </ul>
           
         </li>
         
@@ -577,10 +527,6 @@
                 
 
                 
-                    <span id="busuanzi_container_site_pv" style='display:none'>
-                    </span> <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp; <span id="busuanzi_value_page_pv" >
-                    </span>                  
-				
             </div>
         </div>
         <hr class="clearfix">
@@ -616,22 +562,14 @@
 <p>然后在这个仓库的settings中，选择默认分支为<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=hexo%E5%88%86%E6%94%AF&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A489124966%7D">hexo分支</a>（这样每次同步的时候就不用指定分支，比较方便）。</p>
 <p><img src="https://picx.zhimg.com/80/v2-1899b6219f3787832652813b958b9b3d_720w.webp?source=1def8aca" alt=""></p>
 <p>然后在本地的任意目录下，打开git bash，</p>
-<pre class="line-numbers language-text" data-language="text"><code class="language-text">git clone git@github.com:ZJUFangzh/ZJUFangzh.github.io.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight text"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:ZJUFangzh/ZJUFangzh.github.io.git</span><br></pre></td></tr></tbody></table></figure>
 <p>将其克隆到本地，因为默认分支已经设成了hexo，所以clone时只clone了hexo。</p>
 <p>接下来在克隆到本地的<code>ZJUFangzh.github.io</code>中，把除了.git 文件夹外的所有文件都删掉</p>
 <p>把之前我们写的博客源文件全部复制过来，除了<code>.deploy_git</code>。这里应该说一句，复制过来的源文件应该有一个<code>.gitignore</code>，用来忽略一些不需要的文件，如果没有的话，自己新建一个，在里面写上如下，表示这些类型文件不需要git：</p>
-<pre class="line-numbers language-text" data-language="text"><code class="language-text">.DS_Store
-Thumbs.db
-db.json
-*.log
-node_modules/
-public/
-.deploy*/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight text"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.log</span><br><span class="line">node_modules/</span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br></pre></td></tr></tbody></table></figure>
 <p>注意，如果你之前克隆过<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=theme&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A489124966%7D">theme</a>中的主题文件，那么应该把主题文件中的<code>.git</code>文件夹删掉，因为git不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了了。<br>
 而后</p>
-<pre class="line-numbers language-text" data-language="text"><code class="language-text">git add .
-git commit –m "add branch"
-git push <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight text"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit –m "add branch"</span><br><span class="line">git push </span><br></pre></td></tr></tbody></table></figure>
 <p>这样就上传完了，可以去你的github上看一看hexo分支有没有上传上去，其中<code>node_modules</code>、<code>public</code>、<code>db.json</code>已经被忽略掉了，没有关系，不需要上传的，因为在别的电脑上需要重新输入命令安装 。</p>
 <p><img src="https://pic1.zhimg.com/80/v2-a94330ca825f4debde8ce7ceeb8f8394_720w.webp?source=1def8aca" alt=""></p>
 <p>这样就上传完了。</p>
@@ -640,55 +578,44 @@ git push <span aria-hidden="true" class="line-numbers-rows"><span></span><span><
 <ul>
 <li>安装git</li>
 </ul>
-<pre class="line-numbers language-text" data-language="text"><code class="language-text">sudo apt-get install git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight text"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install git</span><br></pre></td></tr></tbody></table></figure>
 <ul>
 <li>设置git全局邮箱和用户名</li>
 </ul>
-<pre class="line-numbers language-text" data-language="text"><code class="language-text">git config --global user.name "yourgithubname"
-git config --global user.email "yourgithubemail"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<figure class="highlight text"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name "yourgithubname"</span><br><span class="line">git config --global user.email "yourgithubemail"</span><br></pre></td></tr></tbody></table></figure>
 <ul>
 <li>设置ssh key</li>
 </ul>
-<pre class="line-numbers language-text" data-language="text"><code class="language-text">ssh-keygen -t rsa -C "youremail"
-#生成后填到github和coding上（有coding平台的话）
-#验证是否成功
-ssh -T git@github.com
-ssh -T git@git.coding.net #(有coding平台的话)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight text"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C "youremail"</span><br><span class="line">#生成后填到github和coding上（有coding平台的话）</span><br><span class="line">#验证是否成功</span><br><span class="line">ssh -T git@github.com</span><br><span class="line">ssh -T git@git.coding.net #(有coding平台的话)</span><br></pre></td></tr></tbody></table></figure>
 <ul>
 <li>安装<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=nodejs&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A489124966%7D">nodejs</a></li>
 </ul>
-<pre class="line-numbers language-text" data-language="text"><code class="language-text">sudo apt-get install nodejs
-sudo apt-get install npm<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<figure class="highlight text"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install nodejs</span><br><span class="line">sudo apt-get install npm</span><br></pre></td></tr></tbody></table></figure>
 <ul>
 <li>安装hexo</li>
 </ul>
-<pre class="line-numbers language-text" data-language="text"><code class="language-text">sudo npm install hexo-cli -g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight text"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install hexo-cli -g</span><br></pre></td></tr></tbody></table></figure>
 <p>但是已经不需要初始化了，</p>
 <p>直接在任意文件夹下，</p>
-<pre class="line-numbers language-text" data-language="text"><code class="language-text">git clone git@………………<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight text"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@………………</span><br></pre></td></tr></tbody></table></figure>
 <p>然后进入克隆到的文件夹：</p>
-<pre class="line-numbers language-text" data-language="text"><code class="language-text">cd xxx.github.io
-npm install
-npm install hexo-deployer-git --save<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight text"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd xxx.github.io</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></tbody></table></figure>
 <p>生成，部署：</p>
-<pre class="line-numbers language-text" data-language="text"><code class="language-text">hexo g
-hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<figure class="highlight text"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></tbody></table></figure>
 <p>然后就可以开始写你的新博客了</p>
-<pre class="line-numbers language-text" data-language="text"><code class="language-text">hexo new newpage<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight text"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new newpage</span><br></pre></td></tr></tbody></table></figure>
 <p><strong>Tips:</strong></p>
 <ol>
 <li>不要忘了，每次写完最好都把<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E6%BA%90%E6%96%87%E4%BB%B6&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A489124966%7D">源文件</a>上传一下</li>
 </ol>
-<pre class="line-numbers language-text" data-language="text"><code class="language-text">git add .
-git commit –m "xxxx"
-git push <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight text"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit –m "xxxx"</span><br><span class="line">git push </span><br></pre></td></tr></tbody></table></figure>
 <ol>
 <li>如果是在已经编辑过的电脑上，已经有clone文件夹了，那么，每次只要和远端同步一下就行了</li>
 </ol>
-<pre class="line-numbers language-text" data-language="text"><code class="language-text">git pull<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight text"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></tbody></table></figure>
 <h2 id="2-建立另外的仓库"><a class="markdownIt-Anchor" href="#2-建立另外的仓库"></a> 2 建立另外的仓库</h2>
 <p>将源文件放在一个新的私有仓库中，以后直接在私有仓库中更改内容后，直接在私有仓库</p>
-<pre class="line-numbers language-none"><code class="language-none">hexo g &amp; hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g &amp; hexo d</span><br></pre></td></tr></tbody></table></figure>
 <p>即可；不用担心仓库地址不一致问题，在源文件中使用该命令，···会直接部署到相应github网站仓库的域名中。</p>
 
                 
@@ -1498,7 +1425,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">39.1k</span>&nbsp;字
+                class="white-color">53.5k</span>&nbsp;字
             <br>
             
             

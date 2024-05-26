@@ -37,7 +37,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.1.1">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="努力搬砖的眼镜狗" type="application/atom+xml">
 </head>
@@ -173,31 +173,6 @@
     
   </li>
   
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="" class="waves-effect waves-light">
-
-      
-      <i class="fas fa-list" style="zoom: 0.6;"></i>
-      
-      <span>Medias</span>
-      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
-    </a>
-    <ul class="sub-nav menus_item_child ">
-      
-      <li>
-        <a href="/musics">
-          
-          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>Musics</span>
-        </a>
-      </li>
-      
-    </ul>
-    
-  </li>
-  
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
@@ -300,31 +275,6 @@
 			
 			友情链接
 		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="javascript:;">
-			
-				<i class="fa-fw fas fa-list"></i>
-			
-			Medias
-			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
-		</a>
-            <ul  style="background:  ;" >
-              
-                <li>
-
-                  <a href="/musics " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
-			      
-		          <span>Musics</span>
-                  </a>
-                </li>
-              
-            </ul>
           
         </li>
         
@@ -561,7 +511,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    310
+                    309
                 </div>
                 
 
@@ -573,10 +523,6 @@
                 
 
                 
-                    <span id="busuanzi_container_site_pv" style='display:none'>
-                    </span> <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp; <span id="busuanzi_value_page_pv" >
-                    </span>                  
-				
             </div>
         </div>
         <hr class="clearfix">
@@ -595,36 +541,7 @@
 <p>​	由于Ns3初始化并没有提供Trace变量的初始值，创建变量时无法根据配置好的函数指针初始化Trace变量，因此只能在已存在的C++对象上配置Trace变量。</p>
 <p>​	在对象未创建、未分配内存时，Trace变量是无法配置的，即使配置相关属性，也不能成功使用。因此，Trace变量的配置操作必须放在网络拓扑用户应用建立完成之后，但必须放在<code>Simulation::Run()</code>之前。为保证每次成功配置并成功运行，十分建议养成在<strong>程序末尾配置Trace + 开启仿真运行的习惯</strong>。</p>
 <h3 id="1-ipv4-l3-protocol发送数据包"><a class="markdownIt-Anchor" href="#1-ipv4-l3-protocol发送数据包"></a> 1. ipv4-l3-protocol发送数据包</h3>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//src/internet/model/ipv4-l3-protocol.cc</span>
-TypeId 
-<span class="token class-name">Ipv4L3Protocol</span><span class="token double-colon punctuation">::</span><span class="token function">GetTypeId</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
-	<span class="token punctuation">.</span><span class="token function">AddTraceSource</span> <span class="token punctuation">(</span><span class="token string">"TxTrace"</span><span class="token punctuation">,</span>
-                     <span class="token string">"Send ipv4 packet to outgoing interface."</span><span class="token punctuation">,</span>
-                     <span class="token function">MakeTraceSourceAccessor</span> <span class="token punctuation">(</span><span class="token operator">&amp;</span>Ipv4L3Protocol<span class="token double-colon punctuation">::</span>m_adTrace<span class="token punctuation">)</span><span class="token punctuation">,</span>
-                     <span class="token string">"ns3::Ipv4L3Protocol::AdressCallback"</span><span class="token punctuation">)</span>
-    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
-<span class="token punctuation">}</span>
-
-
-<span class="token keyword">void</span>
-<span class="token class-name">Ipv4L3Protocol</span><span class="token double-colon punctuation">::</span><span class="token function">CallTxTrace</span> <span class="token punctuation">(</span><span class="token keyword">const</span> Ipv4Header <span class="token operator">&amp;</span> ipHeader<span class="token punctuation">,</span> Ptr<span class="token operator">&lt;</span>Packet<span class="token operator">&gt;</span> packet<span class="token punctuation">,</span>
-                                    Ptr<span class="token operator">&lt;</span>Ipv4<span class="token operator">&gt;</span> ipv4<span class="token punctuation">,</span> <span class="token keyword">uint32_t</span> interface<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-  Ptr<span class="token operator">&lt;</span>Packet<span class="token operator">&gt;</span> packetCopy <span class="token operator">=</span> packet<span class="token operator">-&gt;</span><span class="token function">Copy</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  packetCopy<span class="token operator">-&gt;</span><span class="token function">AddHeader</span> <span class="token punctuation">(</span>ipHeader<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token function">m_txTrace</span> <span class="token punctuation">(</span>packetCopy<span class="token punctuation">,</span> ipv4<span class="token punctuation">,</span> interface<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token comment">//src/internet/model/ipv4-l3-protocol.h</span>
-<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
-  <span class="token comment">// The following two traces pass a packet with an IP header</span>
-  <span class="token comment">/// Trace of transmitted packets</span>
-  <span class="token comment">/// \deprecated The non-const \c Ptr&lt;Ipv4&gt; argument is deprecated</span>
-  <span class="token comment">/// and will be changed to \c Ptr&lt;const Ipv4&gt; in a future release.</span>
-  TracedCallback<span class="token operator">&lt;</span>Ptr<span class="token operator">&lt;</span><span class="token keyword">const</span> Packet<span class="token operator">&gt;</span><span class="token punctuation">,</span> Ptr<span class="token operator">&lt;</span>Ipv4<span class="token operator">&gt;</span><span class="token punctuation">,</span>  <span class="token keyword">uint32_t</span><span class="token operator">&gt;</span> m_txTrace<span class="token punctuation">;</span>
-<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight cpp"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//src/internet/model/ipv4-l3-protocol.cc</span></span><br><span class="line"><span class="function">TypeId </span></span><br><span class="line"><span class="function"><span class="title">Ipv4L3Protocol::GetTypeId</span> <span class="params">(<span class="type">void</span>)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    ...</span><br><span class="line">	.<span class="built_in">AddTraceSource</span> (<span class="string">"TxTrace"</span>,</span><br><span class="line">                     <span class="string">"Send ipv4 packet to outgoing interface."</span>,</span><br><span class="line">                     <span class="built_in">MakeTraceSourceAccessor</span> (&amp;Ipv4L3Protocol::m_adTrace),</span><br><span class="line">                     <span class="string">"ns3::Ipv4L3Protocol::AdressCallback"</span>)</span><br><span class="line">    ...</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span></span></span><br><span class="line"><span class="function"><span class="title">Ipv4L3Protocol::CallTxTrace</span> <span class="params">(<span class="type">const</span> Ipv4Header &amp; ipHeader, Ptr&lt;Packet&gt; packet,</span></span></span><br><span class="line"><span class="params"><span class="function">                                    Ptr&lt;Ipv4&gt; ipv4, <span class="type">uint32_t</span> interface)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">  Ptr&lt;Packet&gt; packetCopy = packet-&gt;<span class="built_in">Copy</span> ();</span><br><span class="line">  packetCopy-&gt;<span class="built_in">AddHeader</span> (ipHeader);</span><br><span class="line">  <span class="built_in">m_txTrace</span> (packetCopy, ipv4, interface);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="comment">//src/internet/model/ipv4-l3-protocol.h</span></span><br><span class="line">...</span><br><span class="line">  <span class="comment">// The following two traces pass a packet with an IP header</span></span><br><span class="line">  <span class="comment">/// Trace of transmitted packets</span></span><br><span class="line">  <span class="comment">/// \deprecated The non-const \c Ptr&lt;Ipv4&gt; argument is deprecated</span></span><br><span class="line">  <span class="comment">/// and will be changed to \c Ptr&lt;const Ipv4&gt; in a future release.</span></span><br><span class="line">  TracedCallback&lt;Ptr&lt;<span class="type">const</span> Packet&gt;, Ptr&lt;Ipv4&gt;,  <span class="type">uint32_t</span>&gt; m_txTrace;</span><br><span class="line">...</span><br></pre></td></tr></tbody></table></figure>
 
                 
             </div>
@@ -1150,13 +1067,13 @@ new Valine({
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/02/01/ns3-fang-zhen/ns3-dui-lie-mo-xing-jie-shao/">
+                <a href="/2024/02/01/ns3-fang-zhen/ns3-xue-xi-zi-liao-hui-zong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="NS3队列模型介绍">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="NS3学习资料汇总">
                         
-                        <span class="card-title">NS3队列模型介绍</span>
+                        <span class="card-title">NS3学习资料汇总</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1195,13 +1112,13 @@ new Valine({
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/02/01/ns3-fang-zhen/ns3-wen-jian-dui-xiang-mo-xing-jia-gou/">
+                <a href="/2024/02/01/ns3-fang-zhen/ns3-chang-jian-wen-ti-chu-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="Ns3文件对象模型架构">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="NS3常见问题处理">
                         
-                        <span class="card-title">Ns3文件对象模型架构</span>
+                        <span class="card-title">NS3常见问题处理</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1429,7 +1346,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">39.1k</span>&nbsp;字
+                class="white-color">53.5k</span>&nbsp;字
             <br>
             
             

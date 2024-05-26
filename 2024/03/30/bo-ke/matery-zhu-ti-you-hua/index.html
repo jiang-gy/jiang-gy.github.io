@@ -37,7 +37,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.1.1">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="努力搬砖的眼镜狗" type="application/atom+xml">
 </head>
@@ -173,31 +173,6 @@
     
   </li>
   
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="" class="waves-effect waves-light">
-
-      
-      <i class="fas fa-list" style="zoom: 0.6;"></i>
-      
-      <span>Medias</span>
-      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
-    </a>
-    <ul class="sub-nav menus_item_child ">
-      
-      <li>
-        <a href="/musics">
-          
-          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>Musics</span>
-        </a>
-      </li>
-      
-    </ul>
-    
-  </li>
-  
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
@@ -300,31 +275,6 @@
 			
 			友情链接
 		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="javascript:;">
-			
-				<i class="fa-fw fas fa-list"></i>
-			
-			Medias
-			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
-		</a>
-            <ul  style="background:  ;" >
-              
-                <li>
-
-                  <a href="/musics " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
-			      
-		          <span>Musics</span>
-                  </a>
-                </li>
-              
-            </ul>
           
         </li>
         
@@ -561,22 +511,18 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    7.6k
+                    7.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    33 分
+                    34 分
                 </div>
                 
 
                 
-                    <span id="busuanzi_container_site_pv" style='display:none'>
-                    </span> <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp; <span id="busuanzi_value_page_pv" >
-                    </span>                  
-				
             </div>
         </div>
         <hr class="clearfix">
@@ -600,41 +546,18 @@
 <ol>
 <li>
 <p>如果在你的博客 source 目录下还没有，就输入以下命令（站点目录打开的命令行）来新建一个：</p>
- <pre class="line-numbers language-none"><code class="language-none">hexo new page "页面的英文"     # 如：hexo new page "tags"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page "页面的英文"     # 如：hexo new page "tags"</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li>
 <p>编辑你刚刚新建的页面文件 /source/tags/index.md，至少需要以下内容：</p>
- <pre class="line-numbers language-none"><code class="language-none">---
-title: tags
-date: 2020-06-19 16:23:38
-type: "页面的英文"    # 如：type: "tags"
-layout: "页面的英文" # 如：layout: "tags"
----<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: tags</span><br><span class="line">date: 2020-06-19 16:23:38</span><br><span class="line">type: "页面的英文"    # 如：type: "tags"</span><br><span class="line">layout: "页面的英文" # 如：layout: "tags"</span><br><span class="line">---</span><br></pre></td></tr></tbody></table></figure>
 <blockquote>
 <p>关于&nbsp;<code>contact</code>留言板页：</p>
 <p>留言板功能依赖于第三方评论系统，激活评论系统才有效果，下面会有介绍</p>
 <p>关于<code>friends</code>友情链接页：</p>
 <p>如果你想增加内容，在你的博客 source 目录下新建 <code>_data</code> 目录，在 <code>_data</code> 目录中新建 <code>friends.json</code> 文件，输入以下内容：</p>
 </blockquote>
- <pre class="line-numbers language-none"><code class="language-none">[{
-    "avatar": "http://image.luokangyuan.com/1_qq_27922023.jpg",
-    "name": "码酱",
-    "introduction": "我不是大佬，只是在追寻大佬的脚步",
-    "url": "http://luokangyuan.com/",
-    "title": "前去学习"
-}, {
-    "avatar": "http://image.luokangyuan.com/4027734.jpeg",
-    "name": "闪烁之狐",
-    "introduction": "编程界大佬，技术牛，人还特别好，不懂的都可以请教大佬",
-    "url": "https://blinkfox.github.io/",
-    "title": "前去学习"
-}, {
-    "avatar": "http://image.luokangyuan.com/avatar.jpg",
-    "name": "ja_rome",
-    "introduction": "平凡的脚步也可以走出伟大的行程",
-    "url": "https://me.csdn.net/jlh912008548",
-    "title": "前去学习"
-}]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">[{</span><br><span class="line">    "avatar": "http://image.luokangyuan.com/1_qq_27922023.jpg",</span><br><span class="line">    "name": "码酱",</span><br><span class="line">    "introduction": "我不是大佬，只是在追寻大佬的脚步",</span><br><span class="line">    "url": "http://luokangyuan.com/",</span><br><span class="line">    "title": "前去学习"</span><br><span class="line">}, {</span><br><span class="line">    "avatar": "http://image.luokangyuan.com/4027734.jpeg",</span><br><span class="line">    "name": "闪烁之狐",</span><br><span class="line">    "introduction": "编程界大佬，技术牛，人还特别好，不懂的都可以请教大佬",</span><br><span class="line">    "url": "https://blinkfox.github.io/",</span><br><span class="line">    "title": "前去学习"</span><br><span class="line">}, {</span><br><span class="line">    "avatar": "http://image.luokangyuan.com/avatar.jpg",</span><br><span class="line">    "name": "ja_rome",</span><br><span class="line">    "introduction": "平凡的脚步也可以走出伟大的行程",</span><br><span class="line">    "url": "https://me.csdn.net/jlh912008548",</span><br><span class="line">    "title": "前去学习"</span><br><span class="line">}]</span><br></pre></td></tr></tbody></table></figure>
 </li>
 </ol>
 <h3 id="12-菜单导航配置"><a class="markdownIt-Anchor" href="#12-菜单导航配置"></a> 1.2 菜单导航配置</h3>
@@ -646,47 +569,17 @@ layout: "页面的英文" # 如：layout: "tags"
 <li>导航名称可以设置成中文/英文</li>
 <li>图标icon可以更换，具体属性值可以在<a target="_blank" rel="noopener" href="https://fontawesome.com/icons">fontawesome</a>中查找</li>
 </ul>
-<pre class="line-numbers language-none"><code class="language-none">menu:
-  Index:
-    url: /
-    icon: fas fa-home
-  Tags:
-    url: /tags
-    icon: fas fa-tags
-  Categories:
-    url: /categories
-    icon: fas fa-bookmark
-  Archives:
-    url: /archives
-    icon: fas fa-archive
-  About:
-    url: /about
-    icon: fas fa-user-circle
-  友人帐: #可以使用中文，也可以在对应的md中设置title:友人帐
-    url: /friends
-    icon: fas fa-address-book<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  Index:</span><br><span class="line">    url: /</span><br><span class="line">    icon: fas fa-home</span><br><span class="line">  Tags:</span><br><span class="line">    url: /tags</span><br><span class="line">    icon: fas fa-tags</span><br><span class="line">  Categories:</span><br><span class="line">    url: /categories</span><br><span class="line">    icon: fas fa-bookmark</span><br><span class="line">  Archives:</span><br><span class="line">    url: /archives</span><br><span class="line">    icon: fas fa-archive</span><br><span class="line">  About:</span><br><span class="line">    url: /about</span><br><span class="line">    icon: fas fa-user-circle</span><br><span class="line">  友人帐: #可以使用中文，也可以在对应的md中设置title:友人帐</span><br><span class="line">    url: /friends</span><br><span class="line">    icon: fas fa-address-book</span><br></pre></td></tr></tbody></table></figure>
 <h4 id="122-二级菜单配置方法"><a class="markdownIt-Anchor" href="#122-二级菜单配置方法"></a> 1.2.2 二级菜单配置方法</h4>
 <ol>
 <li>在需要添加二级菜单的一级菜单下添加children关键字(如:爱好菜单下添加children)，一级菜单不需要增加url属性</li>
-<li>创建二级页面，步骤与创建页面步骤相同，编辑md时不需要<code>layout</code>属性 <pre class="line-numbers language-none"><code class="language-none">---
-title: 追番
-date: 2020-06-15 15:19:35
-type: "bangumis"
----<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<li>创建二级页面，步骤与创建页面步骤相同，编辑md时不需要<code>layout</code>属性 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 追番</span><br><span class="line">date: 2020-06-15 15:19:35</span><br><span class="line">type: "bangumis"</span><br><span class="line">---</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li>给二级菜单增加名称name,路径url和图标icon</li>
 <li>注意每个二级菜单模块前要加&nbsp;<code>-</code></li>
 <li>二级菜单要缩进到一级菜单内</li>
 </ol>
-<pre class="line-numbers language-none"><code class="language-none">爱好:
-    icon: fas fa-bicycle
-    children:
-      - name: 追番
-        url: /bangumis
-        icon: fas fa-play-circle
-      - name: 音乐
-        url: /musics
-        icon: fas fa-music<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">爱好:</span><br><span class="line">    icon: fas fa-bicycle</span><br><span class="line">    children:</span><br><span class="line">      - name: 追番</span><br><span class="line">        url: /bangumis</span><br><span class="line">        icon: fas fa-play-circle</span><br><span class="line">      - name: 音乐</span><br><span class="line">        url: /musics</span><br><span class="line">        icon: fas fa-music</span><br></pre></td></tr></tbody></table></figure>
 <h4 id="以网易云音乐为例"><a class="markdownIt-Anchor" href="#以网易云音乐为例"></a> 以网易云音乐为例</h4>
 <blockquote>
 <p>这个就非常简单了，不需要安装任何插件，只需要创建新页面，配置二级导航即可</p>
@@ -695,15 +588,11 @@ type: "bangumis"
 <li>
 <p>创建音乐页面</p>
 <p>输入命令</p>
- <pre class="line-numbers language-none"><code class="language-none">hexo new page musics<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page musics</span><br></pre></td></tr></tbody></table></figure>
 <p>找到<code>source/musics/index.md</code>这个文件，修改这个文件，添加&nbsp;<code>type: "music"</code></p>
- <pre class="line-numbers language-none"><code class="language-none">---
-title: 音乐！音乐！
-date: 2020-06-16 14:45:30
-type: 'music'
----<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 音乐！音乐！</span><br><span class="line">date: 2020-06-16 14:45:30</span><br><span class="line">type: 'music'</span><br><span class="line">---</span><br></pre></td></tr></tbody></table></figure>
 <p>在index.md文件中增加以下内容</p>
- <pre class="line-numbers language-none"><code class="language-none">&lt;iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=530 height=520 src="//music.163.com/outchain/player?type=0&amp;id=2817562565&amp;auto=1&amp;height=430"&gt;&lt;/iframe&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=530 height=520 src="//music.163.com/outchain/player?type=0&amp;id=2817562565&amp;auto=1&amp;height=430"&gt;&lt;/iframe&gt;</span><br></pre></td></tr></tbody></table></figure>
 <blockquote>
 <p>第二行的id的那串数字，需要改成你想要的歌单id</p>
 <p>查看自己id的方式：</p>
@@ -733,16 +622,11 @@ type: 'music'
 <ol>
 <li>
 <p>安装插件</p>
- <pre class="line-numbers language-none"><code class="language-none">npm install hexo-filter-github-emojis --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-filter-github-emojis --save</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li>
 <p>在 Hexo 根目录下的 _config.yml 文件中，新增以下的配置项：</p>
- <pre class="line-numbers language-none"><code class="language-none">githubEmojis:
-  enable: true
-  className: github-emoji
-  inject: true
-  styles:
-  customEmojis:<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">githubEmojis:</span><br><span class="line">  enable: true</span><br><span class="line">  className: github-emoji</span><br><span class="line">  inject: true</span><br><span class="line">  styles:</span><br><span class="line">  customEmojis:</span><br></pre></td></tr></tbody></table></figure>
 <p>重新部署即可查看</p>
 </li>
 </ol>
@@ -755,17 +639,7 @@ type: 'music'
 <p>写新文章时，需要控制台执行hexo new “文章名字”生成一篇新文章，但需要手动打开，挺麻烦，我们可以设置在生成之后自动打开</p>
 </blockquote>
 <p>在站点根目录下新建scripts目录，然后在新建<code>auto_open.js</code>，在文件填入一下内容：</p>
-<pre class="line-numbers language-none"><code class="language-none">var spawn = require('child_process').exec;
-
-// Hexo 2.x 用户复制这段
-//hexo.on('new', function(path){
-  //spawn('start  "markdown编辑器绝对路径.exe" ' + path);
-//});
-
-// Hexo 3 用户复制这段
-hexo.on('new', function(data){
-  spawn('start  "D:\Program Files\Typora\Typora.exe" ' + data.path);
-});<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var spawn = require('child_process').exec;</span><br><span class="line"></span><br><span class="line">// Hexo 2.x 用户复制这段</span><br><span class="line">//hexo.on('new', function(path){</span><br><span class="line">  //spawn('start  "markdown编辑器绝对路径.exe" ' + path);</span><br><span class="line">//});</span><br><span class="line"></span><br><span class="line">// Hexo 3 用户复制这段</span><br><span class="line">hexo.on('new', function(data){</span><br><span class="line">  spawn('start  "D:\Program Files\Typora\Typora.exe" ' + data.path);</span><br><span class="line">});</span><br></pre></td></tr></tbody></table></figure>
 <blockquote>
 <p>其中”D:\Program Files\Typora\Typora.exe”是我本地编辑器的路径，只需要改为你本地编辑器的路径即可，然后在执行<code>hexo cl &amp;&amp; hexo g -d</code>，部署到GitHub即可，以后在发布文章就会自动打开编辑器。</p>
 </blockquote>
@@ -774,15 +648,11 @@ hexo.on('new', function(data){
 <ol>
 <li>
 <p>安装插件</p>
- <pre class="line-numbers language-none"><code class="language-none">npm i -S hexo-prism-plugin<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -S hexo-prism-plugin</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li>
 <p>修改 Hexo 站点配置文件 _config.yml 中 highlight.enable 的值为 false，并新增 prism 插件相关的配置，主要配置如下：</p>
- <pre class="line-numbers language-none"><code class="language-none">prism_plugin:
-  mode: 'preprocess'    # realtime/preprocess
-  theme: 'tomorrow'
-  line_number: false    # default false
-  custom_css:<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">prism_plugin:</span><br><span class="line">  mode: 'preprocess'    # realtime/preprocess</span><br><span class="line">  theme: 'tomorrow'</span><br><span class="line">  line_number: false    # default false</span><br><span class="line">  custom_css:</span><br></pre></td></tr></tbody></table></figure>
 </li>
 </ol>
 <h3 id="16-添加友链"><a class="markdownIt-Anchor" href="#16-添加友链"></a> 1.6 添加友链</h3>
@@ -791,34 +661,19 @@ hexo.on('new', function(data){
 <p><strong>Matery版：</strong></p>
 <p>交换友链还请评论此格式哦~🌿</p>
 <p>json</p>
-<pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">{</span>
-    <span class="token property">"avatar"</span><span class="token operator">:</span> <span class="token string">"https://cdn.jsdelivr.net/gh/fenghen0918/fenghen0918.github.io/medias/logo.png"</span><span class="token punctuation">,</span>
-    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"小苏の万事屋"</span><span class="token punctuation">,</span>
-    <span class="token property">"introduction"</span><span class="token operator">:</span> <span class="token string">"一个不是只会写业务代码的后端攻城狮！"</span><span class="token punctuation">,</span>
-    <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"https://sulog.top/"</span><span class="token punctuation">,</span>
-    <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"前去关照"</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight json"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">{</span></span><br><span class="line">    <span class="attr">"avatar"</span><span class="punctuation">:</span> <span class="string">"https://cdn.jsdelivr.net/gh/fenghen0918/fenghen0918.github.io/medias/logo.png"</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">"name"</span><span class="punctuation">:</span> <span class="string">"小苏の万事屋"</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">"introduction"</span><span class="punctuation">:</span> <span class="string">"一个不是只会写业务代码的后端攻城狮！"</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">"url"</span><span class="punctuation">:</span> <span class="string">"https://sulog.top/"</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">"title"</span><span class="punctuation">:</span> <span class="string">"前去关照"</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></tbody></table></figure>
 <p>添加CSDN,此处参考<a target="_blank" rel="noopener" href="https://marmalade.vip/Materysettings1.html"># Hexo-Matery主题细致美化(上)</a></p>
-<pre class="line-numbers language-none"><code class="language-none">{
-
-&nbsp; &nbsp; "avatar": "https://cdn.jsdelivr.net/gh/guixinchn/image/blog/csdn.png",
-&nbsp; &nbsp; "name": "Blog",
-&nbsp; &nbsp; "introduction": "CSDN社区",
-&nbsp; &nbsp; "url": "https://blog.csdn.net/m0_49448331?type=blog",
-&nbsp; &nbsp; "title": "CSDN"
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line"></span><br><span class="line">&nbsp; &nbsp; "avatar": "https://cdn.jsdelivr.net/gh/guixinchn/image/blog/csdn.png",</span><br><span class="line">&nbsp; &nbsp; "name": "Blog",</span><br><span class="line">&nbsp; &nbsp; "introduction": "CSDN社区",</span><br><span class="line">&nbsp; &nbsp; "url": "https://blog.csdn.net/m0_49448331?type=blog",</span><br><span class="line">&nbsp; &nbsp; "title": "CSDN"</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="17-搜索功能"><a class="markdownIt-Anchor" href="#17-搜索功能"></a> 1.7 搜索功能</h3>
 <p>实现文章内容搜索</p>
 <ol>
 <li>
 <p>安装插件</p>
- <pre class="line-numbers language-none"><code class="language-none">npm install hexo-generator-search --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-search --save</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li>
 <p>在 Hexo 站点配置文件 _config.yml 中，新增以下的配置项：</p>
- <pre class="line-numbers language-none"><code class="language-none">search:
-  path: search.xml
-  field: post<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br></pre></td></tr></tbody></table></figure>
 </li>
 </ol>
 <h3 id="18-中文链接转拼音"><a class="markdownIt-Anchor" href="#18-中文链接转拼音"></a> 1.8 中文链接转拼音</h3>
@@ -826,13 +681,11 @@ hexo.on('new', function(data){
 <ol>
 <li>
 <p>安装插件</p>
- <pre class="line-numbers language-none"><code class="language-none">npm i hexo-permalink-pinyin --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-permalink-pinyin --save</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li>
 <p>在 Hexo 站点配置文件 _config.yml 中，新增以下的配置项：</p>
- <pre class="line-numbers language-none"><code class="language-none">permalink_pinyin:
-  enable: true
-  separator: '-' # default: '-'<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">permalink_pinyin:</span><br><span class="line">  enable: true</span><br><span class="line">  separator: '-' # default: '-'</span><br></pre></td></tr></tbody></table></figure>
 </li>
 </ol>
 <h3 id="19-文章字数统计插件"><a class="markdownIt-Anchor" href="#19-文章字数统计插件"></a> 1.9 文章字数统计插件</h3>
@@ -840,38 +693,16 @@ hexo.on('new', function(data){
 <ol>
 <li>
 <p>安装插件</p>
- <pre class="line-numbers language-none"><code class="language-none">npm i --save hexo-wordcount<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i --save hexo-wordcount</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li>
 <p>在<strong>主题</strong>配置文件_config.yml 文件中，<strong>激活</strong>以下配置项即可：</p>
- <pre class="line-numbers language-none"><code class="language-none">wordCount:
-  enable: false # 将这个值设置为 true 即可.
-  postWordCount: true
-  min2read: true
-  totalCount: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">wordCount:</span><br><span class="line">  enable: false # 将这个值设置为 true 即可.</span><br><span class="line">  postWordCount: true</span><br><span class="line">  min2read: true</span><br><span class="line">  totalCount: true</span><br></pre></td></tr></tbody></table></figure>
 </li>
 </ol>
 <h3 id="110-配置音乐播放器"><a class="markdownIt-Anchor" href="#110-配置音乐播放器"></a> 1.10 配置音乐播放器</h3>
 <p>想支持音乐播放，在<strong>主题</strong>的 _config.yml 配置文件中激活music配置即可：</p>
-<pre class="line-numbers language-none"><code class="language-none"># 是否在首页显示音乐.
-music:
-  enable: true
-  title: #非吸底模式有效
-    enable: true
-    show: 听听音乐
-  autoHide: false    # hide automaticaly
-  server: netease   #require    music platform: netease, tencent, kugou, xiami, baidu
-  type: playlist    #require song, playlist, album, search, artist
-  id: 411680085     #require    song id / playlist id / album id / search keyword
-  fixed: true       # 开启吸底模式
-  autoplay: false   # 是否自动播放
-  theme: '#42b983'
-  loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
-  order: 'random'   # 音频循环顺序, 可选值: 'list', 'random'
-  preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'
-  volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
-  listFolded: false  # 列表默认折叠
-  hideLrc: true     # 隐藏歌词<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"># 是否在首页显示音乐.</span><br><span class="line">music:</span><br><span class="line">  enable: true</span><br><span class="line">  title: #非吸底模式有效</span><br><span class="line">    enable: true</span><br><span class="line">    show: 听听音乐</span><br><span class="line">  autoHide: false    # hide automaticaly</span><br><span class="line">  server: netease   #require    music platform: netease, tencent, kugou, xiami, baidu</span><br><span class="line">  type: playlist    #require song, playlist, album, search, artist</span><br><span class="line">  id: 411680085     #require    song id / playlist id / album id / search keyword</span><br><span class="line">  fixed: true       # 开启吸底模式</span><br><span class="line">  autoplay: false   # 是否自动播放</span><br><span class="line">  theme: '#42b983'</span><br><span class="line">  loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'</span><br><span class="line">  order: 'random'   # 音频循环顺序, 可选值: 'list', 'random'</span><br><span class="line">  preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'</span><br><span class="line">  volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效</span><br><span class="line">  listFolded: false  # 列表默认折叠</span><br><span class="line">  hideLrc: true     # 隐藏歌词</span><br></pre></td></tr></tbody></table></figure>
 <blockquote>
 <p>属性介绍：</p>
 <p>server可选netease（网易云音乐），tencent（QQ音乐），kugou（酷狗音乐），xiami（虾米音乐），baidu（百度音乐）</p>
@@ -885,18 +716,7 @@ music:
 </blockquote>
 <h3 id="111-关于我页面添加个人简历"><a class="markdownIt-Anchor" href="#111-关于我页面添加个人简历"></a> 1.11 关于我页面添加个人简历</h3>
 <p>打开theme/matery/layout/about.ejs文件，大约在13行。有一个<code>card</code>标签，找出其对应结尾的标签，大约在61行左右，然后在下面新增如下代码</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;div class="card"&gt;
-     &lt;div class="card-content"&gt;
-         &lt;div class="card-content article-card-content"&gt;
-             &lt;div class="title center-align" data-aos="zoom-in-up"&gt;
-                 &lt;i class="fa fa-address-book"&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;%- __('个人简历') %&gt;
-              &lt;/div&gt;
-                 &lt;div id="articleContent" data-aos="fade-up"&gt;
-                     &lt;%- page.content %&gt;
-                 &lt;/div&gt;
-           &lt;/div&gt;
-      &lt;/div&gt;
-&lt;/div&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class="card"&gt;</span><br><span class="line">     &lt;div class="card-content"&gt;</span><br><span class="line">         &lt;div class="card-content article-card-content"&gt;</span><br><span class="line">             &lt;div class="title center-align" data-aos="zoom-in-up"&gt;</span><br><span class="line">                 &lt;i class="fa fa-address-book"&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;%- __('个人简历') %&gt;</span><br><span class="line">              &lt;/div&gt;</span><br><span class="line">                 &lt;div id="articleContent" data-aos="fade-up"&gt;</span><br><span class="line">                     &lt;%- page.content %&gt;</span><br><span class="line">                 &lt;/div&gt;</span><br><span class="line">           &lt;/div&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></tbody></table></figure>
 <p>注意粘贴的位置和空格要正确，这里的位置随你自己设置，你也可以把简历作为第一个card，然后/source/about/index.md下面写上你的简历了（就像写博客一样）。</p>
 <blockquote>
 <p>中文显示为？？？<br>
@@ -904,52 +724,16 @@ music:
 </blockquote>
 <h3 id="112-配置404错误页面"><a class="markdownIt-Anchor" href="#112-配置404错误页面"></a> 1.12 配置404错误页面</h3>
 <p>站点根目录下的source文件夹下新建404.md文件，里面内容如下：</p>
-<pre class="line-numbers language-none"><code class="language-none">---
-title: 404
-date: 2020-6-18 16:41:10
-type: "404"
-layout: "404"
-description: "Oops～，我崩溃了！找不到你想要的页面了"
----<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 404</span><br><span class="line">date: 2020-6-18 16:41:10</span><br><span class="line">type: "404"</span><br><span class="line">layout: "404"</span><br><span class="line">description: "Oops～，我崩溃了！找不到你想要的页面了"</span><br><span class="line">---</span><br></pre></td></tr></tbody></table></figure>
 <p>在主题文件夹的layout目录下新建404.ejs文件，添加内容如下：</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;style type="text/css"&gt;
-    /* don't remove. */
-    .about-cover {
-        height: 90.2vh;
-    }
-&lt;/style&gt;
-&lt;div class="bg-cover pd-header about-cover"&gt;
-    &lt;div class="container"&gt;
-        &lt;div class="row"&gt;
-            &lt;div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2"&gt;
-                &lt;div class="brand"&gt;
-                    &lt;div class="title center-align"&gt;
-                        404
-                    &lt;/div&gt;
-                    &lt;div class="description center-align"&gt;
-                        &lt;%= page.description %&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;script&gt;
-    // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(https://cdn.jsdelivr.net/gh/Yafine/cdn@3.3.1/source/medias/banner/' + new Date().getDay() + '.jpg)');
-&lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type="text/css"&gt;</span><br><span class="line">    /* don't remove. */</span><br><span class="line">    .about-cover {</span><br><span class="line">        height: 90.2vh;</span><br><span class="line">    }</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;div class="bg-cover pd-header about-cover"&gt;</span><br><span class="line">    &lt;div class="container"&gt;</span><br><span class="line">        &lt;div class="row"&gt;</span><br><span class="line">            &lt;div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2"&gt;</span><br><span class="line">                &lt;div class="brand"&gt;</span><br><span class="line">                    &lt;div class="title center-align"&gt;</span><br><span class="line">                        404</span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line">                    &lt;div class="description center-align"&gt;</span><br><span class="line">                        &lt;%= page.description %&gt;</span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line">                &lt;/div&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">    // 每天切换 banner 图.  Switch banner image every day.</span><br><span class="line">    $('.bg-cover').css('background-image', 'url(https://cdn.jsdelivr.net/gh/Yafine/cdn@3.3.1/source/medias/banner/' + new Date().getDay() + '.jpg)');</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></tbody></table></figure>
 <p>然后部署，再看看效果即可<a target="_blank" rel="noopener" href="http://localhost:4000/404/">http://localhost:4000/404/</a></p>
 <p><img src="https://sulog.oss-cn-hangzhou.aliyuncs.com/matery2-6.png" alt="image-20200619203902808"></p>
 <h3 id="113-不蒜子统计"><a class="markdownIt-Anchor" href="#113-不蒜子统计"></a> 1.13 不蒜子统计</h3>
 <h4 id="1131-底部总浏览量和访问人数总是隐藏"><a class="markdownIt-Anchor" href="#1131-底部总浏览量和访问人数总是隐藏"></a> 1.13.1 底部总浏览量和访问人数总是隐藏</h4>
 <p><a target="_blank" rel="noopener" href="https://jingeg.gitee.io/2020/03/04/hexozhongmateryzhutidegexinghuadingzhi/#toc-heading-10">原链接网页</a><br>
 有时候请求busuanzi数据比较慢，然后浏览量和访问人数就会隐藏，可能是默认的，在matery.css中增加以下代码可以让它一直显示</p>
-<pre class="line-numbers language-none"><code class="language-none">   #busuanzi_container_site_pv,
-   #busuanzi_value_site_pv,
-   #busuanzi_container_site_uv{
-      display: inline !important;
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">   #busuanzi_container_site_pv,</span><br><span class="line">   #busuanzi_value_site_pv,</span><br><span class="line">   #busuanzi_container_site_uv{</span><br><span class="line">      display: inline !important;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p>最终找到了一位大佬的解决方案：<a target="_blank" rel="noopener" href="https://blog.17lai.site/posts/84b4059a/#%E4%B8%8D%E8%92%9C%E5%AD%90-busuanzi-%E6%96%87%E7%AB%A0%E8%AE%A1%E6%95%B0%E5%87%BA%E9%94%99%E9%97%AE%E9%A2%98">基于Hexo的matery主题搭建博客常见问题篇6 | 夜法之书 (17lai.site)</a></p>
 <h4 id="1132-不蒜子-busuanzi-文章计数出错问题"><a class="markdownIt-Anchor" href="#1132-不蒜子-busuanzi-文章计数出错问题"></a> 1.13.2 不蒜子 (busuanzi) 文章计数出错问题</h4>
 <p>参考博客<a target="_blank" rel="noopener" href="https://www.cnblogs.com/ranxi169/p/16715360.html">原网页</a><br>
@@ -962,20 +746,11 @@ description: "Oops～，我崩溃了！找不到你想要的页面了"
 <p>不蒜子统计博客文章访问量就是通过 referer 来计算的，通过上面的分析，如果 Referrer Policy 是 strict-origin-when-cross-origin，不蒜子接收到的只有博客的域名，没有文章的具体路径，所以具体某个文章的 PV 统计会出现错误。</p>
 <p>修复方法：</p>
 <p>在主题文件夹下/layout/_partial/head.ejs中添加</p>
-<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>referrer<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no-referrer-when-downgrade<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"referrer"</span> <span class="attr">content</span>=<span class="string">"no-referrer-when-downgrade"</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
 <h4 id="1133-增加建站时间"><a class="markdownIt-Anchor" href="#1133-增加建站时间"></a> 1.13.3 增加建站时间</h4>
 <p><a target="_blank" rel="noopener" href="https://blog.bluesky01st.eu.org/posts/d76019f8.html">源网页</a></p>
 <p>在<code>themes/matery/_config.yml</code>找到以下内容(42行)：</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment"># Website start time.</span>
-<span class="token comment"># 站点运行开始时间.</span>
-<span class="token key atrule">time</span><span class="token punctuation">:</span>
-  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-  <span class="token key atrule">year</span><span class="token punctuation">:</span>  <span class="token comment"># 年份</span>
-  <span class="token key atrule">month</span><span class="token punctuation">:</span>  <span class="token comment"># 月份</span>
-  <span class="token key atrule">date</span><span class="token punctuation">:</span>  <span class="token comment"># 日期</span>
-  <span class="token key atrule">hour</span><span class="token punctuation">:</span>  <span class="token comment"># 小时</span>
-  <span class="token key atrule">minute</span><span class="token punctuation">:</span>  <span class="token comment"># 分钟</span>
-  <span class="token key atrule">second</span><span class="token punctuation">:</span>  <span class="token comment"># 秒</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Website start time.</span></span><br><span class="line"><span class="comment"># 站点运行开始时间.</span></span><br><span class="line"><span class="attr">time:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">year:</span>  <span class="comment"># 年份</span></span><br><span class="line">  <span class="attr">month:</span>  <span class="comment"># 月份</span></span><br><span class="line">  <span class="attr">date:</span>  <span class="comment"># 日期</span></span><br><span class="line">  <span class="attr">hour:</span>  <span class="comment"># 小时</span></span><br><span class="line">  <span class="attr">minute:</span>  <span class="comment"># 分钟</span></span><br><span class="line">  <span class="attr">second:</span>  <span class="comment"># 秒</span></span><br></pre></td></tr></tbody></table></figure>
 <p>修改为你的建站时间即可</p>
 <h3 id="113-写作设置"><a class="markdownIt-Anchor" href="#113-写作设置"></a> 1.13 写作设置</h3>
 <p>目录中不显示一级标题，查阅了大部分网页发现一般有如下建议：</p>
@@ -986,45 +761,24 @@ description: "Oops～，我崩溃了！找不到你想要的页面了"
 <h2 id="2-视觉美化"><a class="markdownIt-Anchor" href="#2-视觉美化"></a> 2. 视觉美化</h2>
 <h3 id="21-修改主题颜色及导航透明效果"><a class="markdownIt-Anchor" href="#21-修改主题颜色及导航透明效果"></a> 2.1 修改主题颜色及导航透明效果</h3>
 <p>在主题文件的 /source/css/matery.css 文件中，搜索 .bg-color 来修改背景颜色：</p>
-<pre class="line-numbers language-none"><code class="language-none">/* 整体背景颜色，包括导航、移动端的导航、页尾、标签页等的背景颜色、透明效果. */
-.bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
-    opacity: 0.8;  //透明效果 值范围 0~1，看情况自己修改
-}
-/*如果想去掉banner图的颜色渐变效果，请将以下的css属性注释掉或者删除掉即可*/
-@-webkit-keyframes rainbow {
-   /* 动态切换背景颜色. */
-}
-@keyframes rainbow {
-    /* 动态切换背景颜色. */
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">/* 整体背景颜色，包括导航、移动端的导航、页尾、标签页等的背景颜色、透明效果. */</span><br><span class="line">.bg-color {</span><br><span class="line">    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);</span><br><span class="line">    opacity: 0.8;  //透明效果 值范围 0~1，看情况自己修改</span><br><span class="line">}</span><br><span class="line">/*如果想去掉banner图的颜色渐变效果，请将以下的css属性注释掉或者删除掉即可*/</span><br><span class="line">@-webkit-keyframes rainbow {</span><br><span class="line">   /* 动态切换背景颜色. */</span><br><span class="line">}</span><br><span class="line">@keyframes rainbow {</span><br><span class="line">    /* 动态切换背景颜色. */</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="22-修改主题页面"><a class="markdownIt-Anchor" href="#22-修改主题页面"></a> 2.2 修改主题页面</h3>
 <h4 id="221-修改-banner-图和文章特色图"><a class="markdownIt-Anchor" href="#221-修改-banner-图和文章特色图"></a> 2.2.1 修改 banner 图和文章特色图</h4>
 <p>你可以直接在 /source/medias/banner 文件夹中更换你喜欢的 banner 图片，主题代码中是每天动态切换一张，只需 7 张即可。</p>
 <p>如果想改为每小时或者每分钟切换banner图的话，可以在 /layout/_partial/bg-cover-content.ejs 文件的&nbsp;<code>bannerUrl</code>&nbsp;代码中，将getDay()改为getHours()或者getMinutes()即可，当然需要再上述文件夹中有足够多的图片，如换成每小时就需要24张图。</p>
-<pre class="line-numbers language-none"><code class="language-none">var bannerUrl = "&lt;%- theme.jsDelivr.url %&gt;&lt;%- url_for('/medias/banner/') %&gt;" + new Date().getDay() + '.jpg';<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var bannerUrl = "&lt;%- theme.jsDelivr.url %&gt;&lt;%- url_for('/medias/banner/') %&gt;" + new Date().getDay() + '.jpg';</span><br></pre></td></tr></tbody></table></figure>
 <p>文章特色图显示<br>
 如果 <code>img</code> 属性不填写的话，文章特色图会根据文章标题的 <code>hashcode</code> 的值取余，然后选取主题中对应的特色图片，从而达到让所有文章的特色图<strong>各有特色</strong>。<br>
 在 <code>/source/medias/featureimages</code> 文件夹中默认有 24 张特色图片，你可以再增加或者减少，并需要在 <code>_config.yml</code> 做同步修改,增加或者减少图片的名称。</p>
-<pre class="line-numbers language-none"><code class="language-none">&nbsp;%% themes\materylayout\_partial\index-cover.ejs %%
-&nbsp;var featureImage = featureImages[Math.abs(hashCode(post.title) % imgCount)];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-none"><code class="language-none">themes\materyJgy\_config.yml
-featureImages:
-	XXXX.XXX<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&nbsp;%% themes\materylayout\_partial\index-cover.ejs %%</span><br><span class="line">&nbsp;var featureImage = featureImages[Math.abs(hashCode(post.title) % imgCount)];</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">themes\materyJgy\_config.yml</span><br><span class="line">featureImages:</span><br><span class="line">	XXXX.XXX</span><br></pre></td></tr></tbody></table></figure>
 <p><img src="https://gitee.com/jgyong/blogimg/raw/master/img/202403271252109.png" alt=""><br>
 如果图片不显示的话，一定要仔细检查图片名字是否和<code>_config.yml</code>保持一致，特别注意图片的后缀是<code>jpg</code>还是<code>png</code></p>
 <h4 id="222-整体背景修改"><a class="markdownIt-Anchor" href="#222-整体背景修改"></a> 2.2.2 整体背景修改</h4>
 <p>在<code>themes\Matery\source\css\matery.css</code>，ctrl+F快捷键查找<code>body</code><br>
 修改样式如下：<br>
 css</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span> <span class="token punctuation">{</span>
-    <span class="token comment">/* background-color: #eaeaea; */</span>
-    <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>60deg<span class="token punctuation">,</span> <span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span> 165<span class="token punctuation">,</span> 150<span class="token punctuation">,</span> 0.5<span class="token punctuation">)</span> 5%<span class="token punctuation">,</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 228<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 0.35<span class="token punctuation">)</span><span class="token punctuation">)</span> 0% 0% / cover<span class="token punctuation">,</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">"https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"</span><span class="token punctuation">)</span></span><span class="token punctuation">,</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">"https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg"</span><span class="token punctuation">)</span></span> 0px 0px<span class="token punctuation">;</span>
-    <span class="token property">background-attachment</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>
-    <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-     <span class="token comment">/* 字体颜色*/</span>
-    <span class="token property">color</span><span class="token punctuation">:</span> #7F95D1<span class="token punctuation">;</span>  
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> {</span><br><span class="line">    <span class="comment">/* background-color: #eaeaea; */</span></span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(<span class="number">60deg</span>, <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">165</span>, <span class="number">150</span>, <span class="number">0.5</span>) <span class="number">5%</span>, <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">228</span>, <span class="number">255</span>, <span class="number">0.35</span>)) <span class="number">0%</span> <span class="number">0%</span> / cover, <span class="built_in">url</span>(<span class="string">"https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"</span>), <span class="built_in">url</span>(<span class="string">"https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg"</span>) <span class="number">0px</span> <span class="number">0px</span>;</span><br><span class="line">    <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">     <span class="comment">/* 字体颜色*/</span></span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#7F95D1</span>;  </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <h4 id="223-导航条颜色"><a class="markdownIt-Anchor" href="#223-导航条颜色"></a> 2.2.3 导航条颜色</h4>
 <p>修改<code>themes\Matery\source\css\matery.css</code>样式</p>
 <p>快捷键ctrl+F查找定位到<code>#4cbf30</code>（浅绿色）和<code>#0f9d58</code>（深绿色）还有首页字体颜色，</p>
@@ -1034,134 +788,57 @@ css</p>
 <p>遇到的坑：</p>
 <p>忘记修改这个，导致导航条颜色没有修改成功</p>
 <p>css</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">.bg-color</span> <span class="token punctuation">{</span>
-    <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>to right<span class="token punctuation">,</span> #6DD0F2 0%<span class="token punctuation">,</span> #F59ABE 100%<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token property">opacity</span><span class="token punctuation">:</span> 0.8<span class="token punctuation">;</span>  <span class="token comment">/*透明效果 值范围 0~1，看情况自己修改*/</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.bg-color</span> {</span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">linear-gradient</span>(to right, <span class="number">#6DD0F2</span> <span class="number">0%</span>, <span class="number">#F59ABE</span> <span class="number">100%</span>);</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">0.8</span>;  <span class="comment">/*透明效果 值范围 0~1，看情况自己修改*/</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 </blockquote>
 <h4 id="224-滚动条美化"><a class="markdownIt-Anchor" href="#224-滚动条美化"></a> 2.2.4 滚动条美化</h4>
 <p>此处为优化页面中所有的滚动条，包括代码横向的滚动条和页面纵向的滚动条</p>
 <p>在<code>themes\Matery\source\css\matery.css</code></p>
 <p>样式添加如下：</p>
 <p>css</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token comment">/* 滚动条 */</span>
-<span class="token selector">::-webkit-scrollbar-thumb</span> <span class="token punctuation">{</span>
-    <span class="token property">background-color</span><span class="token punctuation">:</span> #FF2A68<span class="token punctuation">;</span>
-    <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">-webkit-linear-gradient</span><span class="token punctuation">(</span>45deg<span class="token punctuation">,</span><span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span>255<span class="token punctuation">,</span>255<span class="token punctuation">,</span>.4<span class="token punctuation">)</span> 25%<span class="token punctuation">,</span>transparent 25%<span class="token punctuation">,</span>transparent 50%<span class="token punctuation">,</span><span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span>255<span class="token punctuation">,</span>255<span class="token punctuation">,</span>.4<span class="token punctuation">)</span> 50%<span class="token punctuation">,</span><span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span>255<span class="token punctuation">,</span>255<span class="token punctuation">,</span>.4<span class="token punctuation">)</span> 75%<span class="token punctuation">,</span>transparent 75%<span class="token punctuation">,</span>transparent<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token property">border-radius</span><span class="token punctuation">:</span> 3em<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">::-webkit-scrollbar-track</span> <span class="token punctuation">{</span>
-    <span class="token property">background-color</span><span class="token punctuation">:</span> #ffcacaff<span class="token punctuation">;</span>
-    <span class="token property">border-radius</span><span class="token punctuation">:</span> 3em<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">::-webkit-scrollbar</span> <span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
-    <span class="token property">height</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 滚动条 */</span></span><br><span class="line">::-webkit-scrollbar-thumb {</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#FF2A68</span>;</span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">-webkit-linear-gradient</span>(<span class="number">45deg</span>,<span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">4</span>) <span class="number">25%</span>,transparent <span class="number">25%</span>,transparent <span class="number">50%</span>,<span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">4</span>) <span class="number">50%</span>,<span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">4</span>) <span class="number">75%</span>,transparent <span class="number">75%</span>,transparent);</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3em</span>;</span><br><span class="line">}</span><br><span class="line">::-webkit-scrollbar-track {</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#ffcacaff</span>;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3em</span>;</span><br><span class="line">}</span><br><span class="line">::-webkit-scrollbar {</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">8px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">15px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <h4 id="225-目录透明化"><a class="markdownIt-Anchor" href="#225-目录透明化"></a> 2.2.5 目录透明化</h4>
 <p>增加样式在<code>themes\Matery\layout\_partial\post-detail-toc.ejs</code></p>
 <p><strong>修改</strong>内容如下：</p>
 <p>ejs</p>
-<pre class="line-numbers language-ejs" data-language="ejs"><code class="language-ejs">.toc-widget {
-width: 345px;
-padding-left: 20px;
-background-color: rgb(255, 255, 255,0.7);
-border-radius: 10px;
-box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07), 0 2px 5px -5px rgba(0, 0, 0, .1) !important;
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.toc-widget {</span><br><span class="line">width: 345px;</span><br><span class="line">padding-left: 20px;</span><br><span class="line">background-color: rgb(255, 255, 255,0.7);</span><br><span class="line">border-radius: 10px;</span><br><span class="line">box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07), 0 2px 5px -5px rgba(0, 0, 0, .1) !important;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="23-修改页脚-跳动红心"><a class="markdownIt-Anchor" href="#23-修改页脚-跳动红心"></a> 2.3 修改页脚、跳动红心</h3>
 <h4 id="231-跳动红心"><a class="markdownIt-Anchor" href="#231-跳动红心"></a> 2.3.1 跳动红心</h4>
 <ol>
 <li>
 <p>在文件的最下面加上以下代码</p>
- <pre class="line-numbers language-none"><code class="language-none">&lt;head&gt;&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"&gt;&lt;/head&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"&gt;&lt;/head&gt;</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li>
 <p>将需要加跳动红心的地方加上以下代码</p>
- <pre class="line-numbers language-none"><code class="language-none">&lt;i id="heartbeat" class="fa fas fa-heartbeat"&gt;&lt;/i&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;i id="heartbeat" class="fa fas fa-heartbeat"&gt;&lt;/i&gt;</span><br></pre></td></tr></tbody></table></figure>
 </li>
 </ol>
 <h4 id="232-修改页脚"><a class="markdownIt-Anchor" href="#232-修改页脚"></a> 2.3.2 修改页脚</h4>
 <p>修改的地方<code>themes\matery\layout\_partial/footer.ejs</code>文件中，包括站点、使用的主题、访问量等。</p>
 <p><img src="https://sulog.oss-cn-hangzhou.aliyuncs.com/matery2-14.png" alt="image-20200619215304130"></p>
 <p>我的配置：</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;div class="col s12 m8 l8 copy-right"&gt;
-    &amp;copy;&lt;span id="year"&gt;&lt;%- theme.time.year %&gt;&lt;/span&gt;-&lt;span id="year"&gt;&lt;%- theme.time.year +1 %&gt;&lt;/span&gt;&amp;nbsp;&lt;i id="heartbeat" class="fa fas fa-heartbeat"&gt;&lt;/i&gt;&amp;nbsp;
-    &lt;a href="&lt;%- url_for('/about') %&gt;" target="_blank"&gt;&lt;%- config.author %&gt;&lt;/a&gt;
-    &lt;br&gt;快乐每一天！
-    &lt;br&gt;
-&lt;% if (theme.postInfo.totalCount) { %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class="col s12 m8 l8 copy-right"&gt;</span><br><span class="line">    &amp;copy;&lt;span id="year"&gt;&lt;%- theme.time.year %&gt;&lt;/span&gt;-&lt;span id="year"&gt;&lt;%- theme.time.year +1 %&gt;&lt;/span&gt;&amp;nbsp;&lt;i id="heartbeat" class="fa fas fa-heartbeat"&gt;&lt;/i&gt;&amp;nbsp;</span><br><span class="line">    &lt;a href="&lt;%- url_for('/about') %&gt;" target="_blank"&gt;&lt;%- config.author %&gt;&lt;/a&gt;</span><br><span class="line">    &lt;br&gt;快乐每一天！</span><br><span class="line">    &lt;br&gt;</span><br><span class="line">&lt;% if (theme.postInfo.totalCount) { %&gt;</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="24-修改打赏二维码"><a class="markdownIt-Anchor" href="#24-修改打赏二维码"></a> 2.4 修改打赏二维码</h3>
 <p>在主题文件的 source/medias/reward 文件中，你可以替换成你的的微信和支付宝的打赏二维码图片。</p>
 <h3 id="25-修改社交链接"><a class="markdownIt-Anchor" href="#25-修改社交链接"></a> 2.5 修改社交链接</h3>
 <p>在主题配置文件_config.yml中，搜索<code>socialLink</code>，不配置值代表不启用，这是我的配置：</p>
-<pre class="line-numbers language-none"><code class="language-none"># 首页 banner 中的第二行个人信息配置，留空即不启用
-socialLink:
-  github:  https://github.com/fenghen0918
-  email: 443175565@qq.com
-  facebook: # https://www.facebook.com/xxx
-  twitter: # https://twitter.com/xxx
-  qq: 443175565
-  weibo: # https://weibo.com/xxx
-  zhihu: # https://www.zhihu.com/xxx
-  rss:  # true、false
-  weixin: https://cdn.jsdelivr.net/gh/fenghen0918/fenghen0918.github.io/medias/imgs/wechat.png<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 首页 banner 中的第二行个人信息配置，留空即不启用</span><br><span class="line">socialLink:</span><br><span class="line">  github:  https://github.com/fenghen0918</span><br><span class="line">  email: 443175565@qq.com</span><br><span class="line">  facebook: # https://www.facebook.com/xxx</span><br><span class="line">  twitter: # https://twitter.com/xxx</span><br><span class="line">  qq: 443175565</span><br><span class="line">  weibo: # https://weibo.com/xxx</span><br><span class="line">  zhihu: # https://www.zhihu.com/xxx</span><br><span class="line">  rss:  # true、false</span><br><span class="line">  weixin: https://cdn.jsdelivr.net/gh/fenghen0918/fenghen0918.github.io/medias/imgs/wechat.png</span><br></pre></td></tr></tbody></table></figure>
 <p>其中的weixin我是用的图片链接，会跳转到一个新的标签页，之后还需要修改ejs文件，文件在主题目录下的layout文件夹下的_partial文件夹，修改social-link.ejs，添加相关的配置，我个人添加的配置如下：</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;% if (theme.socialLink.weixin) { %&gt;
-    &lt;a href="&lt;%= theme.socialLink.weixin %&gt;" class="tooltipped" target="_blank" data-tooltip="微信联系我: " data-position="top" data-delay="50"&gt;
-        &lt;i class="fab fa-weixin"&gt;&lt;/i&gt;
-    &lt;/a&gt;
-&lt;% } %&gt;
-
-&lt;%&nbsp;if&nbsp;(theme.socialLink.github)&nbsp;{&nbsp;%&gt;
-	&lt;a&nbsp;href="&lt;%=&nbsp;theme.socialLink.github %&gt;"&nbsp;class="tooltipped"&nbsp;target="_blank"&nbsp;data-tooltip="访问我的GitHub"&nbsp;data-position="top"&nbsp;data-delay="50"&gt;&nbsp;
-	&lt;i&nbsp;class="fab fa-github"&gt;&lt;/i&gt;&nbsp;
-	&lt;/a&gt;
- &lt;%&nbsp;}&nbsp;%&gt;
- 
-&lt;% if (theme.socialLink.csdn) { %&gt;
-&nbsp; &nbsp; &lt;a href="&lt;%= theme.socialLink.csdn %&gt;" class="tooltipped" target="_blank" data-tooltip="关注我的CSDN: &lt;%= theme.socialLink.csdn %&gt;" data-position="top" data-delay="50"&gt;
-&nbsp; &nbsp; &lt;i class="fab fa-csdn"&gt;C&lt;/i&gt;
-&nbsp; &nbsp; &lt;/a&gt;
-&lt;% } %&gt;
-
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (theme.socialLink.weixin) { %&gt;</span><br><span class="line">    &lt;a href="&lt;%= theme.socialLink.weixin %&gt;" class="tooltipped" target="_blank" data-tooltip="微信联系我: " data-position="top" data-delay="50"&gt;</span><br><span class="line">        &lt;i class="fab fa-weixin"&gt;&lt;/i&gt;</span><br><span class="line">    &lt;/a&gt;</span><br><span class="line">&lt;% } %&gt;</span><br><span class="line"></span><br><span class="line">&lt;%&nbsp;if&nbsp;(theme.socialLink.github)&nbsp;{&nbsp;%&gt;</span><br><span class="line">	&lt;a&nbsp;href="&lt;%=&nbsp;theme.socialLink.github %&gt;"&nbsp;class="tooltipped"&nbsp;target="_blank"&nbsp;data-tooltip="访问我的GitHub"&nbsp;data-position="top"&nbsp;data-delay="50"&gt;&nbsp;</span><br><span class="line">	&lt;i&nbsp;class="fab fa-github"&gt;&lt;/i&gt;&nbsp;</span><br><span class="line">	&lt;/a&gt;</span><br><span class="line"> &lt;%&nbsp;}&nbsp;%&gt;</span><br><span class="line"> </span><br><span class="line">&lt;% if (theme.socialLink.csdn) { %&gt;</span><br><span class="line">&nbsp; &nbsp; &lt;a href="&lt;%= theme.socialLink.csdn %&gt;" class="tooltipped" target="_blank" data-tooltip="关注我的CSDN: &lt;%= theme.socialLink.csdn %&gt;" data-position="top" data-delay="50"&gt;</span><br><span class="line">&nbsp; &nbsp; &lt;i class="fab fa-csdn"&gt;C&lt;/i&gt;</span><br><span class="line">&nbsp; &nbsp; &lt;/a&gt;</span><br><span class="line">&lt;% } %&gt;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 <h3 id="26-标题"><a class="markdownIt-Anchor" href="#26-标题"></a> 2.6 标题</h3>
 <h4 id="261-动态标题"><a class="markdownIt-Anchor" href="#261-动态标题"></a> 2.6.1 动态标题</h4>
 <p><img src="https://sulog.oss-cn-hangzhou.aliyuncs.com/matery2-15.png" alt="image-20200619221831563"></p>
 <p><img src="https://sulog.oss-cn-hangzhou.aliyuncs.com/matery2-16.png" alt="image-20200619222009100"></p>
 <p>在主题文件下的<code>themes\matery\source\js</code>下新建<code>FunnyTitle.js</code>，增加以下代码</p>
-<pre class="line-numbers language-none"><code class="language-none">var OriginTitle = document.title;
-var titleTime;
-document.addEventListener('visibilitychange', function () {
-    if (document.hidden) {
-        $('[rel="icon"]').attr('href', "https://cdn.jsdelivr.net/gh/Yafine/cdn@2.2/source/favicon.png");
-        document.title = 'ヽ(●-`Д´-)ノ你要玩捉迷藏嘛';
-        clearTimeout(titleTime);
-    }
-    else {
-        $('[rel="icon"]').attr('href', "https://cdn.jsdelivr.net/gh/Yafine/cdn@2.2/source/favicon.png");
-        document.title = 'ヾ(Ő∀Ő3)ノ好哦！' + OriginTitle;
-        titleTime = setTimeout(function () {
-            document.title = OriginTitle;
-        }, 2000);
-    }
-});<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">var OriginTitle = document.title;</span><br><span class="line">var titleTime;</span><br><span class="line">document.addEventListener('visibilitychange', function () {</span><br><span class="line">    if (document.hidden) {</span><br><span class="line">        $('[rel="icon"]').attr('href', "https://cdn.jsdelivr.net/gh/Yafine/cdn@2.2/source/favicon.png");</span><br><span class="line">        document.title = 'ヽ(●-`Д´-)ノ你要玩捉迷藏嘛';</span><br><span class="line">        clearTimeout(titleTime);</span><br><span class="line">    }</span><br><span class="line">    else {</span><br><span class="line">        $('[rel="icon"]').attr('href', "https://cdn.jsdelivr.net/gh/Yafine/cdn@2.2/source/favicon.png");</span><br><span class="line">        document.title = 'ヾ(Ő∀Ő3)ノ好哦！' + OriginTitle;</span><br><span class="line">        titleTime = setTimeout(function () {</span><br><span class="line">            document.title = OriginTitle;</span><br><span class="line">        }, 2000);</span><br><span class="line">    }</span><br><span class="line">});</span><br></pre></td></tr></tbody></table></figure>
 <p>在<code>themes/matery/layout/layout.ejs</code>文件中添加如下代码：</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;script type="text/javascript"&gt;
-      var OriginTitile=document.title,st;
-      document.addEventListener("visibilitychange",function(){
-          document.hidden?(document.title="ヽ(●-`Д´-)ノ你要玩捉迷藏嘛",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ好哦！",st=setTimeout(function(){document.title=OriginTitile},3e3))
-      })
-  &lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type="text/javascript"&gt;</span><br><span class="line">      var OriginTitile=document.title,st;</span><br><span class="line">      document.addEventListener("visibilitychange",function(){</span><br><span class="line">          document.hidden?(document.title="ヽ(●-`Д´-)ノ你要玩捉迷藏嘛",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ好哦！",st=setTimeout(function(){document.title=OriginTitile},3e3))</span><br><span class="line">      })</span><br><span class="line">  &lt;/script&gt;</span><br></pre></td></tr></tbody></table></figure>
 <h4 id="262-标题溢出"><a class="markdownIt-Anchor" href="#262-标题溢出"></a> 2.6.2 标题溢出</h4>
 <p><a target="_blank" rel="noopener" href="https://jingeg.gitee.io/2020/03/04/hexozhongmateryzhutidegexinghuadingzhi/#toc-heading-10">原网页</a><br>
 用手机浏览网站时网站名称稍微长点就会从导航栏掉下来，让人看着很不舒服。我选择用手机浏览时不显示logo图片只显示文字</p>
 <p><img src="https://jingeg.gitee.io/images/matery5.png" alt="网站名称"></p>
 <p>解决办法：在matery.css中添加以下代码。不懂css的注意放置的位置(第六行后面)</p>
-<pre class="line-numbers language-none"><code class="language-none">header .brand-logo .logo-img{
-     display: none;
- }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">header .brand-logo .logo-img{</span><br><span class="line">     display: none;</span><br><span class="line"> }</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="27-修改全局字体"><a class="markdownIt-Anchor" href="#27-修改全局字体"></a> 2.7 修改全局字体</h3>
 <h4 id="271-修改全局字体样式"><a class="markdownIt-Anchor" href="#271-修改全局字体样式"></a> 2.7.1 修改全局字体样式</h4>
 <ol>
@@ -1176,14 +853,7 @@ document.addEventListener('visibilitychange', function () {
 </li>
 <li>
 <p>找到&nbsp;<code>/themes/matery/source/css/</code>下的 my.css 文件，填入下面的代码：</p>
- <pre class="line-numbers language-none"><code class="language-none">@font-face{
-    font-family: 'myFont';
-    src: url('../font/myFont.ttf');
-}
-
-body{
-    font-family: 'myFont';
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@font-face{</span><br><span class="line">    font-family: 'myFont';</span><br><span class="line">    src: url('../font/myFont.ttf');</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">body{</span><br><span class="line">    font-family: 'myFont';</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p>将上面的 myFont 改成你自己的字体名称即可<br>
 修改字体的坑：</p>
 </li>
@@ -1197,303 +867,72 @@ body{
 所以更好的方式是通过这种在线配置的方法<a target="_blank" rel="noopener" href="https://blog.csdn.net/rsj1994/article/details/53037881#:~:text=%E5%9C%A8%E7%BD%91%E9%A1%B5%E4%B8%AD%EF%BC%8C%E6%88%91%E4%BB%AC%E5%8F%AF%E4%BB%A5%E7%94%A8CSS%E7%9A%84font-family%E5%B1%9E%E6%80%A7%E6%9D%A5%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93%EF%BC%8C%E7%84%B6%E8%80%8C%E5%AE%9A%E4%B9%89%E7%9A%84%E5%AD%97%E4%BD%93%E5%9C%A8%E7%94%A8%E6%88%B7%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%8A%E8%83%BD%E5%90%A6%E6%AD%A3%E7%A1%AE%E5%91%88%E7%8E%B0%E5%88%99%E8%A6%81%E7%9C%8B%E7%94%A8%E6%88%B7%E7%9A%84%E7%94%B5%E8%84%91%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E4%BA%86%E8%AF%A5%E5%AD%97%E4%BD%93%E3%80%82,%E6%88%91%E4%BB%AC%E7%BB%8F%E5%B8%B8%E8%83%BD%E7%9C%8B%E5%88%B0%E5%9B%BD%E5%A4%96%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E4%BA%86%E9%9D%9E%E5%B8%B8%E6%BC%82%E4%BA%AE%E7%9A%84%E5%AD%97%E4%BD%93%EF%BC%8C%E8%80%8C%E8%BF%99%E4%BA%9B%E5%AD%97%E4%BD%93%E9%80%9A%E5%B8%B8%E5%9C%A8%E7%94%A8%E6%88%B7%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%AD%E6%98%AF%E6%B2%A1%E6%9C%89%E5%AE%89%E8%A3%85%E7%9A%84%EF%BC%8C%E6%89%80%E4%BB%A5%E7%94%A8font-family%E5%B1%9E%E6%80%A7%E5%B0%B1%E6%97%A0%E6%B3%95%E5%AE%9E%E7%8E%B0%E4%BA%86%E3%80%82"># 通过css的@font-face属性，在网页上显示用户电脑没有的字体。</a>，<a target="_blank" rel="noopener" href="https://github.com/lxgw/LxgwWenKai/issues/24"># 如需网页上嵌入，请看这里</a>由于时间关系，没有深入研究。</p>
 <h4 id="272-修改全局字体大小"><a class="markdownIt-Anchor" href="#272-修改全局字体大小"></a> 2.7.2 修改全局字体大小</h4>
 <p>在<code>matery.css</code>中修改<code>font-size</code>的值</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">#articleContent p</span> <span class="token punctuation">{</span>
-    <span class="token property">margin</span><span class="token punctuation">:</span> 2px 2px 10px<span class="token punctuation">;</span>
-    <span class="token property">font-size</span><span class="token punctuation">:</span> 1.2rem<span class="token punctuation">;</span>
-    <span class="token property">line-height</span><span class="token punctuation">:</span> 1.85rem<span class="token punctuation">;</span>
-
-<span class="token punctuation">}</span>
-<span class="token comment">/*无序列表*/</span>
-<span class="token selector">#articleContent ol li</span> <span class="token punctuation">{</span>
-
-    <span class="token property">display</span><span class="token punctuation">:</span> list-item<span class="token punctuation">;</span>
-
-    <span class="token property">line-height</span><span class="token punctuation">:</span> 1.8rem<span class="token punctuation">;</span>
-
-    <span class="token property">font-size</span><span class="token punctuation">:</span> 1.2rem<span class="token punctuation">;</span>
-
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#articleContent</span> <span class="selector-tag">p</span> {</span><br><span class="line">&nbsp; &nbsp; <span class="attribute">margin</span>: <span class="number">2px</span> <span class="number">2px</span> <span class="number">10px</span>;</span><br><span class="line">&nbsp; &nbsp; <span class="attribute">font-size</span>: <span class="number">1.2rem</span>;</span><br><span class="line">&nbsp; &nbsp; <span class="attribute">line-height</span>: <span class="number">1.85rem</span>;</span><br><span class="line"></span><br><span class="line">}</span><br><span class="line"><span class="comment">/*无序列表*/</span></span><br><span class="line"><span class="selector-id">#articleContent</span> <span class="selector-tag">ol</span> <span class="selector-tag">li</span> {</span><br><span class="line"></span><br><span class="line">&nbsp; &nbsp; <span class="attribute">display</span>: list-item;</span><br><span class="line"></span><br><span class="line">&nbsp; &nbsp; <span class="attribute">line-height</span>: <span class="number">1.8rem</span>;</span><br><span class="line"></span><br><span class="line">&nbsp; &nbsp; <span class="attribute">font-size</span>: <span class="number">1.2rem</span>;</span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="28-自定义鼠标样式"><a class="markdownIt-Anchor" href="#28-自定义鼠标样式"></a> 2.8 自定义鼠标样式</h3>
 <p>首先将鼠标样式下载到本地，推荐大家一个网站：<a target="_blank" rel="noopener" href="https://zhutix.com/ico/ori-cursors/">https://zhutix.com/ico/ori-cursors/</a></p>
 <p>以我的为例，我将鼠标指针样式放在了主题文件夹下的medias目录下，然后打开<code>themes\matery\source\css</code>下的<strong>my.css</strong>文件，添加内容如下：</p>
-<pre class="line-numbers language-none"><code class="language-none">*{
-    cursor: url("/medias/imgs/zhengchang.ico"),auto!important;
-}
-:active{
-    cursor: url("/medias/imgs/dianji.ico"),auto!important;
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">*{</span><br><span class="line">    cursor: url("/medias/imgs/zhengchang.ico"),auto!important;</span><br><span class="line">}</span><br><span class="line">:active{</span><br><span class="line">    cursor: url("/medias/imgs/dianji.ico"),auto!important;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="29-页面特效效果增加"><a class="markdownIt-Anchor" href="#29-页面特效效果增加"></a> 2.9 页面特效效果增加</h3>
 <p>个人认为效果还是动态彩带效果最好</p>
 <h4 id="291-添加背景动态彩带效果"><a class="markdownIt-Anchor" href="#291-添加背景动态彩带效果"></a> 2.9.1 添加背景动态彩带效果</h4>
 <p>参考链接<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/69211731"># Hexo 博客美化合集（不断更新）</a>和<a target="_blank" rel="noopener" href="https://kaizynx.github.io/2020/03/19/Sakura_setting/"># Hexo-Sakura主题配置</a>，链接1提供的代码有误，与链接2提供的内容结合才可以实现该功能。<br>
 <img src="https://gitee.com/jgyong/blogimg/raw/master/img/202403241328890.png" alt="彩带效果"><br>
 实现方法：在 \themes\material-x\layout\layout.ejs 文件的body前面添加如下代码：</p>
-<pre class="line-numbers language-ejs" data-language="ejs"><code class="language-ejs"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/piao.js<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/piao.js" type="text/javascript"&gt;&lt;/script&gt;</span><br></pre></td></tr></tbody></table></figure>
 <p>还可以参考<a target="_blank" rel="noopener" href="https://iymark.com/articles/649.html"># js代码为你得网站加入动态彩色飘带</a>，将彩带文件更改为本地文件，此处未做尝试</p>
 <h4 id="292-樱花飘落"><a class="markdownIt-Anchor" href="#292-樱花飘落"></a> 2.9.2 樱花飘落</h4>
 <p>此处作者博客中没有写相关代码，而且个人认为添加樱花效果反而显得页面很乱，这里没有记录</p>
 <h4 id="293-背景动态科技线条"><a class="markdownIt-Anchor" href="#293-背景动态科技线条"></a> 2.9.3 背景动态科技线条</h4>
-<pre class="line-numbers language-none"><code class="language-none">&lt;!--动态线条背景--&gt;
-&lt;script type="text/javascript"
-color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"&gt;
-&lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--动态线条背景--&gt;</span><br><span class="line">&lt;script type="text/javascript"</span><br><span class="line">color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"&gt;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="210-页面加载动画添加"><a class="markdownIt-Anchor" href="#210-页面加载动画添加"></a> 2.10 页面加载动画添加</h3>
 <p>主要按照博客<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43662760/article/details/122311217"># Matery主题自定义(六)页面加载动画</a>进行，建议访问原博客</p>
 <ol>
 <li>
 <p>在 <code>themes&gt;hexo-theme-matery&gt;layout&gt;_widget</code> 下创建一个 loading.ejs 文件，将下面的代码 cv 进去</p>
- <pre class="line-numbers language-none"><code class="language-none">&lt;% if (theme.preloader.enable) { %&gt;
-  &lt;div id="loading-box"&gt;
-    &lt;div class="loading-left-bg"&gt;&lt;/div&gt;
-    &lt;div class="loading-right-bg"&gt;&lt;/div&gt;
-    &lt;div class="spinner-box"&gt;
-      &lt;div class="configure-border-1"&gt;
-        &lt;div class="configure-core"&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class="configure-border-2"&gt;
-        &lt;div class="configure-core"&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class="loading-word"&gt;加载中...&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;!-- 页面加载动画 --&gt;
-  &lt;script&gt;
-    $(document).ready(function () {
-      document.body.style.overflow = 'auto';
-      document.getElementById('loading-box').classList.add("loaded")
-    })
-  &lt;/script&gt;
-&lt;% } %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (theme.preloader.enable) { %&gt;</span><br><span class="line">  &lt;div id="loading-box"&gt;</span><br><span class="line">    &lt;div class="loading-left-bg"&gt;&lt;/div&gt;</span><br><span class="line">    &lt;div class="loading-right-bg"&gt;&lt;/div&gt;</span><br><span class="line">    &lt;div class="spinner-box"&gt;</span><br><span class="line">      &lt;div class="configure-border-1"&gt;</span><br><span class="line">        &lt;div class="configure-core"&gt;&lt;/div&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">      &lt;div class="configure-border-2"&gt;</span><br><span class="line">        &lt;div class="configure-core"&gt;&lt;/div&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">      &lt;div class="loading-word"&gt;加载中...&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">  &lt;!-- 页面加载动画 --&gt;</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">    $(document).ready(function () {</span><br><span class="line">      document.body.style.overflow = 'auto';</span><br><span class="line">      document.getElementById('loading-box').classList.add("loaded")</span><br><span class="line">    })</span><br><span class="line">  &lt;/script&gt;</span><br><span class="line">&lt;% } %&gt;</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li>
 <p>完成了结构代码，下面就开始样式代码了，不然没有样式的动画也太丑了，下面的就是样式代码<br>
 当然，在复制粘贴代码之前，需要先创建样式文件<br>
 在 themes&gt;hexo-theme-matery&gt;source&gt;css&gt; 下创建一个新的文件 loading.css，在将下面的代码复制粘贴</p>
- <pre class="line-numbers language-none"><code class="language-none">#loading-box .loading-left-bg,
-#loading-box .loading-right-bg {
-  position: fixed;
-  z-index: 1000;
-  width: 50%;
-  height: 100%;
-  background-color: #37474f;
-  transition: all 0.5s;
-}
-
-#loading-box .loading-right-bg {
-  right: 0;
-}
-
-#loading-box&gt;.spinner-box {
-  position: fixed;
-  z-index: 1001;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-}
-
-#loading-box .spinner-box .configure-border-1 {
-  position: absolute;
-  padding: 3px;
-  width: 115px;
-  height: 115px;
-  background: #ffab91;
-  animation: configure-clockwise 3s ease-in-out 0s infinite alternate;
-}
-
-#loading-box .spinner-box .configure-border-2 {
-  left: -115px;
-  padding: 3px;
-  width: 115px;
-  height: 115px;
-  background: rgb(63, 249, 220);
-  transform: rotate(45deg);
-  animation: configure-xclockwise 3s ease-in-out 0s infinite alternate;
-}
-
-#loading-box .spinner-box .loading-word {
-  position: absolute;
-  color: #ffffff;
-  font-size: 0.8rem;
-}
-
-#loading-box .spinner-box .configure-core {
-  width: 100%;
-  height: 100%;
-  background-color: #37474f;
-}
-
-div.loaded div.loading-left-bg {
-  transform: translate(-100%, 0);
-}
-
-div.loaded div.loading-right-bg {
-  transform: translate(100%, 0);
-}
-
-div.loaded div.spinner-box {
-  display: none !important;
-}
-
-@keyframes configure-clockwise {
-  0% {
-    transform: rotate(0);
-  }
-
-  25% {
-    transform: rotate(90deg);
-  }
-
-  50% {
-    transform: rotate(180deg);
-  }
-
-  75% {
-    transform: rotate(270deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes configure-xclockwise {
-  0% {
-    transform: rotate(45deg);
-  }
-
-  25% {
-    transform: rotate(-45deg);
-  }
-
-  50% {
-    transform: rotate(-135deg);
-  }
-
-  75% {
-    transform: rotate(-225deg);
-  }
-
-  100% {
-    transform: rotate(-315deg);
-  }
-}
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br></pre></td><td class="code"><pre><span class="line">#loading-box .loading-left-bg,</span><br><span class="line">#loading-box .loading-right-bg {</span><br><span class="line">  position: fixed;</span><br><span class="line">  z-index: 1000;</span><br><span class="line">  width: 50%;</span><br><span class="line">  height: 100%;</span><br><span class="line">  background-color: #37474f;</span><br><span class="line">  transition: all 0.5s;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">#loading-box .loading-right-bg {</span><br><span class="line">  right: 0;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">#loading-box&gt;.spinner-box {</span><br><span class="line">  position: fixed;</span><br><span class="line">  z-index: 1001;</span><br><span class="line">  display: flex;</span><br><span class="line">  justify-content: center;</span><br><span class="line">  align-items: center;</span><br><span class="line">  width: 100%;</span><br><span class="line">  height: 100vh;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">#loading-box .spinner-box .configure-border-1 {</span><br><span class="line">  position: absolute;</span><br><span class="line">  padding: 3px;</span><br><span class="line">  width: 115px;</span><br><span class="line">  height: 115px;</span><br><span class="line">  background: #ffab91;</span><br><span class="line">  animation: configure-clockwise 3s ease-in-out 0s infinite alternate;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">#loading-box .spinner-box .configure-border-2 {</span><br><span class="line">  left: -115px;</span><br><span class="line">  padding: 3px;</span><br><span class="line">  width: 115px;</span><br><span class="line">  height: 115px;</span><br><span class="line">  background: rgb(63, 249, 220);</span><br><span class="line">  transform: rotate(45deg);</span><br><span class="line">  animation: configure-xclockwise 3s ease-in-out 0s infinite alternate;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">#loading-box .spinner-box .loading-word {</span><br><span class="line">  position: absolute;</span><br><span class="line">  color: #ffffff;</span><br><span class="line">  font-size: 0.8rem;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">#loading-box .spinner-box .configure-core {</span><br><span class="line">  width: 100%;</span><br><span class="line">  height: 100%;</span><br><span class="line">  background-color: #37474f;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">div.loaded div.loading-left-bg {</span><br><span class="line">  transform: translate(-100%, 0);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">div.loaded div.loading-right-bg {</span><br><span class="line">  transform: translate(100%, 0);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">div.loaded div.spinner-box {</span><br><span class="line">  display: none !important;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">@keyframes configure-clockwise {</span><br><span class="line">  0% {</span><br><span class="line">    transform: rotate(0);</span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  25% {</span><br><span class="line">    transform: rotate(90deg);</span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  50% {</span><br><span class="line">    transform: rotate(180deg);</span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  75% {</span><br><span class="line">    transform: rotate(270deg);</span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  100% {</span><br><span class="line">    transform: rotate(360deg);</span><br><span class="line">  }</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">@keyframes configure-xclockwise {</span><br><span class="line">  0% {</span><br><span class="line">    transform: rotate(45deg);</span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  25% {</span><br><span class="line">    transform: rotate(-45deg);</span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  50% {</span><br><span class="line">    transform: rotate(-135deg);</span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  75% {</span><br><span class="line">    transform: rotate(-225deg);</span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  100% {</span><br><span class="line">    transform: rotate(-315deg);</span><br><span class="line">  }</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li>
 <p>添加至页面<br>
 在将加载动画添加至页面中<br>
 找到 themes&gt;hexo-theme-matery&gt;layout&gt;_partial&gt;head.ejs 文件，这个文件专门用来引入样式文件和配置网页信息</p>
 <p>在  标签中引入 loading.css 文件</p>
- <pre class="line-numbers language-none"><code class="language-none">&lt;link rel="stylesheet" type="text/css" href="&lt;%- theme.jsDelivr.url %&gt;&lt;%- url_for('/css/loading.css') %&gt;"&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel="stylesheet" type="text/css" href="&lt;%- theme.jsDelivr.url %&gt;&lt;%- url_for('/css/loading.css') %&gt;"&gt;</span><br></pre></td></tr></tbody></table></figure>
 <p>引入样式文件后，引入结构文件 loading.ejs，插入在themes&gt;hexo-theme-matery&gt;layout&gt;layout.ejs  标签下第一行就行了</p>
- <pre class="line-numbers language-none"><code class="language-none">&lt;%- partial('_widget/loading') %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- partial('_widget/loading') %&gt;</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li>
 <p>配置<br>
 最后在主题配置文件中进行配置 _config.yml，true 是开启；false 是关闭</p>
 </li>
 </ol>
-<pre class="line-numbers language-none"><code class="language-none"># 是否开启页面加载动画
-preloader:
-  enable: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 是否开启页面加载动画</span><br><span class="line">preloader:</span><br><span class="line">  enable: true</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="211-图片冒泡功能"><a class="markdownIt-Anchor" href="#211-图片冒泡功能"></a> 2.11 图片冒泡功能</h3>
 <p>同样是参考同一作者的博客<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43662760/article/details/122311008">图片冒泡功能</a></p>
 <ol>
 <li>
 <p>创建 buble.js<br>
 在 <code>themes&gt;hexo-theme-matery&gt;source&gt;libs&gt;others</code> 下创建一个新的文件 <code>buble.js</code>，将下面的代码 CV 到 <code>buble.js</code> 中</p>
- <pre class="line-numbers language-none"><code class="language-none">// 上升的气泡
-function buble () {
-  $('.carousel-item, .pd-header').circleMagic({
-    radius: 10,
-    density: .2,
-    color: 'rgba(255,255,255,.4)',
-    clearOffset: 0.99
-  });
-} ! function (p) {
-  p.fn.circleMagic = function (t) {
-    var o, a, n, r, e = !0,
-      i = [],
-      d = p.extend({
-        color: "rgba(255,0,0,.5)",
-        radius: 10,
-        density: .3,
-        clearOffset: .2
-      }, t),
-      l = this[0];
-    function c () {
-      e = !(document.body.scrollTop &gt; a)
-    }
-    function s () {
-      o = l.clientWidth, a = l.clientHeight, l.height = a + "px", n.width = o, n.height = a
-    }
-    function h () {
-      if (e)
-        for (var t in r.clearRect(0, 0, o, a), i) i[t].draw();
-      requestAnimationFrame(h)
-    }
-    function f () {
-      var t = this;
-      function e () {
-        t.pos.x = Math.random() * o, t.pos.y = a + 100 * Math.random(), t.alpha = .1 + Math.random() * d.clearOffset,
-          t.scale = .1 + .3 * Math.random(), t.speed = Math.random(), "random" === d.color ? t.color =
-            "rgba(" + Math.floor(255 * Math.random()) + ", " + Math.floor(0 * Math.random()) + ", " + Math.floor(
-              0 * Math.random()) + ", " + Math.random().toPrecision(2) + ")" : t.color = d.color
-      }
-      t.pos = {}, e(), this.draw = function () {
-        t.alpha &lt;= 0 &amp;&amp; e(), t.pos.y -= t.speed, t.alpha -= 5e-4, r.beginPath(), r.arc(t.pos.x, t.pos.y,
-          t.scale * d.radius, 0, 2 * Math.PI, !1), r.fillStyle = t.color, r.fill(), r.closePath()
-      }
-    } ! function () {
-      o = l.offsetWidth, a = l.offsetHeight,
-        function () {
-          var t = document.createElement("canvas");
-          t.id = "canvas";
-          t.style.top = 0;
-          t.style.left = 0
-          t.style.right = 0
-          t.style.zIndex = 0;
-          t.style.position = "absolute";
-
-          l.appendChild(t);
-          t.parentElement.style.overflow = "hidden"
-        }(), (n = document.getElementById("canvas")).width = o, n.height = a, r = n.getContext("2d");
-      for (var t = 0; t &lt; o * d.density; t++) {
-        var e = new f;
-        i.push(e)
-      }
-      h()
-    }(), window.addEventListener("scroll", c, !1), window.addEventListener("resize", s, !1)
-  }
-}(jQuery);
-buble()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+ <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line">// 上升的气泡</span><br><span class="line">function buble () {</span><br><span class="line">  $('.carousel-item, .pd-header').circleMagic({</span><br><span class="line">    radius: 10,</span><br><span class="line">    density: .2,</span><br><span class="line">    color: 'rgba(255,255,255,.4)',</span><br><span class="line">    clearOffset: 0.99</span><br><span class="line">  });</span><br><span class="line">} ! function (p) {</span><br><span class="line">  p.fn.circleMagic = function (t) {</span><br><span class="line">    var o, a, n, r, e = !0,</span><br><span class="line">      i = [],</span><br><span class="line">      d = p.extend({</span><br><span class="line">        color: "rgba(255,0,0,.5)",</span><br><span class="line">        radius: 10,</span><br><span class="line">        density: .3,</span><br><span class="line">        clearOffset: .2</span><br><span class="line">      }, t),</span><br><span class="line">      l = this[0];</span><br><span class="line">    function c () {</span><br><span class="line">      e = !(document.body.scrollTop &gt; a)</span><br><span class="line">    }</span><br><span class="line">    function s () {</span><br><span class="line">      o = l.clientWidth, a = l.clientHeight, l.height = a + "px", n.width = o, n.height = a</span><br><span class="line">    }</span><br><span class="line">    function h () {</span><br><span class="line">      if (e)</span><br><span class="line">        for (var t in r.clearRect(0, 0, o, a), i) i[t].draw();</span><br><span class="line">      requestAnimationFrame(h)</span><br><span class="line">    }</span><br><span class="line">    function f () {</span><br><span class="line">      var t = this;</span><br><span class="line">      function e () {</span><br><span class="line">        t.pos.x = Math.random() * o, t.pos.y = a + 100 * Math.random(), t.alpha = .1 + Math.random() * d.clearOffset,</span><br><span class="line">          t.scale = .1 + .3 * Math.random(), t.speed = Math.random(), "random" === d.color ? t.color =</span><br><span class="line">            "rgba(" + Math.floor(255 * Math.random()) + ", " + Math.floor(0 * Math.random()) + ", " + Math.floor(</span><br><span class="line">              0 * Math.random()) + ", " + Math.random().toPrecision(2) + ")" : t.color = d.color</span><br><span class="line">      }</span><br><span class="line">      t.pos = {}, e(), this.draw = function () {</span><br><span class="line">        t.alpha &lt;= 0 &amp;&amp; e(), t.pos.y -= t.speed, t.alpha -= 5e-4, r.beginPath(), r.arc(t.pos.x, t.pos.y,</span><br><span class="line">          t.scale * d.radius, 0, 2 * Math.PI, !1), r.fillStyle = t.color, r.fill(), r.closePath()</span><br><span class="line">      }</span><br><span class="line">    } ! function () {</span><br><span class="line">      o = l.offsetWidth, a = l.offsetHeight,</span><br><span class="line">        function () {</span><br><span class="line">          var t = document.createElement("canvas");</span><br><span class="line">          t.id = "canvas";</span><br><span class="line">          t.style.top = 0;</span><br><span class="line">          t.style.left = 0</span><br><span class="line">          t.style.right = 0</span><br><span class="line">          t.style.zIndex = 0;</span><br><span class="line">          t.style.position = "absolute";</span><br><span class="line"></span><br><span class="line">          l.appendChild(t);</span><br><span class="line">          t.parentElement.style.overflow = "hidden"</span><br><span class="line">        }(), (n = document.getElementById("canvas")).width = o, n.height = a, r = n.getContext("2d");</span><br><span class="line">      for (var t = 0; t &lt; o * d.density; t++) {</span><br><span class="line">        var e = new f;</span><br><span class="line">        i.push(e)</span><br><span class="line">      }</span><br><span class="line">      h()</span><br><span class="line">    }(), window.addEventListener("scroll", c, !1), window.addEventListener("resize", s, !1)</span><br><span class="line">  }</span><br><span class="line">}(jQuery);</span><br><span class="line">buble()</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li>
 <p>_config.yml 配置<br>
 接着将这个文件在主题的配置文件（_config.yml）中 lib:js: 下引入，大约在 458 行</p>
-<pre class="line-numbers language-none"><code class="language-none">buble: /libs/others/buble.js<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">buble: /libs/others/buble.js</span><br></pre></td></tr></tbody></table></figure>
 <p>在主题的配置文件（_config.yml）中添加下面的代码</p>
-<pre class="line-numbers language-none"><code class="language-none"># banner 冒泡
-buble:
-  enable: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># banner 冒泡</span><br><span class="line">buble:</span><br><span class="line">  enable: true</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li>
 <p>引用<br>
 在 themes&gt;hexo-theme-matery&gt;layout&gt;layout.ejs 这的 body 标签中添加下面的代码</p>
 </li>
 </ol>
-<pre class="line-numbers language-none"><code class="language-none">&lt;!-- 冒泡 --&gt;
-&lt;% if (theme.buble.enable) { %&gt;
-    &lt;script type="text/javascript"&gt;
-        // 只在桌面版网页启用特效
-        var windowWidth = $(window).width();
-        document.write(
-            '&lt;script type="text/javascript" src="&lt;%- theme.jsDelivr.url %&gt;&lt;%- url_for(theme.libs.js.buble) %&gt;"&gt;&lt;\/script&gt;'
-        );
-    &lt;/script&gt;
-&lt;% } %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 冒泡 --&gt;</span><br><span class="line">&lt;% if (theme.buble.enable) { %&gt;</span><br><span class="line">    &lt;script type="text/javascript"&gt;</span><br><span class="line">        // 只在桌面版网页启用特效</span><br><span class="line">        var windowWidth = $(window).width();</span><br><span class="line">        document.write(</span><br><span class="line">            '&lt;script type="text/javascript" src="&lt;%- theme.jsDelivr.url %&gt;&lt;%- url_for(theme.libs.js.buble) %&gt;"&gt;&lt;\/script&gt;'</span><br><span class="line">        );</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">&lt;% } %&gt;</span><br></pre></td></tr></tbody></table></figure>
 <p>banner 冒泡的效果就完成了</p>
 <h3 id="待优化功能"><a class="markdownIt-Anchor" href="#待优化功能"></a> 待优化功能</h3>
 <ol>
@@ -1514,27 +953,9 @@ buble:
 <p>但是它避免了国内<code>npm</code>的使用问题. 所以我推荐这种方式.</p>
 <p>在博客根目录命令行输入:</p>
 <p>bash</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">cnpm <span class="token function">install</span> hexo-neat <span class="token parameter variable">--save</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-neat --save</span><br></pre></td></tr></tbody></table></figure>
 <p>然后在Hexo配置文件末尾加入(已针对matery的bug优化):</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment">#hexo-neat 优化提速插件（去掉HTML、css、js的blank字符）</span>
-<span class="token key atrule">neat_enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-<span class="token key atrule">neat_html</span><span class="token punctuation">:</span>
-  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-  <span class="token key atrule">exclude</span><span class="token punctuation">:</span>
-    <span class="token punctuation">-</span> <span class="token string">'**/*.md'</span>
-<span class="token key atrule">neat_css</span><span class="token punctuation">:</span>
-  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-  <span class="token key atrule">exclude</span><span class="token punctuation">:</span>
-    <span class="token punctuation">-</span> <span class="token string">'**/*.min.css'</span>
-<span class="token key atrule">neat_js</span><span class="token punctuation">:</span>
-  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-  <span class="token key atrule">mangle</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-  <span class="token key atrule">output</span><span class="token punctuation">:</span>
-  <span class="token key atrule">compress</span><span class="token punctuation">:</span>
-  <span class="token key atrule">exclude</span><span class="token punctuation">:</span>
-    <span class="token punctuation">-</span> <span class="token string">'**/*.min.js'</span>
-    <span class="token punctuation">-</span> <span class="token string">'**/**/instantpage.js'</span>
-    <span class="token punctuation">-</span> <span class="token string">'**/matery.js'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#hexo-neat 优化提速插件（去掉HTML、css、js的blank字符）</span></span><br><span class="line"><span class="attr">neat_enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">neat_html:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">exclude:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">'**/*.md'</span></span><br><span class="line"><span class="attr">neat_css:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">exclude:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">'**/*.min.css'</span></span><br><span class="line"><span class="attr">neat_js:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">mangle:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">output:</span></span><br><span class="line">  <span class="attr">compress:</span></span><br><span class="line">  <span class="attr">exclude:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">'**/*.min.js'</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">'**/**/instantpage.js'</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">'**/matery.js'</span></span><br></pre></td></tr></tbody></table></figure>
 <h3 id="32-cdn加速"><a class="markdownIt-Anchor" href="#32-cdn加速"></a> 3.2 CDN加速</h3>
 <h2 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h2>
 <p>此次主要依靠各位大佬的记录，优化博客界面，对于主题<code>matery</code>修改了一些样式，增加了一些功能。但对于前端页面的知识还是了解特别少，博客优化方面还有很多需要学习的地方，下面记录一下各位大佬的博客链接，方便以后优化页面，了解相关知识。再次感谢各位大佬的知识分享。<br>
@@ -2071,13 +1492,13 @@ new Valine({
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/03/30/windows-xiang-guan/">
+                <a href="/2024/03/30/windows-xi-tong-xiang-guan/windows-mei-hua/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="Windows相关">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Windows系统美化">
                         
-                        <span class="card-title">Windows相关</span>
+                        <span class="card-title">Windows系统美化</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -2116,13 +1537,13 @@ new Valine({
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/02/01/ns3-fang-zhen/ns3-zhong-yuan-xin-xi/">
+                <a href="/2024/03/24/obsidian/zi-ti-she-zhi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="NS3中元信息">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">NS3中元信息</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -2133,7 +1554,7 @@ new Valine({
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-02-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-03-24
                             </span>
                         <span class="publish-author">
                             
@@ -2142,14 +1563,6 @@ new Valine({
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E7%BD%91%E7%BB%9C%E4%BB%BF%E7%9C%9F/">
-                        <span class="chip bg-color">网络仿真</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -2350,7 +1763,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">39.1k</span>&nbsp;字
+                class="white-color">53.5k</span>&nbsp;字
             <br>
             
             

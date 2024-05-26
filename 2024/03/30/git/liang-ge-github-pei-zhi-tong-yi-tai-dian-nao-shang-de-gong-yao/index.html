@@ -37,7 +37,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.1.1">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="努力搬砖的眼镜狗" type="application/atom+xml">
 </head>
@@ -173,31 +173,6 @@
     
   </li>
   
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="" class="waves-effect waves-light">
-
-      
-      <i class="fas fa-list" style="zoom: 0.6;"></i>
-      
-      <span>Medias</span>
-      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
-    </a>
-    <ul class="sub-nav menus_item_child ">
-      
-      <li>
-        <a href="/musics">
-          
-          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>Musics</span>
-        </a>
-      </li>
-      
-    </ul>
-    
-  </li>
-  
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
@@ -300,31 +275,6 @@
 			
 			友情链接
 		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="javascript:;">
-			
-				<i class="fa-fw fas fa-list"></i>
-			
-			Medias
-			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
-		</a>
-            <ul  style="background:  ;" >
-              
-                <li>
-
-                  <a href="/musics " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
-			      
-		          <span>Musics</span>
-                  </a>
-                </li>
-              
-            </ul>
           
         </li>
         
@@ -561,7 +511,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    472
+                    467
                 </div>
                 
 
@@ -573,10 +523,6 @@
                 
 
                 
-                    <span id="busuanzi_container_site_pv" style='display:none'>
-                    </span> <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp; <span id="busuanzi_value_page_pv" >
-                    </span>                  
-				
             </div>
         </div>
         <hr class="clearfix">
@@ -592,33 +538,26 @@
             <div id="articleContent">
                 <h5 id="一-另外生成一份ssh-key"><a class="markdownIt-Anchor" href="#一-另外生成一份ssh-key"></a> 一、另外生成一份SSH key</h5>
 <p>执行命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ssh-keygen <span class="token parameter variable">-t</span> rsa <span class="token parameter variable">-f</span> /c/Users/Administrator/.ssh/id_rsa_second <span class="token parameter variable">-C</span> <span class="token string">"xxxxx@163.com"</span> <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -f /c/Users/Administrator/.ssh/id_rsa_second -C <span class="string">"xxxxx@163.com"</span> </span><br></pre></td></tr></tbody></table></figure>
 <p>生成成功会在.ssh目录下看到多出两个文件：id_rsa_second和id_rsa_second.pub，同样我们把新生成的公钥添加到gitLab新账号上。</p>
 <h5 id="二添加密钥到-ssh-agent"><a class="markdownIt-Anchor" href="#二添加密钥到-ssh-agent"></a> 二：添加密钥到 SSH Agent</h5>
 <p>执行命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ssh-agent <span class="token function">bash</span>
-ssh-add /c/Users/Administrator/.ssh/id_rsa_second<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-agent bash</span><br><span class="line">ssh-add /c/Users/Administrator/.ssh/id_rsa_second</span><br></pre></td></tr></tbody></table></figure>
 <h5 id="三-配置config文件"><a class="markdownIt-Anchor" href="#三-配置config文件"></a> 三、配置config文件</h5>
 <p>.ssh目录下默认是没有config文件的，我们手动在.ssh目录下创建一个config文件（不需要后缀）。然后用编辑器打开config文件，给新账号单独配置一个Host，Host要取一个别名，每个Host主要配置HostName和IdentityFile即可。如下：</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">Host gitLab<span class="token operator">-</span>second
-HostName gitLab<span class="token punctuation">.</span>com
-PreferredAuthentications publickey
-IdentityFile <span class="token operator">~</span><span class="token operator">/</span><span class="token punctuation">.</span>ssh<span class="token operator">/</span>id_rsa_second<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Host</span> gitLab-second</span><br><span class="line"><span class="title class_">HostName</span> gitLab.<span class="property">com</span></span><br><span class="line"><span class="title class_">PreferredAuthentications</span> publickey</span><br><span class="line"><span class="title class_">IdentityFile</span> ~<span class="regexp">/.ssh/i</span>d_rsa_second</span><br></pre></td></tr></tbody></table></figure>
 <p>检查是否配置成功：</p>
-<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">ssh <span class="token operator">-</span>T git<span class="token variable">@gitLab</span><span class="token operator">-</span><span class="token keyword">second</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh <span class="operator">-</span>T git<span class="variable">@gitLab</span><span class="operator">-</span><span class="keyword">second</span></span><br></pre></td></tr></tbody></table></figure>
 <p>如果看到自己的昵称则表示配置成功，如：Hi (you name)! You’ve successfully authenticated, but <a target="_blank" rel="noopener" href="http://GITEE.COM">GITEE.COM</a> does not provide shell access.<br>
 配置完成后，在连接非默认帐号的gitLab仓库时，远程库的地址要对应地做一些修改，比如现在克隆second帐号下的一个仓库xxxxx：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone git@gitLab-second:name/xxxxx.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@gitLab-second:name/xxxxx.git</span><br></pre></td></tr></tbody></table></figure>
 <p>其实此时就可以使用了，但是网上还有其他配置</p>
 <h5 id="四-取消全局的用户名和邮箱配置"><a class="markdownIt-Anchor" href="#四-取消全局的用户名和邮箱配置"></a> 四、取消全局的用户名和邮箱配置</h5>
 <p>因为一台电脑上配置了多个git账号，所以就不能再配置全局的用户名和邮箱了，而是在不同的仓库下，配置相应的局部用户名和邮箱即可。 打开 git bash，输入以下命令取消全局配置：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css">css复制代码git config --global --unset user.name
-git config --global --unset user.email<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">css复制代码git config <span class="attr">--global</span> <span class="attr">--unset</span> user<span class="selector-class">.name</span></span><br><span class="line">git config <span class="attr">--global</span> <span class="attr">--unset</span> user<span class="selector-class">.email</span></span><br></pre></td></tr></tbody></table></figure>
 <h5 id="五-为某个仓库配置用户名和邮箱"><a class="markdownIt-Anchor" href="#五-为某个仓库配置用户名和邮箱"></a> 五、为某个仓库配置用户名和邮箱</h5>
 <p>进入某个仓库根目录，打开 git bash,输入以下命令为其配置局部用户名和邮箱：</p>
-<pre class="line-numbers language-lua" data-language="lua"><code class="language-lua">git config user<span class="token punctuation">.</span>name <span class="token string">"xx"</span>
-git config user<span class="token punctuation">.</span>email <span class="token string">"xx@xx.com"</span>
-git config <span class="token comment">--list   （查看配置）</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight lua"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">config</span> user.name <span class="string">"xx"</span></span><br><span class="line">git <span class="built_in">config</span> user.email <span class="string">"xx@xx.com"</span></span><br><span class="line">git <span class="built_in">config</span> <span class="comment">--list   （查看配置）</span></span><br></pre></td></tr></tbody></table></figure>
 <p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6992519940074897444">https://juejin.cn/post/6992519940074897444</a></p>
 
                 
@@ -1190,13 +1129,13 @@ new Valine({
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/03/30/windows-xiang-guan/">
+                <a href="/2024/03/30/windows-xi-tong-xiang-guan/windows-mei-hua/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="Windows相关">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Windows系统美化">
                         
-                        <span class="card-title">Windows相关</span>
+                        <span class="card-title">Windows系统美化</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1424,7 +1363,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">39.1k</span>&nbsp;字
+                class="white-color">53.5k</span>&nbsp;字
             <br>
             
             
