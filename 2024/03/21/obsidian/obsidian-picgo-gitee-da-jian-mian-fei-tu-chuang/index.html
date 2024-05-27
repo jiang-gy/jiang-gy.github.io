@@ -534,7 +534,7 @@
             <div id="articleContent">
                 <p>之前使用PicGo+Gitee配合Typora，后来因为换电脑+Typora管理笔记不方便，换到Obsidian笔记，此处记录重新搭建图床的坑与经验。<br>
 主要参考<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/427353062"># picGo+gitee搭建Obsidian图床，实现高效写作！</a></p>
-<h2 id="1-下载安装PicGo">1 下载安装PicGo</h2>
+<h2 id="1-下载安装picgo"><a class="markdownIt-Anchor" href="#1-下载安装picgo"></a> 1 下载安装PicGo</h2>
 <p>下载链接<a href="https://link.zhihu.com/?target=https%3A//molunerfinn.com/PicGo/">https://molunerfinn.com/PicGo/</a></p>
 <ol>
 <li>gitee设置<br>
@@ -543,7 +543,7 @@
 <img src="https://gitee.com/jgyong/blogimg/raw/master/img/20240321093719.png" alt="image.png"><br>
 安装插件时，电脑如果没有安装Node.js会安装不上，因此需要安装Node.js</li>
 </ol>
-<h2 id="2-Node-js-下载与安装">2 Node.js 下载与安装</h2>
+<h2 id="2-nodejs-下载与安装"><a class="markdownIt-Anchor" href="#2-nodejs-下载与安装"></a> 2 Node.js 下载与安装</h2>
 <p>此处详细步骤可以参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/zimeng303/article/details/112167688">Node.js 下载与安装</a></p>
 <ol>
 <li>
@@ -564,7 +564,7 @@
 配置环境的作用如下：若不进行环境变量配置，那么在使用命令安装 node.js全局模块 （如：npm install -g vue）时，会默认安装到C盘的路径 (C:\Users\hua\AppData\Roaming\npm) 中，此处为方便，没有配置环境，详细配置环境的步骤可以参考上文链接。</p>
 </li>
 </ol>
-<h2 id="3-配置插件">3 配置插件</h2>
+<h2 id="3-配置插件"><a class="markdownIt-Anchor" href="#3-配置插件"></a> 3 配置插件</h2>
 <p>然后到<a href="https://link.zhihu.com/?target=https%3A//gitee.com/">gitee</a>新建一个仓库用来做我们的图床</p>
 <p><img src="https://pic1.zhimg.com/80/v2-75f73b3c61eccc848c09c509ef51c6b8_720w.webp" alt=""></p>
 <p>新建仓库的要点如下：</p>
@@ -592,7 +592,7 @@
 <p><img src="https://pic2.zhimg.com/80/v2-3888a858dfe83c0c28a032d23927f0d9_720w.webp" alt=""></p>
 <p>将时间戳重命名打开，否则同一张照片上传两次就会报错</p>
 <p><img src="https://pic2.zhimg.com/80/v2-007d65923b95fb281fb997f54f2883b1_720w.webp" alt=""></p>
-<h2 id="4-Obsidian插件设置">4  <strong>Obsidian插件设置</strong></h2>
+<h2 id="4-obsidian插件设置"><a class="markdownIt-Anchor" href="#4-obsidian插件设置"></a> 4  <strong>Obsidian插件设置</strong></h2>
 <ol>
 <li>安装插件<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/403001135"># 如何安装插件</a><br>
 . 打开设置</li>
@@ -631,7 +631,7 @@
 </ol>
 <p><img src="https://pic2.zhimg.com/80/v2-956854942eb89fc08e36c0aa13adbe21_720w.webp" alt=""><br>
 此处一般插件也默认配置好，因此基本不需要改动，直接就能使用插件。</p>
-<h3 id="其余问题">其余问题</h3>
+<h3 id="其余问题"><a class="markdownIt-Anchor" href="#其余问题"></a> 其余问题</h3>
 <ol>
 <li>已有笔记中图片上传问题<br>
 可以以文章为单位，在 Obsidian 中，按下命令行快捷键 Ctrl / Command + P，并选择 “upload all images”。即可将当前笔记中所有的图片上传至图床，并替换相关的链接。参考<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/565218725#:~:text=%E4%BD%A0%E5%8F%AF%E4%BB%A5%E4%BB%A5%E6%96%87%E7%AB%A0%E4%B8%BA%E5%8D%95%E4%BD%8D%EF%BC%8C%E5%9C%A8%20Obsidian%20%E4%B8%AD%EF%BC%8C%E6%8C%89%E4%B8%8B%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%BF%AB%E6%8D%B7%E9%94%AE%20Ctrl%20%2F%20Command,%2B%20P%EF%BC%8C%E5%B9%B6%E9%80%89%E6%8B%A9%20%22upload%20all%20images%22%E3%80%82%20%E5%8D%B3%E5%8F%AF%E5%B0%86%E5%BD%93%E5%89%8D%E7%AC%94%E8%AE%B0%E4%B8%AD%E6%89%80%E6%9C%89%E7%9A%84%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E8%87%B3%E5%9B%BE%E5%BA%8A%EF%BC%8C%E5%B9%B6%E6%9B%BF%E6%8D%A2%E7%9B%B8%E5%85%B3%E7%9A%84%E9%93%BE%E6%8E%A5%EF%BC%8C%E9%9D%9E%E5%B8%B8%E6%96%B9%E4%BE%BF%E3%80%82">上传图片教程</a><br>
@@ -1429,7 +1429,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">53.5k</span>&nbsp;字
+                class="white-color">49.4k</span>&nbsp;字
             <br>
             
             

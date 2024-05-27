@@ -504,7 +504,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-05-24
+                    2024-05-27
                 </div>
                 
 
@@ -536,12 +536,12 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一-默认设置">一 默认设置</h2>
+                <h2 id="一-默认设置"><a class="markdownIt-Anchor" href="#一-默认设置"></a> 一 默认设置</h2>
 <ol>
 <li>修改字体为仿宋；修改字号为20</li>
 <li>注意插件需要软件重启后生效</li>
 </ol>
-<h2 id="二-多库设置同步">二 多库设置同步</h2>
+<h2 id="二-多库设置同步"><a class="markdownIt-Anchor" href="#二-多库设置同步"></a> 二 多库设置同步</h2>
 <p>使用原理为Windows系统下的文件夹同步，<code>mklink</code>&nbsp;命令是将文件或目录建立双向连接, 改变任何一方都会发生变化，详细文件夹使用删除参见链接2.<br>
 此处说明基本使用语法：</p>
 <figure class="highlight ruby"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mklink [[<span class="regexp">/D] | [/</span>H] |<span class="params"> [/J]] Link Target</span></span><br></pre></td></tr></tbody></table></figure>
@@ -551,23 +551,23 @@
 切换到同一盘符文件夹下</p>
 <figure class="highlight ruby"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="variable constant_">XXXX</span></span><br></pre></td></tr></tbody></table></figure>
 <figure class="highlight ruby"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mklink /j /d  .\.obsidian <span class="symbol">C:</span>\jgy\obsidian\.obsidian</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="三-快捷操作">三 快捷操作</h2>
-<h3 id="1-常用快捷键">1 常用快捷键</h3>
+<h2 id="三-快捷操作"><a class="markdownIt-Anchor" href="#三-快捷操作"></a> 三 快捷操作</h2>
+<h3 id="1-常用快捷键"><a class="markdownIt-Anchor" href="#1-常用快捷键"></a> 1 常用快捷键</h3>
 <ol>
 <li>在<code>快捷键</code>设置中，找到&nbsp;<code>与上一行互换</code>和&nbsp;<code>与下一行互换</code>，设置为&nbsp;<code>alt+上方向键</code>&nbsp;<code>alt+下方向键</code>即可使用快捷键移动行和段落了</li>
 <li>文件列表面板在左上方，大纲面板在右上方</li>
 <li>引用代码<code>code</code> 快捷键需要自己设置，快捷键设置中搜索代码块，设置快捷方式为 `contrl +``</li>
 </ol>
-<h3 id="2-默认快捷键">2 默认快捷键</h3>
+<h3 id="2-默认快捷键"><a class="markdownIt-Anchor" href="#2-默认快捷键"></a> 2 默认快捷键</h3>
 <p>Obsidian 快捷方式总结</p>
 <ol>
 <li>对文字的格式刷-快捷方式<br>
 加粗：<strong>text</strong> 快捷键：Ctrl + B<br>
 右倾斜：<em>text</em> 快捷键：Ctrl + I<br>
 划掉文字：<s>text</s><br>
-高亮文字：==text==<br>
+高亮文字：<mark>text</mark><br>
 引用代码：<code>code</code><br>
-公式：$math$ 快捷键：Ctrl + /<br>
+公式：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>a</mi><mi>t</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">math</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">m</span><span class="mord mathnormal">a</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span></span></span></span> 快捷键：Ctrl + /<br>
 注释：%% text %%</li>
 <li>对段落的格式化-快捷方式<br>
 无序列表：- 无序列表 （行首使用）<br>
@@ -583,25 +583,23 @@
 F快捷键类<br>
 F1 —— 查看帮助<br>
 F2 —— 编辑所在文档的文件名<br>
-F11 —— 全屏<br>
-跳转类<br>
+F11 —— 全屏</li>
+<li>标签相关<br>
 Ctrl + Tab | Ctrl + PageDown —— 下一标签<br>
 Ctrl + Shift + Tab | Ctrl + PageUp —— 上一标签<br>
-Ctrl + 1~4 —— 转换到第1~4标签<br>
-Ctrl + 9 —— 转换到最后一个标签<br>
 Ctrl + Alt + ← —— 在窗口返回<br>
 Ctrl + Alt + → —— 从软件返回桌面<br>
 创建标签类<br>
 Ctrl + T —— 新建标签页<br>
-Ctrl + Shift + N —— 在右侧创建标签页<br>
-其他类<br>
+Ctrl + Shift + N —— 在右侧创建标签页</li>
+<li>其他类<br>
 Ctrl + , —— 打开设置<br>
 Ctrl + ; —— 增加当前文档的属性<br>
 Ctrl + K —— 插入链接<br>
 Ctrl + W —— 关闭当前标签页<br>
 Ctrl + Shift + W —— 关闭所有标签页</li>
 </ol>
-<h3 id="3-更改快捷键">3 更改快捷键</h3>
+<h3 id="3-更改快捷键"><a class="markdownIt-Anchor" href="#3-更改快捷键"></a> 3 更改快捷键</h3>
 <p>使用增强编辑插件</p>
 <ol>
 <li>安装<br>
@@ -609,13 +607,13 @@ Ctrl + Shift + W —— 关闭所有标签页</li>
 <li>设置快捷键即可<br>
 <img src="/2024/03/18/obsidian/obsidian-cao-zuo-fang-shi/Pasted%20image%2020240328220013.png" alt=""></li>
 </ol>
-<h2 id="四-Markdown转换为其他格式">四 Markdown转换为其他格式</h2>
+<h2 id="四-markdown转换为其他格式"><a class="markdownIt-Anchor" href="#四-markdown转换为其他格式"></a> 四 Markdown转换为其他格式</h2>
 <p><a target="_blank" rel="noopener" href="https://www.uncoverman.com/the-way-markdown-to-word-in-obsidian.html#Pandoc-%E8%BD%AF%E4%BB%B6" title="Pandoc 软件">原网页</a></p>
-<h3 id="1-Pandoc-软件">1. Pandoc 软件</h3>
+<h3 id="1-pandoc-软件"><a class="markdownIt-Anchor" href="#1-pandoc-软件"></a> 1. Pandoc 软件</h3>
 <p>Pandoc 的出现就是为了解决这个问题。它就是一把「瑞士军刀」，可以实现多种文本格式的相互转换，不仅可以把 md 文件导出为 Word，还可以导出为 PDF、ePub 甚至是 PPT，更多的格式转换可以查阅<a target="_blank" rel="noopener" href="https://www.pandoc.org/index.html">官网</a>。<br>
 使用方法是下载安装 Pandoc，通过以下的一个命令行就能实现文件的转换。</p>
 <figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandoc 文件名.md -s -o 文件名.docx</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="2-Obsidian-集成-Pandoc">2. Obsidian 集成 Pandoc</h3>
+<h3 id="2-obsidian-集成-pandoc"><a class="markdownIt-Anchor" href="#2-obsidian-集成-pandoc"></a> 2. Obsidian 集成 Pandoc</h3>
 <p>单独使用 Pandoc 需要用命令行操作指令，并不友好，我常常忘了具体的指令是什么，用到的时候需要上网搜一下。Obsidian 集成了 Pandoc，可以通过图形化的界面实现文本之间的格式转换。</p>
 <p>具体步骤如下：</p>
 <p>1、安装&nbsp;<a target="_blank" rel="noopener" href="https://www.pandoc.org/installing.html">Pandoc</a>&nbsp;软件。<br>
@@ -638,10 +636,10 @@ Ctrl + Shift + W —— 关闭所有标签页</li>
 </ul>
 <p>5、完成配置之后，打开需要导出的文档，通过&nbsp;<code>Command</code>+<code>P</code>（Windows 上是&nbsp;<code>Ctrl</code>+<code>P</code>）调出命令面板，选择导出格式。</p>
 <p><img src="https://vip2.loli.io/2022/08/14/D1CgFNOkp4EhAVM.png" alt="image20220809130958.png"></p>
-<h2 id="五-插入文件">五 插入文件</h2>
+<h2 id="五-插入文件"><a class="markdownIt-Anchor" href="#五-插入文件"></a> 五 插入文件</h2>
 <p>你可以通过相同的语法将 PDF 文件嵌入到你的笔记中。除此之外，你可以通过&nbsp;<code>![[My File.pdf#page=number]]</code>&nbsp;这样的形式直接指定嵌入 PDF 文件的页码。<br>
 当你拖动图片到笔记中时，图片会自动嵌入笔记，并且 Obsidian 会将图片文件复制到默认的附件文件夹中。Obsidian 支持几种图片格式，因此大多数情况下你都可以在文件列表中的附件文件夹中选择并查看图片。</p>
-<h5 id="1-嵌入笔记">1 嵌入笔记</h5>
+<h5 id="1-嵌入笔记"><a class="markdownIt-Anchor" href="#1-嵌入笔记"></a> 1 嵌入笔记</h5>
 <p>当然，你可以通过相同的语法将一篇笔记嵌入到另一篇笔记中，比如：<br>
 支持格式<br>
 目前为止，Obsidian 支持以下格式的文件：</p>
@@ -653,8 +651,8 @@ Ctrl + Shift + W —— 关闭所有标签页</li>
 <li>PDF 文件：<code>pdf</code>.<br>
 以上类型文件都可以<a target="_blank" rel="noopener" href="https://publish.obsidian.md/help-zh/%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/%E5%B5%8C%E5%85%A5%E6%96%87%E4%BB%B6">内嵌到笔记页面中</a></li>
 </ol>
-<h2 id="六-常用插件">六 常用插件</h2>
-<h3 id="1-Style-Settings">1 Style Settings</h3>
+<h2 id="六-常用插件"><a class="markdownIt-Anchor" href="#六-常用插件"></a> 六 常用插件</h2>
+<h3 id="1-style-settings"><a class="markdownIt-Anchor" href="#1-style-settings"></a> 1 Style Settings</h3>
 <ol>
 <li>更改页边距
 <ul>
@@ -662,29 +660,29 @@ Ctrl + Shift + W —— 关闭所有标签页</li>
 </ul>
 </li>
 </ol>
-<h3 id="2-自动段落排序">2 自动段落排序</h3>
+<h3 id="2-自动段落排序"><a class="markdownIt-Anchor" href="#2-自动段落排序"></a> 2 自动段落排序</h3>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44000505/article/details/137592653"># Obsidian删除有序列表出现跳号问题</a><br>
 <a target="_blank" rel="noopener" href="https://forum-zh.obsidian.md/t/topic/29799"># 有序列表项删除</a></p>
 <p>选中要删除的段落，或者在段落的开头；按快捷键Ctrl + D即可（也可以设置方便自己的快捷键，但为了遵循Obsidian的使用习惯，还是建议Ctrl + D）<br>
 也可以使用Linter插件<br>
 <a target="_blank" rel="noopener" href="https://pkmer.cn/Pkmer-Docs/10-obsidian/obsidian%E7%A4%BE%E5%8C%BA%E6%8F%92%E4%BB%B6/readme/obsidian-linter_readme/">Obsidian 插件：Linter</a><br>
 使用Control+P，打开命令行，搜索Linter，选择Linter–格式化文档，则文档内所有编号顺序保持一致</p>
-<h3 id="3-折叠所有内容">3 折叠所有内容</h3>
+<h3 id="3-折叠所有内容"><a class="markdownIt-Anchor" href="#3-折叠所有内容"></a> 3 折叠所有内容</h3>
 <p><a target="_blank" rel="noopener" href="https://forum-zh.obsidian.md/t/topic/11406">【已解决】有功能或插件可以一次性伸缩笔记内所有列表层级吗？</a></p>
-<h2 id="七-常见问题">七 常见问题</h2>
-<h3 id="1-渲染失效">1 渲染失效</h3>
+<h2 id="七-常见问题"><a class="markdownIt-Anchor" href="#七-常见问题"></a> 七 常见问题</h2>
+<h3 id="1-渲染失效"><a class="markdownIt-Anchor" href="#1-渲染失效"></a> 1 渲染失效</h3>
 <p><a target="_blank" rel="noopener" href="https://forum-zh.obsidian.md/t/topic/6931">V0.14.6版本下图片、表格、文字实时渲染总是出Bug,时常渲染不出来;目前已找到原因并解决;</a></p>
 <ul>
 <li>原因:<strong>尖括号等特殊代码符号没有采用代码块包含,导致实时渲染失败</strong></li>
 <li>解决:对于尖括号等特殊符号尽量全用代码块包含,养成习惯：<code>const_cast&lt;xxx&gt;(xxx)</code>,关注点在这个尖括号,特殊</li>
 <li>注意:只要遇见尖括号就包含</li>
 </ul>
-<h3 id="2-Obsidian-粘贴代码时自动添加空行">2  Obsidian 粘贴代码时自动添加空行</h3>
+<h3 id="2-obsidian-粘贴代码时自动添加空行"><a class="markdownIt-Anchor" href="#2-obsidian-粘贴代码时自动添加空行"></a> 2  Obsidian 粘贴代码时自动添加空行</h3>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/xieeryihe/article/details/133866211"># Obsidian 粘贴代码时自动添加空行</a><br>
 <a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000043725988">解决 Obsidian 在粘贴代码时自动添加空行的问题</a><br>
 Obsidian 很好用，在粘贴内容时会自动进行 markdown 转换。但是这会在粘贴代码时生成很多额外的空行。<br>
 在 Obsidian 中单击右键，选择“以纯文本方式粘贴”即可</p>
-<h2 id="参考链接">参考链接</h2>
+<h2 id="参考链接"><a class="markdownIt-Anchor" href="#参考链接"></a> 参考链接</h2>
 <p><a target="_blank" rel="noopener" href="https://forum-zh.obsidian.md/">1.Obsidian论坛</a><br>
 <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/4268d00450c2">2.windows下使用mklink命令 建立同步文件夹</a><br>
 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/361003138#:~:text=%E6%88%96%E8%AE%B8%E6%98%AF%E4%B8%BA%E4%BA%86%E6%BB%A1%E8%B6%B3%E7%94%A8%E6%88%B7%E5%AF%B9%E4%BA%8E%E5%A4%9A%E4%B8%AAObsidian%E5%BA%93%E7%9A%84%E4%B8%AA%E6%80%A7%E5%8C%96%E5%8C%BA%E5%88%86%EF%BC%8C%E4%BB%A5%E4%B8%8A%E4%B8%89%E4%B8%AA%E9%85%8D%E7%BD%AE%E7%9B%AE%E5%BD%95%E8%BF%98%E6%97%A0%E6%B3%95%E8%87%AA%E5%8A%A8%E7%BB%9F%E4%B8%80%EF%BC%8C%E9%99%A4%E9%9D%9E%E5%A4%8D%E5%88%B6%E6%88%96%E5%90%8C%E6%AD%A5%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%EF%BC%8C%E5%90%A6%E5%88%99%E4%B8%8D%E8%83%BD%E8%AE%A9%E6%89%80%E6%9C%89Obsidian%E5%BA%93%E5%85%B7%E5%A4%87%E7%9B%B8%E5%90%8C%E7%9A%84%E9%85%8D%E7%BD%AE%E6%95%88%E6%9E%9C%EF%BC%8C%E4%B8%8D%E8%83%BD%E6%94%B9%E4%B8%80%E5%A4%84%E9%85%8D%E7%BD%AE%E5%B0%B1%E5%BD%B1%E5%93%8D%E5%88%B0%E6%89%80%E6%9C%89ob%E5%BA%93%E3%80%82,%E7%BB%93%E5%90%88QQ%E7%BE%A4%E5%8F%8B%E7%9A%84%E6%8F%90%E7%A4%BA%EF%BC%8C%E7%BB%8F%E8%BF%87%E6%B5%8B%E8%AF%95%EF%BC%8C%E5%8F%91%E7%8E%B0%E5%88%A9%E7%94%A8windows%E4%B8%8B%E7%9A%84mklink%E5%91%BD%E4%BB%A4%E5%B0%B1%E5%8F%AF%E4%BB%A5%E5%AE%9E%E7%8E%B0%E5%A4%9A%E5%BA%93%E7%BB%9F%E4%B8%80%E9%85%8D%E7%BD%AE%E6%95%88%E6%9E%9C%EF%BC%8C%E5%8D%B3%E7%94%A8mklink%E8%AF%AD%E6%B3%95%E5%88%9B%E5%BB%BA%E6%9F%90%E5%BA%93%EF%BC%88%E6%BA%90%E5%BA%93%EF%BC%89%E7%9A%84%E9%85%8D%E7%BD%AE%E7%9B%AE%E5%BD%95%E7%9A%84%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F%EF%BC%8C%E5%AD%98%E5%85%A5%E5%85%B6%E5%AE%83%E5%BA%93%EF%BC%88%E7%9B%AE%E6%A0%87%E5%BA%93%EF%BC%89%E7%9B%AE%E5%BD%95%E5%86%85%EF%BC%8C%E5%88%99%E5%8F%AF%E4%BB%A5%E5%81%9A%E5%88%B0%E4%BF%AE%E6%94%B9%E6%BA%90%E5%BA%93%E9%85%8D%E7%BD%AE%EF%BC%8C%E7%9B%AE%E6%A0%87%E5%BA%93%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0%E9%85%8D%E7%BD%AE%E3%80%82">3.# 利用mklink命令实现Obsidian多库统一配置</a><br>
@@ -1253,13 +1251,13 @@ new Valine({
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/02/01/ns3-fang-zhen/ns3-zhong-wang-luo-fang-zhen/">
+                <a href="/2024/02/01/ns3-fang-zhen/ns3-zhong-yuan-xin-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="NS3中网络仿真">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="NS3中元信息">
                         
-                        <span class="card-title">NS3中网络仿真</span>
+                        <span class="card-title">NS3中元信息</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1487,7 +1485,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数<i id="heartbeat" class="fa fas fa-heartbeat"></i>:&nbsp;<span
-                class="white-color">53.5k</span>&nbsp;字
+                class="white-color">49.4k</span>&nbsp;字
             <br>
             
             
